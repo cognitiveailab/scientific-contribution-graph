@@ -1,0 +1,2423 @@
+{
+    "corpus_id": "233297051",
+    "title": "Explaining Answers with Entailment Trees",
+    "year": 2021,
+    "publication_date": {
+        "year": 2021,
+        "month": 4,
+        "day": 17
+    },
+    "contributions": [
+        {
+            "contribution_id": "233297051.c0",
+            "name": "Formulation of explanation as multistep entailment trees",
+            "description": "The paper reconceives open-domain textual question-answering explanation as the construction of a directed entailment tree, where each node is a multi-premise textual entailment step that incrementally derives the hypothesis (question + answer) from known facts. This formulation separates the correctness of the derivation from its utility for users, enabling systematic evaluation of explanations independent of answer selection. By defining explanations as trees rather than isolated rationales, the work provides a high-level conceptual framework that can guide future research on explainable QA.",
+            "types": [
+                {
+                    "type": "problem_formulation",
+                    "explanation": "It proposes a novel way to define the explanation task for QA."
+                },
+                {
+                    "type": "conceptual_framework",
+                    "explanation": "It introduces the entailment-tree framework that structures reasoning steps."
+                }
+            ],
+            "sections": [
+                "Introduction",
+                "Task Definitions"
+            ],
+            "prerequisites": [
+                {
+                    "name": "Multi-premise textual entailment",
+                    "description": "Multi-premise textual entailment extends standard natural-language inference to infer a hypothesis from two or more premises, requiring models to combine information across sentences.",
+                    "explanation": "The entailment-tree formulation relies on each node being a valid multi-premise entailment step.",
+                    "core_or_peripheral": "core",
+                    "references": [
+                        {
+                            "type": "paper",
+                            "paper_title": "Recognizing Textual Entailment: Models and Applications",
+                            "paper_year": 2013,
+                            "paper_first_author": {
+                                "first_name": "Ido",
+                                "last_name": "Dagan"
+                            },
+                            "paper_venue": "Morgan and Claypool",
+                            "corpus_id": null,
+                            "corpus_id_match_confidence": 0.0,
+                            "corpus_id_match_method": null,
+                            "matches": []
+                        },
+                        {
+                            "type": "paper",
+                            "paper_title": "Natural language inference from multiple premises",
+                            "paper_year": 2017,
+                            "paper_first_author": {
+                                "first_name": "Alice",
+                                "last_name": "Lai"
+                            },
+                            "paper_venue": "IJCNLP",
+                            "corpus_id": "29033327",
+                            "corpus_id_match_confidence": 1.0,
+                            "corpus_id_match_method": "title_exact_sanitized",
+                            "matches": [
+                                {
+                                    "contribution_id": "29033327.c0",
+                                    "explanation": "The paper formulates the Multiple Premise Entailment (MPE) task, explicitly defining a textual entailment problem that requires inference from several premises, which is exactly the concept of multi\u2011premise textual entailment.",
+                                    "match_type": "strong",
+                                    "match_method": "alignment_v1_feb14"
+                                },
+                                {
+                                    "contribution_id": "29033327.c1",
+                                    "explanation": "The creation of the MPE dataset provides a concrete resource for training and evaluating models on multi\u2011premise entailment, supporting the prerequisite but not defining the concept itself.",
+                                    "match_type": "weak",
+                                    "match_method": "alignment_v1_feb14"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Prior explanation approaches using rationales",
+                    "description": "Existing QA explanation methods provide short textual rationales or supporting sentences rather than a full chain of reasoning.",
+                    "explanation": "These works motivate the need for a richer, structured explanation format and are contrasted with the entailment-tree approach.",
+                    "core_or_peripheral": "peripheral",
+                    "references": [
+                        {
+                            "type": "paper",
+                            "paper_title": "ERASER: A benchmark to evaluate rationalized NLP models",
+                            "paper_year": 2019,
+                            "paper_first_author": {
+                                "first_name": "Jay",
+                                "last_name": "DeYoung"
+                            },
+                            "paper_venue": "ACL",
+                            "corpus_id": "207847663",
+                            "corpus_id_match_confidence": 1.0,
+                            "corpus_id_match_method": "title_exact_sanitized",
+                            "matches": [
+                                {
+                                    "contribution_id": "207847663.c2-1",
+                                    "explanation": "Implements hard-selection rationalizer models that generate short textual rationales for predictions, exemplifying prior explanation approaches using rationales.",
+                                    "match_type": "strong",
+                                    "match_method": "alignment_v1_feb14"
+                                },
+                                {
+                                    "contribution_id": "207847663.c2-2",
+                                    "explanation": "Implements soft-selection rationalizer models that produce continuous importance scores as short rationales, representing another prior rationale\u2011based explanation method.",
+                                    "match_type": "strong",
+                                    "match_method": "alignment_v1_feb14"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "paper",
+                            "paper_title": "Explain yourself! Leveraging language models for commonsense reasoning",
+                            "paper_year": 2019,
+                            "paper_first_author": {
+                                "first_name": "Nazneen",
+                                "last_name": "Rajani"
+                            },
+                            "paper_venue": "ACL",
+                            "corpus_id": "174803111",
+                            "corpus_id_match_confidence": 1.0,
+                            "corpus_id_match_method": "title_exact_sanitized",
+                            "matches": []
+                        }
+                    ]
+                },
+                {
+                    "name": "Proof generation with language models",
+                    "description": "Transformer-based language models can generate formal or natural-language proofs by sequentially applying inference rules, demonstrating the feasibility of end-to-end generation of structured reasoning.",
+                    "explanation": "The EntailmentWriter model and the linearisation scheme are directly inspired by proof-generation systems such as ProofWriter.",
+                    "core_or_peripheral": "core",
+                    "references": [
+                        {
+                            "type": "paper",
+                            "paper_title": "ProofWriter: Generating implications, proofs, and abductive statements over natural language",
+                            "paper_year": 2021,
+                            "paper_first_author": {
+                                "first_name": "Oyvind",
+                                "last_name": "Tafjord"
+                            },
+                            "paper_venue": "IJCAI",
+                            "corpus_id": "229371222",
+                            "corpus_id_match_confidence": 1.0,
+                            "corpus_id_match_method": "title_exact_sanitized",
+                            "matches": [
+                                {
+                                    "contribution_id": "229371222.c0",
+                                    "explanation": "Introduces an iterative generative ProofWriter model that uses a T5 language model to sequentially generate proof steps, directly exemplifying proof generation with language models.",
+                                    "match_type": "strong",
+                                    "match_method": "alignment_v1_feb14"
+                                },
+                                {
+                                    "contribution_id": "229371222.c1",
+                                    "explanation": "Presents an All\u2011At\u2011Once generative baseline that also uses a T5 language model to produce an entire natural\u2011language proof in one pass, further demonstrating proof generation with language models.",
+                                    "match_type": "strong",
+                                    "match_method": "alignment_v1_feb14"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "paper",
+                            "paper_title": "Generative language modeling for automated theorem proving",
+                            "paper_year": 2020,
+                            "paper_first_author": {
+                                "first_name": "Stanislas",
+                                "last_name": "Polu"
+                            },
+                            "paper_venue": "arXiv",
+                            "corpus_id": "221535103",
+                            "corpus_id_match_confidence": 1.0,
+                            "corpus_id_match_method": "title_exact_sanitized",
+                            "matches": [
+                                {
+                                    "contribution_id": "221535103.c0",
+                                    "explanation": "GPT\u2011f is a transformer\u2011based system that directly generates Metamath proof steps, demonstrating end\u2011to\u2011end language\u2011model proof generation.",
+                                    "match_type": "strong",
+                                    "match_method": "alignment_v1_feb14"
+                                },
+                                {
+                                    "contribution_id": "221535103.c1",
+                                    "explanation": "The GOAL\u2192PROOFSTEP objective formalises proof\u2011step generation as a conditional language\u2011modeling task, the exact paradigm cited as the prerequisite.",
+                                    "match_type": "strong",
+                                    "match_method": "alignment_v1_feb14"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "paper",
+                            "paper_title": "Learning to prove theorems by learning to generate theorems",
+                            "paper_year": 2020,
+                            "paper_first_author": {
+                                "first_name": "Ming-Zhe",
+                                "last_name": "Wang"
+                            },
+                            "paper_venue": "NeurIPS",
+                            "corpus_id": "211132980",
+                            "corpus_id_match_confidence": 1.0,
+                            "corpus_id_match_method": "title_exact_sanitized",
+                            "matches": [
+                                {
+                                    "contribution_id": "211132980.c0",
+                                    "explanation": "MetaGen is a neural forward\u2011generation system that synthesizes full Metamath theorems together with proof trees, directly demonstrating end\u2011to\u2011end proof generation with a transformer\u2011style language model.",
+                                    "match_type": "strong",
+                                    "match_method": "alignment_v1_feb14"
+                                },
+                                {
+                                    "contribution_id": "211132980.c2-2",
+                                    "explanation": "MetaGen\u2011RL\u2011LM trains the theorem generator with a language\u2011model\u2011based reward, showing a connection to language\u2011model\u2011driven proof generation, but the language model is used only for reward, not for the proof itself.",
+                                    "match_type": "weak",
+                                    "match_method": "alignment_v1_feb14"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Multi-hop QA datasets (ARC, WorldTree)",
+                    "description": "Datasets such as ARC and WorldTree provide science questions together with a corpus of domain-specific facts, establishing a setting where multi-step reasoning is required.",
+                    "explanation": "The formulation is applied to open-domain QA and uses these datasets as the source of facts and as motivation for needing structured explanations.",
+                    "core_or_peripheral": "peripheral",
+                    "references": [
+                        {
+                            "type": "paper",
+                            "paper_title": "Think you have solved question answering? Try ARC, the AI2 reasoning challenge",
+                            "paper_year": 2018,
+                            "paper_first_author": {
+                                "first_name": "Peter",
+                                "last_name": "Clark"
+                            },
+                            "paper_venue": "arXiv",
+                            "corpus_id": "3922816",
+                            "corpus_id_match_confidence": 1.0,
+                            "corpus_id_match_method": "title_exact_sanitized",
+                            "matches": [
+                                {
+                                    "contribution_id": "3922816.c0",
+                                    "explanation": "The contribution introduces the ARC dataset, a multi-hop science QA benchmark that is explicitly cited as one of the prerequisite datasets.",
+                                    "match_type": "strong",
+                                    "match_method": "alignment_v1_feb14"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "paper",
+                            "paper_title": "WorldTree V2: A corpus of science-domain structured explanations and inference patterns supporting multi-hop inference",
+                            "paper_year": 2020,
+                            "paper_first_author": {
+                                "first_name": "Zhengnan",
+                                "last_name": "Xie"
+                            },
+                            "paper_venue": "LREC",
+                            "corpus_id": "218974301",
+                            "corpus_id_match_confidence": 1.0,
+                            "corpus_id_match_method": "title_exact_sanitized",
+                            "matches": [
+                                {
+                                    "contribution_id": "218974301.c0",
+                                    "explanation": "The contribution releases WorldTree V2, a multi-fact explanation dataset that is a direct instance of the \"WorldTree\" multi-hop QA dataset referenced in the prerequisite.",
+                                    "match_type": "strong",
+                                    "match_method": "alignment_v1_feb14"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "contribution_id": "233297051.c1",
+            "name": "ENTAILMENTBANK: a large-scale dataset of multistep entailment trees for elementary-science QA",
+            "description": "The authors construct ENTAILMENTBANK, the first publicly released resource that provides 1,840 manually authored entailment trees linking multiple-choice science questions (from ARC) to supporting facts drawn from the WorldTree V2 corpus. Each tree averages 7.6 nodes and 3.2 multi-premise entailment steps, making explicit intermediate conclusions and the provenance of every premise. The dataset also defines three graded explanation tasks (no-distractor, distractor, full-corpus) together with evaluation metrics, thereby establishing a new benchmark for training and assessing models that generate structured explanations.",
+            "types": [
+                {
+                    "type": "resource_dataset",
+                    "explanation": "It introduces a new, manually curated dataset of structured explanations."
+                },
+                {
+                    "type": "resource_benchmark",
+                    "explanation": "It specifies standardized tasks, inputs, and evaluation metrics for the dataset."
+                }
+            ],
+            "sections": [
+                "The ENTAILMENTBANK Dataset",
+                "Overall Dataset",
+                "Dataset Analysis",
+                "Task Definitions"
+            ],
+            "prerequisites": [
+                {
+                    "name": "ARC science question set",
+                    "description": "A collection of 7,787 grade-school multiple-choice science questions with correct answers, used as the source of QA pairs for which entailment trees are built.",
+                    "explanation": "ENTAILMENTBANK requires a set of target questions and answers to anchor each entailment tree.",
+                    "core_or_peripheral": "core",
+                    "references": [
+                        {
+                            "type": "paper",
+                            "paper_title": "Think you have solved question answering? Try ARC, the AI2 reasoning challenge",
+                            "paper_year": 2018,
+                            "paper_first_author": {
+                                "first_name": "Peter",
+                                "last_name": "Clark"
+                            },
+                            "paper_venue": "ArXiv",
+                            "corpus_id": "3922816",
+                            "corpus_id_match_confidence": 1.0,
+                            "corpus_id_match_method": "title_exact_sanitized",
+                            "matches": [
+                                {
+                                    "contribution_id": "3922816.c0",
+                                    "explanation": "The ARC Dataset contribution introduces the exact 7,787 multiple\u2011choice science questions that constitute the \"ARC science question set\" prerequisite.",
+                                    "match_type": "strong",
+                                    "match_method": "alignment_v1_feb14"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "WorldTree V2 corpus",
+                    "description": "A structured knowledge base of elementary science facts and explanation graphs compiled for science QA, containing sentences and relational tables used as premises for the entailment trees.",
+                    "explanation": "The leaf sentences and intermediate premises of ENTAILMENTBANK are drawn from this corpus.",
+                    "core_or_peripheral": "core",
+                    "references": [
+                        {
+                            "type": "paper",
+                            "paper_title": "WorldTree V2: A corpus of science-domain structured explanations and inference patterns supporting multi-hop inference",
+                            "paper_year": 2020,
+                            "paper_first_author": {
+                                "first_name": "Zhengnan",
+                                "last_name": "Xie"
+                            },
+                            "paper_venue": "LREC",
+                            "corpus_id": "218974301",
+                            "corpus_id_match_confidence": 1.0,
+                            "corpus_id_match_method": "title_exact_sanitized",
+                            "matches": [
+                                {
+                                    "contribution_id": "218974301.c0",
+                                    "explanation": "This contribution is the WorldTree V2 multi\u2011fact explanation dataset itself, i.e., the corpus of sentences and explanation graphs that the prerequisite cites.",
+                                    "match_type": "strong",
+                                    "match_method": "alignment_v1_feb14"
+                                },
+                                {
+                                    "contribution_id": "218974301.c1",
+                                    "explanation": "This contribution describes the semi\u2011structured tablestore (66 tables, 9,216 facts) that provides the relational tables and sentences underlying the WorldTree V2 corpus.",
+                                    "match_type": "strong",
+                                    "match_method": "alignment_v1_feb14"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Multi-premise textual entailment research",
+                    "description": "Prior work defining entailment where two or more sentences jointly entail a hypothesis, establishing the formalism that ENTAILMENTBANK extends to multi-step trees.",
+                    "explanation": "The dataset\u2019s core unit (each tree edge) is a multi-premise entailment, requiring the conceptual foundation from this literature.",
+                    "core_or_peripheral": "core",
+                    "references": [
+                        {
+                            "type": "paper",
+                            "paper_title": "Natural language inference from multiple premises",
+                            "paper_year": 2017,
+                            "paper_first_author": {
+                                "first_name": "Alice",
+                                "last_name": "Lai"
+                            },
+                            "paper_venue": "IJCNLP",
+                            "corpus_id": "29033327",
+                            "corpus_id_match_confidence": 1.0,
+                            "corpus_id_match_method": "title_exact_sanitized",
+                            "matches": [
+                                {
+                                    "contribution_id": "29033327.c0",
+                                    "explanation": "Defines the Multiple Premise Entailment (MPE) task, directly establishing the formalism of multi\u2011premise textual entailment that ENTAILMENTBANK builds upon.",
+                                    "match_type": "strong",
+                                    "match_method": "alignment_v1_feb14"
+                                },
+                                {
+                                    "contribution_id": "29033327.c1",
+                                    "explanation": "Creates a benchmark dataset for the MPE task, providing the first concrete resource for multi\u2011premise entailment research.",
+                                    "match_type": "strong",
+                                    "match_method": "alignment_v1_feb14"
+                                },
+                                {
+                                    "contribution_id": "29033327.c2",
+                                    "explanation": "Proposes a neural architecture (Sum\u2011of\u2011Experts) specifically designed to handle multiple premises in entailment, extending the methodological toolkit of multi\u2011premise research.",
+                                    "match_type": "weak",
+                                    "match_method": "alignment_v1_feb14"
+                                },
+                                {
+                                    "contribution_id": "29033327.c3-1",
+                                    "explanation": "Empirically evaluates several neural baselines on the MPE benchmark, showing how existing models perform on multi\u2011premise entailment.",
+                                    "match_type": "weak",
+                                    "match_method": "alignment_v1_feb14"
+                                },
+                                {
+                                    "contribution_id": "29033327.c3-2",
+                                    "explanation": "Analyzes model behavior on the MPE benchmark, providing insights into the challenges of multi\u2011premise entailment.",
+                                    "match_type": "weak",
+                                    "match_method": "alignment_v1_feb14"
+                                },
+                                {
+                                    "contribution_id": "29033327.c4-2",
+                                    "explanation": "Taxonomizes the cross\u2011sentence reasoning types required for MPE, clarifying the kinds of multi\u2011premise inference that ENTAILMENTBANK\u2019s trees must capture.",
+                                    "match_type": "weak",
+                                    "match_method": "alignment_v1_feb14"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Single-premise textual entailment datasets",
+                    "description": "Datasets such as SNLI and the Pascal Recognizing Textual Entailment challenges that provide large collections of sentence-pair entailment examples.",
+                    "explanation": "These earlier resources motivated the need for a multi-step, multi-premise dataset and provided baseline methods for entailment modeling.",
+                    "core_or_peripheral": "peripheral",
+                    "references": [
+                        {
+                            "type": "paper",
+                            "paper_title": "A large annotated corpus for learning natural language inference",
+                            "paper_year": 2015,
+                            "paper_first_author": {
+                                "first_name": "Samuel R.",
+                                "last_name": "Bowman"
+                            },
+                            "paper_venue": "EMNLP",
+                            "corpus_id": "14604520",
+                            "corpus_id_match_confidence": 1.0,
+                            "corpus_id_match_method": "title_exact_sanitized",
+                            "matches": [
+                                {
+                                    "contribution_id": "14604520.c0",
+                                    "explanation": "The SNLI Corpus is a large, publicly released single\u2011premise textual entailment dataset, directly matching the prerequisite.",
+                                    "match_type": "strong",
+                                    "match_method": "alignment_v1_feb14"
+                                },
+                                {
+                                    "contribution_id": "14604520.c8",
+                                    "explanation": "The SNLI with Stanford PCFG Parses resource augments the SNLI single\u2011premise dataset with parses, still providing the same single\u2011premise entailment examples.",
+                                    "match_type": "weak",
+                                    "match_method": "alignment_v1_feb14"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "paper",
+                            "paper_title": "The seventh Pascal Recognizing Textual Entailment challenge",
+                            "paper_year": 2011,
+                            "paper_first_author": {
+                                "first_name": "Luca",
+                                "last_name": "Bentivogli"
+                            },
+                            "paper_venue": "Theory and Applications of Categories",
+                            "corpus_id": "5791809",
+                            "corpus_id_match_confidence": 1.0,
+                            "corpus_id_match_method": "title_exact_sanitized",
+                            "matches": []
+                        }
+                    ]
+                },
+                {
+                    "name": "Web-based drag-and-drop authoring tool",
+                    "description": "A custom JavaScript interface that lets annotators construct, edit, and review entailment trees by dragging facts, labeling roles, and adding missing premises.",
+                    "explanation": "Efficient creation of high-quality, fine-grained entailment trees at scale depended on this tool.",
+                    "core_or_peripheral": "core",
+                    "references": [
+                        {
+                            "type": "internal",
+                            "contribution_name": "Web\u2011based drag\u2011and\u2011drop authoring tool for constructing entailment trees",
+                            "contribution_id": "233297051.c2",
+                            "explanation": "The tool described in contribution 2 enabled the manual construction of the ENTAILMENTBANK trees."
+                        }
+                    ]
+                },
+                {
+                    "name": "Expert annotation guidelines and protocol",
+                    "description": "A set of detailed instructions for annotators covering fine-grained granularity, compositionality, relevance, and correctness of each entailment step.",
+                    "explanation": "Producing reliable multi-step entailment trees required a rigorously defined annotation process.",
+                    "core_or_peripheral": "core",
+                    "references": [
+                        {
+                            "type": "internal",
+                            "contribution_name": "Web\u2011based drag\u2011and\u2011drop authoring tool for constructing entailment trees",
+                            "contribution_id": "233297051.c2",
+                            "explanation": "The tool documentation includes the annotation guidelines used to build ENTAILMENTBANK."
+                        }
+                    ]
+                },
+                {
+                    "name": "Analysis of reasoning categories for multistep entailment",
+                    "description": "An analysis of six high-level inference types (substitution, rule-based, specification/conjunction, class inference, property inheritance, sequential inference) that informs the design of the dataset and its evaluation.",
+                    "explanation": "Understanding the diversity of reasoning required guided the selection of tree structures and the definition of tasks.",
+                    "core_or_peripheral": "peripheral",
+                    "references": [
+                        {
+                            "type": "internal",
+                            "contribution_name": "Analysis of reasoning types required for multistep entailments",
+                            "contribution_id": "233297051.c7",
+                            "explanation": "The analysis (contribution 7) characterizes the reasoning needed for the trees."
+                        }
+                    ]
+                },
+                {
+                    "name": "Formulation of explanation as multistep entailment trees",
+                    "description": "A conceptual framework that reconceives open-domain QA explanation as a directed entailment tree, where each node is a multi-premise entailment step leading from known facts to the hypothesis (question+answer).",
+                    "explanation": "ENTAILMENTBANK was created to instantiate this formulation, providing concrete data for the proposed explanation paradigm.",
+                    "core_or_peripheral": "core",
+                    "references": [
+                        {
+                            "type": "internal",
+                            "contribution_name": "Formulation of explanation as multistep entailment trees",
+                            "contribution_id": "233297051.c0",
+                            "explanation": "The dataset operationalizes the explanation framework introduced in contribution 0."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "contribution_id": "233297051.c2",
+            "name": "Web\u2011based drag\u2011and\u2011drop authoring tool for constructing entailment trees",
+            "description": "The authors implemented a browser\u2011based authoring application using JavaScript and npm that lets annotators create, edit, and review multistep entailment trees via an interactive drag\u2011and\u2011drop interface. The tool shows a ranked list of candidate facts drawn from the WorldTree/ENTAILMENTBANK corpus, allows annotators to label fact roles (e.g., core, grounding), and provides a quick\u2011add mechanism for missing premises. By structuring the workflow into a worksheet and visual tree editor, the system reduces average authoring time to about 20 minutes per question while recording full provenance of each entailment step.",
+            "types": [
+                {
+                    "type": "tool_system_software",
+                    "explanation": "It delivers a software artifact that enables large\u2011scale creation of the ENTAILMENTBANK resource."
+                }
+            ],
+            "sections": [
+                "Tool and Authoring Procedure",
+                "Figure 2"
+            ],
+            "prerequisites": [
+                {
+                    "name": "Formulation of explanations as multistep entailment trees",
+                    "description": "A problem formulation that defines explanations as directed trees of multi\u2011premise textual entailment steps, together with annotation guidelines for constructing such trees.",
+                    "explanation": "The authoring tool implements the specific workflow, node types, and provenance requirements described by this formulation.",
+                    "core_or_peripheral": "core",
+                    "references": [
+                        {
+                            "type": "internal",
+                            "contribution_name": "Formulation of explanation as multistep entailment trees",
+                            "contribution_id": "233297051.c0",
+                            "explanation": "The tool operationalizes the task definition introduced in this contribution."
+                        }
+                    ]
+                },
+                {
+                    "name": "ENTAILMENTBANK dataset",
+                    "description": "A curated collection of 1,840 multistep entailment trees and the associated set of supporting facts derived from the WorldTree V2 corpus.",
+                    "explanation": "The tool presents annotators with candidate facts drawn from this dataset and records the leaf sentences that become part of each tree.",
+                    "core_or_peripheral": "core",
+                    "references": [
+                        {
+                            "type": "internal",
+                            "contribution_name": "ENTAILMENTBANK: a large\u2011scale dataset of multistep entailment trees for elementary\u2011science QA",
+                            "contribution_id": "233297051.c1",
+                            "explanation": "The authoring interface relies on ENTAILMENTBANK to supply the pool of facts for each question."
+                        }
+                    ]
+                },
+                {
+                    "name": "WorldTree V2 corpus",
+                    "description": "A science\u2011domain knowledge base containing structured explanations and inference patterns that serve as the source of factual sentences for entailment tree construction.",
+                    "explanation": "The candidate facts shown in the tool are retrieved from this corpus; without it the tool would have no source of premises.",
+                    "core_or_peripheral": "core",
+                    "references": [
+                        {
+                            "type": "paper",
+                            "paper_title": "WorldTree V2: A corpus of science-domain structured explanations and inference patterns supporting multi-hop inference",
+                            "paper_year": 2020,
+                            "paper_first_author": {
+                                "first_name": "Zhengnan",
+                                "last_name": "Xie"
+                            },
+                            "paper_venue": "LREC",
+                            "corpus_id": "218974301",
+                            "corpus_id_match_confidence": 1.0,
+                            "corpus_id_match_method": "title_exact_sanitized",
+                            "matches": [
+                                {
+                                    "contribution_id": "218974301.c0",
+                                    "explanation": "This contribution releases the WorldTree V2 multi\u2011fact explanation dataset, which is exactly the corpus of structured explanations and inference patterns used as the source of candidate facts.",
+                                    "match_type": "strong",
+                                    "match_method": "alignment_v1_feb14"
+                                },
+                                {
+                                    "contribution_id": "218974301.c1",
+                                    "explanation": "The semi\u2011structured scientific tablestore provides the underlying fact inventory for WorldTree V2, making it a foundational component of the corpus, though it is not the full corpus itself.",
+                                    "match_type": "weak",
+                                    "match_method": "alignment_v1_feb14"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Relevant\u2011fact retrieval pipeline",
+                    "description": "A two\u2011stage sentence relevance classifier (BERT and RoBERTa) followed by a TensorFlow\u2011Ranking BERT reranker that selects the top\u2011k candidate facts for a given hypothesis.",
+                    "explanation": "The ranked pool of candidate facts displayed in the authoring interface is generated by this pipeline, making it essential for efficient annotation.",
+                    "core_or_peripheral": "peripheral",
+                    "references": [
+                        {
+                            "type": "internal",
+                            "contribution_name": "Multi\u2011stage relevant\u2011fact retrieval pipeline for the full\u2011corpus explanation task",
+                            "contribution_id": "233297051.c3",
+                            "explanation": "The tool uses the output of this retrieval system to populate the fact pool shown to annotators."
+                        }
+                    ]
+                },
+                {
+                    "name": "Web development stack (JavaScript, npm)",
+                    "description": "Standard web technologies for building interactive client\u2011side applications, including JavaScript for UI logic and npm for package management and server\u2011side support.",
+                    "explanation": "Implementation of the drag\u2011and\u2011drop interface and data handling relies on these technologies.",
+                    "core_or_peripheral": "peripheral",
+                    "references": [
+                        {
+                            "type": "other",
+                            "name": "JavaScript and npm",
+                            "url": "https://nodejs.org/en/"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "contribution_id": "233297051.c3",
+            "name": "Multi\u2011stage relevant\u2011fact retrieval pipeline for the full\u2011corpus explanation task",
+            "description": "To enable entailment\u2011tree generation when the supporting corpus exceeds the model's token limit, the authors train two sentence\u2011relevance classifiers (BERT and RoBERTa) on WorldTree annotations, score every fact in the corpus, retrieve the top\u201125 sentences using a RoBERTa\u2011trained ranker, and then rerank the top\u201120 candidates from each classifier with a TensorFlow\u2011Ranking BERT scorer. The final 25 highest\u2011scoring sentences are supplied to the EntailmentWriter generation model, ensuring that the most pertinent premises are available for constructing entailment trees in Task\u202f3 (full\u2011corpus).",
+            "types": [
+                {
+                    "type": "techniques_algorithms",
+                    "explanation": "Introduces a multi\u2011stage retrieval, scoring, and reranking algorithm for selecting relevant facts from a large corpus."
+                },
+                {
+                    "type": "tool_system_software",
+                    "explanation": "The retrieval pipeline, including trained classifiers and ranking code, is released as part of the system."
+                }
+            ],
+            "sections": [
+                "A Relevant Fact Retrieval Algorithm",
+                "Task 3 (full\u2011corpus)"
+            ],
+            "prerequisites": [
+                {
+                    "name": "Pretrained transformer models (BERT and RoBERTa) for sentence\u2011relevance classification",
+                    "description": "BERT and RoBERTa are large\u2011scale transformer language models pretrained on massive text corpora; they can be fine\u2011tuned to produce contextual sentence embeddings for binary relevance classification.",
+                    "explanation": "The pipeline fine\u2011tunes these models to predict the relevance of each fact sentence to a hypothesis, which is essential for scoring the entire corpus.",
+                    "core_or_peripheral": "core",
+                    "references": [
+                        {
+                            "type": "paper",
+                            "paper_title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+                            "paper_year": 2019,
+                            "paper_first_author": {
+                                "first_name": "Jacob",
+                                "last_name": "Devlin"
+                            },
+                            "paper_venue": "NAACL-HIT",
+                            "corpus_id": "52967399",
+                            "corpus_id_match_confidence": 1.0,
+                            "corpus_id_match_method": "title_exact_sanitized",
+                            "matches": [
+                                {
+                                    "contribution_id": "52967399.c0",
+                                    "explanation": "Introduces the BERT pretrained transformer architecture, which is one of the models required for sentence\u2011relevance classification.",
+                                    "match_type": "strong",
+                                    "match_method": "alignment_v1_feb14"
+                                },
+                                {
+                                    "contribution_id": "52967399.c7",
+                                    "explanation": "Releases pretrained BERT checkpoints, providing the actual pretrained weights needed for fine\u2011tuning on relevance classification.",
+                                    "match_type": "strong",
+                                    "match_method": "alignment_v1_feb14"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "paper",
+                            "paper_title": "RoBERTa: A Robustly Optimized BERT Pretraining Approach",
+                            "paper_year": 2019,
+                            "paper_first_author": {
+                                "first_name": "Yinhan",
+                                "last_name": "Liu"
+                            },
+                            "paper_venue": "arXiv",
+                            "corpus_id": "198953378",
+                            "corpus_id_match_confidence": 1.0,
+                            "corpus_id_match_method": "title_exact_sanitized",
+                            "matches": [
+                                {
+                                    "contribution_id": "198953378.c0",
+                                    "explanation": "Provides a replicated BERT pretraining implementation and pretrained checkpoints, directly supplying the BERT model used for relevance classification.",
+                                    "match_type": "strong",
+                                    "match_method": "alignment_v1_feb14"
+                                },
+                                {
+                                    "contribution_id": "198953378.c1",
+                                    "explanation": "Introduces the RoBERTa training improvements and releases the RoBERTa pretrained model, which serves as the RoBERTa component of the relevance classifier.",
+                                    "match_type": "strong",
+                                    "match_method": "alignment_v1_feb14"
+                                },
+                                {
+                                    "contribution_id": "198953378.c4",
+                                    "explanation": "Defines the RoBERTa pretraining recipe and reports the resulting pretrained RoBERTa models, directly providing the transformer model needed for sentence\u2011relevance classification.",
+                                    "match_type": "strong",
+                                    "match_method": "alignment_v1_feb14"
+                                },
+                                {
+                                    "contribution_id": "198953378.c7",
+                                    "explanation": "Releases open\u2011source code and pretrained RoBERTa checkpoints, giving immediate access to the pretrained transformer models required for the pipeline.",
+                                    "match_type": "strong",
+                                    "match_method": "alignment_v1_feb14"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "WorldTree V2 corpus and relevance annotations",
+                    "description": "WorldTree V2 is a science\u2011domain knowledge base containing factual sentences and expert\u2011annotated links between sentences and elementary\u2011science questions, providing relevance labels for training classifiers.",
+                    "explanation": "The sentence\u2011relevance classifiers are trained on these WorldTree annotations to learn which facts are useful for a given QA pair.",
+                    "core_or_peripheral": "core",
+                    "references": [
+                        {
+                            "type": "paper",
+                            "paper_title": "WorldTree V2: A corpus of science\u2011domain structured explanations and inference patterns supporting multi\u2011hop inference",
+                            "paper_year": 2020,
+                            "paper_first_author": {
+                                "first_name": "Zhengnan",
+                                "last_name": "Xie"
+                            },
+                            "paper_venue": "LREC",
+                            "corpus_id": "218974301",
+                            "corpus_id_match_confidence": 1.0,
+                            "corpus_id_match_method": "title_exact_sanitized",
+                            "matches": [
+                                {
+                                    "contribution_id": "218974301.c0",
+                                    "explanation": "The \"WorldTree V2 multi\u2011fact explanation dataset\" releases the full WorldTree V2 knowledge base and the expert\u2011annotated links between sentences and elementary\u2011science questions, which are exactly the corpus and relevance annotations used to train the sentence\u2011relevance classifiers.",
+                                    "match_type": "strong",
+                                    "match_method": "alignment_v1_feb14"
+                                },
+                                {
+                                    "contribution_id": "218974301.c5",
+                                    "explanation": "The \"Explanation regeneration benchmark and task definition\" formalizes the same relevance labels (gold facts for each question) and makes them available for training and evaluation, providing a derived but still relevant source of the required annotations.",
+                                    "match_type": "weak",
+                                    "match_method": "alignment_v1_feb14"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "internal",
+                            "contribution_name": "ENTAILMENTBANK: a dataset of multistep entailment trees for science QA",
+                            "contribution_id": "233297051.c1",
+                            "explanation": "ENTAILMENTBANK was built using WorldTree sentences and provides the relevance\u2011annotated data used to train the classifiers."
+                        }
+                    ]
+                },
+                {
+                    "name": "RoBERTa\u2011based sentence ranker for initial retrieval",
+                    "description": "A RoBERTa model fine\u2011tuned on the WorldTree relevance annotations to rank corpus sentences by their relevance to a hypothesis, used to retrieve the top\u201125 candidate facts.",
+                    "explanation": "Task\u202f3 requires retrieving a manageable subset of sentences from a large corpus; this ranker provides the initial candidate set before reranking.",
+                    "core_or_peripheral": "core",
+                    "references": [
+                        {
+                            "type": "paper",
+                            "paper_title": "RoBERTa: A Robustly Optimized BERT Pretraining Approach",
+                            "paper_year": 2019,
+                            "paper_first_author": {
+                                "first_name": "Yinhan",
+                                "last_name": "Liu"
+                            },
+                            "paper_venue": "arXiv",
+                            "corpus_id": "198953378",
+                            "corpus_id_match_confidence": 1.0,
+                            "corpus_id_match_method": "title_exact_sanitized",
+                            "matches": []
+                        },
+                        {
+                            "type": "internal",
+                            "contribution_name": "ENTAILMENTBANK: a dataset of multistep entailment trees for science QA",
+                            "contribution_id": "233297051.c1",
+                            "explanation": "The same relevance annotations from ENTAILMENTBANK are used to train the RoBERTa ranker."
+                        }
+                    ]
+                },
+                {
+                    "name": "TensorFlow Ranking BERT scorer for reranking",
+                    "description": "TensorFlow Ranking is a library for learning\u2011to\u2011rank; a BERT model is fine\u2011tuned within this framework to assign refined relevance scores to the top candidates from each classifier.",
+                    "explanation": "After initial retrieval, the pipeline reranks the top\u201120 candidates from each classifier with this scorer to improve precision of the final 25\u2011sentence set.",
+                    "core_or_peripheral": "core",
+                    "references": [
+                        {
+                            "type": "paper",
+                            "paper_title": "Learning to rank with BERT in TF\u2011ranking",
+                            "paper_year": 2020,
+                            "paper_first_author": {
+                                "first_name": "Shuguang",
+                                "last_name": "Han"
+                            },
+                            "paper_venue": "arXiv",
+                            "corpus_id": null,
+                            "corpus_id_match_confidence": 0.0,
+                            "corpus_id_match_method": null,
+                            "matches": []
+                        }
+                    ]
+                },
+                {
+                    "name": "EntailmentWriter generation model (T5\u2011based) that consumes retrieved sentences",
+                    "description": "EntailmentWriter is a T5 text\u2011to\u2011text transformer fine\u2011tuned on ENTAILMENTBANK to generate linearized entailment trees from a set of input sentences.",
+                    "explanation": "The retrieved 25 sentences are the direct input to EntailmentWriter; without this model the pipeline could not produce the final explanation trees.",
+                    "core_or_peripheral": "core",
+                    "references": [
+                        {
+                            "type": "internal",
+                            "contribution_name": "EntailmentWriter: T5\u2011based generative model for tree generation",
+                            "contribution_id": "233297051.c4",
+                            "explanation": "EntailmentWriter is the downstream component that generates the entailment trees from the retrieved facts."
+                        }
+                    ]
+                },
+                {
+                    "name": "Task definition for full\u2011corpus explanation (Task\u202f3)",
+                    "description": "The paper defines three explanation tasks of increasing difficulty; Task\u202f3 requires generating an entailment tree from a full corpus that exceeds the model's token limit.",
+                    "explanation": "The retrieval pipeline is specifically designed to satisfy the constraints of Task\u202f3, making the task definition a prerequisite for its design.",
+                    "core_or_peripheral": "peripheral",
+                    "references": [
+                        {
+                            "type": "internal",
+                            "contribution_name": "Formulation of explanation as multistep entailment trees",
+                            "contribution_id": "233297051.c0",
+                            "explanation": "The problem formulation introduces the three tasks, including Task\u202f3, which motivates the need for a retrieval pipeline."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "contribution_id": "233297051.c4",
+            "name": "EntailmentWriter: T5\u2011based generative model for entailment\u2011tree generation",
+            "description": "The authors fine\u2011tune a pretrained T5 text\u2011to\u2011text transformer (up to 11\u202fB parameters) to generate linearized entailment trees that encode multi\u2011premise textual entailment steps. Trees are represented as sequences of identifiers (sent*, int*, hypot) with intermediate sentences inserted inline, enabling end\u2011to\u2011end training on the ENTAILMENTBANK resource. For the full\u2011corpus setting, a retrieval\u2011augmented pipeline supplies a small set of relevant facts before generation.",
+            "types": [
+                {
+                    "type": "models_or_architectures",
+                    "explanation": "Introduces a novel architecture that maps natural\u2011language inputs to structured, multi\u2011step explanation trees."
+                },
+                {
+                    "type": "techniques_algorithms",
+                    "explanation": "Develops a linearization scheme for trees and a retrieval\u2011augmented generation pipeline to handle large corpora."
+                },
+                {
+                    "type": "tool_system_software",
+                    "explanation": "Releases the trained models and inference code as a usable system for the community."
+                }
+            ],
+            "sections": [
+                "Model",
+                "Entailment Tree Encoding",
+                "Model Details"
+            ],
+            "prerequisites": [
+                {
+                    "name": "Pretrained T5 text\u2011to\u2011text transformer",
+                    "description": "A large\u2011scale sequence\u2011to\u2011sequence transformer pretrained on a massive text corpus, capable of conditional text generation across many tasks.",
+                    "explanation": "EntailmentWriter builds directly on T5 by fine\u2011tuning it for the tree\u2011generation task.",
+                    "core_or_peripheral": "core",
+                    "references": [
+                        {
+                            "type": "paper",
+                            "paper_title": "Exploring the limits of transfer learning with a unified text-to-text transformer",
+                            "paper_year": 2020,
+                            "paper_first_author": {
+                                "first_name": "Colin",
+                                "last_name": "Raffel"
+                            },
+                            "paper_venue": "J. Mach. Learn. Res.",
+                            "corpus_id": "204838007",
+                            "corpus_id_match_confidence": 1.0,
+                            "corpus_id_match_method": "title_exact_sanitized",
+                            "matches": [
+                                {
+                                    "contribution_id": "204838007.c0-2",
+                                    "explanation": "Describes the large\u2011scale pre\u2011training of the T5 encoder\u2011decoder model (up to 11\u202fB parameters) on massive text, which is exactly the pretrained T5 transformer required as a prerequisite.",
+                                    "match_type": "strong",
+                                    "match_method": "alignment_v1_feb14"
+                                },
+                                {
+                                    "contribution_id": "204838007.c11",
+                                    "explanation": "Provides the released T5 model checkpoints and code, directly delivering the pretrained T5 text\u2011to\u2011text transformer that the source contribution builds upon.",
+                                    "match_type": "strong",
+                                    "match_method": "alignment_v1_feb14"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "ProofWriter \u201cAll\u2011at\u2011once\u201d seq2seq proof generation approach",
+                    "description": "A method that encodes an entire logical proof as a single sequence and trains a transformer to generate it end\u2011to\u2011end.",
+                    "explanation": "EntailmentWriter adopts the same all\u2011at\u2011once encoding and generation strategy for entailment trees.",
+                    "core_or_peripheral": "core",
+                    "references": [
+                        {
+                            "type": "paper",
+                            "paper_title": "ProofWriter: Generating implications, proofs, and abductive statements over natural language",
+                            "paper_year": 2021,
+                            "paper_first_author": {
+                                "first_name": "Oyvind",
+                                "last_name": "Tafjord"
+                            },
+                            "paper_venue": "IJCAI",
+                            "corpus_id": "229371222",
+                            "corpus_id_match_confidence": 1.0,
+                            "corpus_id_match_method": "title_exact_sanitized",
+                            "matches": [
+                                {
+                                    "contribution_id": "229371222.c1",
+                                    "explanation": "The \"All\u2011At\u2011Once proof generation baseline\" introduces a single\u2011pass seq2seq model that encodes and generates an entire proof in one generation step, which is exactly the approach described in the prerequisite.",
+                                    "match_type": "strong",
+                                    "match_method": "alignment_v1_feb14"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Multi\u2011premise textual entailment formulation",
+                    "description": "The task of determining whether a hypothesis follows from two or more premise sentences, extending classic single\u2011premise NLI.",
+                    "explanation": "Each node in an entailment tree requires modeling multi\u2011premise entailment, which relies on this formulation.",
+                    "core_or_peripheral": "core",
+                    "references": [
+                        {
+                            "type": "paper",
+                            "paper_title": "Natural language inference from multiple premises",
+                            "paper_year": 2017,
+                            "paper_first_author": {
+                                "first_name": "Alice",
+                                "last_name": "Lai"
+                            },
+                            "paper_venue": "IJCNLP",
+                            "corpus_id": "29033327",
+                            "corpus_id_match_confidence": 1.0,
+                            "corpus_id_match_method": "title_exact_sanitized",
+                            "matches": [
+                                {
+                                    "contribution_id": "29033327.c0",
+                                    "explanation": "The cited contribution explicitly formulates the Multiple Premise Entailment (MPE) task, which is a multi\u2011premise textual entailment formulation matching the prerequisite.",
+                                    "match_type": "strong",
+                                    "match_method": "alignment_v1_feb14"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "ENTAILMENTBANK dataset",
+                    "description": "A manually authored collection of 1,840 multistep entailment trees linking elementary\u2011science multiple\u2011choice questions to supporting facts.",
+                    "explanation": "EntailmentWriter is trained and evaluated on this dataset; the gold trees provide the supervision needed for fine\u2011tuning.",
+                    "core_or_peripheral": "core",
+                    "references": [
+                        {
+                            "type": "internal",
+                            "contribution_name": "ENTAILMENTBANK: a dataset of multistep entailment trees for science QA",
+                            "contribution_id": "233297051.c1",
+                            "explanation": "Provides the gold entailment trees and leaf sentences used for supervised training."
+                        }
+                    ]
+                },
+                {
+                    "name": "Relevant\u2011fact retrieval pipeline",
+                    "description": "A multi\u2011stage system that scores every sentence in a large corpus with BERT and RoBERTa relevance classifiers, reranks the top candidates with a TensorFlow\u2011Ranking BERT model, and returns the highest\u2011scoring facts.",
+                    "explanation": "Supplies the small set of pertinent premises to EntailmentWriter in the full\u2011corpus task, enabling generation despite the model\u2019s token\u2011length limits.",
+                    "core_or_peripheral": "core",
+                    "references": [
+                        {
+                            "type": "internal",
+                            "contribution_name": "Multi\u2011stage relevant\u2011fact retrieval pipeline for the full\u2011corpus explanation task",
+                            "contribution_id": "233297051.c3",
+                            "explanation": "Describes the exact retrieval components used before generation."
+                        }
+                    ]
+                },
+                {
+                    "name": "BERT relevance classifier",
+                    "description": "A pretrained BERT model fine\u2011tuned to score the relevance of corpus sentences to a hypothesis.",
+                    "explanation": "One of the two classifiers used in the retrieval pipeline that feeds EntailmentWriter.",
+                    "core_or_peripheral": "peripheral",
+                    "references": [
+                        {
+                            "type": "paper",
+                            "paper_title": "BERT: Pre-training of deep bidirectional transformers for language understanding",
+                            "paper_year": 2019,
+                            "paper_first_author": {
+                                "first_name": "Jacob",
+                                "last_name": "Devlin"
+                            },
+                            "paper_venue": "NAACL",
+                            "corpus_id": "52967399",
+                            "corpus_id_match_confidence": 1.0,
+                            "corpus_id_match_method": "title_exact_sanitized",
+                            "matches": [
+                                {
+                                    "contribution_id": "52967399.c3",
+                                    "explanation": "Describes a unified fine\u2011tuning protocol for BERT that enables task\u2011specific classifiers, directly supporting the creation of a BERT relevance classifier.",
+                                    "match_type": "strong",
+                                    "match_method": "alignment_v1_feb14"
+                                },
+                                {
+                                    "contribution_id": "52967399.c2",
+                                    "explanation": "Introduces a binary sentence\u2011pair classification pre\u2011training task (NSP) that is conceptually similar to scoring relevance of a hypothesis to a corpus sentence.",
+                                    "match_type": "weak",
+                                    "match_method": "alignment_v1_feb14"
+                                },
+                                {
+                                    "contribution_id": "52967399.c0",
+                                    "explanation": "Provides the underlying BERT encoder architecture that is fine\u2011tuned to become the relevance classifier.",
+                                    "match_type": "weak",
+                                    "match_method": "alignment_v1_feb14"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "RoBERTa relevance classifier",
+                    "description": "A pretrained RoBERTa model fine\u2011tuned to score the relevance of corpus sentences to a hypothesis.",
+                    "explanation": "The second classifier in the retrieval pipeline that complements BERT.",
+                    "core_or_peripheral": "peripheral",
+                    "references": [
+                        {
+                            "type": "paper",
+                            "paper_title": "RoBERTa: A robustly optimized BERT pretraining approach",
+                            "paper_year": 2019,
+                            "paper_first_author": {
+                                "first_name": "Yinhan",
+                                "last_name": "Liu"
+                            },
+                            "paper_venue": "ArXiv",
+                            "corpus_id": "198953378",
+                            "corpus_id_match_confidence": 1.0,
+                            "corpus_id_match_method": "title_exact_sanitized",
+                            "matches": []
+                        }
+                    ]
+                },
+                {
+                    "name": "TensorFlow Ranking BERT reranker",
+                    "description": "A ranking model that re\u2011scores candidate sentences using a BERT encoder within the TensorFlow Ranking framework.",
+                    "explanation": "Provides the final top\u2011k relevant facts fed to the generator in the full\u2011corpus setting.",
+                    "core_or_peripheral": "peripheral",
+                    "references": [
+                        {
+                            "type": "paper",
+                            "paper_title": "Learning-to-rank with BERT in TF\u2011ranking",
+                            "paper_year": 2020,
+                            "paper_first_author": {
+                                "first_name": "Shuguang",
+                                "last_name": "Han"
+                            },
+                            "paper_venue": "ArXiv",
+                            "corpus_id": "215828505",
+                            "corpus_id_match_confidence": 1.0,
+                            "corpus_id_match_method": "title_exact_sanitized",
+                            "matches": [
+                                {
+                                    "contribution_id": "215828505.c0",
+                                    "explanation": "Introduces TFR\u2011BERT, a BERT encoder reranker built on the TensorFlow Ranking framework, directly matching the prerequisite model.",
+                                    "match_type": "strong",
+                                    "match_method": "alignment_v1_feb14"
+                                },
+                                {
+                                    "contribution_id": "215828505.c5",
+                                    "explanation": "Uses an ensemble of TFR\u2011BERT rerankers within a full\u2011ranking pipeline, providing a component that aligns with the prerequisite but as part of a larger system.",
+                                    "match_type": "weak",
+                                    "match_method": "alignment_v1_feb14"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "BLEURT metric for intermediate sentence evaluation",
+                    "description": "A learned evaluation metric that correlates with human judgments of text generation quality.",
+                    "explanation": "Used to assess the correctness of generated intermediate conclusions during model evaluation.",
+                    "core_or_peripheral": "peripheral",
+                    "references": [
+                        {
+                            "type": "paper",
+                            "paper_title": "Bleurt: Learning robust metrics for text generation",
+                            "paper_year": 2020,
+                            "paper_first_author": {
+                                "first_name": "Thibault",
+                                "last_name": "Sellam"
+                            },
+                            "paper_venue": "ArXiv",
+                            "corpus_id": "215548699",
+                            "corpus_id_match_confidence": 1.0,
+                            "corpus_id_match_method": "title_exact_sanitized",
+                            "matches": [
+                                {
+                                    "contribution_id": "215548699.c0",
+                                    "explanation": "The cited contribution introduces BLEURT, a learned evaluation metric that predicts human quality judgments for generated text, directly matching the prerequisite metric used for intermediate sentence evaluation.",
+                                    "match_type": "strong",
+                                    "match_method": "alignment_v1_feb14"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "WorldTree V2 corpus",
+                    "description": "A large collection of science\u2011domain facts and inference patterns used as the source corpus for ENTAILMENTBANK and for retrieval.",
+                    "explanation": "Provides the raw sentences that are scored and retrieved by the relevance classifiers feeding EntailmentWriter.",
+                    "core_or_peripheral": "peripheral",
+                    "references": [
+                        {
+                            "type": "paper",
+                            "paper_title": "WorldTree V2: A corpus of science\u2011domain structured explanations and inference patterns supporting multi\u2011hop inference",
+                            "paper_year": 2020,
+                            "paper_first_author": {
+                                "first_name": "Zhengnan",
+                                "last_name": "Xie"
+                            },
+                            "paper_venue": "LREC",
+                            "corpus_id": "218974301",
+                            "corpus_id_match_confidence": 1.0,
+                            "corpus_id_match_method": "title_exact_sanitized",
+                            "matches": [
+                                {
+                                    "contribution_id": "218974301.c0",
+                                    "explanation": "The \"WorldTree V2 multi\u2011fact explanation dataset\" is the released corpus of science facts and explanation graphs that the source paper cites as the WorldTree V2 corpus.",
+                                    "match_type": "strong",
+                                    "match_method": "alignment_v1_feb14"
+                                },
+                                {
+                                    "contribution_id": "218974301.c1",
+                                    "explanation": "The \"Semi\u2011structured scientific tablestore\" supplies the underlying factual rows that populate the WorldTree V2 corpus, making it a relevant but indirect source.",
+                                    "match_type": "weak",
+                                    "match_method": "alignment_v1_feb14"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "contribution_id": "233297051.c5",
+            "name": "Tree Alignment Algorithm for Evaluating Entailment Trees",
+            "description": "The paper presents a tree\u2011alignment algorithm that automatically matches nodes of a predicted entailment tree to those of a gold tree. It aligns leaf nodes directly and aligns intermediate nodes by comparing the sets of their ancestor leaf sentences using Jaccard similarity. The alignment enables computation of leaf\u2011F1, step\u2011F1, BLEURT\u2011based intermediate correctness, and an overall AllCorrect metric that tolerates permissible re\u2011ordering of nodes. The algorithm and its evaluation code are released as part of the ENTAILMENTBANK benchmark.",
+            "types": [
+                {
+                    "type": "metrics_instruments",
+                    "explanation": "It provides a novel evaluation metric and alignment procedure for structured explanations."
+                }
+            ],
+            "sections": [
+                "Evaluation Metrics",
+                "B Evaluation: Tree Alignment Algorithm"
+            ],
+            "prerequisites": [
+                {
+                    "name": "Inoue et al. 2020 tree\u2011alignment algorithm",
+                    "description": "A prior method for aligning predicted explanation graphs by matching intermediate nodes based on ancestor leaf overlap using Jaccard similarity.",
+                    "explanation": "The new alignment algorithm directly builds on this earlier approach to compare predicted and gold entailment trees.",
+                    "core_or_peripheral": "core",
+                    "references": [
+                        {
+                            "type": "paper",
+                            "paper_title": "R4C: A benchmark for evaluating RC systems to get the right answer for the right reason",
+                            "paper_year": 2020,
+                            "paper_first_author": {
+                                "first_name": "N.",
+                                "last_name": "Inoue"
+                            },
+                            "paper_venue": "ACL",
+                            "corpus_id": "218486753",
+                            "corpus_id_match_confidence": 1.0,
+                            "corpus_id_match_method": "title_exact_sanitized",
+                            "matches": [
+                                {
+                                    "contribution_id": "218486753.c3",
+                                    "explanation": "Both contributions propose an automatic alignment metric for structured explanations, but the cited work aligns semi\u2011structured derivation steps using Levenshtein distance rather than tree nodes with Jaccard leaf overlap.",
+                                    "match_type": "weak",
+                                    "match_method": "alignment_v1_feb14"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "BLEURT metric for intermediate sentence similarity",
+                    "description": "BLEURT is a learned text\u2011generation evaluation metric that correlates well with human judgments of semantic similarity.",
+                    "explanation": "BLEURT scores are used to decide whether a generated intermediate conclusion matches the gold intermediate conclusion.",
+                    "core_or_peripheral": "core",
+                    "references": [
+                        {
+                            "type": "paper",
+                            "paper_title": "Bleurt: Learning robust metrics for text generation",
+                            "paper_year": 2020,
+                            "paper_first_author": {
+                                "first_name": "Thibault",
+                                "last_name": "Sellam"
+                            },
+                            "paper_venue": "ArXiv",
+                            "corpus_id": "215548699",
+                            "corpus_id_match_confidence": 1.0,
+                            "corpus_id_match_method": "title_exact_sanitized",
+                            "matches": [
+                                {
+                                    "contribution_id": "215548699.c0",
+                                    "explanation": "This contribution introduces BLEURT, the learned evaluation metric that the source prerequisite uses to assess intermediate sentence similarity.",
+                                    "match_type": "strong",
+                                    "match_method": "alignment_v1_feb14"
+                                },
+                                {
+                                    "contribution_id": "215548699.c5",
+                                    "explanation": "This contribution provides the open\u2011source implementation and pretrained checkpoints for BLEURT, enabling the computation of the BLEURT scores required by the source prerequisite.",
+                                    "match_type": "strong",
+                                    "match_method": "alignment_v1_feb14"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Jaccard similarity over leaf\u2011sentence sets",
+                    "description": "A set\u2011based similarity measure that computes the ratio of the size of the intersection to the size of the union of two sets.",
+                    "explanation": "The alignment algorithm uses Jaccard similarity of ancestor leaf sets to match predicted intermediate nodes to gold nodes.",
+                    "core_or_peripheral": "core",
+                    "references": []
+                },
+                {
+                    "name": "Entailment\u2011tree linearization and identifier scheme",
+                    "description": "Encoding of entailment trees as linear sequences using identifiers (sent*, int*, hypot) with intermediate sentences inserted inline, enabling sequence\u2011to\u2011sequence generation.",
+                    "explanation": "The alignment procedure relies on these identifiers to locate leaf nodes and to compare intermediate nodes between predicted and gold trees.",
+                    "core_or_peripheral": "core",
+                    "references": [
+                        {
+                            "type": "internal",
+                            "contribution_name": "EntailmentWriter: T5\u2011based generative model for entailment\u2011tree generation",
+                            "contribution_id": "233297051.c4",
+                            "explanation": "Section 5.1 defines the linearization format that the alignment algorithm consumes."
+                        }
+                    ]
+                },
+                {
+                    "name": "Formulation of explanation as multistep entailment trees",
+                    "description": "A conceptual framework that defines explanations for QA as directed trees of multi\u2011premise textual entailment steps from known facts to the hypothesis.",
+                    "explanation": "Provides the structural definition of the trees whose predictions are evaluated by the alignment algorithm.",
+                    "core_or_peripheral": "core",
+                    "references": [
+                        {
+                            "type": "internal",
+                            "contribution_name": "Formulation of explanation as multistep entailment trees",
+                            "contribution_id": "233297051.c0",
+                            "explanation": "The tree\u2011based explanation format is the object of evaluation."
+                        }
+                    ]
+                },
+                {
+                    "name": "ENTAILMENTBANK dataset of gold entailment trees",
+                    "description": "A manually authored dataset of 1,840 multistep entailment trees linking science QA pairs to supporting facts.",
+                    "explanation": "Supplies the gold trees against which predicted trees are aligned and evaluated.",
+                    "core_or_peripheral": "core",
+                    "references": [
+                        {
+                            "type": "internal",
+                            "contribution_name": "ENTAILMENTBANK: a large\u2011scale dataset of multistep entailment trees for elementary\u2011science QA",
+                            "contribution_id": "233297051.c1",
+                            "explanation": "Provides the reference trees used by the alignment algorithm."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "contribution_id": "233297051.c6-1",
+            "name": "Empirical evaluation of EntailmentWriter on three explanation tasks",
+            "description": "The authors fine\u2011tune a T5\u2011based generative model (EntailmentWriter) to generate entailment\u2011tree explanations for open\u2011domain QA and evaluate it on three increasingly difficult tasks: (a) no\u2011distractor (gold leaf sentences provided), (b) distractor (gold leaves plus 15\u201320 irrelevant sentences), and (c) full\u2011corpus (retrieved sentences). Performance is measured with leaf\u2011selection F1, step\u2011structure F1, BLEURT\u2011based intermediate correctness, and an overall AllCorrect score, showing up to 35\u202f% perfectly correct trees in the easiest setting and a sharp drop in harder settings.",
+            "types": [
+                {
+                    "type": "empirical_evaluation",
+                    "explanation": "Provides systematic quantitative results that demonstrate the feasibility and limits of the proposed explanation generation approach."
+                }
+            ],
+            "sections": [
+                "Experiments",
+                "Evaluation Metrics",
+                "Results"
+            ],
+            "prerequisites": [
+                {
+                    "name": "ENTAILMENTBANK dataset",
+                    "description": "A manually authored collection of 1,840 multistep entailment trees linking elementary\u2011science multiple\u2011choice questions (from ARC) to supporting facts, used for training and evaluating EntailmentWriter.",
+                    "explanation": "Supplies the gold leaf sentences, intermediate conclusions, and reference trees required for supervised learning and evaluation of the model.",
+                    "core_or_peripheral": "core",
+                    "references": [
+                        {
+                            "type": "internal",
+                            "contribution_name": "ENTAILMENTBANK: a dataset of multistep entailment trees for science QA",
+                            "contribution_id": "233297051.c1",
+                            "explanation": "The evaluation experiments directly use this resource as training and test data."
+                        }
+                    ]
+                },
+                {
+                    "name": "EntailmentWriter model",
+                    "description": "A T5\u2011based sequence\u2011to\u2011sequence model that linearises entailment trees and generates them from input sentences (gold leaves, distractors, or retrieved facts).",
+                    "explanation": "The model whose performance is being measured across the three explanation tasks.",
+                    "core_or_peripheral": "core",
+                    "references": [
+                        {
+                            "type": "internal",
+                            "contribution_name": "EntailmentWriter: T5\u2011based generative model for entailment\u2011tree generation",
+                            "contribution_id": "233297051.c4",
+                            "explanation": "Describes the architecture and training of the model evaluated in this contribution."
+                        }
+                    ]
+                },
+                {
+                    "name": "Tree Alignment Algorithm and evaluation metrics",
+                    "description": "An algorithm that aligns predicted and gold entailment trees using ancestor\u2011leaf Jaccard similarity and computes leaf\u2011F1, step\u2011F1, BLEURT\u2011based intermediate correctness, and an overall AllCorrect score.",
+                    "explanation": "These metrics are essential for quantifying model performance on the three explanation tasks.",
+                    "core_or_peripheral": "core",
+                    "references": [
+                        {
+                            "type": "internal",
+                            "contribution_name": "Tree Alignment Algorithm for evaluating entailment trees",
+                            "contribution_id": "233297051.c5",
+                            "explanation": "Provides the evaluation procedure used in the reported results."
+                        }
+                    ]
+                },
+                {
+                    "name": "Relevant\u2011fact retrieval pipeline",
+                    "description": "A two\u2011stage retrieval system that scores every sentence in the WorldTree corpus with BERT and RoBERTa relevance classifiers, reranks the top candidates with a TensorFlow\u2011Ranking BERT scorer, and returns the 25 most relevant sentences for the full\u2011corpus task.",
+                    "explanation": "Task\u202f3 (full\u2011corpus) depends on this pipeline to supply input sentences that fit within the T5 token limit.",
+                    "core_or_peripheral": "core",
+                    "references": [
+                        {
+                            "type": "internal",
+                            "contribution_name": "Multi\u2011stage relevant\u2011fact retrieval pipeline for the full\u2011corpus explanation task",
+                            "contribution_id": "233297051.c3",
+                            "explanation": "The retrieval component is part of the system evaluated on the full\u2011corpus setting."
+                        },
+                        {
+                            "type": "paper",
+                            "paper_title": "BERT: Pre-training of deep bidirectional transformers for language understanding",
+                            "paper_year": 2019,
+                            "paper_first_author": {
+                                "first_name": "Jacob",
+                                "last_name": "Devlin"
+                            },
+                            "paper_venue": "NAACL-HIT",
+                            "corpus_id": "52967399",
+                            "corpus_id_match_confidence": 1.0,
+                            "corpus_id_match_method": "title_exact_sanitized",
+                            "matches": [
+                                {
+                                    "contribution_id": "52967399.c0",
+                                    "explanation": "The BERT bidirectional Transformer architecture supplies the core model that the retrieval pipeline uses as BERT relevance classifiers.",
+                                    "match_type": "strong",
+                                    "match_method": "alignment_v1_feb14"
+                                },
+                                {
+                                    "contribution_id": "52967399.c3",
+                                    "explanation": "The unified fine\u2011tuning protocol describes a general method for adapting a pretrained BERT model to downstream tasks, which can be applied to train the relevance classifiers in the pipeline.",
+                                    "match_type": "weak",
+                                    "match_method": "alignment_v1_feb14"
+                                },
+                                {
+                                    "contribution_id": "52967399.c7",
+                                    "explanation": "The open\u2011source release of BERT code and pretrained checkpoints provides the software artifacts needed to implement the pipeline's BERT components.",
+                                    "match_type": "weak",
+                                    "match_method": "alignment_v1_feb14"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "paper",
+                            "paper_title": "RoBERTa: A robustly optimized BERT pretraining approach",
+                            "paper_year": 2019,
+                            "paper_first_author": {
+                                "first_name": "Yinhan",
+                                "last_name": "Liu"
+                            },
+                            "paper_venue": "arXiv",
+                            "corpus_id": "198953378",
+                            "corpus_id_match_confidence": 1.0,
+                            "corpus_id_match_method": "title_exact_sanitized",
+                            "matches": []
+                        },
+                        {
+                            "type": "paper",
+                            "paper_title": "Learning-to-rank with BERT in TF\u2011ranking",
+                            "paper_year": 2020,
+                            "paper_first_author": {
+                                "first_name": "Shuguang",
+                                "last_name": "Han"
+                            },
+                            "paper_venue": "arXiv",
+                            "corpus_id": "215828505",
+                            "corpus_id_match_confidence": 1.0,
+                            "corpus_id_match_method": "title_exact_sanitized",
+                            "matches": [
+                                {
+                                    "contribution_id": "215828505.c0",
+                                    "explanation": "Introduces a generic BERT\u2011based learning\u2011to\u2011rank framework that integrates BERT encodings with TensorFlow\u2011Ranking loss functions, directly providing the BERT relevance scoring and TF\u2011Ranking scorer component of the prerequisite pipeline.",
+                                    "match_type": "strong",
+                                    "match_method": "alignment_v1_feb14"
+                                },
+                                {
+                                    "contribution_id": "215828505.c4",
+                                    "explanation": "Extends the TFR\u2011BERT ranking pipeline to RoBERTa (and ELECTRA), supplying the RoBERTa relevance classifier element required by the prerequisite retrieval system.",
+                                    "match_type": "strong",
+                                    "match_method": "alignment_v1_feb14"
+                                },
+                                {
+                                    "contribution_id": "215828505.c5",
+                                    "explanation": "Describes a two\u2011stage retrieval pipeline (lexical + neural first\u2011stage, followed by TFR\u2011BERT re\u2011ranking) that mirrors the overall architecture of the prerequisite, though it uses different first\u2011stage retrievers.",
+                                    "match_type": "weak",
+                                    "match_method": "alignment_v1_feb14"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "paper",
+                            "paper_title": "WorldTree V2: A corpus of science\u2011domain structured explanations and inference patterns supporting multi\u2011hop inference",
+                            "paper_year": 2020,
+                            "paper_first_author": {
+                                "first_name": "Zhengnan",
+                                "last_name": "Xie"
+                            },
+                            "paper_venue": "LREC",
+                            "corpus_id": "218974301",
+                            "corpus_id_match_confidence": 1.0,
+                            "corpus_id_match_method": "title_exact_sanitized",
+                            "matches": [
+                                {
+                                    "contribution_id": "218974301.c5",
+                                    "explanation": "The benchmark formalizes a ranking task over WorldTree V2 facts, providing a dataset and evaluation protocol that serve as a foundation for any fact\u2011retrieval pipeline.",
+                                    "match_type": "weak",
+                                    "match_method": "alignment_v1_feb14"
+                                },
+                                {
+                                    "contribution_id": "218974301.c6-2",
+                                    "explanation": "The BERT baseline implements a BERT\u2011based relevance scorer for ranking WorldTree facts, directly analogous to the BERT scorer component of the source paper's retrieval pipeline.",
+                                    "match_type": "weak",
+                                    "match_method": "alignment_v1_feb14"
+                                },
+                                {
+                                    "contribution_id": "218974301.c6-1",
+                                    "explanation": "The tf\u2011idf baseline offers a simple relevance model for ranking WorldTree facts, illustrating the kind of first\u2011stage scoring that the source paper's pipeline performs with BERT/RoBERTa classifiers.",
+                                    "match_type": "weak",
+                                    "match_method": "alignment_v1_feb14"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "T5 pretrained language model",
+                    "description": "The \"Text\u2011to\u2011Text Transfer Transformer\" (T5) model, pretrained on a massive text corpus and fine\u2011tuned for the entailment\u2011tree generation task.",
+                    "explanation": "EntailmentWriter builds on the T5 architecture; its capabilities and limitations directly affect experimental outcomes.",
+                    "core_or_peripheral": "core",
+                    "references": [
+                        {
+                            "type": "paper",
+                            "paper_title": "Exploring the limits of transfer learning with a unified text\u2011to\u2011text transformer",
+                            "paper_year": 2020,
+                            "paper_first_author": {
+                                "first_name": "Colin",
+                                "last_name": "Raffel"
+                            },
+                            "paper_venue": "J. Mach. Learn. Res.",
+                            "corpus_id": "204838007",
+                            "corpus_id_match_confidence": 1.0,
+                            "corpus_id_match_method": "title_exact_sanitized",
+                            "matches": [
+                                {
+                                    "contribution_id": "204838007.c0-2",
+                                    "explanation": "Shows the pre\u2011training of a T5 encoder\u2011decoder on C4 and fine\u2011tuning on many downstream tasks, directly establishing the T5 pretrained language model.",
+                                    "match_type": "strong",
+                                    "match_method": "alignment_v1_feb14"
+                                },
+                                {
+                                    "contribution_id": "204838007.c3",
+                                    "explanation": "Trains the same T5 model with several unsupervised objectives, providing a direct empirical foundation for the T5 pretrained model.",
+                                    "match_type": "strong",
+                                    "match_method": "alignment_v1_feb14"
+                                },
+                                {
+                                    "contribution_id": "204838007.c4",
+                                    "explanation": "Pre\u2011trains T5 (encoder\u2011decoder) and compares architectural variants, thereby delivering the T5 pretrained language model as a baseline.",
+                                    "match_type": "strong",
+                                    "match_method": "alignment_v1_feb14"
+                                },
+                                {
+                                    "contribution_id": "204838007.c7",
+                                    "explanation": "Pre\u2011trains T5 on multiple corpora and isolates the effect of data quality, directly involving the T5 pretrained model.",
+                                    "match_type": "strong",
+                                    "match_method": "alignment_v1_feb14"
+                                },
+                                {
+                                    "contribution_id": "204838007.c8",
+                                    "explanation": "Investigates repetition during T5 pre\u2011training, using the T5 encoder\u2011decoder as the pretrained model under study.",
+                                    "match_type": "strong",
+                                    "match_method": "alignment_v1_feb14"
+                                },
+                                {
+                                    "contribution_id": "204838007.c9-1",
+                                    "explanation": "Scales T5 model size from 220\u202fM to 11\u202fB parameters while keeping the pre\u2011training recipe constant, directly providing larger T5 pretrained models.",
+                                    "match_type": "strong",
+                                    "match_method": "alignment_v1_feb14"
+                                },
+                                {
+                                    "contribution_id": "204838007.c9-2",
+                                    "explanation": "Extends T5 pre\u2011training to ~1\u202ftrillion tokens, delivering a longer\u2011trained T5 pretrained language model.",
+                                    "match_type": "strong",
+                                    "match_method": "alignment_v1_feb14"
+                                },
+                                {
+                                    "contribution_id": "204838007.c9-3",
+                                    "explanation": "Increases batch size during T5 pre\u2011training, yielding a T5 model that is still the pretrained language model of interest.",
+                                    "match_type": "strong",
+                                    "match_method": "alignment_v1_feb14"
+                                },
+                                {
+                                    "contribution_id": "204838007.c9-4",
+                                    "explanation": "Ensembles four independently fine\u2011tuned T5 models, each built on the same T5 pretrained checkpoint, confirming the relevance of the T5 pretrained model.",
+                                    "match_type": "strong",
+                                    "match_method": "alignment_v1_feb14"
+                                },
+                                {
+                                    "contribution_id": "204838007.c10",
+                                    "explanation": "Achieves state\u2011of\u2011the\u2011art scores using the T5 pretrained model, demonstrating that the contribution directly relies on the T5 pretrained language model.",
+                                    "match_type": "strong",
+                                    "match_method": "alignment_v1_feb14"
+                                },
+                                {
+                                    "contribution_id": "204838007.c11",
+                                    "explanation": "Releases T5 model checkpoints and code, providing the T5 pretrained language model to the community.",
+                                    "match_type": "strong",
+                                    "match_method": "alignment_v1_feb14"
+                                },
+                                {
+                                    "contribution_id": "204838007.c0-1",
+                                    "explanation": "Introduces the text\u2011to\u2011text formulation that underlies T5, but does not itself provide the pretrained model.",
+                                    "match_type": "weak",
+                                    "match_method": "alignment_v1_feb14"
+                                },
+                                {
+                                    "contribution_id": "204838007.c2-1",
+                                    "explanation": "Describes the span\u2011corruption objective used in T5 pre\u2011training; the contribution is about the method, not the pretrained model itself.",
+                                    "match_type": "weak",
+                                    "match_method": "alignment_v1_feb14"
+                                },
+                                {
+                                    "contribution_id": "204838007.c2-2",
+                                    "explanation": "Analyzes hyper\u2011parameters of the span\u2011corruption objective; relevance is methodological rather than a direct provision of the T5 pretrained model.",
+                                    "match_type": "weak",
+                                    "match_method": "alignment_v1_feb14"
+                                },
+                                {
+                                    "contribution_id": "204838007.c5-1",
+                                    "explanation": "Proposes multi\u2011task mixing strategies for T5 pre\u2011training; the contribution is about a training recipe, not the pretrained model itself.",
+                                    "match_type": "weak",
+                                    "match_method": "alignment_v1_feb14"
+                                },
+                                {
+                                    "contribution_id": "204838007.c5-2",
+                                    "explanation": "Shows that fine\u2011tuning after multi\u2011task pre\u2011training recovers performance; the focus is on the fine\u2011tuning stage, not the pretrained checkpoint.",
+                                    "match_type": "weak",
+                                    "match_method": "alignment_v1_feb14"
+                                },
+                                {
+                                    "contribution_id": "204838007.c6",
+                                    "explanation": "Evaluates parameter\u2011efficient fine\u2011tuning methods for T5; the contribution concerns downstream adaptation rather than the T5 pretrained language model itself.",
+                                    "match_type": "weak",
+                                    "match_method": "alignment_v1_feb14"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "BLEURT evaluation metric",
+                    "description": "A learned metric for assessing similarity between generated and reference texts, used to judge the correctness of intermediate conclusions.",
+                    "explanation": "BLEURT scores determine whether an intermediate node is considered correct in the overall AllCorrect metric.",
+                    "core_or_peripheral": "peripheral",
+                    "references": [
+                        {
+                            "type": "paper",
+                            "paper_title": "BLEURT: Learning robust metrics for text generation",
+                            "paper_year": 2020,
+                            "paper_first_author": {
+                                "first_name": "Thibault",
+                                "last_name": "Sellam"
+                            },
+                            "paper_venue": "arXiv",
+                            "corpus_id": "215548699",
+                            "corpus_id_match_confidence": 1.0,
+                            "corpus_id_match_method": "title_exact_sanitized",
+                            "matches": [
+                                {
+                                    "contribution_id": "215548699.c0",
+                                    "explanation": "Introduces the BLEURT learned evaluation metric, directly providing the metric required by the prerequisite.",
+                                    "match_type": "strong",
+                                    "match_method": "alignment_v1_feb14"
+                                },
+                                {
+                                    "contribution_id": "215548699.c1",
+                                    "explanation": "Describes the multi\u2011task synthetic pre\u2011training scheme that underlies BLEURT, supporting the metric but not defining it.",
+                                    "match_type": "weak",
+                                    "match_method": "alignment_v1_feb14"
+                                },
+                                {
+                                    "contribution_id": "215548699.c2",
+                                    "explanation": "Presents the synthetic data pipeline used to pre\u2011train BLEURT, tangentially related to the metric's creation.",
+                                    "match_type": "weak",
+                                    "match_method": "alignment_v1_feb14"
+                                },
+                                {
+                                    "contribution_id": "215548699.c3-1",
+                                    "explanation": "Empirical evaluation of BLEURT on WMT shared\u2011task test sets, showing the metric's performance but not defining it.",
+                                    "match_type": "weak",
+                                    "match_method": "alignment_v1_feb14"
+                                },
+                                {
+                                    "contribution_id": "215548699.c3-2",
+                                    "explanation": "Robustness analysis of BLEURT under quality\u2011drift scenarios, providing insight into the metric's behavior.",
+                                    "match_type": "weak",
+                                    "match_method": "alignment_v1_feb14"
+                                },
+                                {
+                                    "contribution_id": "215548699.c3-3",
+                                    "explanation": "Domain\u2011adaptation evaluation of BLEURT on WebNLG data\u2011to\u2011text, further testing the metric in a new domain.",
+                                    "match_type": "weak",
+                                    "match_method": "alignment_v1_feb14"
+                                },
+                                {
+                                    "contribution_id": "215548699.c4",
+                                    "explanation": "Ablation study of BLEURT pre\u2011training supervision signals, analyzing components of the metric.",
+                                    "match_type": "weak",
+                                    "match_method": "alignment_v1_feb14"
+                                },
+                                {
+                                    "contribution_id": "215548699.c5",
+                                    "explanation": "Open\u2011source release of BLEURT code and pretrained checkpoints, enabling practical use of the metric.",
+                                    "match_type": "weak",
+                                    "match_method": "alignment_v1_feb14"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "ARC question\u2011answering dataset",
+                    "description": "The AI2 Reasoning Challenge (ARC) provides multiple\u2011choice science questions used as the source of QA pairs for ENTAILMENTBANK.",
+                    "explanation": "The QA pairs that the entailment trees explain are drawn from ARC, making it a prerequisite source of task instances.",
+                    "core_or_peripheral": "peripheral",
+                    "references": [
+                        {
+                            "type": "paper",
+                            "paper_title": "Think you have solved question answering? Try ARC, the AI2 reasoning challenge",
+                            "paper_year": 2018,
+                            "paper_first_author": {
+                                "first_name": "Peter",
+                                "last_name": "Clark"
+                            },
+                            "paper_venue": "arXiv",
+                            "corpus_id": "3922816",
+                            "corpus_id_match_confidence": 1.0,
+                            "corpus_id_match_method": "title_exact_sanitized",
+                            "matches": [
+                                {
+                                    "contribution_id": "3922816.c0",
+                                    "explanation": "The contribution introduces the ARC question\u2011answering dataset, which is exactly the prerequisite dataset used by the source paper.",
+                                    "match_type": "strong",
+                                    "match_method": "alignment_v1_feb14"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "contribution_id": "233297051.c6-2",
+            "name": "Error analysis of EntailmentWriter revealing common failure modes",
+            "description": "A manual inspection of imperfectly generated entailment trees identifies systematic error categories: (i) repetition of input sentences, (ii) invalid entailments that rely on unstated knowledge, (iii) mis\u2011evaluation or irrelevant intermediate conclusions, (iv) structural mismatches such as incorrect ordering of steps, and (v) disconnected sub\u2011trees. The analysis quantifies the prevalence of each failure mode and discusses potential remedies, including iterative generation, loss\u2011function modifications, and entailment\u2011validation modules.",
+            "types": [
+                {
+                    "type": "analysis",
+                    "explanation": "Provides a detailed qualitative breakdown of the model's shortcomings, offering insights for future improvements."
+                },
+                {
+                    "type": "empirical_evaluation",
+                    "explanation": "The error analysis is based on systematic inspection of model outputs on the test set."
+                }
+            ],
+            "sections": [
+                "6.3 Error Analysis",
+                "Results"
+            ],
+            "prerequisites": [
+                {
+                    "name": "EntailmentWriter model",
+                    "description": "The T5\u2011based generative system that produces linearized entailment trees from a hypothesis and supporting sentences.",
+                    "explanation": "All error categories are derived from the outputs of this model.",
+                    "core_or_peripheral": "core",
+                    "references": [
+                        {
+                            "type": "internal",
+                            "contribution_name": "EntailmentWriter: T5\u2011based generative model for entailment\u2011tree generation",
+                            "contribution_id": "233297051.c4",
+                            "explanation": "The model being analysed originates from this contribution."
+                        }
+                    ]
+                },
+                {
+                    "name": "Tree Alignment Algorithm and evaluation metrics",
+                    "description": "Algorithm that aligns predicted and gold trees using ancestor\u2011leaf Jaccard similarity, together with leaf\u2011F1, step\u2011F1, and BLEURT\u2011based intermediate correctness metrics.",
+                    "explanation": "Error identification and prevalence measurement rely on this alignment procedure and its metrics.",
+                    "core_or_peripheral": "core",
+                    "references": [
+                        {
+                            "type": "internal",
+                            "contribution_name": "Tree Alignment Algorithm for Evaluating Entailment Trees",
+                            "contribution_id": "233297051.c5",
+                            "explanation": "Provides the baseline against which errors are measured."
+                        }
+                    ]
+                },
+                {
+                    "name": "Reasoning type analysis of ENTAILMENTBANK",
+                    "description": "Manual categorisation of entailment steps into six reasoning types (substitution, rule\u2011based inference, specification/conjunction, class inference, property inheritance, sequential inference).",
+                    "explanation": "The taxonomy is used to interpret why certain steps fail (e.g., rule\u2011based failures).",
+                    "core_or_peripheral": "core",
+                    "references": [
+                        {
+                            "type": "internal",
+                            "contribution_name": "Analysis of reasoning types required for multistep entailments",
+                            "contribution_id": "233297051.c7",
+                            "explanation": "Supplies the reasoning categories referenced in the error analysis."
+                        }
+                    ]
+                },
+                {
+                    "name": "ENTAILMENTBANK dataset",
+                    "description": "A collection of 1,840 gold entailment trees with associated sentences, used for training the model and as ground truth for error analysis.",
+                    "explanation": "Errors are identified by comparing model outputs to the gold trees from this dataset.",
+                    "core_or_peripheral": "core",
+                    "references": [
+                        {
+                            "type": "internal",
+                            "contribution_name": "ENTAILMENTBANK: a dataset of multistep entailment trees for science QA",
+                            "contribution_id": "233297051.c1",
+                            "explanation": "Provides the reference trees against which model errors are measured."
+                        }
+                    ]
+                },
+                {
+                    "name": "Manual annotation protocol for error analysis",
+                    "description": "Procedure in which researchers sampled 100 erroneous steps and 50 full trees, categorised failure modes, and estimated their prevalence.",
+                    "explanation": "The validity of the error analysis depends on this systematic manual inspection methodology.",
+                    "core_or_peripheral": "peripheral",
+                    "references": []
+                },
+                {
+                    "name": "T5 pretrained text\u2011to\u2011text transformer",
+                    "description": "The large\u2011scale pretrained sequence\u2011to\u2011sequence model (T5) that serves as the backbone for EntailmentWriter.",
+                    "explanation": "EntailmentWriter fine\u2011tunes this model; its capabilities directly affect the types of errors observed.",
+                    "core_or_peripheral": "core",
+                    "references": [
+                        {
+                            "type": "paper",
+                            "paper_title": "Exploring the limits of transfer learning with a unified text-to-text transformer",
+                            "paper_year": 2020,
+                            "paper_first_author": {
+                                "first_name": "Colin",
+                                "last_name": "Raffel"
+                            },
+                            "paper_venue": "JMLR",
+                            "corpus_id": "204838007",
+                            "corpus_id_match_confidence": 1.0,
+                            "corpus_id_match_method": "title_exact_sanitized",
+                            "matches": [
+                                {
+                                    "contribution_id": "204838007.c11",
+                                    "explanation": "Releases the pretrained T5 model checkpoints, code, and the C4 dataset, directly providing the large\u2011scale text\u2011to\u2011text transformer described in the prerequisite.",
+                                    "match_type": "strong",
+                                    "match_method": "alignment_v1_feb14"
+                                },
+                                {
+                                    "contribution_id": "204838007.c0-1",
+                                    "explanation": "Introduces the unified text\u2011to\u2011text formulation that defines the T5 architecture and training paradigm, establishing the conceptual basis for the pretrained model.",
+                                    "match_type": "weak",
+                                    "match_method": "alignment_v1_feb14"
+                                },
+                                {
+                                    "contribution_id": "204838007.c0-2",
+                                    "explanation": "Empirically validates the T5 model across many benchmarks, demonstrating that the pretrained transformer works as a general-purpose backbone.",
+                                    "match_type": "weak",
+                                    "match_method": "alignment_v1_feb14"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "BLEURT metric for intermediate sentence evaluation",
+                    "description": "A learned evaluation metric that scores similarity between generated intermediate conclusions and gold sentences.",
+                    "explanation": "BLEURT scores are used to decide whether an intermediate node is correct in the error analysis.",
+                    "core_or_peripheral": "core",
+                    "references": [
+                        {
+                            "type": "paper",
+                            "paper_title": "BLEURT: Learning robust metrics for text generation",
+                            "paper_year": 2020,
+                            "paper_first_author": {
+                                "first_name": "Thibault",
+                                "last_name": "Sellam"
+                            },
+                            "paper_venue": "arXiv",
+                            "corpus_id": "215548699",
+                            "corpus_id_match_confidence": 1.0,
+                            "corpus_id_match_method": "title_exact_sanitized",
+                            "matches": [
+                                {
+                                    "contribution_id": "215548699.c0",
+                                    "explanation": "Introduces BLEURT, the learned evaluation metric that scores similarity between generated and reference sentences, exactly the metric described in the prerequisite.",
+                                    "match_type": "strong",
+                                    "match_method": "alignment_v1_feb14"
+                                },
+                                {
+                                    "contribution_id": "215548699.c3-1",
+                                    "explanation": "Evaluates BLEURT on WMT Metrics Shared Tasks, demonstrating the metric's performance and providing empirical evidence of its suitability for sentence\u2011level evaluation.",
+                                    "match_type": "weak",
+                                    "match_method": "alignment_v1_feb14"
+                                },
+                                {
+                                    "contribution_id": "215548699.c5",
+                                    "explanation": "Releases the BLEURT software and pretrained checkpoints, making the metric directly usable for evaluating intermediate conclusions.",
+                                    "match_type": "weak",
+                                    "match_method": "alignment_v1_feb14"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Retrieval component for full\u2011corpus task",
+                    "description": "Two\u2011stage relevant\u2011sentence retrieval pipeline using BERT and RoBERTa classifiers trained on WorldTree, followed by TensorFlow\u2011Ranking BERT reranking to select top sentences for the model.",
+                    "explanation": "Missing or noisy retrieved sentences are identified as a source of errors in the full\u2011corpus setting.",
+                    "core_or_peripheral": "peripheral",
+                    "references": [
+                        {
+                            "type": "paper",
+                            "paper_title": "BERT: Pre-training of deep bidirectional transformers for language understanding",
+                            "paper_year": 2019,
+                            "paper_first_author": {
+                                "first_name": "Jacob",
+                                "last_name": "Devlin"
+                            },
+                            "paper_venue": "NAACL-HIT",
+                            "corpus_id": "52967399",
+                            "corpus_id_match_confidence": 1.0,
+                            "corpus_id_match_method": "title_exact_sanitized",
+                            "matches": [
+                                {
+                                    "contribution_id": "52967399.c0",
+                                    "explanation": "The BERT architecture provides the underlying bidirectional Transformer model that is later used as the classifier and reranker in the retrieval pipeline.",
+                                    "match_type": "weak",
+                                    "match_method": "alignment_v1_feb14"
+                                },
+                                {
+                                    "contribution_id": "52967399.c7",
+                                    "explanation": "The open\u2011source release of BERT code and pretrained checkpoints makes the pretrained BERT model readily available for building the sentence\u2011level classifiers and ranking model described in the prerequisite.",
+                                    "match_type": "weak",
+                                    "match_method": "alignment_v1_feb14"
+                                },
+                                {
+                                    "contribution_id": "52967399.c4",
+                                    "explanation": "The large\u2011scale pre\u2011training methodology describes the data, batch size, and curriculum that produce the high\u2011quality BERT checkpoints used for the retrieval classifiers and reranker.",
+                                    "match_type": "weak",
+                                    "match_method": "alignment_v1_feb14"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "paper",
+                            "paper_title": "RoBERTa: A robustly optimized BERT pretraining approach",
+                            "paper_year": 2019,
+                            "paper_first_author": {
+                                "first_name": "Yinhan",
+                                "last_name": "Liu"
+                            },
+                            "paper_venue": "arXiv",
+                            "corpus_id": "198953378",
+                            "corpus_id_match_confidence": 1.0,
+                            "corpus_id_match_method": "title_exact_sanitized",
+                            "matches": []
+                        },
+                        {
+                            "type": "paper",
+                            "paper_title": "Learning to rank with BERT in TF\u2011ranking",
+                            "paper_year": 2020,
+                            "paper_first_author": {
+                                "first_name": "Shuguang",
+                                "last_name": "Han"
+                            },
+                            "paper_venue": "arXiv",
+                            "corpus_id": null,
+                            "corpus_id_match_confidence": 0.0,
+                            "corpus_id_match_method": null,
+                            "matches": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "contribution_id": "233297051.c7",
+            "name": "Analysis of reasoning types required for multistep entailments",
+            "description": "The authors manually examined a random sample of 100 entailment steps drawn from the ENTAILMENTBANK training set. They categorized each step into one of six high\u2011level reasoning types\u2014substitution, inference from rule, further specification/conjunction, class inference, property inheritance, and sequential inference\u2014and reported the proportion of steps belonging to each category (e.g., 42\u202f% substitution, 33\u202f% rule\u2011based). This quantitative analysis reveals the diversity of logical operations needed to build valid entailment trees and provides insight for designing future explanation models.",
+            "types": [
+                {
+                    "type": "analysis",
+                    "explanation": "It offers a novel quantitative and qualitative examination of the reasoning patterns present in the ENTAILMENTBANK dataset."
+                }
+            ],
+            "sections": [
+                "Dataset Analysis",
+                "Table 3"
+            ],
+            "prerequisites": [
+                {
+                    "name": "ENTAILMENTBANK dataset",
+                    "description": "A curated collection of 1,840 multistep entailment trees linking elementary\u2011science multiple\u2011choice questions (from ARC) to supporting facts, comprising 5,881 discrete entailment steps.",
+                    "explanation": "The analysis directly samples entailment steps from the training portion of ENTAILMENTBANK, making the dataset indispensable for the study.",
+                    "core_or_peripheral": "core",
+                    "references": [
+                        {
+                            "type": "internal",
+                            "contribution_name": "ENTAILMENTBANK: a dataset of multistep entailment trees for science QA",
+                            "contribution_id": "233297051.c1",
+                            "explanation": "Provides the raw entailment steps that are examined in the analysis."
+                        }
+                    ]
+                },
+                {
+                    "name": "Multi\u2011premise textual entailment framework",
+                    "description": "A formulation of textual entailment where a hypothesis is inferred from two or more premise sentences, extending the classic single\u2011premise NLI setting.",
+                    "explanation": "All six reasoning categories are defined with respect to multi\u2011premise entailment steps, so understanding this framework is required to interpret and classify the steps.",
+                    "core_or_peripheral": "core",
+                    "references": [
+                        {
+                            "type": "paper",
+                            "paper_title": "Natural language inference from multiple premises",
+                            "paper_year": 2017,
+                            "paper_first_author": {
+                                "first_name": "Alice",
+                                "last_name": "Lai"
+                            },
+                            "paper_venue": "IJCNLP",
+                            "corpus_id": "29033327",
+                            "corpus_id_match_confidence": 1.0,
+                            "corpus_id_match_method": "title_exact_sanitized",
+                            "matches": [
+                                {
+                                    "contribution_id": "29033327.c0",
+                                    "explanation": "This contribution formulates the Multiple Premise Entailment (MPE) task, explicitly defining a multi\u2011premise textual entailment framework.",
+                                    "match_type": "strong",
+                                    "match_method": "alignment_v1_feb14"
+                                },
+                                {
+                                    "contribution_id": "29033327.c1",
+                                    "explanation": "The dataset construction builds a benchmark that operationalizes the multi\u2011premise entailment framework, but it does not itself define the framework.",
+                                    "match_type": "weak",
+                                    "match_method": "alignment_v1_feb14"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "paper",
+                            "paper_title": "Recognizing Textual Entailment: Models and Applications",
+                            "paper_year": 2013,
+                            "paper_first_author": {
+                                "first_name": "Ido",
+                                "last_name": "Dagan"
+                            },
+                            "paper_venue": "Morgan & Claypool Publishers",
+                            "corpus_id": null,
+                            "corpus_id_match_confidence": 0.0,
+                            "corpus_id_match_method": null,
+                            "matches": []
+                        }
+                    ]
+                },
+                {
+                    "name": "Annotation guidelines for constructing entailment trees",
+                    "description": "A set of detailed instructions given to annotators specifying granularity, compositionality, and validity requirements for each entailment step and overall tree.",
+                    "explanation": "The reasoning categories were derived by examining steps that were created according to these guidelines; the guidelines shape what kinds of inferences are considered valid.",
+                    "core_or_peripheral": "peripheral",
+                    "references": [
+                        {
+                            "type": "internal",
+                            "contribution_name": "Web\u2011based drag\u2011and\u2011drop authoring tool for constructing entailment trees",
+                            "contribution_id": "233297051.c2",
+                            "explanation": "The tool implements and enforces the annotation guidelines used during tree construction."
+                        }
+                    ]
+                },
+                {
+                    "name": "Statistical sampling and frequency analysis methods",
+                    "description": "Standard quantitative techniques for random sampling of items and computing proportion statistics (e.g., percentages of each reasoning type).",
+                    "explanation": "These methods are required to obtain the 100\u2011step sample and to calculate the prevalence figures reported in Table\u202f3.",
+                    "core_or_peripheral": "peripheral",
+                    "references": []
+                }
+            ]
+        },
+        {
+            "contribution_id": "233297051.c8-1",
+            "name": "Zero-shot out-of-domain generalization of EntailmentWriter",
+            "description": "The authors evaluate the EntailmentWriter model, trained on the ENTAILMENTBANK science QA dataset, on two external resources: the eQASC dataset and the Challenge300 collection. Without any fine-tuning, the model generates entailment trees for out-of-domain questions, achieving 26\u202f% overall correctness on eQASC and roughly 35\u202f% valid trees on Challenge300, demonstrating transfer potential of the entailment-tree generation approach beyond the original domain.",
+            "types": [
+                {
+                    "type": "empirical_evaluation",
+                    "explanation": "Provides quantitative results on external benchmarks to assess model generalization."
+                },
+                {
+                    "type": "real_world_application",
+                    "explanation": "Shows the approach can be applied to broader QA explanation tasks outside the original science domain."
+                }
+            ],
+            "sections": [
+                "Generality",
+                "Figure 5"
+            ],
+            "prerequisites": [
+                {
+                    "name": "ENTAILMENTBANK dataset",
+                    "description": "A manually authored resource of 1,840 multistep entailment trees linking elementary\u2011science multiple\u2011choice questions to supporting facts, used to train the EntailmentWriter model.",
+                    "explanation": "The model\u2019s parameters are learned from this dataset; without it the zero\u2011shot transfer experiments would not be possible.",
+                    "core_or_peripheral": "core",
+                    "references": [
+                        {
+                            "type": "internal",
+                            "contribution_name": "ENTAILMENTBANK: a large\u2011scale dataset of multistep entailment trees for elementary\u2011science QA",
+                            "contribution_id": "233297051.c1",
+                            "explanation": "Provides the training data for EntailmentWriter."
+                        }
+                    ]
+                },
+                {
+                    "name": "EntailmentWriter model (T5\u2011based generative model)",
+                    "description": "A sequence\u2011to\u2011sequence model built on the T5 transformer that generates linearized entailment trees from a hypothesis and supporting sentences.",
+                    "explanation": "The model trained on ENTAILMENTBANK is the system evaluated in the zero\u2011shot experiments.",
+                    "core_or_peripheral": "core",
+                    "references": [
+                        {
+                            "type": "internal",
+                            "contribution_name": "EntailmentWriter: T5\u2011based generative model for entailment\u2011tree generation",
+                            "contribution_id": "233297051.c4",
+                            "explanation": "Defines the architecture and training procedure used for the out\u2011of\u2011domain tests."
+                        }
+                    ]
+                },
+                {
+                    "name": "T5 pretrained text\u2011to\u2011text transformer",
+                    "description": "A large\u2011scale pretrained encoder\u2011decoder model that supports transfer learning across many NLP tasks.",
+                    "explanation": "EntailmentWriter fine\u2011tunes this pretrained model; its general language understanding capabilities enable zero\u2011shot transfer.",
+                    "core_or_peripheral": "core",
+                    "references": [
+                        {
+                            "type": "paper",
+                            "paper_title": "Exploring the limits of transfer learning with a unified text-to-text transformer",
+                            "paper_year": 2020,
+                            "paper_first_author": {
+                                "first_name": "Colin",
+                                "last_name": "Raffel"
+                            },
+                            "paper_venue": "J. Mach. Learn. Res.",
+                            "corpus_id": "204838007",
+                            "corpus_id_match_confidence": 1.0,
+                            "corpus_id_match_method": "title_exact_sanitized",
+                            "matches": [
+                                {
+                                    "contribution_id": "204838007.c0-2",
+                                    "explanation": "Describes the pre\u2011training of a T5 encoder\u2011decoder transformer on C4 and its fine\u2011tuning, directly providing the T5 pretrained text\u2011to\u2011text model.",
+                                    "match_type": "strong",
+                                    "match_method": "alignment_v1_feb14"
+                                },
+                                {
+                                    "contribution_id": "204838007.c11",
+                                    "explanation": "Releases the T5 model checkpoints (pre\u2011trained encoder\u2011decoder) and code, explicitly making the T5 pretrained transformer available.",
+                                    "match_type": "strong",
+                                    "match_method": "alignment_v1_feb14"
+                                },
+                                {
+                                    "contribution_id": "204838007.c0-1",
+                                    "explanation": "Introduces the unified text\u2011to\u2011text formulation that underlies T5, but does not itself provide the pretrained model.",
+                                    "match_type": "weak",
+                                    "match_method": "alignment_v1_feb14"
+                                },
+                                {
+                                    "contribution_id": "204838007.c2-1",
+                                    "explanation": "Presents the span\u2011corruption objective used in T5 pre\u2011training; relevant to the model but not the model itself.",
+                                    "match_type": "weak",
+                                    "match_method": "alignment_v1_feb14"
+                                },
+                                {
+                                    "contribution_id": "204838007.c3",
+                                    "explanation": "Compares multiple unsupervised objectives using the T5 architecture; includes T5 but focuses on objective comparison rather than the pretrained model.",
+                                    "match_type": "weak",
+                                    "match_method": "alignment_v1_feb14"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "eQASC dataset",
+                    "description": "A science QA benchmark that provides a hypothesis, a set of retrieved sentences, and single\u2011step entailment annotations.",
+                    "explanation": "Serves as one of the external evaluation corpora for assessing out\u2011of\u2011domain performance.",
+                    "core_or_peripheral": "peripheral",
+                    "references": [
+                        {
+                            "type": "paper",
+                            "paper_title": "Learning to explain: Datasets and models for identifying valid reasoning chains in multihop question-answering",
+                            "paper_year": 2020,
+                            "paper_first_author": {
+                                "first_name": "Harsh",
+                                "last_name": "Jhamtani"
+                            },
+                            "paper_venue": "EMNLP",
+                            "corpus_id": "222178328",
+                            "corpus_id_match_confidence": 1.0,
+                            "corpus_id_match_method": "title_exact_sanitized",
+                            "matches": [
+                                {
+                                    "contribution_id": "222178328.c2",
+                                    "explanation": "This contribution creates the eQASC dataset, which is exactly the prerequisite dataset used for external evaluation.",
+                                    "match_type": "strong",
+                                    "match_method": "alignment_v1_feb14"
+                                },
+                                {
+                                    "contribution_id": "222178328.c3",
+                                    "explanation": "This contribution provides a robustness extension derived from eQASC, relating to the same dataset but not the core benchmark itself.",
+                                    "match_type": "weak",
+                                    "match_method": "alignment_v1_feb14"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Challenge300 dataset",
+                    "description": "A collection of 300 diverse QA items spanning multiple domains, used to test general\u2011purpose question answering systems.",
+                    "explanation": "Provides a second out\u2011of\u2011domain benchmark to demonstrate the model\u2019s broader applicability.",
+                    "core_or_peripheral": "peripheral",
+                    "references": [
+                        {
+                            "type": "paper",
+                            "paper_title": "General\u2011purpose question\u2011answering with Macaw",
+                            "paper_year": 2021,
+                            "paper_first_author": {
+                                "first_name": "Oyvind",
+                                "last_name": "Tafjord"
+                            },
+                            "paper_venue": "ArXiv",
+                            "corpus_id": "237420665",
+                            "corpus_id_match_confidence": 1.0,
+                            "corpus_id_match_method": "title_exact_sanitized",
+                            "matches": [
+                                {
+                                    "contribution_id": "237420665.c4",
+                                    "explanation": "This contribution creates and releases the Challenge300 dataset, which is exactly the prerequisite resource.",
+                                    "match_type": "strong",
+                                    "match_method": "alignment_v1_feb14"
+                                },
+                                {
+                                    "contribution_id": "237420665.c5-1",
+                                    "explanation": "This contribution evaluates MACAW on the Challenge300 benchmark, using the same dataset but not creating it.",
+                                    "match_type": "weak",
+                                    "match_method": "alignment_v1_feb14"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Multi\u2011premise textual entailment",
+                    "description": "The task of determining whether a hypothesis follows from two or more premise sentences, as formalized in prior natural language inference work.",
+                    "explanation": "Entailment trees are built from such multi\u2011premise entailment steps; understanding this concept is required to construct and evaluate the trees.",
+                    "core_or_peripheral": "peripheral",
+                    "references": [
+                        {
+                            "type": "paper",
+                            "paper_title": "Natural language inference from multiple premises",
+                            "paper_year": 2017,
+                            "paper_first_author": {
+                                "first_name": "Alice",
+                                "last_name": "Lai"
+                            },
+                            "paper_venue": "IJCNLP",
+                            "corpus_id": "29033327",
+                            "corpus_id_match_confidence": 1.0,
+                            "corpus_id_match_method": "title_exact_sanitized",
+                            "matches": [
+                                {
+                                    "contribution_id": "29033327.c0",
+                                    "explanation": "Defines the Multiple Premise Entailment (MPE) task, directly establishing the multi\u2011premise textual entailment concept required by the prerequisite.",
+                                    "match_type": "strong",
+                                    "match_method": "alignment_v1_feb14"
+                                },
+                                {
+                                    "contribution_id": "29033327.c1",
+                                    "explanation": "Creates a benchmark dataset for the MPE task, providing concrete examples of multi\u2011premise entailment that serve as a foundational resource for the prerequisite.",
+                                    "match_type": "strong",
+                                    "match_method": "alignment_v1_feb14"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Formulation of explanation as multistep entailment trees",
+                    "description": "The conceptual reframing of open\u2011domain QA explanation as the construction of directed entailment trees composed of multi\u2011premise entailment steps.",
+                    "explanation": "Provides the problem definition and motivation that underlie the entire EntailmentWriter approach and its evaluation on new domains.",
+                    "core_or_peripheral": "core",
+                    "references": [
+                        {
+                            "type": "internal",
+                            "contribution_name": "Formulation of explanation as multistep entailment trees",
+                            "contribution_id": "233297051.c0",
+                            "explanation": "Defines the task that the model is evaluated on in zero\u2011shot settings."
+                        }
+                    ]
+                },
+                {
+                    "name": "Tree Alignment Algorithm for evaluating entailment trees",
+                    "description": "An algorithm that aligns predicted intermediate nodes with gold nodes using ancestor leaf Jaccard similarity, enabling computation of leaf\u2011F1, step\u2011F1, BLEURT\u2011based intermediate correctness, and overall AllCorrect metrics.",
+                    "explanation": "The zero\u2011shot performance numbers (e.g., 26\u202f% overall correctness) are obtained using this evaluation procedure.",
+                    "core_or_peripheral": "peripheral",
+                    "references": [
+                        {
+                            "type": "internal",
+                            "contribution_name": "Tree Alignment Algorithm for Evaluating Entailment Trees",
+                            "contribution_id": "233297051.c5",
+                            "explanation": "Provides the metric used to assess the out\u2011of\u2011domain generated trees."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "contribution_id": "233297051.c8-2",
+            "name": "Shredded\u2011tree interactive explanation generation",
+            "description": "The authors decompose the multistep entailment trees of ENTAILMENTBANK into single\u2011step entailment examples (\"shredded\" trees) and fine\u2011tune a T5\u2011based EntailmentWriter on this data. At inference time the model can generate one inference step on demand, allowing a user to iteratively expand premises and drill down through a tree of explanations, demonstrating a prototype of an interactive, step\u2011wise explanation system for QA.",
+            "types": [
+                {
+                    "type": "techniques_algorithms",
+                    "explanation": "Introduces a novel procedure for converting full entailment trees into one\u2011step generation tasks and an interactive generation algorithm."
+                },
+                {
+                    "type": "real_world_application",
+                    "explanation": "Shows a usable interactive interface that lets users explore explanations step by step."
+                }
+            ],
+            "sections": [
+                "Interactive explanation generation (shredded trees)"
+            ],
+            "prerequisites": [
+                {
+                    "name": "ENTAILMENTBANK dataset",
+                    "description": "A manually authored collection of 1,840 multistep entailment trees linking elementary\u2011science multiple\u2011choice questions to supporting facts, used as the source of full trees that are shredded into one\u2011step training examples.",
+                    "explanation": "Provides the original trees whose individual steps are extracted to create the shredded training data.",
+                    "core_or_peripheral": "core",
+                    "references": [
+                        {
+                            "type": "internal",
+                            "contribution_name": "ENTAILMENTBANK: a dataset of multistep entailment trees for science QA",
+                            "contribution_id": "233297051.c1",
+                            "explanation": "Source of the full trees that are shredded."
+                        }
+                    ]
+                },
+                {
+                    "name": "EntailmentWriter (T5\u2011based generative model)",
+                    "description": "A sequence\u2011to\u2011sequence model built on the T5 transformer that was originally fine\u2011tuned to generate linearized entailment trees from a hypothesis and supporting sentences.",
+                    "explanation": "Serves as the base architecture that is re\u2011trained on the shredded one\u2011step data to produce interactive explanations.",
+                    "core_or_peripheral": "core",
+                    "references": [
+                        {
+                            "type": "internal",
+                            "contribution_name": "EntailmentWriter: T5\u2011based generative model for entailment\u2011tree generation",
+                            "contribution_id": "233297051.c4",
+                            "explanation": "Provides the underlying model architecture."
+                        }
+                    ]
+                },
+                {
+                    "name": "ProofWriter approach for natural\u2011language proof generation",
+                    "description": "A method for generating formal and natural\u2011language proofs by training transformers to produce single inference steps, introduced by Tafjord et\u202fal. (2021).",
+                    "explanation": "Inspired the idea of generating one\u2011step entailments and the iterative, drill\u2011down interaction used in the shredded\u2011tree system.",
+                    "core_or_peripheral": "peripheral",
+                    "references": [
+                        {
+                            "type": "paper",
+                            "paper_title": "ProofWriter: Generating implications, proofs, and abductive statements over natural language",
+                            "paper_year": 2021,
+                            "paper_first_author": {
+                                "first_name": "Oyvind",
+                                "last_name": "Tafjord"
+                            },
+                            "paper_venue": "IJCAI",
+                            "corpus_id": "229371222",
+                            "corpus_id_match_confidence": 1.0,
+                            "corpus_id_match_method": "title_exact_sanitized",
+                            "matches": [
+                                {
+                                    "contribution_id": "229371222.c0",
+                                    "explanation": "Describes the iterative ProofWriter model that trains a T5 transformer to generate single inference steps and assemble multi-step natural-language proofs, exactly the method cited as the prerequisite.",
+                                    "match_type": "strong",
+                                    "match_method": "alignment_v1_feb14"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "T5 pretrained text\u2011to\u2011text transformer",
+                    "description": "A large\u2011scale pretrained encoder\u2011decoder model (Raffel et\u202fal., 2020) that supports transfer learning across many NLP tasks.",
+                    "explanation": "Both the original EntailmentWriter and its shredded variant rely on fine\u2011tuning this pretrained model.",
+                    "core_or_peripheral": "core",
+                    "references": [
+                        {
+                            "type": "paper",
+                            "paper_title": "Exploring the limits of transfer learning with a unified text-to-text transformer",
+                            "paper_year": 2020,
+                            "paper_first_author": {
+                                "first_name": "Colin",
+                                "last_name": "Raffel"
+                            },
+                            "paper_venue": "J. Mach. Learn. Res.",
+                            "corpus_id": "204838007",
+                            "corpus_id_match_confidence": 1.0,
+                            "corpus_id_match_method": "title_exact_sanitized",
+                            "matches": [
+                                {
+                                    "contribution_id": "204838007.c11",
+                                    "explanation": "The contribution releases the pretrained T5 encoder\u2011decoder checkpoints, which are exactly the large\u2011scale text\u2011to\u2011text transformer described in the prerequisite.",
+                                    "match_type": "strong",
+                                    "match_method": "alignment_v1_feb14"
+                                },
+                                {
+                                    "contribution_id": "204838007.c0-1",
+                                    "explanation": "Introduces the unified text\u2011to\u2011text formulation and the T5 model architecture, providing the conceptual basis for the pretrained transformer.",
+                                    "match_type": "weak",
+                                    "match_method": "alignment_v1_feb14"
+                                },
+                                {
+                                    "contribution_id": "204838007.c0-2",
+                                    "explanation": "Empirically validates the T5 model across many benchmarks, showing that the pretrained transformer works as a general-purpose text\u2011to\u2011text system.",
+                                    "match_type": "weak",
+                                    "match_method": "alignment_v1_feb14"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "BLEURT metric",
+                    "description": "A learned evaluation metric that correlates well with human judgments of text generation quality (Sellam et\u202fal., 2020).",
+                    "explanation": "Used to assess the correctness of intermediate conclusions generated by the shredded model during evaluation.",
+                    "core_or_peripheral": "peripheral",
+                    "references": [
+                        {
+                            "type": "paper",
+                            "paper_title": "Bleurt: Learning robust metrics for text generation",
+                            "paper_year": 2020,
+                            "paper_first_author": {
+                                "first_name": "Thibault",
+                                "last_name": "Sellam"
+                            },
+                            "paper_venue": "ArXiv",
+                            "corpus_id": "215548699",
+                            "corpus_id_match_confidence": 1.0,
+                            "corpus_id_match_method": "title_exact_sanitized",
+                            "matches": [
+                                {
+                                    "contribution_id": "215548699.c0",
+                                    "explanation": "Introduces the BLEURT learned evaluation metric, which is exactly the metric used as a prerequisite.",
+                                    "match_type": "strong",
+                                    "match_method": "alignment_v1_feb14"
+                                },
+                                {
+                                    "contribution_id": "215548699.c5",
+                                    "explanation": "Releases the BLEURT software stack and pretrained checkpoints, providing the same metric for downstream use.",
+                                    "match_type": "strong",
+                                    "match_method": "alignment_v1_feb14"
+                                },
+                                {
+                                    "contribution_id": "215548699.c3-1",
+                                    "explanation": "Benchmarks BLEURT on shared\u2011task data, showing its performance but not introducing the metric itself.",
+                                    "match_type": "weak",
+                                    "match_method": "alignment_v1_feb14"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

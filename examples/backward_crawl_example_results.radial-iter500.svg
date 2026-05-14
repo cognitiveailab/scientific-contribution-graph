@@ -1,0 +1,1033 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1986" height="2104" viewBox="0 0 1986 2104">
+<rect x="0" y="0" width="100%" height="100%" fill="white"/>
+<line x1="775.11" y1="1269.75" x2="964.34" y2="1184.98" stroke="#ffacae" stroke-width="8.00" stroke-opacity="0.95" stroke-linecap="round"/>
+<line x1="1149.35" y1="1450.45" x2="1043.68" y2="1215.18" stroke="#ffe49c" stroke-width="8.00" stroke-opacity="0.95" stroke-linecap="round"/>
+<line x1="1088.28" y1="1206.90" x2="1068.90" y2="1193.90" stroke="#c4e492" stroke-width="8.00" stroke-opacity="0.95" stroke-linecap="round"/>
+<line x1="1274.72" y1="1244.90" x2="1076.06" y2="1179.27" stroke="#8cc0e2" stroke-width="8.00" stroke-opacity="0.95" stroke-linecap="round"/>
+<line x1="1198.45" y1="1157.14" x2="1079.08" y2="1159.34" stroke="#b4a6c9" stroke-width="8.00" stroke-opacity="0.95" stroke-linecap="round"/>
+<line x1="1092.73" y1="1111.63" x2="1069.10" y2="1127.30" stroke="#ffacae" stroke-width="8.00" stroke-opacity="0.95" stroke-linecap="round"/>
+<line x1="1129.85" y1="988.31" x2="1051.56" y2="1109.99" stroke="#ffe49c" stroke-width="8.00" stroke-opacity="0.95" stroke-linecap="round"/>
+<line x1="1020.56" y1="1053.50" x2="1019.92" y2="1100.45" stroke="#c4e492" stroke-width="8.00" stroke-opacity="0.95" stroke-linecap="round"/>
+<line x1="950.58" y1="1115.09" x2="969.06" y2="1127.32" stroke="#8cc0e2" stroke-width="8.00" stroke-opacity="0.95" stroke-linecap="round"/>
+<line x1="755.38" y1="1155.59" x2="959.10" y2="1159.34" stroke="#b4a6c9" stroke-width="8.00" stroke-opacity="0.95" stroke-linecap="round"/>
+<line x1="514.48" y1="1604.34" x2="687.17" y2="1344.27" stroke="#ffbdbf" stroke-width="6.00" stroke-opacity="0.90" stroke-linecap="round"/>
+<line x1="656.12" y1="1412.75" x2="691.76" y2="1347.03" stroke="#ffbdbf" stroke-width="6.00" stroke-opacity="0.90" stroke-linecap="round"/>
+<line x1="502.82" y1="1778.71" x2="695.78" y2="1349.02" stroke="#ffbdbf" stroke-width="6.00" stroke-opacity="0.90" stroke-linecap="round"/>
+<line x1="638.04" y1="1553.59" x2="702.20" y2="1351.47" stroke="#ffbdbf" stroke-width="6.00" stroke-opacity="0.90" stroke-linecap="round"/>
+<line x1="735.26" y1="1489.94" x2="724.91" y2="1354.11" stroke="#ffbdbf" stroke-width="6.00" stroke-opacity="0.90" stroke-linecap="round"/>
+<line x1="755.76" y1="1365.48" x2="747.07" y2="1348.00" stroke="#ffbdbf" stroke-width="6.00" stroke-opacity="0.90" stroke-linecap="round"/>
+<line x1="809.79" y1="1305.59" x2="779.88" y2="1301.81" stroke="#ffbdbf" stroke-width="6.00" stroke-opacity="0.90" stroke-linecap="round"/>
+<line x1="1039.49" y1="1344.52" x2="1135.43" y2="1459.17" stroke="#ffeab0" stroke-width="6.00" stroke-opacity="0.90" stroke-linecap="round"/>
+<line x1="1081.16" y1="1458.73" x2="1120.28" y2="1478.32" stroke="#ffeab0" stroke-width="6.00" stroke-opacity="0.90" stroke-linecap="round"/>
+<line x1="1009.64" y1="1778.69" x2="1143.03" y2="1556.62" stroke="#ffeab0" stroke-width="6.00" stroke-opacity="0.90" stroke-linecap="round"/>
+<line x1="1102.83" y1="1680.84" x2="1151.42" y2="1560.80" stroke="#ffeab0" stroke-width="6.00" stroke-opacity="0.90" stroke-linecap="round"/>
+<line x1="1183.23" y1="1591.38" x2="1180.36" y2="1564.84" stroke="#ffeab0" stroke-width="6.00" stroke-opacity="0.90" stroke-linecap="round"/>
+<line x1="1278.19" y1="1660.81" x2="1207.33" y2="1555.03" stroke="#ffeab0" stroke-width="6.00" stroke-opacity="0.90" stroke-linecap="round"/>
+<line x1="1403.96" y1="1715.97" x2="1218.17" y2="1545.72" stroke="#ffeab0" stroke-width="6.00" stroke-opacity="0.90" stroke-linecap="round"/>
+<line x1="1536.38" y1="1700.00" x2="1226.78" y2="1533.59" stroke="#ffeab0" stroke-width="6.00" stroke-opacity="0.90" stroke-linecap="round"/>
+<line x1="1370.90" y1="1587.85" x2="1229.26" y2="1528.40" stroke="#ffeab0" stroke-width="6.00" stroke-opacity="0.90" stroke-linecap="round"/>
+<line x1="1264.98" y1="1503.80" x2="1233.92" y2="1504.27" stroke="#ffeab0" stroke-width="6.00" stroke-opacity="0.90" stroke-linecap="round"/>
+<line x1="1227.95" y1="1439.77" x2="1212.14" y2="1458.92" stroke="#ffeab0" stroke-width="6.00" stroke-opacity="0.90" stroke-linecap="round"/>
+<line x1="1162.50" y1="1420.12" x2="1165.94" y2="1445.72" stroke="#ffeab0" stroke-width="6.00" stroke-opacity="0.90" stroke-linecap="round"/>
+<line x1="1345.72" y1="1355.15" x2="1190.60" y2="1269.38" stroke="#d0e9a8" stroke-width="6.00" stroke-opacity="0.90" stroke-linecap="round"/>
+<line x1="1491.38" y1="1372.34" x2="1381.30" y2="1297.47" stroke="#a3cde7" stroke-width="6.00" stroke-opacity="0.90" stroke-linecap="round"/>
+<line x1="1434.52" y1="1268.36" x2="1391.63" y2="1266.42" stroke="#a3cde7" stroke-width="6.00" stroke-opacity="0.90" stroke-linecap="round"/>
+<line x1="1501.14" y1="1165.61" x2="1383.62" y2="1233.66" stroke="#a3cde7" stroke-width="6.00" stroke-opacity="0.90" stroke-linecap="round"/>
+<line x1="1380.16" y1="1203.07" x2="1369.15" y2="1216.85" stroke="#a3cde7" stroke-width="6.00" stroke-opacity="0.90" stroke-linecap="round"/>
+<line x1="1432.43" y1="1077.86" x2="1360.28" y2="1210.97" stroke="#a3cde7" stroke-width="6.00" stroke-opacity="0.90" stroke-linecap="round"/>
+<line x1="1466.85" y1="931.63" x2="1299.27" y2="1112.07" stroke="#c3b7d4" stroke-width="6.00" stroke-opacity="0.90" stroke-linecap="round"/>
+<line x1="1227.21" y1="982.44" x2="1211.77" y2="971.83" stroke="#ffeab0" stroke-width="6.00" stroke-opacity="0.90" stroke-linecap="round"/>
+<line x1="1302.06" y1="915.36" x2="1221.56" y2="928.32" stroke="#ffeab0" stroke-width="6.00" stroke-opacity="0.90" stroke-linecap="round"/>
+<line x1="1378.29" y1="797.48" x2="1212.63" y2="905.16" stroke="#ffeab0" stroke-width="6.00" stroke-opacity="0.90" stroke-linecap="round"/>
+<line x1="1253.57" y1="820.91" x2="1199.23" y2="890.55" stroke="#ffeab0" stroke-width="6.00" stroke-opacity="0.90" stroke-linecap="round"/>
+<line x1="1295.70" y1="568.00" x2="1182.67" y2="881.41" stroke="#ffeab0" stroke-width="6.00" stroke-opacity="0.90" stroke-linecap="round"/>
+<line x1="1154.73" y1="796.58" x2="1159.10" y2="877.94" stroke="#ffeab0" stroke-width="6.00" stroke-opacity="0.90" stroke-linecap="round"/>
+<line x1="1110.24" y1="875.51" x2="1123.85" y2="891.81" stroke="#ffeab0" stroke-width="6.00" stroke-opacity="0.90" stroke-linecap="round"/>
+<line x1="995.89" y1="847.36" x2="1109.61" y2="909.19" stroke="#ffeab0" stroke-width="6.00" stroke-opacity="0.90" stroke-linecap="round"/>
+<line x1="888.82" y1="1004.12" x2="891.61" y2="1022.63" stroke="#a3cde7" stroke-width="6.00" stroke-opacity="0.90" stroke-linecap="round"/>
+<line x1="825.43" y1="1054.88" x2="844.11" y2="1061.61" stroke="#a3cde7" stroke-width="6.00" stroke-opacity="0.90" stroke-linecap="round"/>
+<line x1="669.26" y1="1005.85" x2="685.00" y2="1095.39" stroke="#c3b7d4" stroke-width="6.00" stroke-opacity="0.90" stroke-linecap="round"/>
+<line x1="560.14" y1="977.88" x2="658.91" y2="1106.85" stroke="#c3b7d4" stroke-width="6.00" stroke-opacity="0.90" stroke-linecap="round"/>
+<line x1="629.68" y1="1093.32" x2="651.47" y2="1113.60" stroke="#c3b7d4" stroke-width="6.00" stroke-opacity="0.90" stroke-linecap="round"/>
+<line x1="392.61" y1="960.77" x2="644.85" y2="1122.15" stroke="#c3b7d4" stroke-width="6.00" stroke-opacity="0.90" stroke-linecap="round"/>
+<line x1="410.46" y1="1078.57" x2="637.41" y2="1139.04" stroke="#c3b7d4" stroke-width="6.00" stroke-opacity="0.90" stroke-linecap="round"/>
+<line x1="528.49" y1="1132.16" x2="635.92" y2="1146.53" stroke="#c3b7d4" stroke-width="6.00" stroke-opacity="0.90" stroke-linecap="round"/>
+<line x1="294.68" y1="1144.83" x2="635.41" y2="1153.04" stroke="#c3b7d4" stroke-width="6.00" stroke-opacity="0.90" stroke-linecap="round"/>
+<line x1="407.71" y1="1203.60" x2="636.24" y2="1164.58" stroke="#c3b7d4" stroke-width="6.00" stroke-opacity="0.90" stroke-linecap="round"/>
+<line x1="503.72" y1="1256.78" x2="642.46" y2="1182.73" stroke="#c3b7d4" stroke-width="6.00" stroke-opacity="0.90" stroke-linecap="round"/>
+<line x1="625.51" y1="1210.85" x2="648.69" y2="1192.15" stroke="#c3b7d4" stroke-width="6.00" stroke-opacity="0.90" stroke-linecap="round"/>
+<line x1="571.69" y1="1328.03" x2="660.56" y2="1203.34" stroke="#c3b7d4" stroke-width="6.00" stroke-opacity="0.90" stroke-linecap="round"/>
+<line x1="529.10" y1="1461.23" x2="666.79" y2="1207.23" stroke="#c3b7d4" stroke-width="6.00" stroke-opacity="0.90" stroke-linecap="round"/>
+<line x1="314.47" y1="1643.18" x2="421.43" y2="1650.33" stroke="#ffcdcf" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="415.76" y1="1702.47" x2="432.94" y2="1689.85" stroke="#ffcdcf" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="633.09" y1="1708.61" x2="706.35" y2="1599.57" stroke="#ffcdcf" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="731.04" y1="1633.21" x2="733.54" y2="1609.44" stroke="#ffcdcf" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="741.82" y1="1780.96" x2="853.55" y2="1371.00" stroke="#ffcdcf" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="852.81" y1="1697.72" x2="866.75" y2="1373.05" stroke="#ffcdcf" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="919.98" y1="1579.95" x2="880.51" y2="1372.06" stroke="#ffcdcf" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="1011.38" y1="1521.42" x2="903.13" y2="1362.68" stroke="#ffcdcf" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="904.10" y1="1874.07" x2="927.04" y2="1860.56" stroke="#ffefc4" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="966.56" y1="1944.53" x2="972.39" y2="1889.79" stroke="#ffefc4" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="1103.99" y1="1877.59" x2="1168.44" y2="1707.15" stroke="#ffefc4" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="1184.33" y1="1775.62" x2="1187.10" y2="1710.98" stroke="#ffefc4" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="1223.18" y1="1909.73" x2="1197.37" y2="1710.53" stroke="#ffefc4" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="1293.02" y1="1805.11" x2="1223.08" y2="1700.86" stroke="#ffefc4" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="1502.29" y1="1450.80" x2="1501.72" y2="1451.45" stroke="#badaed" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="1560.91" y1="1527.29" x2="1550.72" y2="1465.29" stroke="#badaed" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="1673.50" y1="1573.75" x2="1578.20" y2="1453.16" stroke="#badaed" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="1631.18" y1="1433.65" x2="1533.08" y2="1316.98" stroke="#badaed" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="1763.07" y1="1445.93" x2="1544.74" y2="1303.79" stroke="#badaed" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="1672.90" y1="1339.46" x2="1550.48" y2="1292.53" stroke="#badaed" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="1814.12" y1="1329.71" x2="1553.47" y2="1281.89" stroke="#badaed" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="1579.50" y1="1253.63" x2="1553.24" y2="1259.01" stroke="#badaed" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="1726.62" y1="1200.15" x2="1609.29" y2="1156.47" stroke="#badaed" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="1632.35" y1="1121.09" x2="1612.09" y2="1124.79" stroke="#badaed" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="1581.60" y1="1051.12" x2="1572.28" y2="1078.70" stroke="#badaed" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="1708.91" y1="946.50" x2="1356.27" y2="556.08" stroke="#ffefc4" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="1636.23" y1="824.38" x2="1358.97" y2="553.49" stroke="#ffefc4" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="1548.77" y1="707.55" x2="1361.95" y2="550.21" stroke="#ffefc4" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="1773.15" y1="841.06" x2="1364.72" y2="546.64" stroke="#ffefc4" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="1688.73" y1="716.53" x2="1368.63" y2="540.47" stroke="#ffefc4" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="1604.67" y1="602.19" x2="1373.30" y2="529.53" stroke="#ffefc4" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="1830.34" y1="721.68" x2="1371.60" y2="534.25" stroke="#ffefc4" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="1752.12" y1="608.16" x2="1374.63" y2="524.54" stroke="#ffefc4" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="1681.05" y1="498.17" x2="1376.01" y2="509.36" stroke="#ffefc4" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="1544.44" y1="473.25" x2="1375.23" y2="501.63" stroke="#ffefc4" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="1415.68" y1="454.33" x2="1368.08" y2="481.67" stroke="#ffefc4" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="1646.34" y1="379.73" x2="1371.78" y2="489.32" stroke="#ffefc4" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="1512.04" y1="357.55" x2="1363.23" y2="474.49" stroke="#ffefc4" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="1514.72" y1="227.35" x2="1350.43" y2="462.38" stroke="#ffefc4" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="1393.93" y1="287.34" x2="1335.74" y2="454.88" stroke="#ffefc4" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="1335.07" y1="411.04" x2="1327.21" y2="452.60" stroke="#ffefc4" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="1280.57" y1="297.64" x2="1306.23" y2="452.37" stroke="#ffefc4" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="1327.56" y1="172.40" x2="1318.09" y2="451.59" stroke="#ffefc4" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="1190.80" y1="200.61" x2="1293.63" y2="455.90" stroke="#ffefc4" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="1067.02" y1="149.44" x2="1282.05" y2="462.12" stroke="#ffefc4" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="1206.14" y1="379.42" x2="1277.68" y2="465.43" stroke="#ffefc4" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="1102.25" y1="289.49" x2="1274.44" y2="468.34" stroke="#ffefc4" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="970.13" y1="234.61" x2="1269.21" y2="474.06" stroke="#ffefc4" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="801.75" y1="223.61" x2="1263.70" y2="482.25" stroke="#ffefc4" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="727.12" y1="332.61" x2="1258.64" y2="494.11" stroke="#ffefc4" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="889.38" y1="329.68" x2="1260.86" y2="488.03" stroke="#ffefc4" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="974.54" y1="434.61" x2="1257.52" y2="498.37" stroke="#ffefc4" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="822.19" y1="431.99" x2="1256.82" y2="502.01" stroke="#ffefc4" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="663.78" y1="453.90" x2="1256.29" y2="506.28" stroke="#ffefc4" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="1042.05" y1="545.14" x2="1256.50" y2="518.86" stroke="#ffefc4" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="1267.68" y1="582.01" x2="1282.09" y2="561.02" stroke="#ffefc4" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="1167.36" y1="578.01" x2="1261.27" y2="536.04" stroke="#ffefc4" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="891.91" y1="581.08" x2="1100.04" y2="705.82" stroke="#ffefc4" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="1072.62" y1="713.14" x2="1094.01" y2="719.52" stroke="#ffefc4" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="941.98" y1="691.54" x2="1092.85" y2="724.03" stroke="#ffefc4" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="738.22" y1="600.71" x2="902.08" y2="774.98" stroke="#ffefc4" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="839.88" y1="866.26" x2="852.65" y2="891.33" stroke="#badaed" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="739.56" y1="753.40" x2="762.74" y2="974.85" stroke="#badaed" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="699.05" y1="866.55" x2="745.93" y2="979.14" stroke="#badaed" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="573.85" y1="645.34" x2="642.58" y2="889.01" stroke="#d2c9df" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="577.58" y1="786.74" x2="631.70" y2="893.26" stroke="#d2c9df" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="460.42" y1="718.09" x2="619.55" y2="901.44" stroke="#d2c9df" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="491.50" y1="848.08" x2="607.19" y2="916.28" stroke="#d2c9df" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="341.75" y1="825.63" x2="541.82" y2="1011.59" stroke="#d2c9df" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="225.19" y1="1057.29" x2="228.11" y2="1083.75" stroke="#d2c9df" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="155.68" y1="1111.68" x2="179.02" y2="1121.04" stroke="#d2c9df" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="185.92" y1="1216.33" x2="201.35" y2="1193.26" stroke="#d2c9df" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="337.27" y1="1319.01" x2="393.30" y2="1302.24" stroke="#d2c9df" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="295.61" y1="1437.73" x2="408.02" y2="1327.11" stroke="#d2c9df" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="419.40" y1="1361.80" x2="428.08" y2="1340.57" stroke="#d2c9df" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="406.35" y1="1510.37" x2="545.81" y2="1298.63" stroke="#d2c9df" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<circle cx="1019.09" cy="1160.45" r="60.00" fill="#CCCCCC" stroke="#3f3f3f" stroke-width="3.20"/>
+<text x="1019.09" y="1130.45" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Formulation of</text>
+<text x="1019.09" y="1142.45" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">explanation as</text>
+<text x="1019.09" y="1154.45" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">multistep entailment</text>
+<text x="1019.09" y="1166.45" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">trees</text>
+<text x="1019.09" y="1180.45" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Explaining Answers with</text>
+<text x="1019.09" y="1190.45" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Entailment Trees</text>
+<circle cx="720.35" cy="1294.28" r="60.00" fill="#ffacae" stroke="#ff595e" stroke-width="1.80"/>
+<text x="720.35" y="1264.28" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Hard-selection</text>
+<text x="720.35" y="1276.28" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">baseline models for</text>
+<text x="720.35" y="1288.28" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">rationalized</text>
+<text x="720.35" y="1300.28" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">predictions</text>
+<text x="720.35" y="1314.28" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">ERASER : A Benchmark to</text>
+<text x="720.35" y="1324.28" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Evaluate Rationalized...</text>
+<circle cx="1173.93" cy="1505.18" r="60.00" fill="#ffe49c" stroke="#ffca3a" stroke-width="1.80"/>
+<text x="1173.93" y="1475.18" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Soft‑selection</text>
+<text x="1173.93" y="1487.18" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">baseline models for</text>
+<text x="1173.93" y="1499.18" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">rationalized</text>
+<text x="1173.93" y="1511.18" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">predictions</text>
+<text x="1173.93" y="1525.18" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">ERASER : A Benchmark to</text>
+<text x="1173.93" y="1535.18" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Evaluate Rationalized...</text>
+<circle cx="1138.09" cy="1240.35" r="60.00" fill="#c4e492" stroke="#8ac926" stroke-width="1.80"/>
+<text x="1138.09" y="1210.35" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">MetaGen: Neural</text>
+<text x="1138.09" y="1222.35" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">forward‑generation</text>
+<text x="1138.09" y="1234.35" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">system for Metamath</text>
+<text x="1138.09" y="1246.35" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">theorems and proofs</text>
+<text x="1138.09" y="1260.35" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Learning to Prove</text>
+<text x="1138.09" y="1270.35" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Theorems by Learning ...</text>
+<circle cx="1331.69" cy="1263.72" r="60.00" fill="#8cc0e2" stroke="#1982c4" stroke-width="1.80"/>
+<text x="1331.69" y="1239.72" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">WorldTree V2</text>
+<text x="1331.69" y="1251.72" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">multi‑fact explanation</text>
+<text x="1331.69" y="1263.72" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">dataset</text>
+<text x="1331.69" y="1277.72" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">WorldTree V2: A Corpus</text>
+<text x="1331.69" y="1287.72" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">of Science-Domain...</text>
+<circle cx="1258.44" cy="1156.03" r="60.00" fill="#b4a6c9" stroke="#6a4c93" stroke-width="1.80"/>
+<text x="1258.44" y="1132.03" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">GPT‑f automated prover</text>
+<text x="1258.44" y="1144.03" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">and proof assistant</text>
+<text x="1258.44" y="1156.03" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">for Metamath</text>
+<text x="1258.44" y="1170.03" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Generative Language</text>
+<text x="1258.44" y="1180.03" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Modeling for Automate...</text>
+<circle cx="1142.74" cy="1078.48" r="60.00" fill="#ffacae" stroke="#ff595e" stroke-width="1.80"/>
+<text x="1142.74" y="1048.48" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Proof‑step conditional</text>
+<text x="1142.74" y="1060.48" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">language‑modeling</text>
+<text x="1142.74" y="1072.48" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">objective (GOAL →</text>
+<text x="1142.74" y="1084.48" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">PROOFSTEP)</text>
+<text x="1142.74" y="1098.48" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Generative Language</text>
+<text x="1142.74" y="1108.48" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Modeling for Automate...</text>
+<circle cx="1162.32" cy="937.86" r="60.00" fill="#ffe49c" stroke="#ffca3a" stroke-width="1.80"/>
+<text x="1162.32" y="901.86" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Iterative generative</text>
+<text x="1162.32" y="913.86" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">ProofWriter model for</text>
+<text x="1162.32" y="925.86" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">faithful</text>
+<text x="1162.32" y="937.86" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">natural-language proof</text>
+<text x="1162.32" y="949.86" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">generation</text>
+<text x="1162.32" y="963.86" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">ProofWriter: Generating</text>
+<text x="1162.32" y="973.86" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Implications, Proofs,...</text>
+<circle cx="1021.39" cy="993.51" r="60.00" fill="#c4e492" stroke="#8ac926" stroke-width="1.80"/>
+<text x="1021.39" y="963.51" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">All‑At‑Once proof</text>
+<text x="1021.39" y="975.51" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">generation baseline</text>
+<text x="1021.39" y="987.51" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">for natural‑language</text>
+<text x="1021.39" y="999.51" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">reasoning</text>
+<text x="1021.39" y="1013.51" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">ProofWriter: Generating</text>
+<text x="1021.39" y="1023.51" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Implications, Proofs,...</text>
+<circle cx="900.55" cy="1081.96" r="60.00" fill="#8cc0e2" stroke="#1982c4" stroke-width="1.80"/>
+<text x="900.55" y="1057.96" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Formulation of the</text>
+<text x="900.55" y="1069.96" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Multiple Premise</text>
+<text x="900.55" y="1081.96" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Entailment (MPE) task</text>
+<text x="900.55" y="1095.96" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Natural Language</text>
+<text x="900.55" y="1105.96" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Inference from Multip...</text>
+<circle cx="695.39" cy="1154.48" r="60.00" fill="#b4a6c9" stroke="#6a4c93" stroke-width="1.80"/>
+<text x="695.39" y="1118.48" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">ARC Dataset:</text>
+<text x="695.39" y="1130.48" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">large‑scale</text>
+<text x="695.39" y="1142.48" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">grade‑school science</text>
+<text x="695.39" y="1154.48" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">QA benchmark with</text>
+<text x="695.39" y="1166.48" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Challenge/Easy split</text>
+<text x="695.39" y="1180.48" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Think you have Solved</text>
+<text x="695.39" y="1190.48" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Question Answering? T...</text>
+<circle cx="481.29" cy="1654.33" r="60.00" fill="#ffcdcf" stroke="#ff595e" stroke-width="1.80"/>
+<text x="481.29" y="1624.33" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">GloVe: Global</text>
+<text x="481.29" y="1636.33" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Log‑Bilinear</text>
+<text x="481.29" y="1648.33" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Regression Model for</text>
+<text x="481.29" y="1660.33" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Word Embeddings</text>
+<text x="481.29" y="1674.33" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">GloVe: Global Vectors</text>
+<text x="481.29" y="1684.33" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">for Word Representation</text>
+<circle cx="627.53" cy="1465.50" r="60.00" fill="#ffcdcf" stroke="#ff595e" stroke-width="1.80"/>
+<text x="627.53" y="1435.50" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Open‑Source</text>
+<text x="627.53" y="1447.50" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Implementation and</text>
+<text x="627.53" y="1459.50" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Pre‑trained Word</text>
+<text x="627.53" y="1471.50" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Vectors Release</text>
+<text x="627.53" y="1485.50" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">GloVe: Global Vectors</text>
+<text x="627.53" y="1495.50" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">for Word Representation</text>
+<circle cx="478.24" cy="1833.45" r="60.00" fill="#ffcdcf" stroke="#ff595e" stroke-width="1.80"/>
+<text x="478.24" y="1803.45" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Imperative</text>
+<text x="478.24" y="1815.45" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">define‑by‑run deep</text>
+<text x="478.24" y="1827.45" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">learning library</text>
+<text x="478.24" y="1839.45" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">(PyTorch)</text>
+<text x="478.24" y="1853.45" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">PyTorch: An Imperative</text>
+<text x="478.24" y="1863.45" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Style, High-Performan...</text>
+<circle cx="619.89" cy="1610.78" r="60.00" fill="#ffcdcf" stroke="#ff595e" stroke-width="1.80"/>
+<text x="619.89" y="1586.78" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Open-source release of</text>
+<text x="619.89" y="1598.78" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">BERT code and</text>
+<text x="619.89" y="1610.78" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">pretrained checkpoints</text>
+<text x="619.89" y="1624.78" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">BERT: Pre-training of</text>
+<text x="619.89" y="1634.78" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Deep Bidirectional...</text>
+<circle cx="739.81" cy="1549.77" r="60.00" fill="#ffcdcf" stroke="#ff595e" stroke-width="1.80"/>
+<text x="739.81" y="1525.77" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Gated Recurrent Unit</text>
+<text x="739.81" y="1537.77" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">(reset and update</text>
+<text x="739.81" y="1549.77" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">gates)</text>
+<text x="739.81" y="1563.77" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Learning Phrase</text>
+<text x="739.81" y="1573.77" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Representations using...</text>
+<circle cx="782.48" cy="1419.20" r="60.00" fill="#ffcdcf" stroke="#ff595e" stroke-width="1.80"/>
+<text x="782.48" y="1395.20" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Adam: Adaptive Moment</text>
+<text x="782.48" y="1407.20" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Estimation</text>
+<text x="782.48" y="1419.20" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Optimization Algorithm</text>
+<text x="782.48" y="1433.20" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Adam: A Method for</text>
+<text x="782.48" y="1443.20" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Stochastic Optimization</text>
+<circle cx="869.32" cy="1313.11" r="60.00" fill="#ffcdcf" stroke="#ff595e" stroke-width="1.80"/>
+<text x="869.32" y="1277.11" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Modular</text>
+<text x="869.32" y="1289.11" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">encoder‑generator</text>
+<text x="869.32" y="1301.11" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">framework for</text>
+<text x="869.32" y="1313.11" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">rationale‑based</text>
+<text x="869.32" y="1325.11" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">prediction</text>
+<text x="869.32" y="1339.11" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Rationalizing Neural</text>
+<text x="869.32" y="1349.11" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Predictions</text>
+<circle cx="1000.99" cy="1298.51" r="60.00" fill="#ffefc4" stroke="#ffca3a" stroke-width="1.80"/>
+<text x="1000.99" y="1268.51" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Soft attention</text>
+<text x="1000.99" y="1280.51" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">mechanism for</text>
+<text x="1000.99" y="1292.51" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">differentiable</text>
+<text x="1000.99" y="1304.51" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">alignment</text>
+<text x="1000.99" y="1318.51" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Neural Machine</text>
+<text x="1000.99" y="1328.51" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Translation by Jointl...</text>
+<circle cx="1027.51" cy="1431.87" r="60.00" fill="#ffefc4" stroke="#ffca3a" stroke-width="1.80"/>
+<text x="1027.51" y="1401.87" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">LIME: Local</text>
+<text x="1027.51" y="1413.87" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Interpretable</text>
+<text x="1027.51" y="1425.87" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Model‑agnostic</text>
+<text x="1027.51" y="1437.87" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Explanations</text>
+<text x="1027.51" y="1451.87" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">&quot;Why Should I Trust</text>
+<text x="1027.51" y="1461.87" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">You?&quot; Explaining the...</text>
+<circle cx="978.74" cy="1830.12" r="60.00" fill="#ffefc4" stroke="#ffca3a" stroke-width="1.80"/>
+<text x="978.74" y="1806.12" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Open‑source LIME</text>
+<text x="978.74" y="1818.12" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Software and</text>
+<text x="978.74" y="1830.12" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Demonstration System</text>
+<text x="978.74" y="1844.12" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">&quot;Why Should I Trust</text>
+<text x="978.74" y="1854.12" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">You?&quot; Explaining the...</text>
+<circle cx="1080.32" cy="1736.45" r="60.00" fill="#ffefc4" stroke="#ffca3a" stroke-width="1.80"/>
+<text x="1080.32" y="1718.45" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Integrated Gradients</text>
+<text x="1080.32" y="1730.45" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">attribution method</text>
+<text x="1080.32" y="1744.45" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Axiomatic Attribution</text>
+<text x="1080.32" y="1754.45" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">for Deep Networks</text>
+<circle cx="1189.66" cy="1651.03" r="60.00" fill="#ffefc4" stroke="#ffca3a" stroke-width="1.80"/>
+<text x="1189.66" y="1627.03" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Bidirectional</text>
+<text x="1189.66" y="1639.03" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Transformer encoder</text>
+<text x="1189.66" y="1651.03" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">architecture (BERT)</text>
+<text x="1189.66" y="1665.03" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">BERT: Pre-training of</text>
+<text x="1189.66" y="1675.03" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Deep Bidirectional...</text>
+<circle cx="1311.58" cy="1710.65" r="60.00" fill="#ffefc4" stroke="#ffca3a" stroke-width="1.80"/>
+<text x="1311.58" y="1686.65" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Bias‑Correction for</text>
+<text x="1311.58" y="1698.65" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Exponential Moving</text>
+<text x="1311.58" y="1710.65" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Averages in Adam</text>
+<text x="1311.58" y="1724.65" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Adam: A Method for</text>
+<text x="1311.58" y="1734.65" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Stochastic Optimization</text>
+<circle cx="1448.19" cy="1756.51" r="60.00" fill="#ffefc4" stroke="#ffca3a" stroke-width="1.80"/>
+<text x="1448.19" y="1738.51" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">O(√T) Regret Bound for</text>
+<text x="1448.19" y="1750.51" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Adam</text>
+<text x="1448.19" y="1764.51" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Adam: A Method for</text>
+<text x="1448.19" y="1774.51" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Stochastic Optimization</text>
+<circle cx="1589.23" cy="1728.40" r="60.00" fill="#ffefc4" stroke="#ffca3a" stroke-width="1.80"/>
+<text x="1589.23" y="1710.40" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Average Regret</text>
+<text x="1589.23" y="1722.40" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Convergence to Zero</text>
+<text x="1589.23" y="1736.40" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Adam: A Method for</text>
+<text x="1589.23" y="1746.40" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Stochastic Optimization</text>
+<circle cx="1426.23" cy="1611.07" r="60.00" fill="#ffefc4" stroke="#ffca3a" stroke-width="1.80"/>
+<text x="1426.23" y="1581.07" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Invariance of Adam&#x27;s</text>
+<text x="1426.23" y="1593.07" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Effective Step Size to</text>
+<text x="1426.23" y="1605.07" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Diagonal Rescaling of</text>
+<text x="1426.23" y="1617.07" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Gradients</text>
+<text x="1426.23" y="1631.07" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Adam: A Method for</text>
+<text x="1426.23" y="1641.07" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Stochastic Optimization</text>
+<circle cx="1324.97" cy="1502.88" r="60.00" fill="#ffefc4" stroke="#ffca3a" stroke-width="1.80"/>
+<text x="1324.97" y="1472.88" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Upper Bound on</text>
+<text x="1324.97" y="1484.88" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Per‑Parameter Update</text>
+<text x="1324.97" y="1496.88" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Magnitude Proportional</text>
+<text x="1324.97" y="1508.88" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">to Global Stepsize α</text>
+<text x="1324.97" y="1522.88" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Adam: A Method for</text>
+<text x="1324.97" y="1532.88" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Stochastic Optimization</text>
+<circle cx="1266.15" cy="1393.51" r="60.00" fill="#ffefc4" stroke="#ffca3a" stroke-width="1.80"/>
+<text x="1266.15" y="1363.51" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Signal-to-Noise Ratio</text>
+<text x="1266.15" y="1375.51" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Interpretation and</text>
+<text x="1266.15" y="1387.51" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Automatic Annealing of</text>
+<text x="1266.15" y="1399.51" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Step Sizes</text>
+<text x="1266.15" y="1413.51" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Adam: A Method for</text>
+<text x="1266.15" y="1423.51" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Stochastic Optimization</text>
+<circle cx="1154.52" cy="1360.65" r="60.00" fill="#ffefc4" stroke="#ffca3a" stroke-width="1.80"/>
+<text x="1154.52" y="1336.65" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Unified Adaptive</text>
+<text x="1154.52" y="1348.65" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Gradient Method</text>
+<text x="1154.52" y="1360.65" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Framework</text>
+<text x="1154.52" y="1374.65" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Adam: A Method for</text>
+<text x="1154.52" y="1384.65" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Stochastic Optimization</text>
+<circle cx="1398.23" cy="1384.18" r="60.00" fill="#dcefbe" stroke="#8ac926" stroke-width="1.80"/>
+<text x="1398.23" y="1348.18" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Systematic comparison</text>
+<text x="1398.23" y="1360.18" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">of neural</text>
+<text x="1398.23" y="1372.18" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">architectures for</text>
+<text x="1398.23" y="1384.18" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">embedding mathematical</text>
+<text x="1398.23" y="1396.18" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">statements</text>
+<text x="1398.23" y="1410.18" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">DeepMath - Deep Sequence</text>
+<text x="1398.23" y="1420.18" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Models for Premise...</text>
+<circle cx="1540.99" cy="1406.09" r="60.00" fill="#badaed" stroke="#1982c4" stroke-width="1.80"/>
+<text x="1540.99" y="1376.09" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Hierarchical taxonomy</text>
+<text x="1540.99" y="1388.09" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">of 406 fine-grained</text>
+<text x="1540.99" y="1400.09" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">problem domains for</text>
+<text x="1540.99" y="1412.09" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">K‑12 science exams</text>
+<text x="1540.99" y="1426.09" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Multi-class Hierarchical</text>
+<text x="1540.99" y="1436.09" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Question Classificati...</text>
+<circle cx="1494.46" cy="1271.06" r="60.00" fill="#badaed" stroke="#1982c4" stroke-width="1.80"/>
+<text x="1494.46" y="1241.06" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Annotated ARC</text>
+<text x="1494.46" y="1253.06" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">question‑classification</text>
+<text x="1494.46" y="1265.06" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">dataset (7,787</text>
+<text x="1494.46" y="1277.06" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">questions)</text>
+<text x="1494.46" y="1291.06" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Multi-class Hierarchical</text>
+<text x="1494.46" y="1301.06" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Question Classificati...</text>
+<circle cx="1553.06" cy="1135.54" r="60.00" fill="#badaed" stroke="#1982c4" stroke-width="1.80"/>
+<text x="1553.06" y="1117.54" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">WorldTree explanation</text>
+<text x="1553.06" y="1129.54" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">graph corpus</text>
+<text x="1553.06" y="1143.54" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">WorldTree: A Corpus of</text>
+<text x="1553.06" y="1153.54" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Explanation Graphs fo...</text>
+<circle cx="1417.62" cy="1156.20" r="60.00" fill="#badaed" stroke="#1982c4" stroke-width="1.80"/>
+<text x="1417.62" y="1120.20" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Web‑based</text>
+<text x="1417.62" y="1132.20" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">collaborative</text>
+<text x="1417.62" y="1144.20" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">annotation tool for</text>
+<text x="1417.62" y="1156.20" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">constructing</text>
+<text x="1417.62" y="1168.20" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">explanation graphs</text>
+<text x="1417.62" y="1182.20" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">WorldTree: A Corpus of</text>
+<text x="1417.62" y="1192.20" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Explanation Graphs fo...</text>
+<circle cx="1461.01" cy="1025.11" r="60.00" fill="#badaed" stroke="#1982c4" stroke-width="1.80"/>
+<text x="1461.01" y="1001.11" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Guidelines for</text>
+<text x="1461.01" y="1013.11" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">explanation depth and</text>
+<text x="1461.01" y="1025.11" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">annotation protocol</text>
+<text x="1461.01" y="1039.11" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">WorldTree: A Corpus of</text>
+<text x="1461.01" y="1049.11" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Explanation Graphs fo...</text>
+<circle cx="1507.68" cy="887.66" r="60.00" fill="#d2c9df" stroke="#6a4c93" stroke-width="1.80"/>
+<text x="1507.68" y="857.66" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Value‑network</text>
+<text x="1507.68" y="869.66" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">augmentation for MCTS</text>
+<text x="1507.68" y="881.66" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">using apprentice</text>
+<text x="1507.68" y="893.66" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">estimates</text>
+<text x="1507.68" y="907.66" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Thinking Fast and Slow</text>
+<text x="1507.68" y="917.66" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">with Deep Learning an...</text>
+<circle cx="1276.66" cy="1016.41" r="60.00" fill="#ffefc4" stroke="#ffca3a" stroke-width="1.80"/>
+<text x="1276.66" y="992.41" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Release of T5 model</text>
+<text x="1276.66" y="1004.41" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">checkpoints, code, and</text>
+<text x="1276.66" y="1016.41" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">C4 dataset</text>
+<text x="1276.66" y="1030.41" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Exploring the Limits of</text>
+<text x="1276.66" y="1040.41" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Transfer Learning wit...</text>
+<circle cx="1361.30" cy="905.83" r="60.00" fill="#ffefc4" stroke="#ffca3a" stroke-width="1.80"/>
+<text x="1361.30" y="887.83" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Scaling model size up</text>
+<text x="1361.30" y="899.83" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">to 11 B parameters</text>
+<text x="1361.30" y="913.83" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Exploring the Limits of</text>
+<text x="1361.30" y="923.83" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Transfer Learning wit...</text>
+<circle cx="1428.60" cy="764.78" r="60.00" fill="#ffefc4" stroke="#ffca3a" stroke-width="1.80"/>
+<text x="1428.60" y="746.78" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Synthetic RuleTaker</text>
+<text x="1428.60" y="758.78" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">dataset suite</text>
+<text x="1428.60" y="772.78" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Transformers as Soft</text>
+<text x="1428.60" y="782.78" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Reasoners over Language</text>
+<circle cx="1290.48" cy="773.61" r="60.00" fill="#ffefc4" stroke="#ffca3a" stroke-width="1.80"/>
+<text x="1290.48" y="743.61" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">RuleTaker:</text>
+<text x="1290.48" y="755.61" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">RoBERTa‑large</text>
+<text x="1290.48" y="767.61" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">fine‑tuned as a soft</text>
+<text x="1290.48" y="779.61" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">theorem prover</text>
+<text x="1290.48" y="793.61" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Transformers as Soft</text>
+<text x="1290.48" y="803.61" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Reasoners over Language</text>
+<circle cx="1316.05" cy="511.56" r="60.00" fill="#ffefc4" stroke="#ffca3a" stroke-width="1.80"/>
+<text x="1316.05" y="481.56" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Module-wise</text>
+<text x="1316.05" y="493.56" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Faithfulness Framework</text>
+<text x="1316.05" y="505.56" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">for Neural Module</text>
+<text x="1316.05" y="517.56" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Networks</text>
+<text x="1316.05" y="531.56" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Obtaining Faithful</text>
+<text x="1316.05" y="541.56" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Interpretations from...</text>
+<circle cx="1151.51" cy="736.66" r="60.00" fill="#ffefc4" stroke="#ffca3a" stroke-width="1.80"/>
+<text x="1151.51" y="700.66" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">PROVER Multi-Module</text>
+<text x="1151.51" y="712.66" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Transformer</text>
+<text x="1151.51" y="724.66" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Architecture for Joint</text>
+<text x="1151.51" y="736.66" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">QA and Proof</text>
+<text x="1151.51" y="748.66" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Generation</text>
+<text x="1151.51" y="762.66" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">PROVER: Proof Generation</text>
+<text x="1151.51" y="772.66" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">for Interpretable...</text>
+<circle cx="1071.77" cy="829.46" r="60.00" fill="#ffefc4" stroke="#ffca3a" stroke-width="1.80"/>
+<text x="1071.77" y="793.46" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Constrained Joint</text>
+<text x="1071.77" y="805.46" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Training Regime with</text>
+<text x="1071.77" y="817.46" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Edge Masking and</text>
+<text x="1071.77" y="829.46" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Global Semantic</text>
+<text x="1071.77" y="841.46" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Constraints</text>
+<text x="1071.77" y="855.46" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">PROVER: Proof Generation</text>
+<text x="1071.77" y="865.46" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">for Interpretable...</text>
+<circle cx="943.17" cy="818.69" r="60.00" fill="#ffefc4" stroke="#ffca3a" stroke-width="1.80"/>
+<text x="943.17" y="794.69" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Graph‑Based Proof</text>
+<text x="943.17" y="806.69" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Representation with</text>
+<text x="943.17" y="818.69" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Global Constraints</text>
+<text x="943.17" y="832.69" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">PROVER: Proof Generation</text>
+<text x="943.17" y="842.69" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">for Interpretable...</text>
+<circle cx="879.88" cy="944.79" r="60.00" fill="#badaed" stroke="#1982c4" stroke-width="1.80"/>
+<text x="879.88" y="920.79" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Stanford Natural</text>
+<text x="879.88" y="932.79" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Language Inference</text>
+<text x="879.88" y="944.79" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">(SNLI) Corpus</text>
+<text x="879.88" y="958.79" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">A large annotated corpus</text>
+<text x="879.88" y="968.79" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">for learning natural...</text>
+<circle cx="768.99" cy="1034.53" r="60.00" fill="#badaed" stroke="#1982c4" stroke-width="1.80"/>
+<text x="768.99" y="1010.53" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Crowdsourced</text>
+<text x="768.99" y="1022.53" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">High-Quality NLI Data</text>
+<text x="768.99" y="1034.53" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Collection Protocol</text>
+<text x="768.99" y="1048.53" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">A large annotated corpus</text>
+<text x="768.99" y="1058.53" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">for learning natural...</text>
+<circle cx="658.87" cy="946.75" r="60.00" fill="#d2c9df" stroke="#6a4c93" stroke-width="1.80"/>
+<text x="658.87" y="916.75" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Release of the</text>
+<text x="658.87" y="928.75" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Stanford Question</text>
+<text x="658.87" y="940.75" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Answering Dataset</text>
+<text x="658.87" y="952.75" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">(SQuAD) v1.0</text>
+<text x="658.87" y="966.75" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">SQuAD: 100,000+</text>
+<text x="658.87" y="976.75" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Questions for Machine...</text>
+<circle cx="523.66" cy="930.25" r="60.00" fill="#d2c9df" stroke="#6a4c93" stroke-width="1.80"/>
+<text x="523.66" y="894.25" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Logistic regression</text>
+<text x="523.66" y="906.25" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">model with lexicalized</text>
+<text x="523.66" y="918.25" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">and dependency‑tree</text>
+<text x="523.66" y="930.25" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">path features for span</text>
+<text x="523.66" y="942.25" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">selection on SQuAD</text>
+<text x="523.66" y="956.25" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">SQuAD: 100,000+</text>
+<text x="523.66" y="966.25" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Questions for Machine...</text>
+<circle cx="585.77" cy="1052.44" r="60.00" fill="#d2c9df" stroke="#6a4c93" stroke-width="1.80"/>
+<text x="585.77" y="1022.44" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">TriviaQA large‑scale</text>
+<text x="585.77" y="1034.44" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">reading‑comprehension</text>
+<text x="585.77" y="1046.44" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">dataset with distant</text>
+<text x="585.77" y="1058.44" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">supervision</text>
+<text x="585.77" y="1072.44" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">TriviaQA: A Large Scale</text>
+<text x="585.77" y="1082.44" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Distantly Supervised...</text>
+<circle cx="342.07" cy="928.44" r="60.00" fill="#d2c9df" stroke="#6a4c93" stroke-width="1.80"/>
+<text x="342.07" y="898.44" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Modified BiDAF</text>
+<text x="342.07" y="910.44" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">architecture for long,</text>
+<text x="342.07" y="922.44" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">multi-document</text>
+<text x="342.07" y="934.44" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">evidence</text>
+<text x="342.07" y="948.44" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">TriviaQA: A Large Scale</text>
+<text x="342.07" y="958.44" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Distantly Supervised...</text>
+<circle cx="352.48" cy="1063.12" r="60.00" fill="#d2c9df" stroke="#6a4c93" stroke-width="1.80"/>
+<text x="352.48" y="1039.12" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Human‑verified clean</text>
+<text x="352.48" y="1051.12" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">evaluation subset of</text>
+<text x="352.48" y="1063.12" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">TriviaQA</text>
+<text x="352.48" y="1077.12" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">TriviaQA: A Large Scale</text>
+<text x="352.48" y="1087.12" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Distantly Supervised...</text>
+<circle cx="469.02" cy="1124.21" r="60.00" fill="#d2c9df" stroke="#6a4c93" stroke-width="1.80"/>
+<text x="469.02" y="1100.21" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Decomposable Attention</text>
+<text x="469.02" y="1112.21" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Model for Natural</text>
+<text x="469.02" y="1124.21" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Language Inference</text>
+<text x="469.02" y="1138.21" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">A Decomposable Attention</text>
+<text x="469.02" y="1148.21" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Model for Natural...</text>
+<circle cx="234.70" cy="1143.39" r="60.00" fill="#d2c9df" stroke="#6a4c93" stroke-width="1.80"/>
+<text x="234.70" y="1101.39" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">State‑of‑the‑Art</text>
+<text x="234.70" y="1113.39" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Empirical Evaluation</text>
+<text x="234.70" y="1125.39" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">on SNLI with</text>
+<text x="234.70" y="1137.39" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Parameter‑Efficient</text>
+<text x="234.70" y="1149.39" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Decomposable Attention</text>
+<text x="234.70" y="1161.39" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Models</text>
+<text x="234.70" y="1175.39" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">A Decomposable Attention</text>
+<text x="234.70" y="1185.39" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Model for Natural...</text>
+<circle cx="348.56" cy="1213.69" r="60.00" fill="#d2c9df" stroke="#6a4c93" stroke-width="1.80"/>
+<text x="348.56" y="1189.69" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Hierarchical</text>
+<text x="348.56" y="1201.69" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">multi‑stage embedding</text>
+<text x="348.56" y="1213.69" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">pipeline</text>
+<text x="348.56" y="1227.69" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Bidirectional Attention</text>
+<text x="348.56" y="1237.69" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Flow for Machine...</text>
+<circle cx="450.78" cy="1285.03" r="60.00" fill="#d2c9df" stroke="#6a4c93" stroke-width="1.80"/>
+<text x="450.78" y="1255.03" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Bidirectional</text>
+<text x="450.78" y="1267.03" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">attention flow layer</text>
+<text x="450.78" y="1279.03" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">with memory‑less</text>
+<text x="450.78" y="1291.03" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">static attention</text>
+<text x="450.78" y="1305.03" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Bidirectional Attention</text>
+<text x="450.78" y="1315.03" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Flow for Machine...</text>
+<circle cx="578.81" cy="1248.52" r="60.00" fill="#d2c9df" stroke="#6a4c93" stroke-width="1.80"/>
+<text x="578.81" y="1230.52" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Task‑specific output</text>
+<text x="578.81" y="1242.52" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">head for QA formats</text>
+<text x="578.81" y="1256.52" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Bidirectional Attention</text>
+<text x="578.81" y="1266.52" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Flow for Machine...</text>
+<circle cx="536.87" cy="1376.89" r="60.00" fill="#d2c9df" stroke="#6a4c93" stroke-width="1.80"/>
+<text x="536.87" y="1352.89" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">State‑of‑the‑art</text>
+<text x="536.87" y="1364.89" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">performance on SQuAD</text>
+<text x="536.87" y="1376.89" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">benchmark</text>
+<text x="536.87" y="1390.89" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Bidirectional Attention</text>
+<text x="536.87" y="1400.89" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Flow for Machine...</text>
+<circle cx="500.51" cy="1513.98" r="60.00" fill="#d2c9df" stroke="#6a4c93" stroke-width="1.80"/>
+<text x="500.51" y="1483.98" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">State‑of‑the‑art</text>
+<text x="500.51" y="1495.98" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">performance on</text>
+<text x="500.51" y="1507.98" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">CNN/DailyMail cloze</text>
+<text x="500.51" y="1519.98" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">test</text>
+<text x="500.51" y="1533.98" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Bidirectional Attention</text>
+<text x="500.51" y="1543.98" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Flow for Machine...</text>
+<circle cx="254.60" cy="1639.17" r="60.00" fill="#ffeeef" stroke="#ff595e" stroke-width="1.80"/>
+<text x="254.60" y="1603.17" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Explicit</text>
+<text x="254.60" y="1615.17" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">high‑dimensional</text>
+<text x="254.60" y="1627.17" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">sparse word vectors</text>
+<text x="254.60" y="1639.17" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">from Wikipedia using</text>
+<text x="254.60" y="1651.17" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">PPMI</text>
+<text x="254.60" y="1665.17" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Linguistic Regularities</text>
+<text x="254.60" y="1675.17" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">in Sparse and Explici...</text>
+<circle cx="367.41" cy="1737.99" r="60.00" fill="#ffeeef" stroke="#ff595e" stroke-width="1.80"/>
+<text x="367.41" y="1713.99" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Vector offset</text>
+<text x="367.41" y="1725.99" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">algorithm for word</text>
+<text x="367.41" y="1737.99" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">analogy solving</text>
+<text x="367.41" y="1751.99" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Linguistic Regularities</text>
+<text x="367.41" y="1761.99" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">in Continuous Space W...</text>
+<circle cx="599.63" cy="1758.42" r="60.00" fill="#ffeeef" stroke="#ff595e" stroke-width="1.80"/>
+<text x="599.63" y="1728.42" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Leaky‑integration</text>
+<text x="599.63" y="1740.42" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">hidden units for</text>
+<text x="599.63" y="1752.42" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">longer temporal</text>
+<text x="599.63" y="1764.42" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">dependencies</text>
+<text x="599.63" y="1778.42" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Advances in optimizing</text>
+<text x="599.63" y="1788.42" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">recurrent networks</text>
+<circle cx="724.77" cy="1692.88" r="60.00" fill="#ffeeef" stroke="#ff595e" stroke-width="1.80"/>
+<text x="724.77" y="1668.88" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">ADADELTA adaptive</text>
+<text x="724.77" y="1680.88" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">learning‑rate</text>
+<text x="724.77" y="1692.88" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">algorithm</text>
+<text x="724.77" y="1706.88" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">ADADELTA: An Adaptive</text>
+<text x="724.77" y="1716.88" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Learning Rate Method</text>
+<circle cx="726.05" cy="1838.85" r="60.00" fill="#ffeeef" stroke="#ff595e" stroke-width="1.80"/>
+<text x="726.05" y="1814.85" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Joint end‑to‑end</text>
+<text x="726.05" y="1826.85" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">training of attention</text>
+<text x="726.05" y="1838.85" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">and translation</text>
+<text x="726.05" y="1852.85" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Neural Machine</text>
+<text x="726.05" y="1862.85" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Translation by Jointl...</text>
+<circle cx="850.23" cy="1757.66" r="60.00" fill="#ffeeef" stroke="#ff595e" stroke-width="1.80"/>
+<text x="850.23" y="1733.66" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Recurrent Attention</text>
+<text x="850.23" y="1745.66" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Model (RAM)</text>
+<text x="850.23" y="1757.66" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">architecture</text>
+<text x="850.23" y="1771.66" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Recurrent Models of</text>
+<text x="850.23" y="1781.66" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Visual Attention</text>
+<circle cx="931.18" cy="1638.90" r="60.00" fill="#ffeeef" stroke="#ff595e" stroke-width="1.80"/>
+<text x="931.18" y="1608.90" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">End-to-end training of</text>
+<text x="931.18" y="1620.90" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">RAM with REINFORCE,</text>
+<text x="931.18" y="1632.90" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">learned baseline, and</text>
+<text x="931.18" y="1644.90" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">hybrid supervised loss</text>
+<text x="931.18" y="1658.90" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Recurrent Models of</text>
+<text x="931.18" y="1668.90" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Visual Attention</text>
+<circle cx="1045.19" cy="1570.99" r="60.00" fill="#ffeeef" stroke="#ff595e" stroke-width="1.80"/>
+<text x="1045.19" y="1540.99" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Gated non-consecutive</text>
+<text x="1045.19" y="1552.99" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">convolutional encoder</text>
+<text x="1045.19" y="1564.99" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">(RCNN) for question</text>
+<text x="1045.19" y="1576.99" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">representation</text>
+<text x="1045.19" y="1590.99" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Semi-supervised Question</text>
+<text x="1045.19" y="1600.99" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Retrieval with Gated...</text>
+<circle cx="852.39" cy="1904.51" r="60.00" fill="#fffaeb" stroke="#ffca3a" stroke-width="1.80"/>
+<text x="852.39" y="1880.51" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Large-scale</text>
+<text x="852.39" y="1892.51" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">politeness‑annotated</text>
+<text x="852.39" y="1904.51" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">request corpus</text>
+<text x="852.39" y="1918.51" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">A computational approach</text>
+<text x="852.39" y="1928.51" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">to politeness with...</text>
+<circle cx="960.20" cy="2004.19" r="60.00" fill="#fffaeb" stroke="#ffca3a" stroke-width="1.80"/>
+<text x="960.20" y="1980.19" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Public release of</text>
+<text x="960.20" y="1992.19" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">politeness detection</text>
+<text x="960.20" y="2004.19" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">dataset and software</text>
+<text x="960.20" y="2018.19" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">A computational approach</text>
+<text x="960.20" y="2028.19" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">to politeness with...</text>
+<circle cx="1082.77" cy="1933.71" r="60.00" fill="#fffaeb" stroke="#ffca3a" stroke-width="1.80"/>
+<text x="1082.77" y="1903.71" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Transformer:</text>
+<text x="1082.77" y="1915.71" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">attention‑only</text>
+<text x="1082.77" y="1927.71" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">encoder‑decoder</text>
+<text x="1082.77" y="1939.71" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">architecture</text>
+<text x="1082.77" y="1953.71" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Attention is All you</text>
+<text x="1082.77" y="1963.71" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Need</text>
+<circle cx="1181.77" cy="1835.56" r="60.00" fill="#fffaeb" stroke="#ffca3a" stroke-width="1.80"/>
+<text x="1181.77" y="1811.56" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Wordpiece sub‑word</text>
+<text x="1181.77" y="1823.56" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">segmentation for</text>
+<text x="1181.77" y="1835.56" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">open‑vocabulary NMT</text>
+<text x="1181.77" y="1849.56" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Google&#x27;s Neural Machine</text>
+<text x="1181.77" y="1859.56" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Translation System:...</text>
+<circle cx="1230.89" cy="1969.23" r="60.00" fill="#fffaeb" stroke="#ffca3a" stroke-width="1.80"/>
+<text x="1230.89" y="1945.23" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">ELMo: Deep</text>
+<text x="1230.89" y="1957.23" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Contextualized Word</text>
+<text x="1230.89" y="1969.23" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Representations</text>
+<text x="1230.89" y="1983.23" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Deep contextualized word</text>
+<text x="1230.89" y="1993.23" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">representations</text>
+<circle cx="1326.44" cy="1854.93" r="60.00" fill="#fffaeb" stroke="#ffca3a" stroke-width="1.80"/>
+<text x="1326.44" y="1830.93" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Pretrained</text>
+<text x="1326.44" y="1842.93" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Bidirectional Language</text>
+<text x="1326.44" y="1854.93" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Model Architecture</text>
+<text x="1326.44" y="1868.93" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Deep contextualized word</text>
+<text x="1326.44" y="1878.93" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">representations</text>
+<circle cx="1463.02" cy="1496.17" r="60.00" fill="#e8f2f9" stroke="#1982c4" stroke-width="1.80"/>
+<text x="1463.02" y="1472.17" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Two‑Layered Semantic</text>
+<text x="1463.02" y="1484.17" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Taxonomy of Answer</text>
+<text x="1463.02" y="1496.17" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Types</text>
+<text x="1463.02" y="1510.17" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Learning Question</text>
+<text x="1463.02" y="1520.17" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Classifiers</text>
+<circle cx="1570.64" cy="1586.50" r="60.00" fill="#e8f2f9" stroke="#1982c4" stroke-width="1.80"/>
+<text x="1570.64" y="1562.50" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Comprehensive</text>
+<text x="1570.64" y="1574.50" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">exposition of Cohen&#x27;s</text>
+<text x="1570.64" y="1586.50" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">kappa statistic</text>
+<text x="1570.64" y="1600.50" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Interrater reliability:</text>
+<text x="1570.64" y="1610.50" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">the kappa statistic</text>
+<circle cx="1710.70" cy="1620.83" r="60.00" fill="#e8f2f9" stroke="#1982c4" stroke-width="1.80"/>
+<text x="1710.70" y="1584.83" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Guideline to report</text>
+<text x="1710.70" y="1596.83" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">both percent agreement</text>
+<text x="1710.70" y="1608.83" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">and Cohen&#x27;s kappa</text>
+<text x="1710.70" y="1620.83" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">based on expected</text>
+<text x="1710.70" y="1632.83" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">guessing</text>
+<text x="1710.70" y="1646.83" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Interrater reliability:</text>
+<text x="1710.70" y="1656.83" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">the kappa statistic</text>
+<circle cx="1669.80" cy="1479.57" r="60.00" fill="#e8f2f9" stroke="#1982c4" stroke-width="1.80"/>
+<text x="1669.80" y="1437.57" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Revised minimum</text>
+<text x="1669.80" y="1449.57" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Cohen&#x27;s kappa</text>
+<text x="1669.80" y="1461.57" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">threshold for</text>
+<text x="1669.80" y="1473.57" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">acceptable interrater</text>
+<text x="1669.80" y="1485.57" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">reliability in health</text>
+<text x="1669.80" y="1497.57" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">research</text>
+<text x="1669.80" y="1511.57" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Interrater reliability:</text>
+<text x="1669.80" y="1521.57" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">the kappa statistic</text>
+<circle cx="1813.35" cy="1478.67" r="60.00" fill="#e8f2f9" stroke="#1982c4" stroke-width="1.80"/>
+<text x="1813.35" y="1436.67" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Guidelines for 95%</text>
+<text x="1813.35" y="1448.67" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">confidence interval</text>
+<text x="1813.35" y="1460.67" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">computation for</text>
+<text x="1813.35" y="1472.67" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Cohen&#x27;s kappa and</text>
+<text x="1813.35" y="1484.67" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">recommended minimum</text>
+<text x="1813.35" y="1496.67" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">sample sizes</text>
+<text x="1813.35" y="1510.67" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Interrater reliability:</text>
+<text x="1813.35" y="1520.67" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">the kappa statistic</text>
+<circle cx="1728.92" cy="1360.94" r="60.00" fill="#e8f2f9" stroke="#1982c4" stroke-width="1.80"/>
+<text x="1728.92" y="1330.94" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Critical analysis of</text>
+<text x="1728.92" y="1342.94" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">the rater independence</text>
+<text x="1728.92" y="1354.94" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">assumption underlying</text>
+<text x="1728.92" y="1366.94" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Cohen&#x27;s kappa</text>
+<text x="1728.92" y="1380.94" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Interrater reliability:</text>
+<text x="1728.92" y="1390.94" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">the kappa statistic</text>
+<circle cx="1873.13" cy="1340.54" r="60.00" fill="#e8f2f9" stroke="#1982c4" stroke-width="1.80"/>
+<text x="1873.13" y="1304.54" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Critical analysis of</text>
+<text x="1873.13" y="1316.54" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">the marginal‑total</text>
+<text x="1873.13" y="1328.54" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">chance‑agreement</text>
+<text x="1873.13" y="1340.54" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">assumption in Cohen&#x27;s</text>
+<text x="1873.13" y="1352.54" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">kappa</text>
+<text x="1873.13" y="1366.54" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Interrater reliability:</text>
+<text x="1873.13" y="1376.54" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">the kappa statistic</text>
+<circle cx="1638.27" cy="1241.59" r="60.00" fill="#e8f2f9" stroke="#1982c4" stroke-width="1.80"/>
+<text x="1638.27" y="1211.59" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Critical analysis of</text>
+<text x="1638.27" y="1223.59" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">the guessing‑behavior</text>
+<text x="1638.27" y="1235.59" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">assumption in Cohen&#x27;s</text>
+<text x="1638.27" y="1247.59" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">kappa</text>
+<text x="1638.27" y="1261.59" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Interrater reliability:</text>
+<text x="1638.27" y="1271.59" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">the kappa statistic</text>
+<circle cx="1782.85" cy="1221.08" r="60.00" fill="#e8f2f9" stroke="#1982c4" stroke-width="1.80"/>
+<text x="1782.85" y="1197.08" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Explanation‑centered</text>
+<text x="1782.85" y="1209.08" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">analysis framework for</text>
+<text x="1782.85" y="1221.08" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">elementary science QA</text>
+<text x="1782.85" y="1235.08" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">What&#x27;s in an</text>
+<text x="1782.85" y="1245.08" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Explanation?...</text>
+<circle cx="1691.38" cy="1110.34" r="60.00" fill="#e8f2f9" stroke="#1982c4" stroke-width="1.80"/>
+<text x="1691.38" y="1080.34" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Analytical insights on</text>
+<text x="1691.38" y="1092.34" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">knowledge distribution</text>
+<text x="1691.38" y="1104.34" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">and implications for</text>
+<text x="1691.38" y="1116.34" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">QA system design</text>
+<text x="1691.38" y="1130.34" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">What&#x27;s in an</text>
+<text x="1691.38" y="1140.34" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Explanation?...</text>
+<circle cx="1600.82" cy="994.28" r="60.00" fill="#e8f2f9" stroke="#1982c4" stroke-width="1.80"/>
+<text x="1600.82" y="970.28" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Semi‑structured table</text>
+<text x="1600.82" y="982.28" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">corpus for</text>
+<text x="1600.82" y="994.28" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">elementary‑science QA</text>
+<text x="1600.82" y="1008.28" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Question Answering via</text>
+<text x="1600.82" y="1018.28" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Integer Programming o...</text>
+<circle cx="1749.13" cy="991.03" r="60.00" fill="#fffaeb" stroke="#ffca3a" stroke-width="1.80"/>
+<text x="1749.13" y="955.03" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Multi-task loss for</text>
+<text x="1749.13" y="967.03" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">joint objectness</text>
+<text x="1749.13" y="979.03" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">classification and</text>
+<text x="1749.13" y="991.03" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">bounding-box</text>
+<text x="1749.13" y="1003.03" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">regression</text>
+<text x="1749.13" y="1017.03" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Faster R-CNN: Towards</text>
+<text x="1749.13" y="1027.03" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Real-Time Object...</text>
+<circle cx="1679.14" cy="866.31" r="60.00" fill="#fffaeb" stroke="#ffca3a" stroke-width="1.80"/>
+<text x="1679.14" y="842.31" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Analysis of proposal</text>
+<text x="1679.14" y="854.31" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">recall versus</text>
+<text x="1679.14" y="866.31" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">detection mAP</text>
+<text x="1679.14" y="880.31" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Faster R-CNN: Towards</text>
+<text x="1679.14" y="890.31" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Real-Time Object...</text>
+<circle cx="1594.66" cy="746.20" r="60.00" fill="#fffaeb" stroke="#ffca3a" stroke-width="1.80"/>
+<text x="1594.66" y="722.20" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">End-to-End Module</text>
+<text x="1594.66" y="734.20" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Networks (N2NMN)</text>
+<text x="1594.66" y="746.20" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">architecture</text>
+<text x="1594.66" y="760.20" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Learning to Reason:</text>
+<text x="1594.66" y="770.20" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">End-to-End Module...</text>
+<circle cx="1821.83" cy="876.14" r="60.00" fill="#fffaeb" stroke="#ffca3a" stroke-width="1.80"/>
+<text x="1821.83" y="852.14" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Co‑attentive neural</text>
+<text x="1821.83" y="864.14" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">modules for visual</text>
+<text x="1821.83" y="876.14" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">reasoning</text>
+<text x="1821.83" y="890.14" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Learning to Reason:</text>
+<text x="1821.83" y="900.14" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">End-to-End Module...</text>
+<circle cx="1741.31" cy="745.45" r="60.00" fill="#fffaeb" stroke="#ffca3a" stroke-width="1.80"/>
+<text x="1741.31" y="721.45" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">LXMERT multi‑encoder</text>
+<text x="1741.31" y="733.45" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">cross‑modality</text>
+<text x="1741.31" y="745.45" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">architecture</text>
+<text x="1741.31" y="759.45" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">LXMERT: Learning</text>
+<text x="1741.31" y="769.45" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Cross-Modality Encode...</text>
+<circle cx="1661.91" cy="620.17" r="60.00" fill="#fffaeb" stroke="#ffca3a" stroke-width="1.80"/>
+<text x="1661.91" y="590.17" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Self-assembling Neural</text>
+<text x="1661.91" y="602.17" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Modular Network for</text>
+<text x="1661.91" y="614.17" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Text-based Multi-hop</text>
+<text x="1661.91" y="626.17" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">QA</text>
+<text x="1661.91" y="640.17" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Self-Assembling Modular</text>
+<text x="1661.91" y="650.17" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Networks for...</text>
+<circle cx="1885.89" cy="744.37" r="60.00" fill="#fffaeb" stroke="#ffca3a" stroke-width="1.80"/>
+<text x="1885.89" y="720.37" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Four language‑oriented</text>
+<text x="1885.89" y="732.37" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">NMN modules for</text>
+<text x="1885.89" y="744.37" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">textual reasoning</text>
+<text x="1885.89" y="758.37" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Self-Assembling Modular</text>
+<text x="1885.89" y="768.37" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Networks for...</text>
+<circle cx="1810.70" cy="621.14" r="60.00" fill="#fffaeb" stroke="#ffca3a" stroke-width="1.80"/>
+<text x="1810.70" y="591.14" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Controller RNN with</text>
+<text x="1810.70" y="603.14" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">soft layout prediction</text>
+<text x="1810.70" y="615.14" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">and sub‑question</text>
+<text x="1810.70" y="627.14" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">attention</text>
+<text x="1810.70" y="641.14" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Self-Assembling Modular</text>
+<text x="1810.70" y="651.14" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Networks for...</text>
+<circle cx="1741.01" cy="495.97" r="60.00" fill="#fffaeb" stroke="#ffca3a" stroke-width="1.80"/>
+<text x="1741.01" y="471.97" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">BREAK Dataset of</text>
+<text x="1741.01" y="483.97" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">83,978 Question–QDMR</text>
+<text x="1741.01" y="495.97" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Pairs</text>
+<text x="1741.01" y="509.97" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Break It Down: A</text>
+<text x="1741.01" y="519.97" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Question Understandin...</text>
+<circle cx="1603.61" cy="463.32" r="60.00" fill="#fffaeb" stroke="#ffca3a" stroke-width="1.80"/>
+<text x="1603.61" y="433.32" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Taxonomy of</text>
+<text x="1603.61" y="445.32" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Faithfulness</text>
+<text x="1603.61" y="457.32" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Evaluation Based on</text>
+<text x="1603.61" y="469.32" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Three Core Assumptions</text>
+<text x="1603.61" y="483.32" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Towards Faithfully</text>
+<text x="1603.61" y="493.32" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Interpretable NLP...</text>
+<circle cx="1467.71" cy="424.45" r="60.00" fill="#fffaeb" stroke="#ffca3a" stroke-width="1.80"/>
+<text x="1467.71" y="394.45" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Critique of Binary</text>
+<text x="1467.71" y="406.45" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Faithfulness and</text>
+<text x="1467.71" y="418.45" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Proposal of Graded</text>
+<text x="1467.71" y="430.45" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Faithfulness Criteria</text>
+<text x="1467.71" y="444.45" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Towards Faithfully</text>
+<text x="1467.71" y="454.45" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Interpretable NLP...</text>
+<circle cx="1702.06" cy="357.49" r="60.00" fill="#fffaeb" stroke="#ffca3a" stroke-width="1.80"/>
+<text x="1702.06" y="333.49" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Explicit Distinction</text>
+<text x="1702.06" y="345.49" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Between Faithfulness</text>
+<text x="1702.06" y="357.49" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">and Plausibility</text>
+<text x="1702.06" y="371.49" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Towards Faithfully</text>
+<text x="1702.06" y="381.49" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Interpretable NLP...</text>
+<circle cx="1559.21" cy="320.47" r="60.00" fill="#fffaeb" stroke="#ffca3a" stroke-width="1.80"/>
+<text x="1559.21" y="296.47" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Two-Axis Graded</text>
+<text x="1559.21" y="308.47" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Faithfulness</text>
+<text x="1559.21" y="320.47" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Evaluation Framework</text>
+<text x="1559.21" y="334.47" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Towards Faithfully</text>
+<text x="1559.21" y="344.47" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Interpretable NLP...</text>
+<circle cx="1549.09" cy="178.18" r="60.00" fill="#fffaeb" stroke="#ffca3a" stroke-width="1.80"/>
+<text x="1549.09" y="154.18" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Dynamic Neural Module</text>
+<text x="1549.09" y="166.18" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Network (D‑NMN)</text>
+<text x="1549.09" y="178.18" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">architecture</text>
+<text x="1549.09" y="192.18" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Learning to Compose</text>
+<text x="1549.09" y="202.18" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Neural Networks for...</text>
+<circle cx="1413.61" cy="230.66" r="60.00" fill="#fffaeb" stroke="#ffca3a" stroke-width="1.80"/>
+<text x="1413.61" y="206.66" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Joint learning</text>
+<text x="1413.61" y="218.66" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">algorithm for modules</text>
+<text x="1413.61" y="230.66" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">and layouts</text>
+<text x="1413.61" y="244.66" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Learning to Compose</text>
+<text x="1413.61" y="254.66" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Neural Networks for...</text>
+<circle cx="1346.23" cy="352.09" r="60.00" fill="#fffaeb" stroke="#ffca3a" stroke-width="1.80"/>
+<text x="1346.23" y="328.09" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Neural module</text>
+<text x="1346.23" y="340.09" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">inventory for visual</text>
+<text x="1346.23" y="352.09" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">and structured domains</text>
+<text x="1346.23" y="366.09" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Learning to Compose</text>
+<text x="1346.23" y="376.09" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Neural Networks for...</text>
+<circle cx="1270.75" cy="238.45" r="60.00" fill="#fffaeb" stroke="#ffca3a" stroke-width="1.80"/>
+<text x="1270.75" y="208.45" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Layout prediction via</text>
+<text x="1270.75" y="220.45" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">dependency‑parse</text>
+<text x="1270.75" y="232.45" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">candidates and</text>
+<text x="1270.75" y="244.45" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">LSTM‑MLP scoring</text>
+<text x="1270.75" y="258.45" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Learning to Compose</text>
+<text x="1270.75" y="268.45" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Neural Networks for...</text>
+<circle cx="1329.60" cy="112.43" r="60.00" fill="#fffaeb" stroke="#ffca3a" stroke-width="1.80"/>
+<text x="1329.60" y="82.43" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">NLVR2: large‑scale</text>
+<text x="1329.60" y="94.43" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">natural‑language</text>
+<text x="1329.60" y="106.43" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">visual reasoning</text>
+<text x="1329.60" y="118.43" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">dataset and benchmark</text>
+<text x="1329.60" y="132.43" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">A Corpus for Reasoning</text>
+<text x="1329.60" y="142.43" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">About Natural Languag...</text>
+<circle cx="1168.38" cy="144.95" r="60.00" fill="#fffaeb" stroke="#ffca3a" stroke-width="1.80"/>
+<text x="1168.38" y="114.95" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Public release of</text>
+<text x="1168.38" y="126.95" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">NLVR2 dataset,</text>
+<text x="1168.38" y="138.95" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">collection pipeline,</text>
+<text x="1168.38" y="150.95" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">and evaluation code</text>
+<text x="1168.38" y="164.95" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">A Corpus for Reasoning</text>
+<text x="1168.38" y="174.95" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">About Natural Languag...</text>
+<circle cx="1033.02" cy="100.00" r="60.00" fill="#fffaeb" stroke="#ffca3a" stroke-width="1.80"/>
+<text x="1033.02" y="70.00" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Creation of the DROP</text>
+<text x="1033.02" y="82.00" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">dataset (96,567 QA</text>
+<text x="1033.02" y="94.00" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">pairs with numbers,</text>
+<text x="1033.02" y="106.00" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">spans, dates)</text>
+<text x="1033.02" y="120.00" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">DROP: A Reading</text>
+<text x="1033.02" y="130.00" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Comprehension Benchma...</text>
+<circle cx="1167.77" cy="333.30" r="60.00" fill="#fffaeb" stroke="#ffca3a" stroke-width="1.80"/>
+<text x="1167.77" y="297.30" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Public release of the</text>
+<text x="1167.77" y="309.30" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">DROP benchmark,</text>
+<text x="1167.77" y="321.30" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">baseline</text>
+<text x="1167.77" y="333.30" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">implementations, and</text>
+<text x="1167.77" y="345.30" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">evaluation leaderboard</text>
+<text x="1167.77" y="359.30" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">DROP: A Reading</text>
+<text x="1167.77" y="369.30" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Comprehension Benchma...</text>
+<circle cx="1060.64" cy="246.27" r="60.00" fill="#fffaeb" stroke="#ffca3a" stroke-width="1.80"/>
+<text x="1060.64" y="222.27" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Large‑scale empirical</text>
+<text x="1060.64" y="234.27" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">benchmark of attention</text>
+<text x="1060.64" y="246.27" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">as explanation</text>
+<text x="1060.64" y="260.27" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Attention is not</text>
+<text x="1060.64" y="270.27" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Explanation</text>
+<circle cx="923.29" cy="197.12" r="60.00" fill="#fffaeb" stroke="#ffca3a" stroke-width="1.80"/>
+<text x="923.29" y="161.12" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Weak and inconsistent</text>
+<text x="923.29" y="173.12" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">correlation between</text>
+<text x="923.29" y="185.12" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">attention weights and</text>
+<text x="923.29" y="197.12" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">feature‑importance</text>
+<text x="923.29" y="209.12" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">measures</text>
+<text x="923.29" y="223.12" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Attention is not</text>
+<text x="923.29" y="233.12" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Explanation</text>
+<circle cx="749.40" cy="194.30" r="60.00" fill="#fffaeb" stroke="#ffca3a" stroke-width="1.80"/>
+<text x="749.40" y="164.30" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Random permutation of</text>
+<text x="749.40" y="176.30" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">attention weights</text>
+<text x="749.40" y="188.30" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">often leaves</text>
+<text x="749.40" y="200.30" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">predictions unchanged</text>
+<text x="749.40" y="214.30" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Attention is not</text>
+<text x="749.40" y="224.30" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Explanation</text>
+<circle cx="669.71" cy="315.17" r="60.00" fill="#fffaeb" stroke="#ffca3a" stroke-width="1.80"/>
+<text x="669.71" y="285.17" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Adversarial attention</text>
+<text x="669.71" y="297.17" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">optimization for</text>
+<text x="669.71" y="309.17" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">counterfactual</text>
+<text x="669.71" y="321.17" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">explanations</text>
+<text x="669.71" y="335.17" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Attention is not</text>
+<text x="669.71" y="345.17" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Explanation</text>
+<circle cx="834.19" cy="306.15" r="60.00" fill="#fffaeb" stroke="#ffca3a" stroke-width="1.80"/>
+<text x="834.19" y="282.15" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Open‑source codebase</text>
+<text x="834.19" y="294.15" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">and interactive</text>
+<text x="834.19" y="306.15" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">visualisation suite</text>
+<text x="834.19" y="320.15" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Attention is not</text>
+<text x="834.19" y="330.15" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Explanation</text>
+<circle cx="916.01" cy="421.42" r="60.00" fill="#fffaeb" stroke="#ffca3a" stroke-width="1.80"/>
+<text x="916.01" y="391.42" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Position statement</text>
+<text x="916.01" y="403.42" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">cautioning against</text>
+<text x="916.01" y="415.42" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">treating attention as</text>
+<text x="916.01" y="427.42" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">explanation</text>
+<text x="916.01" y="441.42" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Attention is not</text>
+<text x="916.01" y="451.42" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Explanation</text>
+<circle cx="762.96" cy="422.45" r="60.00" fill="#fffaeb" stroke="#ffca3a" stroke-width="1.80"/>
+<text x="762.96" y="386.45" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Input‑gradient</text>
+<text x="762.96" y="398.45" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">explanations match</text>
+<text x="762.96" y="410.45" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">LIME fidelity and are</text>
+<text x="762.96" y="422.45" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">computationally</text>
+<text x="762.96" y="434.45" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">efficient</text>
+<text x="762.96" y="448.45" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Right for the Right</text>
+<text x="762.96" y="458.45" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Reasons: Training...</text>
+<circle cx="604.01" cy="448.62" r="60.00" fill="#fffaeb" stroke="#ffca3a" stroke-width="1.80"/>
+<text x="604.01" y="424.62" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Gradient‑based</text>
+<text x="604.01" y="436.62" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">explanation</text>
+<text x="604.01" y="448.62" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">regularization (RRR)</text>
+<text x="604.01" y="462.62" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Right for the Right</text>
+<text x="604.01" y="472.62" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Reasons: Training...</text>
+<circle cx="982.50" cy="552.43" r="60.00" fill="#fffaeb" stroke="#ffca3a" stroke-width="1.80"/>
+<text x="982.50" y="522.43" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Explanation‑regularized</text>
+<text x="982.50" y="534.43" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">models retain accuracy</text>
+<text x="982.50" y="546.43" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">under distribution</text>
+<text x="982.50" y="558.43" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">shift</text>
+<text x="982.50" y="572.43" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Right for the Right</text>
+<text x="982.50" y="582.43" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Reasons: Training...</text>
+<circle cx="1233.72" cy="631.47" r="60.00" fill="#fffaeb" stroke="#ffca3a" stroke-width="1.80"/>
+<text x="1233.72" y="601.47" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Explanation</text>
+<text x="1233.72" y="613.47" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">regularization</text>
+<text x="1233.72" y="625.47" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">improves data</text>
+<text x="1233.72" y="637.47" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">efficiency</text>
+<text x="1233.72" y="651.47" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Right for the Right</text>
+<text x="1233.72" y="661.47" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Reasons: Training...</text>
+<circle cx="1112.58" cy="602.49" r="60.00" fill="#fffaeb" stroke="#ffca3a" stroke-width="1.80"/>
+<text x="1112.58" y="572.49" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Open‑source</text>
+<text x="1112.58" y="584.49" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">implementation of</text>
+<text x="1112.58" y="596.49" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Right‑for‑the‑Right‑Reasons</text>
+<text x="1112.58" y="608.49" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">(RRR) training</text>
+<text x="1112.58" y="622.49" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Right for the Right</text>
+<text x="1112.58" y="632.49" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Reasons: Training...</text>
+<circle cx="840.45" cy="550.24" r="60.00" fill="#fffaeb" stroke="#ffca3a" stroke-width="1.80"/>
+<text x="840.45" y="514.24" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Discovery of BERT</text>
+<text x="840.45" y="526.24" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">under‑training and</text>
+<text x="840.45" y="538.24" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">four simple training</text>
+<text x="840.45" y="550.24" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">improvements (RoBERTa</text>
+<text x="840.45" y="562.24" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">recipe)</text>
+<text x="840.45" y="576.24" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">RoBERTa: A Robustly</text>
+<text x="840.45" y="586.24" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Optimized BERT...</text>
+<circle cx="1015.12" cy="696.00" r="60.00" fill="#fffaeb" stroke="#ffca3a" stroke-width="1.80"/>
+<text x="1015.12" y="666.00" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">RoBERTa pretraining</text>
+<text x="1015.12" y="678.00" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">recipe and</text>
+<text x="1015.12" y="690.00" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">state‑of‑the‑art</text>
+<text x="1015.12" y="702.00" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">benchmark results</text>
+<text x="1015.12" y="716.00" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">RoBERTa: A Robustly</text>
+<text x="1015.12" y="726.00" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Optimized BERT...</text>
+<circle cx="883.33" cy="678.91" r="60.00" fill="#fffaeb" stroke="#ffca3a" stroke-width="1.80"/>
+<text x="883.33" y="654.91" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Open‑source</text>
+<text x="883.33" y="666.91" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">implementation and</text>
+<text x="883.33" y="678.91" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">pretrained checkpoints</text>
+<text x="883.33" y="692.91" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">RoBERTa: A Robustly</text>
+<text x="883.33" y="702.91" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Optimized BERT...</text>
+<circle cx="697.12" cy="557.00" r="60.00" fill="#fffaeb" stroke="#ffca3a" stroke-width="1.80"/>
+<text x="697.12" y="533.00" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">RuleTaker soft</text>
+<text x="697.12" y="545.00" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">theorem‑proving task</text>
+<text x="697.12" y="557.00" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">formulation</text>
+<text x="697.12" y="571.00" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Transformers as Soft</text>
+<text x="697.12" y="581.00" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Reasoners over Language</text>
+<circle cx="812.65" cy="812.80" r="60.00" fill="#e8f2f9" stroke="#1982c4" stroke-width="1.80"/>
+<text x="812.65" y="782.80" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">SICK (Sentences</text>
+<text x="812.65" y="794.80" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Involving</text>
+<text x="812.65" y="806.80" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Compositional</text>
+<text x="812.65" y="818.80" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Knowledge) dataset</text>
+<text x="812.65" y="832.80" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">SemEval-2014 Task 1:</text>
+<text x="812.65" y="842.80" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Evaluation of...</text>
+<circle cx="733.31" cy="693.72" r="60.00" fill="#e8f2f9" stroke="#1982c4" stroke-width="1.80"/>
+<text x="733.31" y="663.72" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Contradiction</text>
+<text x="733.31" y="675.72" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">detection system with</text>
+<text x="733.31" y="687.72" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">event‑coreference</text>
+<text x="733.31" y="699.72" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">filtering</text>
+<text x="733.31" y="713.72" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Finding Contradictions</text>
+<text x="733.31" y="723.72" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">in Text</text>
+<circle cx="675.99" cy="811.16" r="60.00" fill="#e8f2f9" stroke="#1982c4" stroke-width="1.80"/>
+<text x="675.99" y="787.16" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Topicality‑based</text>
+<text x="675.99" y="799.16" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">event‑coreference</text>
+<text x="675.99" y="811.16" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">scoring method</text>
+<text x="675.99" y="825.16" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Finding Contradictions</text>
+<text x="675.99" y="835.16" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">in Text</text>
+<circle cx="557.55" cy="587.60" r="60.00" fill="#f0edf4" stroke="#6a4c93" stroke-width="1.80"/>
+<text x="557.55" y="563.60" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Children&#x27;s Book Test</text>
+<text x="557.55" y="575.60" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">(CBT) benchmark</text>
+<text x="557.55" y="587.60" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">dataset</text>
+<text x="557.55" y="601.60" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">The Goldilocks</text>
+<text x="557.55" y="611.60" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Principle: Reading...</text>
+<circle cx="550.40" cy="733.25" r="60.00" fill="#f0edf4" stroke="#6a4c93" stroke-width="1.80"/>
+<text x="550.40" y="697.25" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">MCTest MC160 and MC500</text>
+<text x="550.40" y="709.25" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Reading‑Comprehension</text>
+<text x="550.40" y="721.25" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Datasets with Standard</text>
+<text x="550.40" y="733.25" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Splits and Rich</text>
+<text x="550.40" y="745.25" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Metadata</text>
+<text x="550.40" y="759.25" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">MCTest: A Challenge</text>
+<text x="550.40" y="769.25" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Dataset for the...</text>
+<circle cx="421.09" cy="672.78" r="60.00" fill="#f0edf4" stroke="#6a4c93" stroke-width="1.80"/>
+<text x="421.09" y="642.78" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Large-scale supervised</text>
+<text x="421.09" y="654.78" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">reading-comprehension</text>
+<text x="421.09" y="666.78" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">dataset</text>
+<text x="421.09" y="678.78" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">(CNN/Daily Mail)</text>
+<text x="421.09" y="692.78" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Teaching Machines to</text>
+<text x="421.09" y="702.78" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Read and Comprehend</text>
+<circle cx="439.81" cy="817.61" r="60.00" fill="#f0edf4" stroke="#6a4c93" stroke-width="1.80"/>
+<text x="439.81" y="793.61" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">CNN/Daily Mail</text>
+<text x="439.81" y="805.61" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">reading‑comprehension</text>
+<text x="439.81" y="817.61" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">benchmark</text>
+<text x="439.81" y="831.61" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Teaching Machines to</text>
+<text x="439.81" y="841.61" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Read and Comprehend</text>
+<circle cx="297.81" cy="784.79" r="60.00" fill="#f0edf4" stroke="#6a4c93" stroke-width="1.80"/>
+<text x="297.81" y="754.79" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Exact Match and</text>
+<text x="297.81" y="766.79" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">token‑level F1</text>
+<text x="297.81" y="778.79" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">evaluation metrics for</text>
+<text x="297.81" y="790.79" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">span‑based QA</text>
+<text x="297.81" y="804.79" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">SQuAD: 100,000+</text>
+<text x="297.81" y="814.79" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Questions for Machine...</text>
+<circle cx="218.60" cy="997.65" r="60.00" fill="#f0edf4" stroke="#6a4c93" stroke-width="1.80"/>
+<text x="218.60" y="973.65" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Conditional Encoding</text>
+<text x="218.60" y="985.65" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">LSTM Architecture for</text>
+<text x="218.60" y="997.65" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">RTE</text>
+<text x="218.60" y="1011.65" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Reasoning about</text>
+<text x="218.60" y="1021.65" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Entailment with Neura...</text>
+<circle cx="100.00" cy="1089.33" r="60.00" fill="#f0edf4" stroke="#6a4c93" stroke-width="1.80"/>
+<text x="100.00" y="1065.33" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Long Short-Term</text>
+<text x="100.00" y="1077.33" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Memory-Network (LSTMN)</text>
+<text x="100.00" y="1089.33" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">architecture</text>
+<text x="100.00" y="1103.33" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Long Short-Term</text>
+<text x="100.00" y="1113.33" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Memory-Networks for...</text>
+<circle cx="152.57" cy="1266.20" r="60.00" fill="#f0edf4" stroke="#6a4c93" stroke-width="1.80"/>
+<text x="152.57" y="1230.20" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Empirical evaluation</text>
+<text x="152.57" y="1242.20" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">of LSTMN with</text>
+<text x="152.57" y="1254.20" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">attention-fusion on</text>
+<text x="152.57" y="1266.20" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">SNLI natural language</text>
+<text x="152.57" y="1278.20" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">inference</text>
+<text x="152.57" y="1292.20" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Long Short-Term</text>
+<text x="152.57" y="1302.20" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Memory-Networks for...</text>
+<circle cx="279.80" cy="1336.22" r="60.00" fill="#f0edf4" stroke="#6a4c93" stroke-width="1.80"/>
+<text x="279.80" y="1323.22" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Memory Networks</text>
+<text x="279.80" y="1335.22" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">conceptual framework</text>
+<text x="279.80" y="1349.22" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Memory Networks</text>
+<circle cx="252.84" cy="1479.81" r="60.00" fill="#f0edf4" stroke="#6a4c93" stroke-width="1.80"/>
+<text x="252.84" y="1460.81" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Memory Neural Network</text>
+<text x="252.84" y="1472.81" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">(MemNN) architecture</text>
+<text x="252.84" y="1484.81" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">for textual QA</text>
+<text x="252.84" y="1498.81" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Memory Networks</text>
+<circle cx="396.70" cy="1417.33" r="60.00" fill="#f0edf4" stroke="#6a4c93" stroke-width="1.80"/>
+<text x="396.70" y="1387.33" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Co‑Attention Mechanism</text>
+<text x="396.70" y="1399.33" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">for Joint</text>
+<text x="396.70" y="1411.33" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Image‑Question</text>
+<text x="396.70" y="1423.33" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Reasoning</text>
+<text x="396.70" y="1437.33" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Hierarchical</text>
+<text x="396.70" y="1447.33" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Question-Image...</text>
+<circle cx="373.35" cy="1560.47" r="60.00" fill="#f0edf4" stroke="#6a4c93" stroke-width="1.80"/>
+<text x="373.35" y="1536.47" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Entity anonymisation</text>
+<text x="373.35" y="1548.47" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">and permutation</text>
+<text x="373.35" y="1560.47" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">pipeline</text>
+<text x="373.35" y="1574.47" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Teaching Machines to</text>
+<text x="373.35" y="1584.47" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Read and Comprehend</text>
+</svg>

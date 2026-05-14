@@ -1,0 +1,480 @@
+digraph G {
+    graph [
+        rankdir=TB,
+        splines=ortho,
+        overlap=false,
+        concentrate=true,
+        nodesep=0.7,
+        ranksep=1.1,
+        pad=0.2
+    ];
+    node [
+        shape=box,
+        style="rounded,filled",
+        color="gray40",
+        fontname="Helvetica"
+    ];
+    edge [
+        color="gray55",
+        penwidth=1.2,
+        arrowsize=0.8
+    ];
+    "281421016.c0" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">281421016.c0</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">Integrative Grounding Task Definition</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">INTEGROUND: On the Evaluation of Verification and<BR/>Retrieval Planning in Integrative Grounding</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">The paper formally defines the integrative<BR/>grounding task, wherein a language model must<BR/>retrieve and verify multiple inter‑dependent<BR/>pieces of external evidence to support a<BR/>hypothesis proposition. This extends traditional<BR/>grounding, which assumes a single supporting<BR/>document, by requiring synthesis of several<BR/>evidential snippets to answer complex real‑world<BR/>queries. The definition introduces formal notions<BR/>of propositions, knowledge bases, and the<BR/>grounding objective (find a subset Σ ⊆ K such that<BR/>Σ entails or contradicts the hypothesis).</FONT></TD></TR>
+</TABLE>>, fillcolor="#fde0c5"];
+    "273323372.c1" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">273323372.c1</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">Graph‑based structure‑aware demonstration<BR/>selection</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">Exploring the Role of Reasoning Structures for<BR/>Constructing Proofs in Multi-Step Natural Language<BR/>Reasoning with Large Language Models</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">The paper proposes a method for selecting few‑shot<BR/>exemplars for in‑context learning by encoding the<BR/>proof graphs of candidate demonstrations with a<BR/>Graph Attention Network (GATv2) and computing<BR/>cosine similarity over the resulting embeddings.<BR/>For a target problem, the system retrieves the<BR/>most similar demonstrations from a proof database,<BR/>allowing the language model to observe<BR/>proof‑structure patterns that are directly<BR/>relevant to the current reasoning task. This<BR/>replaces prior fixed‑demo or purely text‑similar<BR/>demonstration selection approaches.</FONT></TD></TR>
+</TABLE>>, fillcolor="#fde0c5"];
+    "273323372.c3" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">273323372.c3</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">Proof‑hint generation module</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">Exploring the Role of Reasoning Structures for<BR/>Constructing Proofs in Multi-Step Natural Language<BR/>Reasoning with Large Language Models</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">The paper introduces a dedicated proof‑hint<BR/>generation component that receives an intermediate<BR/>conclusion produced by the LLM, compares it with<BR/>the target hypothesis, and outputs a concise<BR/>textual hint describing the missing reasoning<BR/>step. This hint is fed back into the<BR/>candidate‑retrieval module to guide the selection<BR/>of evidence sentences for the next reasoning step,<BR/>improving the efficiency and accuracy of<BR/>multi‑step proof construction within the overall<BR/>framework.</FONT></TD></TR>
+</TABLE>>, fillcolor="#fde0c5"];
+    "280322203.c1" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">280322203.c1</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">Natural-Logic-Guided Reward Pipeline for<BR/>Entailment-Tree Generation</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">Natural Logic at the Core: Dynamic Rewards for<BR/>Entailment Tree Generation</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">The paper introduces a multi-stage pipeline that<BR/>computes stepwise dynamic rewards for<BR/>entailment-tree construction. First, an<BR/>instruction-tuned LLM (e.g., Llama<BR/>3.1‑8B‑Instruct) semantically chunks the<BR/>hypothesis and candidate facts. Second, the<BR/>Hungarian algorithm aligns chunks to obtain<BR/>optimal span correspondences. Third, a fine‑tuned<BR/>DeBERTa model predicts the natural‑logic relation<BR/>(equivalence, forward entailment, etc.) for each<BR/>aligned pair. Fourth, a monotonicity classifier<BR/>projects these relations according to contextual<BR/>upward/downward monotonicity. Finally, the<BR/>projected relation sequence is processed by a<BR/>two‑state deterministic finite automaton, whose<BR/>output probability forms the dynamic reward used<BR/>in reinforcement learning, providing fine‑grained<BR/>logical feedback at every reasoning step.</FONT></TD></TR>
+</TABLE>>, fillcolor="#fde0c5"];
+    "268358481.c0" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">268358481.c0</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">Logical Pattern Memory Pre-trained Model (LMPM)<BR/>architecture</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">A Logical Pattern Memory Pre-trained Model for<BR/>Entailment Tree Generation</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">The paper introduces LMPM, an entailment‑tree<BR/>generation model that augments a T5<BR/>encoder‑decoder with an external memory module<BR/>storing latent representations of logical<BR/>deduction patterns. Premises are encoded, an<BR/>address network (using Gumbel‑softmax for<BR/>single‑pattern selection or softmax for<BR/>multi‑pattern combination) retrieves a pattern<BR/>vector from the memory, and this vector is added<BR/>to the decoder start token to guide generation of<BR/>logically consistent intermediate conclusions.<BR/>This design separates logical pattern learning<BR/>from language modeling, enabling more reliable<BR/>multi‑step reasoning.</FONT></TD></TR>
+</TABLE>>, fillcolor="#fde0c5"];
+    "271931406.c0" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">271931406.c0</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">FRVA: Integrated Fact Retrieval and Bidirectional<BR/>Proof Generation Framework for Explainable QA</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">FRVA: Fact-Retrieval and Verification Augmented<BR/>Entailment Tree Generation for Explainable<BR/>Question Answering</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">FRVA is a complete system for generating<BR/>structured entailment trees that explain<BR/>question‑answer pairs. It first filters irrelevant<BR/>knowledge sentences with a neural fact‑retrieval<BR/>module, then constructs proof steps using two<BR/>complementary seq2seq generators: a deductive<BR/>(bottom‑up) and an abductive (top‑down) generator.<BR/>Generated steps are cross‑validated by a verifier<BR/>and further refined with a multi‑view contrastive<BR/>learning objective that aligns facts and generated<BR/>steps with the hypothesis. Finally, the deductive<BR/>and abductive trees are aligned and fused into a<BR/>single optimal entailment tree, reducing<BR/>combinatorial search space, mitigating error<BR/>propagation, and achieving state‑of‑the‑art<BR/>performance on the EntailmentBank benchmark.</FONT></TD></TR>
+</TABLE>>, fillcolor="#fde0c5"];
+    "248887255.c1" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">248887255.c1</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">Conditional dense‑retrieval algorithm for premise<BR/>selection</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">Entailment Tree Explanations via Iterative<BR/>Retrieval-Generation Reasoner</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">The paper introduces a conditional dense‑retrieval<BR/>procedure (Algorithm 1) that selects k premises in<BR/>two phases: an initial set retrieved using only<BR/>the hypothesis as query, and a second set<BR/>retrieved with a query that concatenates the<BR/>hypothesis and previously selected premises. A<BR/>conditioning factor ω determines how many premises<BR/>are taken from each phase, enabling the system to<BR/>prioritize lexically close leaf nodes while still<BR/>gathering deeper, less‑similar premises needed for<BR/>later proof steps. The algorithm defines a<BR/>specific query representation for dense passage<BR/>retrieval and is integrated into the iterative<BR/>IRGR framework, yielding higher premise recall and<BR/>improved entailment‑tree generation performance.</FONT></TD></TR>
+</TABLE>>, fillcolor="#fde0c5"];
+    "269804127.c0" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">269804127.c0</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">State-aware iterative fact retrieval for<BR/>multi-step Tree-structured Entailment Reasoning<BR/>(TER)</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">Empowering Tree-structured Entailment Reasoning:<BR/>Rhetorical Perception and LLM-driven<BR/>Interpretability</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">The paper introduces a dynamic fact-retrieval<BR/>mechanism for multi-step TER that trains the<BR/>fact-selection controller iteratively across<BR/>reasoning steps. At each step the controller<BR/>conditions on a mean-pooled CLS embedding of the<BR/>current reasoning state and the hypothesis, and<BR/>selects &quot;good&quot; facts defined by lexical overlap<BR/>with the hypothesis or intermediate conclusion and<BR/>structural proximity to the newly built node. The<BR/>training objective combines a max-margin ranking<BR/>loss for positive/negative fact discrimination<BR/>with a negative log-likelihood term for<BR/>optimal-fact selection, enabling on-the-fly<BR/>premise retrieval and reducing error propagation,<BR/>which yields higher leaf-fact accuracy on<BR/>EntailmentBank distractor and full-corpus<BR/>settings.</FONT></TD></TR>
+</TABLE>>, fillcolor="#f9d5e5"];
+    "248887255.c3" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">248887255.c3</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">Linearized entailment‑tree representation for<BR/>seq2seq generation</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">Entailment Tree Explanations via Iterative<BR/>Retrieval-Generation Reasoner</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">The paper proposes a plain‑text linearization<BR/>scheme that encodes an entailment tree as a flat<BR/>token sequence suitable for a standard<BR/>sequence‑to‑sequence model. Each leaf sentence is<BR/>prefixed with the token &quot;sent&quot;, each generated<BR/>intermediate conclusion with &quot;int&quot;, and the<BR/>hypothesis with &quot;hypothesis&quot;; logical relations<BR/>are expressed with &quot;&amp;&quot; for conjunction and &quot;-&gt;&quot;<BR/>for entailment. This representation enables the T5<BR/>generator to produce one entailment step at a time<BR/>while preserving the hierarchical structure<BR/>required for downstream alignment and evaluation.</FONT></TD></TR>
+</TABLE>>, fillcolor="#fde0c5"];
+    "256846551.c1" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">256846551.c1</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">Reasoning Graph Formalism for Structured<BR/>Natural‑Language Explanations</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">STREET: A Multi-Task Structured Reasoning and<BR/>Explanation Benchmark</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">The paper defines a reasoning graph as a directed<BR/>acyclic graph whose vertices are textual logical<BR/>units (TLUs) extracted from a question, context,<BR/>and answer options, and whose edges connect<BR/>premises to intermediate conclusions, terminating<BR/>at an answer node. This formalism captures<BR/>multi‑premise, multi‑step reasoning in natural<BR/>language while remaining machine‑readable,<BR/>extending prior entailment‑tree ideas by allowing<BR/>arbitrary DAG structures and by integrating the<BR/>answer directly into the graph.</FONT></TD></TR>
+</TABLE>>, fillcolor="#f9d5e5"];
+    "267199832.c1" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">267199832.c1</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">Structure-based return for tree and graph<BR/>reasoning</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">SEER: Facilitating Structured Reasoning and<BR/>Explanation via Reinforcement Learning</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">The paper introduces a novel structure-based<BR/>return for reinforcement-learning agents that<BR/>perform structured reasoning over entailment trees<BR/>or reasoning graphs. Instead of the conventional<BR/>chained cumulative reward, the return for a state<BR/>is defined as the immediate reward plus the<BR/>discounted average value of its parent nodes in<BR/>the reasoning structure, thereby respecting<BR/>hierarchical and branching dependencies. This<BR/>formulation ensures that equivalent reasoning<BR/>trajectories receive identical returns, addressing<BR/>instability in prior methods. The authors analyze<BR/>how this return resolves the equivalent-trajectory<BR/>problem and improves training stability and<BR/>effectiveness.</FONT></TD></TR>
+</TABLE>>, fillcolor="#fde0c5"];
+    "267199832.c2" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">267199832.c2</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">Fine-grained reward function distinguishing<BR/>correct, erroneous, and redundant steps</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">SEER: Facilitating Structured Reasoning and<BR/>Explanation via Reinforcement Learning</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">The authors introduce a reward scheme for<BR/>structured reasoning in which each reasoning step<BR/>receives a scalar reward: +1 for steps that<BR/>perfectly match a gold intermediate node, -0.5 for<BR/>redundant steps that do not contribute to the<BR/>final entailment tree, and -1 for erroneous steps.<BR/>This granularity provides informative feedback to<BR/>the reinforcement‑learning policy, encouraging<BR/>exploration of useful actions while penalizing<BR/>harmful moves, and improves training stability and<BR/>the quality of generated structured explanations.</FONT></TD></TR>
+</TABLE>>, fillcolor="#fde0c5"];
+    "267199832.c3" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">267199832.c3</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">Supervised warm‑up of policy for structured<BR/>reasoning RL</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">SEER: Facilitating Structured Reasoning and<BR/>Explanation via Reinforcement Learning</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">SEER first converts the structured reasoning task<BR/>(entailment trees or reasoning graphs) into a<BR/>collection of single‑step supervised examples and<BR/>fine‑tunes a T5‑large policy network on this data.<BR/>This warm‑up yields a stable initial policy,<BR/>mitigates sample inefficiency, and accelerates<BR/>convergence when the subsequent PPO‑based<BR/>reinforcement‑learning phase begins.</FONT></TD></TR>
+</TABLE>>, fillcolor="#fde0c5"];
+    "268247756.c0" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">268247756.c0</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">xSTREET multilingual structured‑reasoning<BR/>benchmark</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">Eliciting Better Multilingual Structured Reasoning<BR/>from LLMs through Code</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">The authors extend the English STREET benchmark to<BR/>six languages (English, Arabic, Spanish, Russian,<BR/>Chinese, Japanese) by translating all<BR/>natural‑language statements while preserving the<BR/>original structured reasoning graphs. They create<BR/>a high‑quality test split that is manually<BR/>post‑edited by expert translators and provide<BR/>machine‑translated training and development<BR/>splits. The benchmark comprises four complex<BR/>reasoning tasks (ARC, GSM8K, AQUA_RAT, AR_LSAT)<BR/>with defined answer formats, accuracy‑based<BR/>evaluation, and publicly released code and data,<BR/>enabling systematic assessment of multilingual<BR/>structured reasoning in LLMs.</FONT></TD></TR>
+</TABLE>>, fillcolor="#e3d5ff"];
+    "273641238.c1" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">273641238.c1</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">Definition of Multimodal Entailment‑Tree<BR/>Generation Task</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">An Entailment Tree Generation Approach for<BR/>Multimodal Multi-Hop Question Answering with<BR/>Mixture-of-Experts and Iterative Feedback<BR/>Mechanism</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">The paper formally defines a multimodal<BR/>entailment‑tree generation task for multi‑hop<BR/>question answering. Given a set of premises (facts<BR/>extracted from text, tables, and images) and a<BR/>hypothesis (the original question), the task<BR/>requires generating a tree whose leaf nodes are<BR/>selected premises and whose internal nodes are<BR/>intermediate conclusions produced by a large<BR/>language model. Unlike prior entailment‑tree tasks<BR/>in pure NLP, the answer is not provided during<BR/>training, making the formulation applicable to<BR/>multimodal settings where the answer must be<BR/>inferred after tree construction.</FONT></TD></TR>
+</TABLE>>, fillcolor="#fde0c5"];
+    "253237103.c0" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">253237103.c0</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">MDP‑Formulated Reinforcement Learning Framework<BR/>for Entailment‑Tree Generation (RLET)</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">RLET: A Reinforcement Learning Based Approach for<BR/>Explainable QA with Entailment Trees</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">The paper introduces RLET, a framework that<BR/>formulates the construction of entailment trees<BR/>for explainable question answering as a Markov<BR/>Decision Process (MDP). At each step the state<BR/>consists of the set of unused fact and<BR/>intermediate sentences, the action selects a pair<BR/>of sentences, and a deterministic transition adds<BR/>the newly generated intermediate conclusion. A<BR/>cumulative, alignment‑based reward is used to<BR/>train a stochastic sentence‑selection policy with<BR/>policy‑gradient reinforcement learning, while a<BR/>separate deduction‑generation module (rule‑based<BR/>or Seq2Seq) produces the intermediate conclusion.<BR/>The architecture is instantiated with a<BR/>DeBERTa‑v3‑base encoder for selection and a<BR/>BART‑large (or T5‑based) generator for deduction.</FONT></TD></TR>
+</TABLE>>, fillcolor="#f9d5e5"];
+    "280322203.c0" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">280322203.c0</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">NLDR: Natural‑Logic‑Based Dynamic‑Reward Framework<BR/>for Entailment‑Tree Generation</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">Natural Logic at the Core: Dynamic Rewards for<BR/>Entailment Tree Generation</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">NLDR is a reinforcement‑learning framework that<BR/>integrates natural‑logic entailment scores as<BR/>step‑wise dynamic rewards for constructing<BR/>entailment trees. It employs a two‑state<BR/>deterministic finite automaton (DFA) to aggregate<BR/>projected natural‑logic relations, producing a<BR/>reward that reflects global logical consistency<BR/>rather than a fixed scalar. The framework couples<BR/>this reward module with a T5‑large policy model<BR/>that jointly selects premises and generates<BR/>intermediate conclusions, yielding an end‑to‑end<BR/>system for multi‑step structured reasoning.</FONT></TD></TR>
+</TABLE>>, fillcolor="#e3d5ff"];
+    "280322203.c2" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">280322203.c2</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">Joint Premise Selection and Intermediate<BR/>Conclusion Generation in RL Policy</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">Natural Logic at the Core: Dynamic Rewards for<BR/>Entailment Tree Generation</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">The paper extends the reinforcement‑learning (RL)<BR/>policy for entailment‑tree construction to output<BR/>a combined action consisting of (i) a set of<BR/>selected premises and (ii) a generated<BR/>intermediate textual conclusion at each reasoning<BR/>step. This joint action space enables the reward<BR/>function to evaluate both premise relevance and<BR/>logical soundness of the generated inference,<BR/>allowing the agent to learn coherent multi‑step<BR/>reasoning rather than isolated premise‑pair<BR/>decisions. The policy is instantiated as a<BR/>T5‑large generative model and optimized with<BR/>proximal policy optimization (PPO) to maximize the<BR/>dynamic natural‑logic‑based rewards.</FONT></TD></TR>
+</TABLE>>, fillcolor="#e3d5ff"];
+    "280322203.c3" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">280322203.c3</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">State‑of‑the‑art Empirical Results on<BR/>EntailmentBank</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">Natural Logic at the Core: Dynamic Rewards for<BR/>Entailment Tree Generation</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">The NLDR system is evaluated on the EntailmentBank<BR/>benchmark across three increasingly challenging<BR/>tasks (no‑distractor, distractor, full‑corpus).<BR/>Using the strict Overall AllCorrect metric, NLDR<BR/>achieves 42.6 % on Task 1, 36.5 % on Task 2, and<BR/>13.2 % on Task 3, surpassing strong baselines such<BR/>as SEER, RLET, METGEN, and GPT‑4 variants with<BR/>Chain‑of‑Thought or Tree‑of‑Thought prompting.<BR/>These results demonstrate that dynamic,<BR/>natural‑logic‑driven rewards improve multi‑step<BR/>entailment‑tree generation over prior<BR/>static‑reward or heuristic methods.</FONT></TD></TR>
+</TABLE>>, fillcolor="#e3d5ff"];
+    "268358481.c6-1" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">268358481.c6-1</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">State‑of‑the‑art empirical performance of LMPM on<BR/>EntailmentBank</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">A Logical Pattern Memory Pre-trained Model for<BR/>Entailment Tree Generation</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">The paper evaluates the LMPM model, integrated<BR/>into the METGEN framework, on the EntailmentBank<BR/>benchmark (tasks 1‑3) and shows that METGEN+LMPM<BR/>outperforms prior systems (EntailmentWriter, IRGR,<BR/>RLET, METGEN+T5) on automatic metrics (Leaves,<BR/>Steps, Intermediates F1 and AllCorrect) and on<BR/>human judgments of validity, logical consistency,<BR/>readability, and reasonability.</FONT></TD></TR>
+</TABLE>>, fillcolor="#e3d5ff"];
+    "271931406.c5" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">271931406.c5</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">Comprehensive Empirical Evaluation of FRVA on<BR/>EntailmentBank</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">FRVA: Fact-Retrieval and Verification Augmented<BR/>Entailment Tree Generation for Explainable<BR/>Question Answering</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">The paper conducts extensive experiments on the<BR/>three EntailmentBank tasks (no‑distractor,<BR/>distractor, full‑corpus) comparing the proposed<BR/>FRVA system against direct‑generation and stepwise<BR/>baselines. It reports quantitative improvements in<BR/>leaf‑node F1, proof‑step correctness,<BR/>intermediate‑conclusion accuracy, and overall tree<BR/>accuracy. Detailed ablation studies isolate the<BR/>impact of fact retrieval, bidirectional<BR/>generation, cross‑verification, and multi‑view<BR/>contrastive learning, and an error analysis<BR/>characterises common failure modes.</FONT></TD></TR>
+</TABLE>>, fillcolor="#e3d5ff"];
+    "269803949.c3" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">269803949.c3</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">Empirical evaluation of SPEH on EntailmentBank<BR/>Task 1</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">Step Feasibility-Aware and Error-Correctable<BR/>Entailment Tree Generation</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">The authors conduct a comprehensive empirical<BR/>study on the EntailmentBank Task 1 test split,<BR/>comparing the proposed SPEH framework (with Step<BR/>Feasibility Perception and State Error Handling<BR/>enabled) against strong baselines including<BR/>EntailmentWriter, IRGR, RLET, METGEN, and<BR/>ChatGPT‑3.5. SPEH achieves the highest Overall<BR/>AllCorrect score (37.7 %) and shows improvements<BR/>in step and intermediate metrics, demonstrating<BR/>that the introduced mechanisms effectively enhance<BR/>entailment‑tree generation performance.</FONT></TD></TR>
+</TABLE>>, fillcolor="#e3d5ff"];
+    "267199832.c0" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">267199832.c0</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">SEER: General RL Framework for Structured<BR/>Reasoning and Explanation</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">SEER: Facilitating Structured Reasoning and<BR/>Explanation via Reinforcement Learning</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">SEER is a reinforcement‑learning based system that<BR/>formulates the generation of structured<BR/>explanations (entailment trees or reasoning<BR/>graphs) for question answering as a sequential<BR/>decision‑making problem. It integrates a<BR/>generative policy capable of selecting arbitrary<BR/>premise combinations, a structure‑based return<BR/>that respects hierarchical and branching<BR/>dependencies, and a fine‑grained reward that<BR/>differentiates correct, erroneous, and redundant<BR/>steps. The framework is trained via a supervised<BR/>warm‑up followed by PPO‑based RL fine‑tuning and<BR/>achieves state‑of‑the‑art performance on multiple<BR/>structured reasoning benchmarks.</FONT></TD></TR>
+</TABLE>>, fillcolor="#fde0c5"];
+    "267199832.c5" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">267199832.c5</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">Open‑source release of SEER code and<BR/>reproducibility package</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">SEER: Facilitating Structured Reasoning and<BR/>Explanation via Reinforcement Learning</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">The authors publicly release the full<BR/>implementation of the SEER framework, including<BR/>the policy network, critic network, reward<BR/>computation modules, training scripts, and<BR/>data‑preprocessing utilities at<BR/>https://github.com/Chen‑GX/SEER. The package<BR/>contains environment specifications,<BR/>hyper‑parameter settings, and evaluation scripts<BR/>to enable exact replication of the reported<BR/>results on structured reasoning benchmarks and to<BR/>facilitate extension to new tasks.</FONT></TD></TR>
+</TABLE>>, fillcolor="#e3d5ff"];
+    "253244513.c0" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">253244513.c0</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">Premise Recovery Task for Natural Language<BR/>Deduction with Incomplete Information</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">Natural Language Deduction with Incomplete<BR/>Information</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">The paper defines a new reasoning task in which a<BR/>system must construct a natural‑language proof<BR/>(entailment tree) that both entails a given goal<BR/>and recovers a missing premise that has been<BR/>deliberately omitted from the initial set of<BR/>premises. This formulation extends prior<BR/>entailment‑tree tasks by requiring abductive<BR/>inference to materialize unstated knowledge, and<BR/>introduces evaluation criteria for premise<BR/>coverage and step validity. The task is motivated<BR/>by the need for explainable reasoning systems that<BR/>can handle underspecified information while<BR/>producing verifiable intermediate steps.</FONT></TD></TR>
+</TABLE>>, fillcolor="#fde0c5"];
+    "266177015.c4-1" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">266177015.c4-1</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">Position statement: NL annotations as middle<BR/>ground between comments and static analysis</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">Natural Language Annotations for Reasoning about<BR/>Program Semantics</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">The authors argue that annotating program<BR/>statements with natural‑language pre‑ and<BR/>post‑conditions offers a level of abstraction that<BR/>is more structured than informal code comments yet<BR/>does not require the full formalism of static<BR/>analysis. This middle ground captures intuitive<BR/>program behavior in a way that is accessible to<BR/>non‑expert users and can support explainable<BR/>reasoning about code execution.</FONT></TD></TR>
+</TABLE>>, fillcolor="#fde0c5"];
+    "258479954.c0" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">258479954.c0</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">Problem formulation and modular framework for<BR/>Faithful QA (FAME)</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">Faithful Question Answering with Monte-Carlo<BR/>Planning</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">The paper reconceives the Faithful Question<BR/>Answering (FQA) task as a discrete decision‑making<BR/>problem in which a reasoning environment maintains<BR/>a state consisting of a hypothesis, a partial<BR/>entailment tree, and a set of candidate premises.<BR/>A generative controller (implemented with a<BR/>T5‑large model) observes this state and proposes<BR/>actions—Retrieve, Entail, or End—to iteratively<BR/>construct an entailment tree whose intermediate<BR/>steps are valid and whose root conclusion<BR/>faithfully supports the answer. The modular<BR/>architecture (retriever, single‑step entailment<BR/>module, verifier) enables explicit look‑ahead<BR/>planning over reasoning actions rather than greedy<BR/>step‑wise generation.</FONT></TD></TR>
+</TABLE>>, fillcolor="#fde0c5"];
+    "258479954.c1" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">258479954.c1</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">Monte-Carlo planning algorithm for foresighted<BR/>action selection</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">Faithful Question Answering with Monte-Carlo<BR/>Planning</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">The paper adapts Monte-Carlo Tree Search (MCTS)<BR/>with an Upper Confidence Bound (UCB) to the<BR/>discrete decision‑making problem of constructing<BR/>entailment trees for Faithful Question Answering.<BR/>In each simulation the planner selects an action<BR/>(Retrieve, Entail, End) based on a combination of<BR/>the controller&#x27;s prior probability and a<BR/>state‑verifier score, updates the action value Q<BR/>for the selected action, and back‑propagates the<BR/>resulting state score. This look‑ahead search<BR/>yields actions that are expected to lead to<BR/>high‑quality, valid, and faithful reasoning trees,<BR/>outperforming greedy, over‑generate‑and‑filter,<BR/>and beam‑search baselines.</FONT></TD></TR>
+</TABLE>>, fillcolor="#fde0c5"];
+    "267782534.c0" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">267782534.c0</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">Decompositional RTE task definition</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">Enhancing Systematic Decompositional Natural<BR/>Language Inference Using Informal Logic</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">The paper formally defines the Decompositional<BR/>Recognizing Textual Entailment (RDTE) task: given<BR/>a question Q, a hypothesis h, and a set of<BR/>premises generated as a decomposition of h,<BR/>determine whether the premises are contextually<BR/>sufficient to prove h. This extends traditional<BR/>single‑premise NLI to recursive, multi‑premise<BR/>reasoning required by entailment‑tree search<BR/>algorithms and provides a clear protocol for<BR/>labeling compositional entailments.</FONT></TD></TR>
+</TABLE>>, fillcolor="#fde0c5"];
+    "273162523.c0" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">273162523.c0</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">MDP formulation of multi-step reasoning using<BR/>entailment graphs</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">Deliberate Reasoning in Language Models as<BR/>Structure-Aware Planning with an Accurate World<BR/>Model</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">The paper formalizes multi-step reasoning as a<BR/>Markov Decision Process (MDP) where each reasoning<BR/>state is an entailment graph that encodes<BR/>statements and their logical dependencies. Actions<BR/>correspond to graph expansion steps that add new<BR/>statements or entailment edges, and the transition<BR/>function is modeled by a learned world model that<BR/>predicts the updated graph. This formulation<BR/>reframes reasoning as sequential planning over<BR/>structured knowledge, enabling symbolic<BR/>verification of intermediate steps and providing a<BR/>principled reward‑free decision mechanism via a<BR/>discriminator.</FONT></TD></TR>
+</TABLE>>, fillcolor="#fde0c5"];
+    "273162523.c1" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">273162523.c1</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">SWAP (Structure-aware Planning with an Accurate<BR/>World Model) framework</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">Deliberate Reasoning in Language Models as<BR/>Structure-Aware Planning with an Accurate World<BR/>Model</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">SWAP is an end-to-end reasoning system that treats<BR/>multi-step problem solving as planning over<BR/>entailment graphs. It combines a policy model that<BR/>proposes candidate actions, an accurate world<BR/>model that predicts graph updates, a discriminator<BR/>that re‑ranks multiple candidates using<BR/>contrastive ranking, and a controller that decides<BR/>when to stop. The framework is instantiated by<BR/>fine‑tuning a single large language model (via<BR/>LoRA) to serve all three roles and incorporates<BR/>diversity‑based modeling to explore a broader<BR/>solution space. By explicitly constructing and<BR/>verifying entailment graphs, SWAP enables symbolic<BR/>verification of intermediate steps and improves<BR/>consistency on math, logic, and coding benchmarks.</FONT></TD></TR>
+</TABLE>>, fillcolor="#fde0c5"];
+    "273162523.c2" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">273162523.c2</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">Entailment-graph representation for reasoning<BR/>states</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">Deliberate Reasoning in Language Models as<BR/>Structure-Aware Planning with an Accurate World<BR/>Model</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">The paper encodes each reasoning state as a<BR/>directed (hyper)graph whose nodes are<BR/>natural‑language statements (evidence,<BR/>assumptions, lemmas, conclusions) and whose<BR/>(hyper)edges represent entailment relations<BR/>mapping a set of premises to a conclusion. This<BR/>graph‑based encoding enables symbolic verification<BR/>of intermediate steps, lets the planner reason<BR/>about dependencies and inconsistencies, and serves<BR/>as the world state for multi‑step planning. By<BR/>treating the graph as the state, the system can<BR/>select actions that expand or modify the graph in<BR/>a principled way.</FONT></TD></TR>
+</TABLE>>, fillcolor="#fde0c5"];
+    "246015349.c0" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">246015349.c0</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">SCSEARCH: Factored system for natural-language<BR/>deduction</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">Natural Language Deduction through Search over<BR/>Statement Compositions</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">The paper introduces SCSEARCH, a modular<BR/>architecture that performs natural-language<BR/>deduction by (i) a step-deduction model that<BR/>generates a direct conclusion from a pair of<BR/>premises, (ii) a best-first search procedure that<BR/>explores compositions of statements guided by a<BR/>learned heuristic, and (iii) a goal-entailment<BR/>model that decides when the hypothesis has been<BR/>proved. By factorising generation, search, and<BR/>verification, the system guarantees that each<BR/>intermediate step is soundly derived from its<BR/>inputs, yielding an explicit entailment tree<BR/>rather than a black-box generation. SCSEARCH is<BR/>implemented with pretrained T5-3B for step<BR/>generation and DeBERTa-large for goal checking,<BR/>and can handle arbitrary numbers of premises and<BR/>binary-branching trees.</FONT></TD></TR>
+</TABLE>>, fillcolor="#fde0c5"];
+    "253244513.c1" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">253244513.c1</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">Everyday Norms: Why Not? (ENWN) Dataset</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">Natural Language Deduction with Incomplete<BR/>Information</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">The authors create a new English-language resource<BR/>of 100 manually authored entailment trees that<BR/>capture everyday ethical scenarios. Each tree<BR/>includes a set of premise statements, intermediate<BR/>deductive steps, a goal statement, and a<BR/>deliberately omitted gold premise, enabling<BR/>evaluation of systems that must both recover the<BR/>missing premise and construct a proof under<BR/>incomplete information. The dataset and<BR/>accompanying code are released publicly, providing<BR/>a benchmark for abductive reasoning and<BR/>commonsense normative knowledge in natural<BR/>language deduction.</FONT></TD></TR>
+</TABLE>>, fillcolor="#f9d5e5"];
+    "253244513.c2" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">253244513.c2</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">ADGV: Bidirectional Search over Abductive and<BR/>Deductive Generation with Validation</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">Natural Language Deduction with Incomplete<BR/>Information</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">The authors introduce ADGV, a search‑based<BR/>reasoning system that interleaves forward‑chaining<BR/>deductive steps and backward‑chaining abductive<BR/>steps using two priority‑queue fringes. At each<BR/>expansion the system samples multiple candidate<BR/>generations from a deductive step model (Sᵈ) and<BR/>an abductive step model (Sᵃ), filters them with<BR/>round‑trip consistency validators, and pushes<BR/>validated results back onto the fringes. This<BR/>bidirectional heuristic search enables recovery of<BR/>a missing premise while simultaneously<BR/>constructing a complete entailment tree that<BR/>proves the goal.</FONT></TD></TR>
+</TABLE>>, fillcolor="#f9d5e5"];
+    "281421016.c1" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">281421016.c1</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">Four‑Condition Evidence Taxonomy for Integrative<BR/>Grounding</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">INTEGROUND: On the Evaluation of Verification and<BR/>Retrieval Planning in Integrative Grounding</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">The authors define a systematic taxonomy that<BR/>classifies the evidence set retrieved for a<BR/>hypothesis into four mutually exclusive<BR/>conditions: (i) complete – all required premises<BR/>are present; (ii) redundant – complete set plus<BR/>additional distractors; (iii) incomplete – at<BR/>least one required premise is missing; and (iv)<BR/>uninformative – no relevant premises are included.<BR/>This taxonomy is used to construct evaluation<BR/>instances that probe model behavior under<BR/>realistic sub‑optimal evidence scenarios, enabling<BR/>fine‑grained analysis of both verification and<BR/>retrieval‑planning components in integrative<BR/>grounding systems.</FONT></TD></TR>
+</TABLE>>, fillcolor="#e3d5ff"];
+    "267365102.c0" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">267365102.c0</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">Logic-Explainer neuro-symbolic framework for<BR/>ethical NLI</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">Enhancing Ethical Explanations of Large Language<BR/>Models through Iterative Symbolic Refinement</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">Logic-Explainer is a neuro-symbolic system that<BR/>combines a large language model (GPT-3.5-turbo)<BR/>with a differentiable backward‑chaining Prolog<BR/>solver (NLProlog) to generate, verify, and<BR/>iteratively refine step‑wise natural‑language<BR/>explanations for ethical natural‑language<BR/>inference. The pipeline first uses semantic<BR/>prompting to produce an initial explanation and a<BR/>hypothesised moral‑violation label, then<BR/>auto‑formalises the explanation into Prolog,<BR/>validates logical correctness with the solver, and<BR/>feeds back abductive and deductive refinements<BR/>until a valid, non‑redundant proof is obtained.<BR/>The framework is designed to improve logical<BR/>validity, completeness and non‑redundancy of LLM<BR/>explanations while aligning them with<BR/>moral‑foundation theory.</FONT></TD></TR>
+</TABLE>>, fillcolor="#e3d5ff"];
+    "253244513.c4" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">253244513.c4</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">Round‑Trip Validation Mechanisms for Logical<BR/>Consistency</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">Natural Language Deduction with Incomplete<BR/>Information</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">The paper introduces a suite of validation modules<BR/>that enforce bidirectional consistency between<BR/>forward (deductive) and backward (abductive)<BR/>generation steps during proof search. Deductive<BR/>Agreement checks that an abductively generated<BR/>hypothesis, when combined with its premise,<BR/>reproduces the original conclusion via the<BR/>deductive model. Abductive Agreement verifies that<BR/>each premise of a deductive inference can be<BR/>recovered by an abductive generation conditioned<BR/>on the conclusion. Additional filters<BR/>(de‑duplication and consanguinity pruning) remove<BR/>redundant or unsafe generations before they are<BR/>added to the search frontier, thereby improving<BR/>the soundness of the constructed entailment trees.</FONT></TD></TR>
+</TABLE>>, fillcolor="#f9d5e5"];
+    "253244513.c7" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">253244513.c7</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">Empirical Evaluation and Error Analysis of ADGV</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">Natural Language Deduction with Incomplete<BR/>Information</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">The authors conduct a comprehensive experimental<BR/>study of the ADGV (Abduction and Deductive<BR/>Generation with Validation) system on two<BR/>benchmark suites: the EntailmentBank test set and<BR/>the newly introduced Everyday Norms: Why Not?<BR/>(ENWN) dataset. They compare ADGV against four<BR/>baselines—deductive‑only (DG), abductive‑only<BR/>(AG), combined deductive‑abductive without<BR/>validation (ADG), and an end‑to‑end T5‑3B model<BR/>(E2E)—using three quantitative metrics:<BR/>premise‑coverage (recovery scoring),<BR/>human‑annotated step validity, and<BR/>deductive‑agreement scores derived from round‑trip<BR/>validation. Additionally, they perform a<BR/>qualitative error analysis that isolates<BR/>systematic failure modes such as<BR/>underspecification, cascading errors, and premise<BR/>subsumption, and discuss directions for future<BR/>improvements.</FONT></TD></TR>
+</TABLE>>, fillcolor="#f9d5e5"];
+    "259858919.c1" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">259858919.c1</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">Algorithmic pipeline for transformer‑guided<BR/>chaining based on forward chaining</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">Investigating Transformer guided Chaining for<BR/>Interpretable Natural Logic Reasoning</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">The paper formalizes a neuro‑symbolic inference<BR/>pipeline that adapts the classic forward‑chaining<BR/>algorithm to operate with pretrained transformer<BR/>models. At each iteration a T5 encoder‑decoder<BR/>model performs rule matching and generates new<BR/>facts (rule inference), the accumulated fact set<BR/>is expanded, and a RoBERTa classifier checks<BR/>whether the hypothesis is entailed, contradicted,<BR/>neutral, or paradoxical. The procedure repeats<BR/>until no new facts are produced or the hypothesis<BR/>is resolved, and the sequence of applied rules and<BR/>generated facts is assembled into an interpretable<BR/>reasoning chain. Pseudocode and detailed<BR/>procedural steps are provided to ensure<BR/>reproducibility.</FONT></TD></TR>
+</TABLE>>, fillcolor="#f9d5e5"];
+    "259343907.c1" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">259343907.c1</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">Deductive‑Additivity‑Based Planning Heuristic and<BR/>Proof‑Generation Search Algorithm</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">Deductive Additivity for Planning of Natural<BR/>Language Proofs</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">The paper proposes a planning heuristic that ranks<BR/>candidate premise pairs by the cosine similarity<BR/>between the summed embeddings of the pair and the<BR/>embedding of the goal statement. This heuristic is<BR/>embedded in a full proof‑generation search<BR/>(Algorithm 1) that iteratively expands an<BR/>entailment tree: it caches embeddings of the<BR/>initial fact pool, computes summed premise<BR/>vectors, selects the highest‑scoring step,<BR/>generates a deduction with a language model,<BR/>validates the deduction with an entailment<BR/>classifier, and repeats until the claim is proved<BR/>or a step limit is reached. The approach enables<BR/>rapid, scalable multi‑step reasoning without<BR/>expensive transformer‑based pairwise scoring at<BR/>each step.</FONT></TD></TR>
+</TABLE>>, fillcolor="#f9d5e5"];
+    "249062748.c0" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">249062748.c0</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">NLProofS: Verifier‑Guided Stepwise Proof<BR/>Generation</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">Generating Natural Language Proofs with<BR/>Verifier-Guided Search</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">NLProofS is a stepwise natural‑language proof<BR/>generation framework that conditions each<BR/>generated proof step on the hypothesis, employs an<BR/>independently trained verifier to score the<BR/>logical validity of candidate steps, and conducts<BR/>a global search over a directed‑acyclic proof<BR/>graph to select a proof tree with maximal<BR/>aggregated verifier scores. The prover (a<BR/>fine‑tuned T5 model) generates multiple candidate<BR/>steps per iteration, the verifier (a fine‑tuned<BR/>RoBERTa model) assigns a validity score to each<BR/>step, and a min‑aggregation scoring function<BR/>propagates scores through the graph. A<BR/>beam‑search‑based proof expansion algorithm<BR/>iteratively updates the graph until convergence,<BR/>yielding proofs that are more relevant to the<BR/>hypothesis and contain fewer hallucinated steps.</FONT></TD></TR>
+</TABLE>>, fillcolor="#f9d5e5"];
+    "271931406.c2" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">271931406.c2</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">Bidirectional Deductive‑Abductive Proof Generator<BR/>with Cross‑Verification</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">FRVA: Fact-Retrieval and Verification Augmented<BR/>Entailment Tree Generation for Explainable<BR/>Question Answering</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">The paper introduces a pair of seq2seq generators<BR/>built on T5: a deductive generator that constructs<BR/>intermediate conclusions from retrieved facts in a<BR/>bottom‑up fashion, and an abductive generator that<BR/>decomposes the hypothesis into sub‑goals in a<BR/>top‑down manner. For each generated step, a<BR/>verifier based on ALBERT evaluates consistency<BR/>between the forward (deductive) and backward<BR/>(abductive) directions, selecting only steps that<BR/>are mutually supported. This bidirectional<BR/>generation with cross‑verification mitigates error<BR/>accumulation and improves the structural<BR/>correctness of entailment trees for explainable<BR/>question answering.</FONT></TD></TR>
+</TABLE>>, fillcolor="#e3d5ff"];
+    "271931406.c4" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">271931406.c4</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">Alignment and Fusion of Deductive and Abductive<BR/>Proof Trees</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">FRVA: Fact-Retrieval and Verification Augmented<BR/>Entailment Tree Generation for Explainable<BR/>Question Answering</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">After generating separate proof trees with a<BR/>deductive (bottom‑up) generator and an abductive<BR/>(top‑down) generator, FRVA constructs a unified<BR/>proof graph by merging the two trees, assigns each<BR/>node a score that combines the generator&#x27;s<BR/>log‑likelihood and the cross‑verification<BR/>confidence, and then extracts the highest‑scoring<BR/>entailment tree. This fusion leverages<BR/>complementary evidence from both reasoning<BR/>directions to produce a coherent, structurally<BR/>correct explanation for the hypothesis.</FONT></TD></TR>
+</TABLE>>, fillcolor="#e3d5ff"];
+    "265150088.c3" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">265150088.c3</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">Computational Efficiency Analysis of One‑Stage<BR/>ConDec vs Multi‑Stage Baselines</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">Are LLMs Rigorous Logical Reasoners? Empowering<BR/>Natural Language Proof Generation by Stepwise<BR/>Decoding with Contrastive Learning</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">The authors empirically measure inference latency<BR/>on an NVIDIA A800 GPU for the EntailmentBank Task<BR/>2 validation set, reporting 294 ms for the<BR/>single‑stage ConDec generator, 430 ms for NLProofs<BR/>with search, and 544 ms for NLProofs with both<BR/>search and verification. This analysis quantifies<BR/>the runtime reduction achieved by eliminating<BR/>separate search and verification components while<BR/>preserving or improving proof‑generation accuracy.</FONT></TD></TR>
+</TABLE>>, fillcolor="#e3d5ff"];
+    "256901153.c0" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">256901153.c0</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">Conceptual framework separating output and<BR/>chaining strategies for neural symbolic reasoning</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">Empirical Investigation of Neural Symbolic<BR/>Reasoning Strategies</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">The paper introduces a systematic decomposition of<BR/>neural symbolic reasoning into two orthogonal<BR/>dimensions: (i) output strategy, which controls<BR/>the granularity of intermediate reasoning step<BR/>generation (all‑at‑once, step‑by‑step,<BR/>token‑by‑token), and (ii) chaining strategy, which<BR/>determines the order in which equations are solved<BR/>(shortest‑path, exhaustive, backward). This<BR/>taxonomy clarifies existing neural reasoning<BR/>approaches and enables controlled experiments that<BR/>isolate the effect of each factor on model<BR/>performance. By formalising these dimensions, the<BR/>authors provide a reusable experimental protocol<BR/>for future neural‑symbolic integration work.</FONT></TD></TR>
+</TABLE>>, fillcolor="#e3d5ff"];
+    "268857317.c0" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">268857317.c0</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">GFaiR: Neural Resolution‑Refutation Framework for<BR/>Natural‑Language First‑Order Logic Reasoning</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">Towards Generalizable and Faithful Logic Reasoning<BR/>over Natural Language via Resolution Refutation</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">The paper introduces GFaiR, an end‑to‑end neural<BR/>system that equips large language models with the<BR/>complete reasoning power of resolution refutation.<BR/>GFaiR iteratively selects two natural‑language<BR/>clauses, applies a learned resolution step at the<BR/>language level to synthesize a new clause, and<BR/>repeats until a contradiction is derived, thereby<BR/>determining the truth value of a hypothesis. The<BR/>architecture comprises a T5‑based converter that<BR/>rewrites facts and rules into a Skolem‑like clause<BR/>form, XLNet‑based pre‑ and post‑selectors that<BR/>choose clause pairs, a T5 knowledge composer that<BR/>implicitly learns the resolution rule, and a<BR/>verifier trained with a validity‑contrastive loss<BR/>to enforce logical compatibility of selected<BR/>pairs.</FONT></TD></TR>
+</TABLE>>, fillcolor="#e3d5ff"];
+    "273641238.c0" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">273641238.c0</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">Joint Entailment‑Tree Generation and Answering<BR/>Formulation for Multimodal Multi‑Hop QA</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">An Entailment Tree Generation Approach for<BR/>Multimodal Multi-Hop Question Answering with<BR/>Mixture-of-Experts and Iterative Feedback<BR/>Mechanism</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">The paper reconceives multimodal multi‑hop<BR/>question answering (MMQA) as a joint problem of<BR/>(i) generating an entailment tree that explicitly<BR/>structures the logical relationships among<BR/>multimodal evidence (facts) and (ii) producing the<BR/>final answer conditioned on that tree. By treating<BR/>the original question as a hypothesis and a<BR/>constructed fact base as premises, the formulation<BR/>forces the system to select only relevant<BR/>evidence, model intermediate reasoning steps, and<BR/>provide interpretable explanations, thereby<BR/>addressing redundancy and opacity of prior<BR/>text‑conversion pipelines.</FONT></TD></TR>
+</TABLE>>, fillcolor="#fde0c5"];
+    "273641238.c5-3" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">273641238.c5-3</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">Ablation Study Quantifying Component Contributions</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">An Entailment Tree Generation Approach for<BR/>Multimodal Multi-Hop Question Answering with<BR/>Mixture-of-Experts and Iterative Feedback<BR/>Mechanism</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">The paper conducts systematic ablation experiments<BR/>that individually remove or replace four major<BR/>modules—question decomposition with sub‑question<BR/>image captioning, the multi‑task<BR/>mixture‑of‑experts (MoE) component, the iterative<BR/>feedback loop, and the explicit entailment‑tree<BR/>generation step—to measure each module&#x27;s impact on<BR/>final multimodal multi‑hop QA accuracy. Results<BR/>show measurable gains from every component,<BR/>confirming their necessity for state‑of‑the‑art<BR/>performance.</FONT></TD></TR>
+</TABLE>>, fillcolor="#fde0c5"];
+    "268091324.c0" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">268091324.c0</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">Multimodal Entailment Tree Generation Task</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">TV-TREES: Multimodal Entailment Trees for<BR/>Neuro-Symbolic Video Reasoning</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">The paper defines a new task that requires<BR/>generating entailment trees over both video frames<BR/>and dialogue transcripts to prove question‑answer<BR/>pairs in video‑language QA. The task extends prior<BR/>text‑only entailment‑tree generation by specifying<BR/>a multimodal evidence bank (V ∪ D), a recursive<BR/>tree structure where each node’s evidence must<BR/>entail its hypothesis, and evaluation criteria<BR/>based on informal‑logic notions of acceptability,<BR/>relevance, and sufficiency. This formulation<BR/>provides a systematic, interpretable reasoning<BR/>benchmark for complex TV clips and enables future<BR/>multimodal neuro‑symbolic systems to be evaluated<BR/>on structured proof generation.</FONT></TD></TR>
+</TABLE>>, fillcolor="#fde0c5"];
+    "268091324.c1-1" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">268091324.c1-1</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">Recursive Multimodal Entailment Tree Generation<BR/>Algorithm</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">TV-TREES: Multimodal Entailment Trees for<BR/>Neuro-Symbolic Video Reasoning</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">A novel recursive search algorithm that constructs<BR/>multimodal entailment trees by iteratively<BR/>retrieving candidate evidence, filtering premises,<BR/>and decomposing hypotheses into sub‑hypotheses.<BR/>The algorithm operates over a joint evidence bank<BR/>of video frames and dialogue transcripts,<BR/>producing a proof tree whose leaves are grounded<BR/>in concrete multimodal evidence and whose internal<BR/>nodes represent logical entailment steps. It<BR/>orchestrates retrieval, NLI‑based filtering,<BR/>LLM‑driven decomposition, and vision‑language<BR/>model verification within a unified neuro‑symbolic<BR/>framework.</FONT></TD></TR>
+</TABLE>>, fillcolor="#fde0c5"];
+    "265150088.c0" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">265150088.c0</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">ConDec: Contrastive Learning‑Based Stepwise<BR/>Decoding for Natural Language Proof Generation</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">Are LLMs Rigorous Logical Reasoners? Empowering<BR/>Natural Language Proof Generation by Stepwise<BR/>Decoding with Contrastive Learning</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">ConDec introduces a training regime that couples<BR/>stepwise proof generation with a contrastive<BR/>learning objective. During fine‑tuning, the model<BR/>maximises the similarity between the encoder<BR/>representation of the current proof context and<BR/>the decoder representation of the correct next<BR/>step, while minimising similarity to specially<BR/>crafted hard‑negative steps that mimic common<BR/>decoding errors (repetition and invalid<BR/>entailment). The approach is applied to an<BR/>encoder‑decoder LLM (Flan‑T5‑Large) and operates<BR/>as a single‑stage generator, removing the need for<BR/>external search or verification components.</FONT></TD></TR>
+</TABLE>>, fillcolor="#fde0c5"];
+    "267759612.c0-1" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">267759612.c0-1</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">Analysis of missing backtracking in Least-to-most<BR/>prompting</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">SymBa: Symbolic Backward Chaining for Structured<BR/>Natural Language Reasoning</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">The paper conducts a systematic examination of the<BR/>Least-to-most prompting method, demonstrating that<BR/>it omits the backtracking step of the classic SLD<BR/>Resolution algorithm. Minimal counter‑examples are<BR/>provided to show how the lack of backtracking<BR/>leads to failed proof construction and reduced<BR/>answer accuracy on structured reasoning<BR/>benchmarks. By contrasting the implementation with<BR/>the complete SLD procedure, the analysis reveals a<BR/>theoretical incompleteness in the method.</FONT></TD></TR>
+</TABLE>>, fillcolor="#fde0c5"];
+    "267759612.c0-2" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">267759612.c0-2</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">Analysis of missing binding propagation in LAMBADA</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">SymBa: Symbolic Backward Chaining for Structured<BR/>Natural Language Reasoning</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">The paper examines the LAMBADA backward‑chaining<BR/>system and shows that it implements binding<BR/>propagation only from goal to subgoals, omitting<BR/>propagation between subgoals and from subgoals<BR/>back to the goal. Counter‑examples illustrate how<BR/>this limitation prevents correct reasoning in<BR/>relational and arithmetic tasks, leading to<BR/>incompleteness compared with the full SLD<BR/>Resolution algorithm.</FONT></TD></TR>
+</TABLE>>, fillcolor="#fde0c5"];
+    "258480186.c7-1" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">258480186.c7-1</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">Multi‑hop reasoning identified as a primary<BR/>challenge for clinical‑trial NLI</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">SemEval-2023 Task 7: Multi-Evidence Natural<BR/>Language Inference for Clinical Trial Data</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">The authors observe that successful inference on<BR/>the NLI4CT benchmark frequently requires combining<BR/>information from multiple sentences of a clinical<BR/>trial report, i.e., multi‑hop reasoning. Empirical<BR/>analysis of system performance shows that smaller<BR/>or purely discriminative models struggle<BR/>disproportionately on instances requiring longer<BR/>inference chains, highlighting multi‑hop reasoning<BR/>as a key obstacle.</FONT></TD></TR>
+</TABLE>>, fillcolor="#fde0c5"];
+    "259343907.c0" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">259343907.c0</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">Deductive Additivity Property for Sentence<BR/>Embeddings</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">Deductive Additivity for Planning of Natural<BR/>Language Proofs</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">The paper defines deductive additivity (DA) as a<BR/>geometric property of a sentence‑embedding space:<BR/>for any two premise sentences p_a and p_b that<BR/>entail a conclusion d_{ab}, the vector sum of<BR/>their embeddings E(p_a)+E(p_b) must have higher<BR/>cosine similarity to the embedding of the<BR/>conclusion E(d_{ab}) than to the embedding of any<BR/>non‑entailed statement x. This formal inequality<BR/>(cos(E(p_a)+E(p_b),E(d_{ab})) &gt;<BR/>cos(E(p_a)+E(p_b),E(x))) reframes the planning<BR/>stage of natural‑language proof generation as a<BR/>vector‑arithmetic search problem, enabling fast,<BR/>scalable selection of reasoning steps via simple<BR/>addition and cosine similarity.</FONT></TD></TR>
+</TABLE>>, fillcolor="#fde0c5"];
+    "266177015.c0" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">266177015.c0</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">HTL dataset: fine-grained natural-language Hoare<BR/>triples for program semantics</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">Natural Language Annotations for Reasoning about<BR/>Program Semantics</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">The paper introduces HTL (Hoare Triples via<BR/>Language), a publicly released dataset that pairs<BR/>self-contained Python code snippets with<BR/>natural-language pre- and postconditions expressed<BR/>as Hoare triples. Annotations are collected at the<BR/>granularity of individual statements and small<BR/>code blocks, aiming to capture intuitive,<BR/>commonsense descriptions of program behaviour<BR/>without relying on static analysis. HTL is built<BR/>from the Programming Puzzles corpus and is<BR/>intended as a resource for training and evaluating<BR/>models that reason about code using natural<BR/>language.</FONT></TD></TR>
+</TABLE>>, fillcolor="#fde0c5"];
+    "266177015.c1" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">266177015.c1</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">Annotation protocol and guidelines for<BR/>natural-language Hoare triples</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">Natural Language Annotations for Reasoning about<BR/>Program Semantics</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">The authors devise a systematic protocol that<BR/>directs annotators to write pre‑ and<BR/>post‑conditions in natural language that are<BR/>immediate logical entailments of a highlighted<BR/>code span and that compose consistently across<BR/>nested spans. The guidelines enforce entailment,<BR/>compositionality, and a uniform tokenisation of<BR/>variable identifiers, and are supported by<BR/>statistical analyses of annotation length and<BR/>coverage. This protocol underpins the creation of<BR/>a coherent, machine‑readable corpus of Hoare‑style<BR/>triples expressed in natural language.</FONT></TD></TR>
+</TABLE>>, fillcolor="#fde0c5"];
+    "266177015.c4-2" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">266177015.c4-2</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">Position statement: NL annotations enable<BR/>explainable program assistants with Hoare‑style<BR/>entailment trees</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">Natural Language Annotations for Reasoning about<BR/>Program Semantics</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">The authors argue that natural‑language pre‑ and<BR/>post‑conditions annotated for code statements can<BR/>be leveraged by language models to build step‑wise<BR/>entailment trees analogous to Hoare triples,<BR/>providing transparent explanations of program<BR/>execution and supporting both deductive and<BR/>abductive reasoning about code behavior.</FONT></TD></TR>
+</TABLE>>, fillcolor="#fde0c5"];
+    "270766239.c0" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">270766239.c0</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">Definition of the Compositional Structured<BR/>Explanation Generation (CSEG) task</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">Compositional Structured Explanation Generation<BR/>with Dynamic Modularized Reasoning</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">The paper introduces a new task, Compositional<BR/>Structured Explanation Generation (CSEG), which<BR/>requires a model to generate a multi‑step<BR/>entailment tree (structured explanation) for a<BR/>hypothesis given a set of candidate sentences.<BR/>CSEG explicitly evaluates compositional<BR/>generalization by testing whether models can<BR/>extrapolate from trees with a limited number of<BR/>inference steps to trees with more steps, focusing<BR/>on both proof length (productivity) and tree shape<BR/>(systematicity). The task is framed as a<BR/>generation problem, combining reasoning and<BR/>compositionality challenges in a single end‑to‑end<BR/>setting.</FONT></TD></TR>
+</TABLE>>, fillcolor="#fde0c5"];
+    "270766239.c1" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">270766239.c1</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">Construction of CSEG benchmark splits<BR/>(EntailmentBank‑Length, EntailmentBank‑Shape,<BR/>DBpedia‑Length)</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">Compositional Structured Explanation Generation<BR/>with Dynamic Modularized Reasoning</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">The authors curate three compositional<BR/>generalization splits from existing corpora to<BR/>evaluate the proposed CSEG task.<BR/>EntailmentBank‑Length (EntB‑L) groups entailment<BR/>trees by proof length to test productivity, while<BR/>EntailmentBank‑Shape (EntB‑Sh) groups them by tree<BR/>shape to test systematicity. DBpedia‑Length<BR/>(DBP‑L) is a synthetic rule‑based dataset derived<BR/>from DBpedia, also partitioned by proof length.<BR/>These splits provide standardized evaluation<BR/>protocols for length and shape generalization in<BR/>structured explanation generation.</FONT></TD></TR>
+</TABLE>>, fillcolor="#fde0c5"];
+    "252781098.c0" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">252781098.c0</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">TemplateCSR task formulation</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">Template Filling for Controllable Commonsense<BR/>Reasoning</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">The paper defines TemplateCSR, a new commonsense<BR/>reasoning task that frames reasoning as filling a<BR/>natural-language template with open‑vocabulary<BR/>concept slots, a multiple‑choice qualifier slot,<BR/>and an optional free‑form explanation slot. A<BR/>language model receives the template together with<BR/>natural‑language instructions describing each slot<BR/>and must generate a fully‑filled sentence that<BR/>respects these constraints. This formulation<BR/>departs from traditional multiple‑choice QA and<BR/>open‑domain knowledge‑base retrieval settings,<BR/>providing fine‑grained controllability over the<BR/>reasoning chain. The task is presented as a<BR/>sequence‑to‑sequence generation problem suitable<BR/>for instruction‑fine‑tuned models.</FONT></TD></TR>
+</TABLE>>, fillcolor="#fde0c5"];
+    "270257856.c0" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">270257856.c0</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">ACCORD conceptual framework for anti‑factual<BR/>commonsense reasoning</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">**ACCORD**: Closing the Commonsense Measurability<BR/>Gap</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">The paper introduces ACCORD, a formally defined<BR/>framework that augments existing commonsense QA<BR/>datasets with anti‑factual contexts. ACCORD<BR/>specifies a set of reasoning skills, pairing<BR/>templates, and recursively reducible reasoning<BR/>(poly)trees, enabling precise control over the<BR/>number of reasoning hops and distractors.<BR/>Variables in the generated trees are grounded<BR/>anti‑factually via a back‑tracking beam search<BR/>over ConceptNet, ensuring that language models<BR/>must reason through the provided context rather<BR/>than rely on parametric knowledge. This framework<BR/>is positioned as a means to close the<BR/>measurability gap between commonsense and formal<BR/>reasoning by providing construct‑valid, scalable<BR/>benchmarks.</FONT></TD></TR>
+</TABLE>>, fillcolor="#fde0c5"];
+    "233297051.c0" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">233297051.c0</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">Formulation of explanation as multistep entailment<BR/>trees</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">Explaining Answers with Entailment Trees</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">The paper reconceives open-domain textual<BR/>question-answering explanation as the construction<BR/>of a directed entailment tree, where each node is<BR/>a multi-premise textual entailment step that<BR/>incrementally derives the hypothesis (question +<BR/>answer) from known facts. This formulation<BR/>separates the correctness of the derivation from<BR/>its utility for users, enabling systematic<BR/>evaluation of explanations independent of answer<BR/>selection. By defining explanations as trees<BR/>rather than isolated rationales, the work provides<BR/>a high-level conceptual framework that can guide<BR/>future research on explainable QA.</FONT></TD></TR>
+</TABLE>>, style="rounded,filled,bold", penwidth=2.5, fillcolor="#fff2b2"];
+    "233297051.c0" -> "281421016.c0" [dir=back];
+    "233297051.c0" -> "273323372.c1" [dir=back];
+    "233297051.c0" -> "273323372.c3" [dir=back];
+    "233297051.c0" -> "280322203.c1" [dir=back];
+    "233297051.c0" -> "268358481.c0" [dir=back];
+    "233297051.c0" -> "271931406.c0" [dir=back];
+    "233297051.c0" -> "248887255.c1" [dir=back];
+    "248887255.c1" -> "269804127.c0" [dir=back];
+    "233297051.c0" -> "248887255.c3" [dir=back];
+    "248887255.c3" -> "256846551.c1" [dir=back];
+    "256846551.c1" -> "267199832.c1" [dir=back];
+    "256846551.c1" -> "267199832.c2" [dir=back];
+    "256846551.c1" -> "267199832.c3" [dir=back];
+    "256846551.c1" -> "268247756.c0" [dir=back];
+    "248887255.c3" -> "273641238.c1" [dir=back];
+    "248887255.c3" -> "253237103.c0" [dir=back];
+    "253237103.c0" -> "280322203.c0" [dir=back];
+    "253237103.c0" -> "280322203.c2" [dir=back];
+    "253237103.c0" -> "280322203.c3" [dir=back];
+    "253237103.c0" -> "268358481.c6-1" [dir=back];
+    "253237103.c0" -> "271931406.c0" [dir=back];
+    "253237103.c0" -> "271931406.c5" [dir=back];
+    "253237103.c0" -> "269803949.c3" [dir=back];
+    "253237103.c0" -> "267199832.c0" [dir=back];
+    "253237103.c0" -> "267199832.c1" [dir=back];
+    "253237103.c0" -> "267199832.c5" [dir=back];
+    "233297051.c0" -> "253244513.c0" [dir=back];
+    "253244513.c0" -> "266177015.c4-1" [dir=back];
+    "233297051.c0" -> "258479954.c0" [dir=back];
+    "233297051.c0" -> "258479954.c1" [dir=back];
+    "233297051.c0" -> "267782534.c0" [dir=back];
+    "233297051.c0" -> "273162523.c0" [dir=back];
+    "233297051.c0" -> "273162523.c1" [dir=back];
+    "233297051.c0" -> "273162523.c2" [dir=back];
+    "233297051.c0" -> "246015349.c0" [dir=back];
+    "246015349.c0" -> "253244513.c0" [dir=back];
+    "246015349.c0" -> "253244513.c1" [dir=back];
+    "246015349.c0" -> "253244513.c2" [dir=back];
+    "253244513.c2" -> "281421016.c1" [dir=back];
+    "253244513.c2" -> "267365102.c0" [dir=back];
+    "253244513.c2" -> "266177015.c4-1" [dir=back];
+    "246015349.c0" -> "253244513.c4" [dir=back];
+    "246015349.c0" -> "253244513.c7" [dir=back];
+    "246015349.c0" -> "259858919.c1" [dir=back];
+    "246015349.c0" -> "259343907.c1" [dir=back];
+    "246015349.c0" -> "249062748.c0" [dir=back];
+    "249062748.c0" -> "271931406.c2" [dir=back];
+    "249062748.c0" -> "271931406.c4" [dir=back];
+    "249062748.c0" -> "271931406.c5" [dir=back];
+    "249062748.c0" -> "265150088.c3" [dir=back];
+    "249062748.c0" -> "256901153.c0" [dir=back];
+    "249062748.c0" -> "268857317.c0" [dir=back];
+    "233297051.c0" -> "273641238.c0" [dir=back];
+    "233297051.c0" -> "273641238.c1" [dir=back];
+    "233297051.c0" -> "273641238.c5-3" [dir=back];
+    "233297051.c0" -> "268091324.c0" [dir=back];
+    "233297051.c0" -> "268091324.c1-1" [dir=back];
+    "233297051.c0" -> "265150088.c0" [dir=back];
+    "233297051.c0" -> "267759612.c0-1" [dir=back];
+    "233297051.c0" -> "267759612.c0-2" [dir=back];
+    "233297051.c0" -> "258480186.c7-1" [dir=back];
+    "233297051.c0" -> "267199832.c0" [dir=back];
+    "233297051.c0" -> "267199832.c1" [dir=back];
+    "233297051.c0" -> "267199832.c2" [dir=back];
+    "233297051.c0" -> "267199832.c3" [dir=back];
+    "233297051.c0" -> "259343907.c0" [dir=back];
+    "233297051.c0" -> "266177015.c0" [dir=back];
+    "233297051.c0" -> "266177015.c1" [dir=back];
+    "233297051.c0" -> "266177015.c4-1" [dir=back];
+    "233297051.c0" -> "266177015.c4-2" [dir=back];
+    "233297051.c0" -> "270766239.c0" [dir=back];
+    "233297051.c0" -> "270766239.c1" [dir=back];
+    "233297051.c0" -> "252781098.c0" [dir=back];
+    "233297051.c0" -> "270257856.c0" [dir=back];
+}

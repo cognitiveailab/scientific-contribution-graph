@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: scicontgraph
+Version: 1.0.0
+Summary: Scientific Contribution Graph API
+Requires-Python: >=3.10
+Requires-Dist: numpy==2.2.6
+Requires-Dist: orjson==3.11.3
+Requires-Dist: psutil>=6.0.0
+Requires-Dist: pydantic<3.0.0,>=2.0.0
+Requires-Dist: torch>=2.6.0
+Requires-Dist: tqdm==4.67.1
+Requires-Dist: transformers<6.0.0,>=5.8.0
+Requires-Dist: huggingface-hub<2.0.0,>=1.14.0

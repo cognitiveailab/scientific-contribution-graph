@@ -1,0 +1,8 @@
+numpy==2.2.6
+orjson==3.11.3
+psutil>=6.0.0
+pydantic<3.0.0,>=2.0.0
+torch>=2.6.0
+tqdm==4.67.1
+transformers<6.0.0,>=5.8.0
+huggingface-hub<2.0.0,>=1.14.0

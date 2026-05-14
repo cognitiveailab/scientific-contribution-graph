@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+src/scicontgraph/ScientificContributionGraph.py
+src/scicontgraph/ScientificContributionGraphVisualization.py
+src/scicontgraph/__init__.py
+src/scicontgraph.egg-info/PKG-INFO
+src/scicontgraph.egg-info/SOURCES.txt
+src/scicontgraph.egg-info/dependency_links.txt
+src/scicontgraph.egg-info/requires.txt
+src/scicontgraph.egg-info/top_level.txt

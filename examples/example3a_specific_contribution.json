@@ -1,0 +1,268 @@
+{
+    "contribution_id": "233297051.c0",
+    "name": "Formulation of explanation as multistep entailment trees",
+    "description": "The paper reconceives open-domain textual question-answering explanation as the construction of a directed entailment tree, where each node is a multi-premise textual entailment step that incrementally derives the hypothesis (question + answer) from known facts. This formulation separates the correctness of the derivation from its utility for users, enabling systematic evaluation of explanations independent of answer selection. By defining explanations as trees rather than isolated rationales, the work provides a high-level conceptual framework that can guide future research on explainable QA.",
+    "types": [
+        {
+            "type": "problem_formulation",
+            "explanation": "It proposes a novel way to define the explanation task for QA."
+        },
+        {
+            "type": "conceptual_framework",
+            "explanation": "It introduces the entailment-tree framework that structures reasoning steps."
+        }
+    ],
+    "sections": [
+        "Introduction",
+        "Task Definitions"
+    ],
+    "prerequisites": [
+        {
+            "name": "Multi-premise textual entailment",
+            "description": "Multi-premise textual entailment extends standard natural-language inference to infer a hypothesis from two or more premises, requiring models to combine information across sentences.",
+            "explanation": "The entailment-tree formulation relies on each node being a valid multi-premise entailment step.",
+            "core_or_peripheral": "core",
+            "references": [
+                {
+                    "type": "paper",
+                    "paper_title": "Recognizing Textual Entailment: Models and Applications",
+                    "paper_year": 2013,
+                    "paper_first_author": {
+                        "first_name": "Ido",
+                        "last_name": "Dagan"
+                    },
+                    "paper_venue": "Morgan and Claypool",
+                    "corpus_id": null,
+                    "corpus_id_match_confidence": 0.0,
+                    "corpus_id_match_method": null,
+                    "matches": []
+                },
+                {
+                    "type": "paper",
+                    "paper_title": "Natural language inference from multiple premises",
+                    "paper_year": 2017,
+                    "paper_first_author": {
+                        "first_name": "Alice",
+                        "last_name": "Lai"
+                    },
+                    "paper_venue": "IJCNLP",
+                    "corpus_id": "29033327",
+                    "corpus_id_match_confidence": 1.0,
+                    "corpus_id_match_method": "title_exact_sanitized",
+                    "matches": [
+                        {
+                            "contribution_id": "29033327.c0",
+                            "explanation": "The paper formulates the Multiple Premise Entailment (MPE) task, explicitly defining a textual entailment problem that requires inference from several premises, which is exactly the concept of multi\u2011premise textual entailment.",
+                            "match_type": "strong",
+                            "match_method": "alignment_v1_feb14"
+                        },
+                        {
+                            "contribution_id": "29033327.c1",
+                            "explanation": "The creation of the MPE dataset provides a concrete resource for training and evaluating models on multi\u2011premise entailment, supporting the prerequisite but not defining the concept itself.",
+                            "match_type": "weak",
+                            "match_method": "alignment_v1_feb14"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Prior explanation approaches using rationales",
+            "description": "Existing QA explanation methods provide short textual rationales or supporting sentences rather than a full chain of reasoning.",
+            "explanation": "These works motivate the need for a richer, structured explanation format and are contrasted with the entailment-tree approach.",
+            "core_or_peripheral": "peripheral",
+            "references": [
+                {
+                    "type": "paper",
+                    "paper_title": "ERASER: A benchmark to evaluate rationalized NLP models",
+                    "paper_year": 2019,
+                    "paper_first_author": {
+                        "first_name": "Jay",
+                        "last_name": "DeYoung"
+                    },
+                    "paper_venue": "ACL",
+                    "corpus_id": "207847663",
+                    "corpus_id_match_confidence": 1.0,
+                    "corpus_id_match_method": "title_exact_sanitized",
+                    "matches": [
+                        {
+                            "contribution_id": "207847663.c2-1",
+                            "explanation": "Implements hard-selection rationalizer models that generate short textual rationales for predictions, exemplifying prior explanation approaches using rationales.",
+                            "match_type": "strong",
+                            "match_method": "alignment_v1_feb14"
+                        },
+                        {
+                            "contribution_id": "207847663.c2-2",
+                            "explanation": "Implements soft-selection rationalizer models that produce continuous importance scores as short rationales, representing another prior rationale\u2011based explanation method.",
+                            "match_type": "strong",
+                            "match_method": "alignment_v1_feb14"
+                        }
+                    ]
+                },
+                {
+                    "type": "paper",
+                    "paper_title": "Explain yourself! Leveraging language models for commonsense reasoning",
+                    "paper_year": 2019,
+                    "paper_first_author": {
+                        "first_name": "Nazneen",
+                        "last_name": "Rajani"
+                    },
+                    "paper_venue": "ACL",
+                    "corpus_id": "174803111",
+                    "corpus_id_match_confidence": 1.0,
+                    "corpus_id_match_method": "title_exact_sanitized",
+                    "matches": []
+                }
+            ]
+        },
+        {
+            "name": "Proof generation with language models",
+            "description": "Transformer-based language models can generate formal or natural-language proofs by sequentially applying inference rules, demonstrating the feasibility of end-to-end generation of structured reasoning.",
+            "explanation": "The EntailmentWriter model and the linearisation scheme are directly inspired by proof-generation systems such as ProofWriter.",
+            "core_or_peripheral": "core",
+            "references": [
+                {
+                    "type": "paper",
+                    "paper_title": "ProofWriter: Generating implications, proofs, and abductive statements over natural language",
+                    "paper_year": 2021,
+                    "paper_first_author": {
+                        "first_name": "Oyvind",
+                        "last_name": "Tafjord"
+                    },
+                    "paper_venue": "IJCAI",
+                    "corpus_id": "229371222",
+                    "corpus_id_match_confidence": 1.0,
+                    "corpus_id_match_method": "title_exact_sanitized",
+                    "matches": [
+                        {
+                            "contribution_id": "229371222.c0",
+                            "explanation": "Introduces an iterative generative ProofWriter model that uses a T5 language model to sequentially generate proof steps, directly exemplifying proof generation with language models.",
+                            "match_type": "strong",
+                            "match_method": "alignment_v1_feb14"
+                        },
+                        {
+                            "contribution_id": "229371222.c1",
+                            "explanation": "Presents an All\u2011At\u2011Once generative baseline that also uses a T5 language model to produce an entire natural\u2011language proof in one pass, further demonstrating proof generation with language models.",
+                            "match_type": "strong",
+                            "match_method": "alignment_v1_feb14"
+                        }
+                    ]
+                },
+                {
+                    "type": "paper",
+                    "paper_title": "Generative language modeling for automated theorem proving",
+                    "paper_year": 2020,
+                    "paper_first_author": {
+                        "first_name": "Stanislas",
+                        "last_name": "Polu"
+                    },
+                    "paper_venue": "arXiv",
+                    "corpus_id": "221535103",
+                    "corpus_id_match_confidence": 1.0,
+                    "corpus_id_match_method": "title_exact_sanitized",
+                    "matches": [
+                        {
+                            "contribution_id": "221535103.c0",
+                            "explanation": "GPT\u2011f is a transformer\u2011based system that directly generates Metamath proof steps, demonstrating end\u2011to\u2011end language\u2011model proof generation.",
+                            "match_type": "strong",
+                            "match_method": "alignment_v1_feb14"
+                        },
+                        {
+                            "contribution_id": "221535103.c1",
+                            "explanation": "The GOAL\u2192PROOFSTEP objective formalises proof\u2011step generation as a conditional language\u2011modeling task, the exact paradigm cited as the prerequisite.",
+                            "match_type": "strong",
+                            "match_method": "alignment_v1_feb14"
+                        }
+                    ]
+                },
+                {
+                    "type": "paper",
+                    "paper_title": "Learning to prove theorems by learning to generate theorems",
+                    "paper_year": 2020,
+                    "paper_first_author": {
+                        "first_name": "Ming-Zhe",
+                        "last_name": "Wang"
+                    },
+                    "paper_venue": "NeurIPS",
+                    "corpus_id": "211132980",
+                    "corpus_id_match_confidence": 1.0,
+                    "corpus_id_match_method": "title_exact_sanitized",
+                    "matches": [
+                        {
+                            "contribution_id": "211132980.c0",
+                            "explanation": "MetaGen is a neural forward\u2011generation system that synthesizes full Metamath theorems together with proof trees, directly demonstrating end\u2011to\u2011end proof generation with a transformer\u2011style language model.",
+                            "match_type": "strong",
+                            "match_method": "alignment_v1_feb14"
+                        },
+                        {
+                            "contribution_id": "211132980.c2-2",
+                            "explanation": "MetaGen\u2011RL\u2011LM trains the theorem generator with a language\u2011model\u2011based reward, showing a connection to language\u2011model\u2011driven proof generation, but the language model is used only for reward, not for the proof itself.",
+                            "match_type": "weak",
+                            "match_method": "alignment_v1_feb14"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Multi-hop QA datasets (ARC, WorldTree)",
+            "description": "Datasets such as ARC and WorldTree provide science questions together with a corpus of domain-specific facts, establishing a setting where multi-step reasoning is required.",
+            "explanation": "The formulation is applied to open-domain QA and uses these datasets as the source of facts and as motivation for needing structured explanations.",
+            "core_or_peripheral": "peripheral",
+            "references": [
+                {
+                    "type": "paper",
+                    "paper_title": "Think you have solved question answering? Try ARC, the AI2 reasoning challenge",
+                    "paper_year": 2018,
+                    "paper_first_author": {
+                        "first_name": "Peter",
+                        "last_name": "Clark"
+                    },
+                    "paper_venue": "arXiv",
+                    "corpus_id": "3922816",
+                    "corpus_id_match_confidence": 1.0,
+                    "corpus_id_match_method": "title_exact_sanitized",
+                    "matches": [
+                        {
+                            "contribution_id": "3922816.c0",
+                            "explanation": "The contribution introduces the ARC dataset, a multi-hop science QA benchmark that is explicitly cited as one of the prerequisite datasets.",
+                            "match_type": "strong",
+                            "match_method": "alignment_v1_feb14"
+                        }
+                    ]
+                },
+                {
+                    "type": "paper",
+                    "paper_title": "WorldTree V2: A corpus of science-domain structured explanations and inference patterns supporting multi-hop inference",
+                    "paper_year": 2020,
+                    "paper_first_author": {
+                        "first_name": "Zhengnan",
+                        "last_name": "Xie"
+                    },
+                    "paper_venue": "LREC",
+                    "corpus_id": "218974301",
+                    "corpus_id_match_confidence": 1.0,
+                    "corpus_id_match_method": "title_exact_sanitized",
+                    "matches": [
+                        {
+                            "contribution_id": "218974301.c0",
+                            "explanation": "The contribution releases WorldTree V2, a multi-fact explanation dataset that is a direct instance of the \"WorldTree\" multi-hop QA dataset referenced in the prerequisite.",
+                            "match_type": "strong",
+                            "match_method": "alignment_v1_feb14"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "paper_info": {
+        "corpus_id": "233297051",
+        "paper_title": "Explaining Answers with Entailment Trees",
+        "paper_year": 2021,
+        "paper_publication_date": {
+            "year": 2021,
+            "month": 4,
+            "day": 17
+        }
+    }
+}

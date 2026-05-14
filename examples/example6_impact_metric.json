@@ -1,0 +1,75 @@
+{
+    "corpus_id": "233297051",
+    "paper_info": {
+        "corpus_id": "233297051",
+        "paper_title": "Explaining Answers with Entailment Trees",
+        "paper_year": 2021,
+        "paper_publication_date": {
+            "year": 2021,
+            "month": 4,
+            "day": 17
+        }
+    },
+    "max_depth": 5,
+    "contribution_impact_scores": {
+        "233297051.c0": {
+            "contribution_name": "Formulation of explanation as multistep entailment trees",
+            "impact_score": 69.0,
+            "impact_score_dampened": 48.33333333333333
+        },
+        "233297051.c1": {
+            "contribution_name": "ENTAILMENTBANK: a large-scale dataset of multistep entailment trees for elementary-science QA",
+            "impact_score": 619.0,
+            "impact_score_dampened": 335.2333333333316
+        },
+        "233297051.c2": {
+            "contribution_name": "Web\u2011based drag\u2011and\u2011drop authoring tool for constructing entailment trees",
+            "impact_score": 3.0,
+            "impact_score_dampened": 3.0
+        },
+        "233297051.c3": {
+            "contribution_name": "Multi\u2011stage relevant\u2011fact retrieval pipeline for the full\u2011corpus explanation task",
+            "impact_score": 19.0,
+            "impact_score_dampened": 8.833333333333332
+        },
+        "233297051.c4": {
+            "contribution_name": "EntailmentWriter: T5\u2011based generative model for entailment\u2011tree generation",
+            "impact_score": 85.0,
+            "impact_score_dampened": 54.666666666666664
+        },
+        "233297051.c5": {
+            "contribution_name": "Tree Alignment Algorithm for Evaluating Entailment Trees",
+            "impact_score": 26.0,
+            "impact_score_dampened": 24.0
+        },
+        "233297051.c6-1": {
+            "contribution_name": "Empirical evaluation of EntailmentWriter on three explanation tasks",
+            "impact_score": 0.0,
+            "impact_score_dampened": 0.0
+        },
+        "233297051.c6-2": {
+            "contribution_name": "Error analysis of EntailmentWriter revealing common failure modes",
+            "impact_score": 3.0,
+            "impact_score_dampened": 3.0
+        },
+        "233297051.c7": {
+            "contribution_name": "Analysis of reasoning types required for multistep entailments",
+            "impact_score": 16.0,
+            "impact_score_dampened": 11.5
+        },
+        "233297051.c8-1": {
+            "contribution_name": "Zero-shot out-of-domain generalization of EntailmentWriter",
+            "impact_score": 0.0,
+            "impact_score_dampened": 0.0
+        },
+        "233297051.c8-2": {
+            "contribution_name": "Shredded\u2011tree interactive explanation generation",
+            "impact_score": 14.0,
+            "impact_score_dampened": 9.0
+        }
+    },
+    "overall_paper_impact_score": {
+        "impact_score": 631.0,
+        "impact_score_dampened": 356.89999999999793
+    }
+}

@@ -1,0 +1,506 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="3499" height="3550" viewBox="0 0 3499 3550">
+<rect x="0" y="0" width="100%" height="100%" fill="white"/>
+<line x1="825.98" y1="2854.87" x2="1772.40" y2="1731.95" stroke="#ffacae" stroke-width="8.00" stroke-opacity="0.95" stroke-linecap="round"/>
+<line x1="1895.83" y1="3212.00" x2="1814.40" y2="1745.98" stroke="#ffe49c" stroke-width="8.00" stroke-opacity="0.95" stroke-linecap="round"/>
+<line x1="2528.62" y1="3035.44" x2="1839.24" y2="1739.05" stroke="#c4e492" stroke-width="8.00" stroke-opacity="0.95" stroke-linecap="round"/>
+<line x1="3028.25" y1="2610.26" x2="1858.85" y2="1722.36" stroke="#8cc0e2" stroke-width="8.00" stroke-opacity="0.95" stroke-linecap="round"/>
+<line x1="3120.96" y1="2473.36" x2="1862.49" y2="1716.98" stroke="#b4a6c9" stroke-width="8.00" stroke-opacity="0.95" stroke-linecap="round"/>
+<line x1="3198.34" y1="2327.26" x2="1865.53" y2="1711.25" stroke="#ffacae" stroke-width="8.00" stroke-opacity="0.95" stroke-linecap="round"/>
+<line x1="3259.49" y1="2173.64" x2="1867.93" y2="1705.21" stroke="#ffe49c" stroke-width="8.00" stroke-opacity="0.95" stroke-linecap="round"/>
+<line x1="3303.68" y1="2014.33" x2="1869.67" y2="1698.96" stroke="#c4e492" stroke-width="8.00" stroke-opacity="0.95" stroke-linecap="round"/>
+<line x1="3330.41" y1="1851.17" x2="1870.72" y2="1692.55" stroke="#8cc0e2" stroke-width="8.00" stroke-opacity="0.95" stroke-linecap="round"/>
+<line x1="3339.35" y1="1686.07" x2="1871.07" y2="1686.07" stroke="#b4a6c9" stroke-width="8.00" stroke-opacity="0.95" stroke-linecap="round"/>
+<line x1="3330.41" y1="1520.98" x2="1870.72" y2="1679.59" stroke="#ffacae" stroke-width="8.00" stroke-opacity="0.95" stroke-linecap="round"/>
+<line x1="3303.68" y1="1357.82" x2="1869.67" y2="1673.19" stroke="#ffe49c" stroke-width="8.00" stroke-opacity="0.95" stroke-linecap="round"/>
+<line x1="3259.49" y1="1198.50" x2="1867.93" y2="1666.93" stroke="#c4e492" stroke-width="8.00" stroke-opacity="0.95" stroke-linecap="round"/>
+<line x1="3198.34" y1="1044.89" x2="1865.53" y2="1660.90" stroke="#8cc0e2" stroke-width="8.00" stroke-opacity="0.95" stroke-linecap="round"/>
+<line x1="3120.96" y1="898.78" x2="1862.49" y2="1655.16" stroke="#b4a6c9" stroke-width="8.00" stroke-opacity="0.95" stroke-linecap="round"/>
+<line x1="3028.25" y1="761.89" x2="1858.85" y2="1649.79" stroke="#ffacae" stroke-width="8.00" stroke-opacity="0.95" stroke-linecap="round"/>
+<line x1="2921.29" y1="635.81" x2="1854.66" y2="1644.84" stroke="#ffe49c" stroke-width="8.00" stroke-opacity="0.95" stroke-linecap="round"/>
+<line x1="2801.34" y1="522.02" x2="1849.95" y2="1640.37" stroke="#c4e492" stroke-width="8.00" stroke-opacity="0.95" stroke-linecap="round"/>
+<line x1="2669.80" y1="421.86" x2="1844.78" y2="1636.44" stroke="#8cc0e2" stroke-width="8.00" stroke-opacity="0.95" stroke-linecap="round"/>
+<line x1="2528.21" y1="336.50" x2="1839.22" y2="1633.09" stroke="#b4a6c9" stroke-width="8.00" stroke-opacity="0.95" stroke-linecap="round"/>
+<line x1="2378.22" y1="266.92" x2="1833.33" y2="1630.36" stroke="#ffacae" stroke-width="8.00" stroke-opacity="0.95" stroke-linecap="round"/>
+<line x1="2221.60" y1="213.96" x2="1827.19" y2="1628.28" stroke="#ffe49c" stroke-width="8.00" stroke-opacity="0.95" stroke-linecap="round"/>
+<line x1="2060.17" y1="178.23" x2="1820.85" y2="1626.88" stroke="#c4e492" stroke-width="8.00" stroke-opacity="0.95" stroke-linecap="round"/>
+<line x1="1895.83" y1="160.14" x2="1814.40" y2="1626.17" stroke="#8cc0e2" stroke-width="8.00" stroke-opacity="0.95" stroke-linecap="round"/>
+<line x1="1730.50" y1="159.92" x2="1807.91" y2="1626.16" stroke="#b4a6c9" stroke-width="8.00" stroke-opacity="0.95" stroke-linecap="round"/>
+<line x1="1566.10" y1="177.55" x2="1801.45" y2="1626.85" stroke="#ffacae" stroke-width="8.00" stroke-opacity="0.95" stroke-linecap="round"/>
+<line x1="1404.58" y1="212.84" x2="1795.11" y2="1628.23" stroke="#ffe49c" stroke-width="8.00" stroke-opacity="0.95" stroke-linecap="round"/>
+<line x1="1247.81" y1="265.37" x2="1788.96" y2="1630.30" stroke="#c4e492" stroke-width="8.00" stroke-opacity="0.95" stroke-linecap="round"/>
+<line x1="1097.64" y1="334.53" x2="1783.06" y2="1633.01" stroke="#8cc0e2" stroke-width="8.00" stroke-opacity="0.95" stroke-linecap="round"/>
+<line x1="955.81" y1="419.51" x2="1777.49" y2="1636.35" stroke="#b4a6c9" stroke-width="8.00" stroke-opacity="0.95" stroke-linecap="round"/>
+<line x1="824.00" y1="519.31" x2="1772.32" y2="1640.27" stroke="#ffacae" stroke-width="8.00" stroke-opacity="0.95" stroke-linecap="round"/>
+<line x1="703.73" y1="632.77" x2="1767.59" y2="1644.72" stroke="#ffe49c" stroke-width="8.00" stroke-opacity="0.95" stroke-linecap="round"/>
+<line x1="596.43" y1="758.55" x2="1763.38" y2="1649.66" stroke="#c4e492" stroke-width="8.00" stroke-opacity="0.95" stroke-linecap="round"/>
+<line x1="503.34" y1="895.19" x2="1759.73" y2="1655.02" stroke="#8cc0e2" stroke-width="8.00" stroke-opacity="0.95" stroke-linecap="round"/>
+<line x1="425.56" y1="1041.08" x2="1756.67" y2="1660.75" stroke="#b4a6c9" stroke-width="8.00" stroke-opacity="0.95" stroke-linecap="round"/>
+<line x1="363.99" y1="1194.53" x2="1754.26" y2="1666.78" stroke="#ffacae" stroke-width="8.00" stroke-opacity="0.95" stroke-linecap="round"/>
+<line x1="319.36" y1="1353.73" x2="1752.50" y2="1673.03" stroke="#ffe49c" stroke-width="8.00" stroke-opacity="0.95" stroke-linecap="round"/>
+<line x1="292.19" y1="1516.81" x2="1751.44" y2="1679.43" stroke="#c4e492" stroke-width="8.00" stroke-opacity="0.95" stroke-linecap="round"/>
+<line x1="384.53" y1="2636.13" x2="737.17" y2="2867.80" stroke="#ffbdbf" stroke-width="6.00" stroke-opacity="0.90" stroke-linecap="round"/>
+<line x1="728.01" y1="2968.12" x2="747.67" y2="2945.78" stroke="#ffbdbf" stroke-width="6.00" stroke-opacity="0.90" stroke-linecap="round"/>
+<line x1="855.89" y1="3094.79" x2="807.31" y2="2957.32" stroke="#ffbdbf" stroke-width="6.00" stroke-opacity="0.90" stroke-linecap="round"/>
+<line x1="1023.07" y1="3228.38" x2="822.36" y2="2949.45" stroke="#ffbdbf" stroke-width="6.00" stroke-opacity="0.90" stroke-linecap="round"/>
+<line x1="1162.06" y1="3294.81" x2="828.66" y2="2944.23" stroke="#ffbdbf" stroke-width="6.00" stroke-opacity="0.90" stroke-linecap="round"/>
+<line x1="1307.78" y1="3344.67" x2="832.96" y2="2939.68" stroke="#ffbdbf" stroke-width="6.00" stroke-opacity="0.90" stroke-linecap="round"/>
+<line x1="1474.87" y1="3366.94" x2="836.97" y2="2934.42" stroke="#ffbdbf" stroke-width="6.00" stroke-opacity="0.90" stroke-linecap="round"/>
+<line x1="1904.15" y1="3361.77" x2="1902.49" y2="3331.82" stroke="#ffeab0" stroke-width="6.00" stroke-opacity="0.90" stroke-linecap="round"/>
+<line x1="2598.70" y1="3168.06" x2="2584.73" y2="3141.51" stroke="#d0e9a8" stroke-width="6.00" stroke-opacity="0.90" stroke-linecap="round"/>
+<line x1="2930.70" y1="2981.46" x2="2614.48" y2="3071.91" stroke="#d0e9a8" stroke-width="6.00" stroke-opacity="0.90" stroke-linecap="round"/>
+<line x1="156.02" y1="2534.75" x2="278.36" y2="2581.69" stroke="#ffcdcf" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="214.33" y1="2617.12" x2="274.78" y2="2610.10" stroke="#ffcdcf" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="257.65" y1="2650.18" x2="283.21" y2="2634.52" stroke="#ffcdcf" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="268.09" y1="2703.37" x2="301.27" y2="2653.22" stroke="#ffcdcf" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="295.75" y1="2776.83" x2="321.35" y2="2661.75" stroke="#ffcdcf" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="361.79" y1="2863.21" x2="340.67" y2="2662.86" stroke="#ffcdcf" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="827.65" y1="3227.34" x2="843.73" y2="3202.02" stroke="#ffcdcf" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="923.93" y1="3305.12" x2="893.78" y2="3208.63" stroke="#ffcdcf" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="2548.68" y1="3395.42" x2="2602.14" y2="3275.92" stroke="#dcefbe" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="2595.61" y1="3373.44" x2="2614.66" y2="3279.95" stroke="#dcefbe" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="2652.18" y1="3344.54" x2="2638.80" y2="3279.91" stroke="#dcefbe" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="2683.96" y1="3328.85" x2="2654.83" y2="3274.12" stroke="#dcefbe" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="2724.80" y1="3295.60" x2="2674.44" y2="3257.41" stroke="#dcefbe" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="2767.09" y1="3275.74" x2="2682.56" y2="3242.89" stroke="#dcefbe" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<line x1="3049.56" y1="3030.97" x2="3029.17" y2="3008.97" stroke="#dcefbe" stroke-width="4.00" stroke-opacity="0.85" stroke-linecap="round"/>
+<circle cx="1811.07" cy="1686.07" r="60.00" fill="#CCCCCC" stroke="#3f3f3f" stroke-width="3.20"/>
+<text x="1811.07" y="1656.07" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Formulation of</text>
+<text x="1811.07" y="1668.07" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">explanation as</text>
+<text x="1811.07" y="1680.07" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">multistep entailment</text>
+<text x="1811.07" y="1692.07" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">trees</text>
+<text x="1811.07" y="1706.07" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Explaining Answers with</text>
+<text x="1811.07" y="1716.07" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Entailment Trees</text>
+<circle cx="787.31" cy="2900.75" r="60.00" fill="#ffacae" stroke="#ff595e" stroke-width="1.80"/>
+<text x="787.31" y="2870.75" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">SCSEARCH: Factored</text>
+<text x="787.31" y="2882.75" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">system for</text>
+<text x="787.31" y="2894.75" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">natural-language</text>
+<text x="787.31" y="2906.75" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">deduction</text>
+<text x="787.31" y="2920.75" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Natural Language</text>
+<text x="787.31" y="2930.75" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Deduction through Sea...</text>
+<circle cx="1899.16" cy="3271.91" r="60.00" fill="#ffe49c" stroke="#ffca3a" stroke-width="1.80"/>
+<text x="1899.16" y="3241.91" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Conditional</text>
+<text x="1899.16" y="3253.91" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">dense‑retrieval</text>
+<text x="1899.16" y="3265.91" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">algorithm for premise</text>
+<text x="1899.16" y="3277.91" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">selection</text>
+<text x="1899.16" y="3291.91" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Entailment Tree</text>
+<text x="1899.16" y="3301.91" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Explanations via...</text>
+<circle cx="2556.79" cy="3088.41" r="60.00" fill="#c4e492" stroke="#8ac926" stroke-width="1.80"/>
+<text x="2556.79" y="3058.41" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Linearized</text>
+<text x="2556.79" y="3070.41" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">entailment‑tree</text>
+<text x="2556.79" y="3082.41" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">representation for</text>
+<text x="2556.79" y="3094.41" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">seq2seq generation</text>
+<text x="2556.79" y="3108.41" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Entailment Tree</text>
+<text x="2556.79" y="3118.41" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Explanations via...</text>
+<circle cx="3076.03" cy="2646.54" r="60.00" fill="#8cc0e2" stroke="#1982c4" stroke-width="1.80"/>
+<text x="3076.03" y="2628.54" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">TemplateCSR task</text>
+<text x="3076.03" y="2640.54" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">formulation</text>
+<text x="3076.03" y="2654.54" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Template Filling for</text>
+<text x="3076.03" y="2664.54" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Controllable Commonse...</text>
+<circle cx="3172.39" cy="2504.27" r="60.00" fill="#b4a6c9" stroke="#6a4c93" stroke-width="1.80"/>
+<text x="3172.39" y="2474.27" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Premise Recovery Task</text>
+<text x="3172.39" y="2486.27" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">for Natural Language</text>
+<text x="3172.39" y="2498.27" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Deduction with</text>
+<text x="3172.39" y="2510.27" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Incomplete Information</text>
+<text x="3172.39" y="2524.27" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Natural Language</text>
+<text x="3172.39" y="2534.27" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Deduction with...</text>
+<circle cx="3252.81" cy="2352.43" r="60.00" fill="#ffacae" stroke="#ff595e" stroke-width="1.80"/>
+<text x="3252.81" y="2328.43" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Problem formulation</text>
+<text x="3252.81" y="2340.43" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">and modular framework</text>
+<text x="3252.81" y="2352.43" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">for Faithful QA (FAME)</text>
+<text x="3252.81" y="2366.43" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Faithful Question</text>
+<text x="3252.81" y="2376.43" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Answering with...</text>
+<circle cx="3316.35" cy="2192.79" r="60.00" fill="#ffe49c" stroke="#ffca3a" stroke-width="1.80"/>
+<text x="3316.35" y="2162.79" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Monte-Carlo planning</text>
+<text x="3316.35" y="2174.79" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">algorithm for</text>
+<text x="3316.35" y="2186.79" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">foresighted action</text>
+<text x="3316.35" y="2198.79" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">selection</text>
+<text x="3316.35" y="2212.79" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Faithful Question</text>
+<text x="3316.35" y="2222.79" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Answering with...</text>
+<circle cx="3362.28" cy="2027.21" r="60.00" fill="#c4e492" stroke="#8ac926" stroke-width="1.80"/>
+<text x="3362.28" y="1997.21" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Multi‑hop reasoning</text>
+<text x="3362.28" y="2009.21" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">identified as a</text>
+<text x="3362.28" y="2021.21" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">primary challenge for</text>
+<text x="3362.28" y="2033.21" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">clinical‑trial NLI</text>
+<text x="3362.28" y="2047.21" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">SemEval-2023 Task 7:</text>
+<text x="3362.28" y="2057.21" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Multi-Evidence Natura...</text>
+<circle cx="3390.06" cy="1857.65" r="60.00" fill="#8cc0e2" stroke="#1982c4" stroke-width="1.80"/>
+<text x="3390.06" y="1833.65" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Deductive Additivity</text>
+<text x="3390.06" y="1845.65" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Property for Sentence</text>
+<text x="3390.06" y="1857.65" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Embeddings</text>
+<text x="3390.06" y="1871.65" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Deductive Additivity for</text>
+<text x="3390.06" y="1881.65" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Planning of Natural...</text>
+<circle cx="3399.35" cy="1686.07" r="60.00" fill="#b4a6c9" stroke="#6a4c93" stroke-width="1.80"/>
+<text x="3399.35" y="1650.07" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">ConDec: Contrastive</text>
+<text x="3399.35" y="1662.07" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Learning‑Based</text>
+<text x="3399.35" y="1674.07" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Stepwise Decoding for</text>
+<text x="3399.35" y="1686.07" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Natural Language Proof</text>
+<text x="3399.35" y="1698.07" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Generation</text>
+<text x="3399.35" y="1712.07" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Are LLMs Rigorous</text>
+<text x="3399.35" y="1722.07" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Logical Reasoners?...</text>
+<circle cx="3390.06" cy="1514.50" r="60.00" fill="#ffacae" stroke="#ff595e" stroke-width="1.80"/>
+<text x="3390.06" y="1478.50" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">HTL dataset:</text>
+<text x="3390.06" y="1490.50" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">fine-grained</text>
+<text x="3390.06" y="1502.50" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">natural-language Hoare</text>
+<text x="3390.06" y="1514.50" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">triples for program</text>
+<text x="3390.06" y="1526.50" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">semantics</text>
+<text x="3390.06" y="1540.50" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Natural Language</text>
+<text x="3390.06" y="1550.50" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Annotations for...</text>
+<circle cx="3362.28" cy="1344.93" r="60.00" fill="#ffe49c" stroke="#ffca3a" stroke-width="1.80"/>
+<text x="3362.28" y="1314.93" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Annotation protocol</text>
+<text x="3362.28" y="1326.93" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">and guidelines for</text>
+<text x="3362.28" y="1338.93" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">natural-language Hoare</text>
+<text x="3362.28" y="1350.93" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">triples</text>
+<text x="3362.28" y="1364.93" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Natural Language</text>
+<text x="3362.28" y="1374.93" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Annotations for...</text>
+<circle cx="3316.35" cy="1179.36" r="60.00" fill="#c4e492" stroke="#8ac926" stroke-width="1.80"/>
+<text x="3316.35" y="1143.36" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Position statement: NL</text>
+<text x="3316.35" y="1155.36" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">annotations as middle</text>
+<text x="3316.35" y="1167.36" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">ground between</text>
+<text x="3316.35" y="1179.36" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">comments and static</text>
+<text x="3316.35" y="1191.36" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">analysis</text>
+<text x="3316.35" y="1205.36" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Natural Language</text>
+<text x="3316.35" y="1215.36" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Annotations for...</text>
+<circle cx="3252.81" cy="1019.72" r="60.00" fill="#8cc0e2" stroke="#1982c4" stroke-width="1.80"/>
+<text x="3252.81" y="977.72" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Position statement: NL</text>
+<text x="3252.81" y="989.72" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">annotations enable</text>
+<text x="3252.81" y="1001.72" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">explainable program</text>
+<text x="3252.81" y="1013.72" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">assistants with</text>
+<text x="3252.81" y="1025.72" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Hoare‑style entailment</text>
+<text x="3252.81" y="1037.72" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">trees</text>
+<text x="3252.81" y="1051.72" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Natural Language</text>
+<text x="3252.81" y="1061.72" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Annotations for...</text>
+<circle cx="3172.39" cy="867.87" r="60.00" fill="#b4a6c9" stroke="#6a4c93" stroke-width="1.80"/>
+<text x="3172.39" y="837.87" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">SEER: General RL</text>
+<text x="3172.39" y="849.87" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Framework for</text>
+<text x="3172.39" y="861.87" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Structured Reasoning</text>
+<text x="3172.39" y="873.87" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">and Explanation</text>
+<text x="3172.39" y="887.87" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">SEER: Facilitating</text>
+<text x="3172.39" y="897.87" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Structured Reasoning ...</text>
+<circle cx="3076.03" cy="725.60" r="60.00" fill="#ffacae" stroke="#ff595e" stroke-width="1.80"/>
+<text x="3076.03" y="701.60" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Structure-based return</text>
+<text x="3076.03" y="713.60" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">for tree and graph</text>
+<text x="3076.03" y="725.60" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">reasoning</text>
+<text x="3076.03" y="739.60" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">SEER: Facilitating</text>
+<text x="3076.03" y="749.60" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Structured Reasoning ...</text>
+<circle cx="2964.88" cy="594.58" r="60.00" fill="#ffe49c" stroke="#ffca3a" stroke-width="1.80"/>
+<text x="2964.88" y="558.58" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Fine-grained reward</text>
+<text x="2964.88" y="570.58" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">function</text>
+<text x="2964.88" y="582.58" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">distinguishing</text>
+<text x="2964.88" y="594.58" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">correct, erroneous,</text>
+<text x="2964.88" y="606.58" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">and redundant steps</text>
+<text x="2964.88" y="620.58" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">SEER: Facilitating</text>
+<text x="2964.88" y="630.58" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Structured Reasoning ...</text>
+<circle cx="2840.22" cy="476.32" r="60.00" fill="#c4e492" stroke="#8ac926" stroke-width="1.80"/>
+<text x="2840.22" y="452.32" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Supervised warm‑up of</text>
+<text x="2840.22" y="464.32" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">policy for structured</text>
+<text x="2840.22" y="476.32" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">reasoning RL</text>
+<text x="2840.22" y="490.32" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">SEER: Facilitating</text>
+<text x="2840.22" y="500.32" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Structured Reasoning ...</text>
+<circle cx="2703.51" cy="372.23" r="60.00" fill="#8cc0e2" stroke="#1982c4" stroke-width="1.80"/>
+<text x="2703.51" y="342.23" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Analysis of missing</text>
+<text x="2703.51" y="354.23" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">backtracking in</text>
+<text x="2703.51" y="366.23" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Least-to-most</text>
+<text x="2703.51" y="378.23" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">prompting</text>
+<text x="2703.51" y="392.23" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">SymBa: Symbolic Backward</text>
+<text x="2703.51" y="402.23" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Chaining for Structur...</text>
+<circle cx="2556.36" cy="283.51" r="60.00" fill="#b4a6c9" stroke="#6a4c93" stroke-width="1.80"/>
+<text x="2556.36" y="259.51" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Analysis of missing</text>
+<text x="2556.36" y="271.51" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">binding propagation in</text>
+<text x="2556.36" y="283.51" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">LAMBADA</text>
+<text x="2556.36" y="297.51" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">SymBa: Symbolic Backward</text>
+<text x="2556.36" y="307.51" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Chaining for Structur...</text>
+<circle cx="2400.49" cy="211.21" r="60.00" fill="#ffacae" stroke="#ff595e" stroke-width="1.80"/>
+<text x="2400.49" y="193.21" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Decompositional RTE</text>
+<text x="2400.49" y="205.21" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">task definition</text>
+<text x="2400.49" y="219.21" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Enhancing Systematic</text>
+<text x="2400.49" y="229.21" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Decompositional Natur...</text>
+<circle cx="2237.72" cy="156.17" r="60.00" fill="#ffe49c" stroke="#ffca3a" stroke-width="1.80"/>
+<text x="2237.72" y="138.17" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Multimodal Entailment</text>
+<text x="2237.72" y="150.17" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Tree Generation Task</text>
+<text x="2237.72" y="164.17" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">TV-TREES: Multimodal</text>
+<text x="2237.72" y="174.17" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Entailment Trees for...</text>
+<circle cx="2069.95" cy="119.03" r="60.00" fill="#c4e492" stroke="#8ac926" stroke-width="1.80"/>
+<text x="2069.95" y="95.03" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Recursive Multimodal</text>
+<text x="2069.95" y="107.03" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Entailment Tree</text>
+<text x="2069.95" y="119.03" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Generation Algorithm</text>
+<text x="2069.95" y="133.03" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">TV-TREES: Multimodal</text>
+<text x="2069.95" y="143.03" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Entailment Trees for...</text>
+<circle cx="1899.16" cy="100.24" r="60.00" fill="#8cc0e2" stroke="#1982c4" stroke-width="1.80"/>
+<text x="1899.16" y="76.24" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Logical Pattern Memory</text>
+<text x="1899.16" y="88.24" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Pre-trained Model</text>
+<text x="1899.16" y="100.24" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">(LMPM) architecture</text>
+<text x="1899.16" y="114.24" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">A Logical Pattern Memory</text>
+<text x="1899.16" y="124.24" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Pre-trained Model for...</text>
+<circle cx="1727.33" cy="100.00" r="60.00" fill="#b4a6c9" stroke="#6a4c93" stroke-width="1.80"/>
+<text x="1727.33" y="70.00" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">ACCORD conceptual</text>
+<text x="1727.33" y="82.00" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">framework for</text>
+<text x="1727.33" y="94.00" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">anti‑factual</text>
+<text x="1727.33" y="106.00" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">commonsense reasoning</text>
+<text x="1727.33" y="120.00" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">ACCORD: Closing the</text>
+<text x="1727.33" y="130.00" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Commonsense...</text>
+<circle cx="1556.49" cy="118.33" r="60.00" fill="#ffacae" stroke="#ff595e" stroke-width="1.80"/>
+<text x="1556.49" y="88.33" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Definition of the</text>
+<text x="1556.49" y="100.33" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Compositional</text>
+<text x="1556.49" y="112.33" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Structured Explanation</text>
+<text x="1556.49" y="124.33" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Generation (CSEG) task</text>
+<text x="1556.49" y="138.33" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Compositional Structured</text>
+<text x="1556.49" y="148.33" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Explanation Generatio...</text>
+<circle cx="1388.62" cy="155.00" r="60.00" fill="#ffe49c" stroke="#ffca3a" stroke-width="1.80"/>
+<text x="1388.62" y="119.00" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Construction of CSEG</text>
+<text x="1388.62" y="131.00" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">benchmark splits</text>
+<text x="1388.62" y="143.00" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">(EntailmentBank‑Length,</text>
+<text x="1388.62" y="155.00" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">EntailmentBank‑Shape,</text>
+<text x="1388.62" y="167.00" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">DBpedia‑Length)</text>
+<text x="1388.62" y="181.00" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Compositional Structured</text>
+<text x="1388.62" y="191.00" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Explanation Generatio...</text>
+<circle cx="1225.70" cy="209.60" r="60.00" fill="#c4e492" stroke="#8ac926" stroke-width="1.80"/>
+<text x="1225.70" y="173.60" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">FRVA: Integrated Fact</text>
+<text x="1225.70" y="185.60" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Retrieval and</text>
+<text x="1225.70" y="197.60" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Bidirectional Proof</text>
+<text x="1225.70" y="209.60" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Generation Framework</text>
+<text x="1225.70" y="221.60" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">for Explainable QA</text>
+<text x="1225.70" y="235.60" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">FRVA: Fact-Retrieval and</text>
+<text x="1225.70" y="245.60" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Verification Augmente...</text>
+<circle cx="1069.63" cy="281.47" r="60.00" fill="#8cc0e2" stroke="#1982c4" stroke-width="1.80"/>
+<text x="1069.63" y="251.47" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">MDP formulation of</text>
+<text x="1069.63" y="263.47" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">multi-step reasoning</text>
+<text x="1069.63" y="275.47" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">using entailment</text>
+<text x="1069.63" y="287.47" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">graphs</text>
+<text x="1069.63" y="301.47" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Deliberate Reasoning in</text>
+<text x="1069.63" y="311.47" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Language Models as...</text>
+<circle cx="922.23" cy="369.79" r="60.00" fill="#b4a6c9" stroke="#6a4c93" stroke-width="1.80"/>
+<text x="922.23" y="339.79" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">SWAP (Structure-aware</text>
+<text x="922.23" y="351.79" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Planning with an</text>
+<text x="922.23" y="363.79" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Accurate World Model)</text>
+<text x="922.23" y="375.79" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">framework</text>
+<text x="922.23" y="389.79" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Deliberate Reasoning in</text>
+<text x="922.23" y="399.79" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Language Models as...</text>
+<circle cx="785.24" cy="473.50" r="60.00" fill="#ffacae" stroke="#ff595e" stroke-width="1.80"/>
+<text x="785.24" y="449.50" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Entailment-graph</text>
+<text x="785.24" y="461.50" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">representation for</text>
+<text x="785.24" y="473.50" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">reasoning states</text>
+<text x="785.24" y="487.50" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Deliberate Reasoning in</text>
+<text x="785.24" y="497.50" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Language Models as...</text>
+<circle cx="660.26" cy="591.41" r="60.00" fill="#ffe49c" stroke="#ffca3a" stroke-width="1.80"/>
+<text x="660.26" y="561.41" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Graph‑based</text>
+<text x="660.26" y="573.41" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">structure‑aware</text>
+<text x="660.26" y="585.41" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">demonstration</text>
+<text x="660.26" y="597.41" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">selection</text>
+<text x="660.26" y="611.41" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Exploring the Role of</text>
+<text x="660.26" y="621.41" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Reasoning Structures ...</text>
+<circle cx="548.74" cy="722.14" r="60.00" fill="#c4e492" stroke="#8ac926" stroke-width="1.80"/>
+<text x="548.74" y="704.14" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Proof‑hint generation</text>
+<text x="548.74" y="716.14" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">module</text>
+<text x="548.74" y="730.14" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Exploring the Role of</text>
+<text x="548.74" y="740.14" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Reasoning Structures ...</text>
+<circle cx="452.00" cy="864.14" r="60.00" fill="#8cc0e2" stroke="#1982c4" stroke-width="1.80"/>
+<text x="452.00" y="828.14" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Joint Entailment‑Tree</text>
+<text x="452.00" y="840.14" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Generation and</text>
+<text x="452.00" y="852.14" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Answering Formulation</text>
+<text x="452.00" y="864.14" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">for Multimodal</text>
+<text x="452.00" y="876.14" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Multi‑Hop QA</text>
+<text x="452.00" y="890.14" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">An Entailment Tree</text>
+<text x="452.00" y="900.14" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Generation Approach f...</text>
+<circle cx="371.16" cy="1015.76" r="60.00" fill="#b4a6c9" stroke="#6a4c93" stroke-width="1.80"/>
+<text x="371.16" y="985.76" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Definition of</text>
+<text x="371.16" y="997.76" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Multimodal</text>
+<text x="371.16" y="1009.76" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Entailment‑Tree</text>
+<text x="371.16" y="1021.76" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Generation Task</text>
+<text x="371.16" y="1035.76" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">An Entailment Tree</text>
+<text x="371.16" y="1045.76" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Generation Approach f...</text>
+<circle cx="307.18" cy="1175.23" r="60.00" fill="#ffacae" stroke="#ff595e" stroke-width="1.80"/>
+<text x="307.18" y="1151.23" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Ablation Study</text>
+<text x="307.18" y="1163.23" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Quantifying Component</text>
+<text x="307.18" y="1175.23" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Contributions</text>
+<text x="307.18" y="1189.23" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">An Entailment Tree</text>
+<text x="307.18" y="1199.23" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Generation Approach f...</text>
+<circle cx="260.80" cy="1340.68" r="60.00" fill="#ffe49c" stroke="#ffca3a" stroke-width="1.80"/>
+<text x="260.80" y="1310.68" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Natural-Logic-Guided</text>
+<text x="260.80" y="1322.68" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Reward Pipeline for</text>
+<text x="260.80" y="1334.68" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Entailment-Tree</text>
+<text x="260.80" y="1346.68" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Generation</text>
+<text x="260.80" y="1360.68" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Natural Logic at the</text>
+<text x="260.80" y="1370.68" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Core: Dynamic Rewards...</text>
+<circle cx="232.56" cy="1510.17" r="60.00" fill="#c4e492" stroke="#8ac926" stroke-width="1.80"/>
+<text x="232.56" y="1492.17" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Integrative Grounding</text>
+<text x="232.56" y="1504.17" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Task Definition</text>
+<text x="232.56" y="1518.17" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">INTEGROUND: On the</text>
+<text x="232.56" y="1528.17" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Evaluation of...</text>
+<circle cx="334.38" cy="2603.19" r="60.00" fill="#ffcdcf" stroke="#ff595e" stroke-width="1.80"/>
+<text x="334.38" y="2573.19" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">NLProofS:</text>
+<text x="334.38" y="2585.19" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Verifier‑Guided</text>
+<text x="334.38" y="2597.19" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Stepwise Proof</text>
+<text x="334.38" y="2609.19" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Generation</text>
+<text x="334.38" y="2623.19" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Generating Natural</text>
+<text x="334.38" y="2633.19" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Language Proofs with...</text>
+<circle cx="688.36" cy="3013.16" r="60.00" fill="#ffcdcf" stroke="#ff595e" stroke-width="1.80"/>
+<text x="688.36" y="2995.16" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Everyday Norms: Why</text>
+<text x="688.36" y="3007.16" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Not? (ENWN) Dataset</text>
+<text x="688.36" y="3021.16" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Natural Language</text>
+<text x="688.36" y="3031.16" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Deduction with...</text>
+<circle cx="875.89" cy="3151.36" r="60.00" fill="#ffcdcf" stroke="#ff595e" stroke-width="1.80"/>
+<text x="875.89" y="3115.36" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">ADGV: Bidirectional</text>
+<text x="875.89" y="3127.36" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Search over Abductive</text>
+<text x="875.89" y="3139.36" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">and Deductive</text>
+<text x="875.89" y="3151.36" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Generation with</text>
+<text x="875.89" y="3163.36" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Validation</text>
+<text x="875.89" y="3177.36" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Natural Language</text>
+<text x="875.89" y="3187.36" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Deduction with...</text>
+<circle cx="1058.12" cy="3277.08" r="60.00" fill="#ffcdcf" stroke="#ff595e" stroke-width="1.80"/>
+<text x="1058.12" y="3253.08" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Round‑Trip Validation</text>
+<text x="1058.12" y="3265.08" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Mechanisms for Logical</text>
+<text x="1058.12" y="3277.08" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Consistency</text>
+<text x="1058.12" y="3291.08" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Natural Language</text>
+<text x="1058.12" y="3301.08" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Deduction with...</text>
+<circle cx="1203.41" cy="3338.28" r="60.00" fill="#ffcdcf" stroke="#ff595e" stroke-width="1.80"/>
+<text x="1203.41" y="3314.28" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Empirical Evaluation</text>
+<text x="1203.41" y="3326.28" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">and Error Analysis of</text>
+<text x="1203.41" y="3338.28" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">ADGV</text>
+<text x="1203.41" y="3352.28" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Natural Language</text>
+<text x="1203.41" y="3362.28" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Deduction with...</text>
+<circle cx="1353.43" cy="3383.61" r="60.00" fill="#ffcdcf" stroke="#ff595e" stroke-width="1.80"/>
+<text x="1353.43" y="3353.61" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Deductive‑Additivity‑Based</text>
+<text x="1353.43" y="3365.61" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Planning Heuristic and</text>
+<text x="1353.43" y="3377.61" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Proof‑Generation</text>
+<text x="1353.43" y="3389.61" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Search Algorithm</text>
+<text x="1353.43" y="3403.61" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Deductive Additivity for</text>
+<text x="1353.43" y="3413.61" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Planning of Natural...</text>
+<circle cx="1524.53" cy="3400.61" r="60.00" fill="#ffcdcf" stroke="#ff595e" stroke-width="1.80"/>
+<text x="1524.53" y="3370.61" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Algorithmic pipeline</text>
+<text x="1524.53" y="3382.61" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">for transformer‑guided</text>
+<text x="1524.53" y="3394.61" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">chaining based on</text>
+<text x="1524.53" y="3406.61" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">forward chaining</text>
+<text x="1524.53" y="3420.61" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Investigating</text>
+<text x="1524.53" y="3430.61" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Transformer guided...</text>
+<circle cx="1907.48" cy="3421.68" r="60.00" fill="#ffefc4" stroke="#ffca3a" stroke-width="1.80"/>
+<text x="1907.48" y="3379.68" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">State-aware iterative</text>
+<text x="1907.48" y="3391.68" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">fact retrieval for</text>
+<text x="1907.48" y="3403.68" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">multi-step</text>
+<text x="1907.48" y="3415.68" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Tree-structured</text>
+<text x="1907.48" y="3427.68" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Entailment Reasoning</text>
+<text x="1907.48" y="3439.68" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">(TER)</text>
+<text x="1907.48" y="3453.68" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Empowering</text>
+<text x="1907.48" y="3463.68" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Tree-structured...</text>
+<circle cx="2626.64" cy="3221.15" r="60.00" fill="#dcefbe" stroke="#8ac926" stroke-width="1.80"/>
+<text x="2626.64" y="3185.15" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">MDP‑Formulated</text>
+<text x="2626.64" y="3197.15" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Reinforcement Learning</text>
+<text x="2626.64" y="3209.15" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Framework for</text>
+<text x="2626.64" y="3221.15" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Entailment‑Tree</text>
+<text x="2626.64" y="3233.15" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Generation (RLET)</text>
+<text x="2626.64" y="3247.15" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">RLET: A Reinforcement</text>
+<text x="2626.64" y="3257.15" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Learning Based Approa...</text>
+<circle cx="2988.39" cy="2964.96" r="60.00" fill="#dcefbe" stroke="#8ac926" stroke-width="1.80"/>
+<text x="2988.39" y="2928.96" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Reasoning Graph</text>
+<text x="2988.39" y="2940.96" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Formalism for</text>
+<text x="2988.39" y="2952.96" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Structured</text>
+<text x="2988.39" y="2964.96" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Natural‑Language</text>
+<text x="2988.39" y="2976.96" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Explanations</text>
+<text x="2988.39" y="2990.96" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">STREET: A Multi-Task</text>
+<text x="2988.39" y="3000.96" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Structured Reasoning ...</text>
+<circle cx="100.00" cy="2513.25" r="60.00" fill="#ffeeef" stroke="#ff595e" stroke-width="1.80"/>
+<text x="100.00" y="2477.25" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Conceptual framework</text>
+<text x="100.00" y="2489.25" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">separating output and</text>
+<text x="100.00" y="2501.25" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">chaining strategies</text>
+<text x="100.00" y="2513.25" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">for neural symbolic</text>
+<text x="100.00" y="2525.25" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">reasoning</text>
+<text x="100.00" y="2539.25" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Empirical Investigation</text>
+<text x="100.00" y="2549.25" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">of Neural Symbolic...</text>
+<circle cx="154.73" cy="2624.04" r="60.00" fill="#ffeeef" stroke="#ff595e" stroke-width="1.80"/>
+<text x="154.73" y="2594.04" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Computational</text>
+<text x="154.73" y="2606.04" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Efficiency Analysis of</text>
+<text x="154.73" y="2618.04" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">One‑Stage ConDec vs</text>
+<text x="154.73" y="2630.04" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Multi‑Stage Baselines</text>
+<text x="154.73" y="2644.04" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Are LLMs Rigorous</text>
+<text x="154.73" y="2654.04" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Logical Reasoners?...</text>
+<circle cx="206.48" cy="2681.51" r="60.00" fill="#ffeeef" stroke="#ff595e" stroke-width="1.80"/>
+<text x="206.48" y="2639.51" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">GFaiR: Neural</text>
+<text x="206.48" y="2651.51" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Resolution‑Refutation</text>
+<text x="206.48" y="2663.51" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Framework for</text>
+<text x="206.48" y="2675.51" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Natural‑Language</text>
+<text x="206.48" y="2687.51" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">First‑Order Logic</text>
+<text x="206.48" y="2699.51" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Reasoning</text>
+<text x="206.48" y="2713.51" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Towards Generalizable</text>
+<text x="206.48" y="2723.51" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">and Faithful Logic...</text>
+<circle cx="234.98" cy="2753.40" r="60.00" fill="#ffeeef" stroke="#ff595e" stroke-width="1.80"/>
+<text x="234.98" y="2723.40" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Bidirectional</text>
+<text x="234.98" y="2735.40" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Deductive‑Abductive</text>
+<text x="234.98" y="2747.40" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Proof Generator with</text>
+<text x="234.98" y="2759.40" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Cross‑Verification</text>
+<text x="234.98" y="2773.40" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">FRVA: Fact-Retrieval and</text>
+<text x="234.98" y="2783.40" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Verification Augmente...</text>
+<circle cx="282.72" cy="2835.39" r="60.00" fill="#ffeeef" stroke="#ff595e" stroke-width="1.80"/>
+<text x="282.72" y="2811.39" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Alignment and Fusion</text>
+<text x="282.72" y="2823.39" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">of Deductive and</text>
+<text x="282.72" y="2835.39" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Abductive Proof Trees</text>
+<text x="282.72" y="2849.39" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">FRVA: Fact-Retrieval and</text>
+<text x="282.72" y="2859.39" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Verification Augmente...</text>
+<circle cx="368.08" cy="2922.88" r="60.00" fill="#ffeeef" stroke="#ff595e" stroke-width="1.80"/>
+<text x="368.08" y="2892.88" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Comprehensive</text>
+<text x="368.08" y="2904.88" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Empirical Evaluation</text>
+<text x="368.08" y="2916.88" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">of FRVA on</text>
+<text x="368.08" y="2928.88" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">EntailmentBank</text>
+<text x="368.08" y="2942.88" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">FRVA: Fact-Retrieval and</text>
+<text x="368.08" y="2952.88" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Verification Augmente...</text>
+<circle cx="795.49" cy="3278.00" r="60.00" fill="#ffeeef" stroke="#ff595e" stroke-width="1.80"/>
+<text x="795.49" y="3248.00" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Logic-Explainer</text>
+<text x="795.49" y="3260.00" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">neuro-symbolic</text>
+<text x="795.49" y="3272.00" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">framework for ethical</text>
+<text x="795.49" y="3284.00" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">NLI</text>
+<text x="795.49" y="3298.00" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Enhancing Ethical</text>
+<text x="795.49" y="3308.00" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Explanations of Large...</text>
+<circle cx="941.82" cy="3362.39" r="60.00" fill="#ffeeef" stroke="#ff595e" stroke-width="1.80"/>
+<text x="941.82" y="3338.39" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Four‑Condition</text>
+<text x="941.82" y="3350.39" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Evidence Taxonomy for</text>
+<text x="941.82" y="3362.39" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Integrative Grounding</text>
+<text x="941.82" y="3376.39" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">INTEGROUND: On the</text>
+<text x="941.82" y="3386.39" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Evaluation of...</text>
+<circle cx="2524.18" cy="3450.19" r="60.00" fill="#f3fae9" stroke="#8ac926" stroke-width="1.80"/>
+<text x="2524.18" y="3420.19" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Open‑source release of</text>
+<text x="2524.18" y="3432.19" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">SEER code and</text>
+<text x="2524.18" y="3444.19" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">reproducibility</text>
+<text x="2524.18" y="3456.19" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">package</text>
+<text x="2524.18" y="3470.19" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">SEER: Facilitating</text>
+<text x="2524.18" y="3480.19" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Structured Reasoning ...</text>
+<circle cx="2583.64" cy="3432.23" r="60.00" fill="#f3fae9" stroke="#8ac926" stroke-width="1.80"/>
+<text x="2583.64" y="3402.23" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">State‑of‑the‑art</text>
+<text x="2583.64" y="3414.23" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">empirical performance</text>
+<text x="2583.64" y="3426.23" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">of LMPM on</text>
+<text x="2583.64" y="3438.23" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">EntailmentBank</text>
+<text x="2583.64" y="3452.23" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">A Logical Pattern Memory</text>
+<text x="2583.64" y="3462.23" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Pre-trained Model for...</text>
+<circle cx="2664.34" cy="3403.29" r="60.00" fill="#f3fae9" stroke="#8ac926" stroke-width="1.80"/>
+<text x="2664.34" y="3379.29" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Empirical evaluation</text>
+<text x="2664.34" y="3391.29" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">of SPEH on</text>
+<text x="2664.34" y="3403.29" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">EntailmentBank Task 1</text>
+<text x="2664.34" y="3417.29" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Step Feasibility-Aware</text>
+<text x="2664.34" y="3427.29" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">and Error-Correctable...</text>
+<circle cx="2712.15" cy="3381.81" r="60.00" fill="#f3fae9" stroke="#8ac926" stroke-width="1.80"/>
+<text x="2712.15" y="3339.81" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">NLDR:</text>
+<text x="2712.15" y="3351.81" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Natural‑Logic‑Based</text>
+<text x="2712.15" y="3363.81" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Dynamic‑Reward</text>
+<text x="2712.15" y="3375.81" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Framework for</text>
+<text x="2712.15" y="3387.81" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Entailment‑Tree</text>
+<text x="2712.15" y="3399.81" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Generation</text>
+<text x="2712.15" y="3413.81" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Natural Logic at the</text>
+<text x="2712.15" y="3423.81" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Core: Dynamic Rewards...</text>
+<circle cx="2772.60" cy="3331.86" r="60.00" fill="#f3fae9" stroke="#8ac926" stroke-width="1.80"/>
+<text x="2772.60" y="3295.86" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Joint Premise</text>
+<text x="2772.60" y="3307.86" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Selection and</text>
+<text x="2772.60" y="3319.86" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Intermediate</text>
+<text x="2772.60" y="3331.86" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Conclusion Generation</text>
+<text x="2772.60" y="3343.86" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">in RL Policy</text>
+<text x="2772.60" y="3357.86" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Natural Logic at the</text>
+<text x="2772.60" y="3367.86" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Core: Dynamic Rewards...</text>
+<circle cx="2823.01" cy="3297.47" r="60.00" fill="#f3fae9" stroke="#8ac926" stroke-width="1.80"/>
+<text x="2823.01" y="3273.47" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">State‑of‑the‑art</text>
+<text x="2823.01" y="3285.47" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">Empirical Results on</text>
+<text x="2823.01" y="3297.47" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">EntailmentBank</text>
+<text x="2823.01" y="3311.47" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Natural Logic at the</text>
+<text x="2823.01" y="3321.47" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Core: Dynamic Rewards...</text>
+<circle cx="3090.35" cy="3074.98" r="60.00" fill="#f3fae9" stroke="#8ac926" stroke-width="1.80"/>
+<text x="3090.35" y="3050.98" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">xSTREET multilingual</text>
+<text x="3090.35" y="3062.98" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">structured‑reasoning</text>
+<text x="3090.35" y="3074.98" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#222222">benchmark</text>
+<text x="3090.35" y="3088.98" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Eliciting Better</text>
+<text x="3090.35" y="3098.98" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#444444">Multilingual Structur...</text>
+</svg>

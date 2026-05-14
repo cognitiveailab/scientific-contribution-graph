@@ -1,0 +1,87 @@
+[
+    {
+        "corpus_id": "233297051",
+        "contribution_id": "233297051.c4",
+        "cosine": 0.8225603103637695,
+        "contribution_name": "EntailmentWriter: T5‑based generative model for entailment‑tree generation",
+        "contribution_description": "The authors fine‑tune a pretrained T5 text‑to‑text transformer (up to 11 B parameters) to generate linearized entailment trees that encode multi‑premise textual entailment steps. Trees are represented as sequences of identifiers (sent*, int*, hypot) with intermediate sentences inserted inline, enabling end‑to‑end training on the ENTAILMENTBANK resource. For the full‑corpus setting, a retrieval‑augmented pipeline supplies a small set of relevant facts before generation.",
+        "paper_info": {
+            "corpus_id": "233297051",
+            "paper_title": "Explaining Answers with Entailment Trees",
+            "paper_year": 2021,
+            "paper_publication_date": {
+                "year": 2021,
+                "month": 4,
+                "day": 17
+            }
+        }
+    },
+    {
+        "corpus_id": "248524641",
+        "contribution_id": "248524641.c0",
+        "cosine": 0.7965105175971985,
+        "contribution_name": "METGEN: Modular Entailment‑Tree Generation Framework",
+        "contribution_description": "METGEN is a high‑level framework that generates multi‑step entailment trees to explain question‑answering predictions. It alternates between a reasoning controller, which scores and selects promising reasoning steps, facts, and intermediate states, and a collection of dedicated single‑step entailment modules (deductive and abductive) that are each constrained to a specific logical inference type (substitution, conjunction, if‑then). The framework iteratively expands the tree by executing the selected modules, adding generated intermediate facts to the state, and using a beam‑search algorithm guided by the controller scores, producing more reliable and logically valid entailment steps than prior end‑to‑end generators.",
+        "paper_info": {
+            "corpus_id": "248524641",
+            "paper_title": "METGEN: A Module-Based Entailment Tree Generation Framework for Answer Explanation",
+            "paper_year": 2022,
+            "paper_publication_date": {
+                "year": 2022,
+                "month": 5,
+                "day": 5
+            }
+        }
+    },
+    {
+        "corpus_id": "233297051",
+        "contribution_id": "233297051.c3",
+        "cosine": 0.7819234728813171,
+        "contribution_name": "Multi‑stage relevant‑fact retrieval pipeline for the full‑corpus explanation task",
+        "contribution_description": "To enable entailment‑tree generation when the supporting corpus exceeds the model's token limit, the authors train two sentence‑relevance classifiers (BERT and RoBERTa) on WorldTree annotations, score every fact in the corpus, retrieve the top‑25 sentences using a RoBERTa‑trained ranker, and then rerank the top‑20 candidates from each classifier with a TensorFlow‑Ranking BERT scorer. The final 25 highest‑scoring sentences are supplied to the EntailmentWriter generation model, ensuring that the most pertinent premises are available for constructing entailment trees in Task 3 (full‑corpus).",
+        "paper_info": {
+            "corpus_id": "233297051",
+            "paper_title": "Explaining Answers with Entailment Trees",
+            "paper_year": 2021,
+            "paper_publication_date": {
+                "year": 2021,
+                "month": 4,
+                "day": 17
+            }
+        }
+    },
+    {
+        "corpus_id": "267782534",
+        "contribution_id": "267782534.c6",
+        "cosine": 0.7728909254074097,
+        "contribution_name": "TREEWISE entailment‑tree reasoning engine",
+        "contribution_description": "TREEWISE is a neuro‑symbolic reasoning system that extends the NELLIE entailment‑tree framework with several algorithmic innovations: (1) paraphrase unification to merge redundant search branches, (2) non‑conditioned and retrieval‑conditioned rule generation supporting arbitrary‑arity decompositions, (3) forward‑chaining inference generation from Wikipedia passages, and (4) replacement of domain‑specific neural modules by instruction‑tuned LLM prompts. The system incorporates a distilled decompositional entailment classifier trained on the RDTE protocol, yielding higher QA accuracy and tree‑integrity scores on EntailmentBankQA and HotpotQA.",
+        "paper_info": {
+            "corpus_id": "267782534",
+            "paper_title": "Enhancing Systematic Decompositional Natural Language Inference Using Informal Logic",
+            "paper_year": 2024,
+            "paper_publication_date": {
+                "year": 2024,
+                "month": 2,
+                "day": 22
+            }
+        }
+    },
+    {
+        "corpus_id": "253097865",
+        "contribution_id": "253097865.c0",
+        "cosine": 0.7691835761070251,
+        "contribution_name": "Entailer: QA system that generates faithful and truthful entailment trees",
+        "contribution_description": "Entailer is a question‑answering system that, for each multiple‑choice answer, rewrites the answer into a declarative hypothesis and constructs a multi‑step entailment tree proving the hypothesis. It uses a frozen T5‑11B model to over‑generate candidate premise sets for a hypothesis (backward‑chaining), then self‑queries the same model to verify each premise and the entailment step, scoring proofs as the product of premise belief scores and entailment validity. The highest‑scoring proof is returned together with the answer, providing explanations that are both faithful (the answer follows from the chain) and truthful (the chain reflects the model's own internal beliefs).",
+        "paper_info": {
+            "corpus_id": "253097865",
+            "paper_title": "Entailer: Answering Questions with Faithful and Truthful Chains of Reasoning",
+            "paper_year": 2022,
+            "paper_publication_date": {
+                "year": 2022,
+                "month": 10,
+                "day": 21
+            }
+        }
+    }
+]
