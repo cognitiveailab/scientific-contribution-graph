@@ -1,5 +1,5 @@
 ## The Scientific Contribution Graph
-This is the repository for [The Scientific Contribution Graph: Automated Literature-based Technological Roadmapping at Scale](preprint-arxiv.pdf), and contains the API and installation instructions.
+This is the repository for [The Scientific Contribution Graph: Automated Literature-based Technological Roadmapping at Scale](https://arxiv.org/pdf/2605.15011), and contains the API and installation instructions.
 
 <table align="center"><tr><td><img src="images/example-bert.png" width="800"></td></tr></table>
 
@@ -40,7 +40,7 @@ Second, the Scientific Contribution Graph is *large*.  It currently contains ove
 
 ## 1. Paper 
 
-The Scientific Contribution Graph is described in the following paper: [The Scientific Contribution Graph: Automated Literature-based Technological Roadmapping at Scale [Arxiv/PDF]](preprint-arxiv.pdf).
+The Scientific Contribution Graph is described in the following paper: [The Scientific Contribution Graph: Automated Literature-based Technological Roadmapping at Scale [Arxiv/PDF]](https://arxiv.org/pdf/2605.15011).
 
 <div align="center">
 <table> <tr> <td>
@@ -289,7 +289,15 @@ A number of ready-made examples of the API are available to run in the `example_
 ## 4. Citation
 If you use this work, please reference the following citation:
 ```
-TODO: Update when Arxiv submission is processed.
+@misc{jansen2026scientificcontributiongraphautomated,
+      title={The Scientific Contribution Graph: Automated Literature-based Technological Roadmapping at Scale}, 
+      author={Peter A. Jansen},
+      year={2026},
+      eprint={2605.15011},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2605.15011}, 
+}
 ```
 
 <span id="5-license"/>
