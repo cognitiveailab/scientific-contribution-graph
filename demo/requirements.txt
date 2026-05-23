@@ -1,0 +1,5 @@
+# Demo-only requirements for `demo/demo.py`.
+# The Scientific Contribution Graph itself (and its core deps) are expected
+# to be installed via the repo root (`pip install -e .` + `pip install -r requirements.txt`).
+fastapi>=0.100
+uvicorn[standard]>=0.20

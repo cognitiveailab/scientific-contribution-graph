@@ -1,0 +1,10 @@
+{
+  "data_path":  "/data-ssd2/temp1/",
+  "bucket_uri": "hf://buckets/pajansen/scientific-contribution-graph/releases-tar/current",
+
+  "host": "0.0.0.0",
+  "port": 7860,
+
+  "impact_timeout_secs": 20,
+  "render_timeout_secs": 45
+}
