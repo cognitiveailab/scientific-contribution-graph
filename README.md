@@ -333,4 +333,3 @@ The original papers are open access papers taken from permissively licensed sour
 ## 6. Contact
 
 For any questions, please contact Peter Jansen (`pajansen@arizona.edu`).  For issues, bugs, or feature requests, please submit a Github issue.
-```
