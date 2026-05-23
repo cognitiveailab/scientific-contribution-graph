@@ -10,6 +10,12 @@ Several things make the Scientific Contribution Graph different than previous kn
 
 Second, the Scientific Contribution Graph is *large*.  It currently contains over *2 million* scientific contributions (and *12 million* prerequisite relations) extracted from over *230k* open access scientific articles, centrally in natural language processing and artificial intelligence.  In its current state, it likely maps out most of the technological roadmap of the field of natural language processing that is capable of being mapped using open access articles.
 
+## Live (Web) Demo on Huggingface Spaces
+
+There is a live web demo of a high-level browsing interface available on [Huggingface Spaces here](https://huggingface.co/spaces/pajansen/scientific-contribution-graph), as well as a short instructional video on how to use it below. You can also install the demo locally (see [demo/](demo/) for instructions):
+
+[![Watch the demo on YouTube](demo/youtube-preview.png)](https://youtu.be/5zfU8xp1jU4)
+
 ---
 
 # Table of Contents
