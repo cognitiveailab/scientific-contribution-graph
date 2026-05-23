@@ -8,7 +8,7 @@ There is a live demo visualization of the scientific contribution graph availabl
 
 ## Video of Demo Usage
 
-TODO
+[![Watch the demo on YouTube](youtube-preview.png)](https://youtu.be/5zfU8xp1jU4)
 
 ## Local Demo (Install on your machine)
 
