@@ -1,7 +1,9 @@
 ## The Scientific Contribution Graph
+
+
 This is the repository for [The Scientific Contribution Graph: Automated Literature-based Technological Roadmapping at Scale](https://arxiv.org/pdf/2605.15011), and contains the API and installation instructions.
 
-<table align="center"><tr><td><img src="images/example-bert.png" width="800"></td></tr></table>
+<table align="center"><tr><td><img src="images/example-bert.png" width="800"><br><a href="https://en.wikipedia.org/wiki/Standing_on_the_shoulders_of_giants">"If I have seen further than others, it is by standing on the shoulders of giants" (Isaac Newton)</a></td></tr></table>
 
 ## What is this?
 The Scientific Contribution Graph maps how science is "built upon the shoulders of giants" by extracting all the scientific contributions from scientific papers, and mapping how each contribution was built upon other contributions (i.e. its precursors).  For example, one of the most well-known scientific contributions in Natural Language Processing is the `Bidirectional Transformer Encoder Architecture (BERT)` from `Devlin et al. (2019)`.  BERT was built upon other (previously published) scientific contributions, including `Attention`, `Pretrained Bidirectional Language Models`, and `Contextualized Word Embedding`.  Each of these contributions (e.g. Attention) were themselves built upon contributions that came before them.  The Scientific Contribution Graph extracts both the scientific contributions from papers, as well as these "prerequisite relationships", to perform "technological roadmapping" -- or show how contributions have combined through the past to create new contributions. 
