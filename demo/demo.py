@@ -1,3 +1,5 @@
+# This file was generated using Claude Code
+
 """Scientific Contribution Graph Explorer — single-file FastAPI demo.
 
 A browser-based UI for the Scientific Contribution Graph:
