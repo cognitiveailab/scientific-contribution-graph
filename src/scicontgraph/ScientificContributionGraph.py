@@ -636,6 +636,30 @@ class ScientificContributionGraph:
     #
 
     def get_all_corpus_files(self) -> List[str]:
+        # Prefer the manifest that ships with the release: it lists one row per
+        # paper, so we can read a single file instead of enumerating every paper
+        # on disk.  This matters when the data sits on network/object storage
+        # (e.g. a mounted bucket), where walking hundreds of thousands of files
+        # can take minutes while reading the manifest takes seconds.
+        # Falls back to walking the tree if the manifest is absent.
+        manifest_path = os.path.join(self.path_metadata, "paper_manifest.jsonl")
+        if (os.path.exists(manifest_path)):
+            try:
+                corpus_files = []
+                with open(manifest_path, "rb") as f:
+                    for line in f:
+                        line = line.strip()
+                        if (not line):
+                            continue
+                        corpus_id = orjson.loads(line).get("corpus_id", None)
+                        if (corpus_id is not None):
+                            corpus_files.append(str(corpus_id))
+                if (len(corpus_files) > 0):
+                    return corpus_files
+                print(f"Warning: {manifest_path} contained no corpus_ids. Falling back to scanning {self.path_papers}.")
+            except Exception as e:
+                print(f"Warning: could not read {manifest_path} ({e}). Falling back to scanning {self.path_papers}.")
+
         # Get all the JSON files in the directory, and extract the corpus_id from the filename (assuming filename is "corpus_id.json")
         corpus_files = []
         # JSON files are in nested subdirectories.  Have to explore the subdirectory tree 1 level deep.
