@@ -191,8 +191,8 @@ You can list the size of the latest graph in `/releases-tar/current/`:
 ```
 > hf buckets ls hf://buckets/pajansen/scientific-contribution-graph/releases-tar/current/
 
-  18949624976  2026-08-26 16:00:00  releases-tar/current/scg-release-1.1.0.tar.gz
-          91  2026-08-26 16:00:00  releases-tar/current/scg-release-1.1.0.tar.gz.sha256
+  18949624976  2026-08-27 00:13:21  releases-tar/current/scg-release-1.1.0.tar.gz
+          91  2026-08-27 00:14:14  releases-tar/current/scg-release-1.1.0.tar.gz.sha256
 ```
 
 Then download the archive and `sha256`:

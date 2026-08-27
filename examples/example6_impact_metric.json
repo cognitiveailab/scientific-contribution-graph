@@ -14,13 +14,13 @@
     "contribution_impact_scores": {
         "233297051.c0": {
             "contribution_name": "Formulation of explanation as multistep entailment trees",
-            "impact_score": 69.0,
-            "impact_score_dampened": 48.33333333333333
+            "impact_score": 82.0,
+            "impact_score_dampened": 50.33333333333338
         },
         "233297051.c1": {
             "contribution_name": "ENTAILMENTBANK: a large-scale dataset of multistep entailment trees for elementary-science QA",
-            "impact_score": 619.0,
-            "impact_score_dampened": 335.2333333333316
+            "impact_score": 774.0,
+            "impact_score_dampened": 390.38333333333316
         },
         "233297051.c2": {
             "contribution_name": "Web\u2011based drag\u2011and\u2011drop authoring tool for constructing entailment trees",
@@ -30,17 +30,17 @@
         "233297051.c3": {
             "contribution_name": "Multi\u2011stage relevant\u2011fact retrieval pipeline for the full\u2011corpus explanation task",
             "impact_score": 19.0,
-            "impact_score_dampened": 8.833333333333332
+            "impact_score_dampened": 9.0
         },
         "233297051.c4": {
             "contribution_name": "EntailmentWriter: T5\u2011based generative model for entailment\u2011tree generation",
-            "impact_score": 85.0,
-            "impact_score_dampened": 54.666666666666664
+            "impact_score": 96.0,
+            "impact_score_dampened": 56.333333333333364
         },
         "233297051.c5": {
             "contribution_name": "Tree Alignment Algorithm for Evaluating Entailment Trees",
-            "impact_score": 26.0,
-            "impact_score_dampened": 24.0
+            "impact_score": 30.0,
+            "impact_score_dampened": 28.5
         },
         "233297051.c6-1": {
             "contribution_name": "Empirical evaluation of EntailmentWriter on three explanation tasks",
@@ -54,8 +54,8 @@
         },
         "233297051.c7": {
             "contribution_name": "Analysis of reasoning types required for multistep entailments",
-            "impact_score": 16.0,
-            "impact_score_dampened": 11.5
+            "impact_score": 17.0,
+            "impact_score_dampened": 12.5
         },
         "233297051.c8-1": {
             "contribution_name": "Zero-shot out-of-domain generalization of EntailmentWriter",
@@ -69,7 +69,7 @@
         }
     },
     "overall_paper_impact_score": {
-        "impact_score": 631.0,
-        "impact_score_dampened": 356.89999999999793
+        "impact_score": 790.0,
+        "impact_score_dampened": 416.8833333333343
     }
 }

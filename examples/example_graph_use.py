@@ -980,7 +980,7 @@ if __name__ == "__main__":
     search_enabled = True
     #search_enabled = False
 
-    path_to_graph_data = "/data-ssd2/scientific-contribution-graph/download/"
+    path_to_graph_data = "/home/pajansen/scientific-contribution-graph/hf-release/releases/1.2/"
 
     # Load the graph
     graph = ScientificContributionGraph(path=path_to_graph_data, search_enabled=search_enabled, search_device="cpu")

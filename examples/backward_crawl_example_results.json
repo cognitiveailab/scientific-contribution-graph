@@ -443,7 +443,7 @@
         },
         "207847663.c2-1": {
             "contribution_id": "207847663.c2-1",
-            "paper_title": "ERASER : A Benchmark to Evaluate Rationalized NLP Models",
+            "paper_title": "<span id=\"page-0-0\"></span>ERASER : A Benchmark to Evaluate Rationalized NLP Models",
             "paper_corpus_id": "207847663",
             "contribution_obj": {
                 "contribution_id": "207847663.c2-1",
@@ -1244,179 +1244,6 @@
                 ],
                 "sections": [
                     "2.3 Hidden Unit that Adaptively Remembers and Forgets"
-                ],
-                "prerequisites": [
-                    {
-                        "name": "Standard recurrent neural network (RNN) formulation and training",
-                        "description": "Understanding of the basic RNN recurrence h_t = f(h_{t-1}, x_t), the use of activation functions, and training via back\u2011propagation through time. This includes awareness of the vanishing\u2011gradient problem that motivates more sophisticated units.",
-                        "explanation": "The gated unit builds directly on the standard RNN recurrence and replaces its simple activation with gated computations.",
-                        "core_or_peripheral": "core",
-                        "references": [
-                            {
-                                "type": "paper",
-                                "paper_title": "A neural probabilistic language model",
-                                "paper_year": 2003,
-                                "paper_first_author": {
-                                    "first_name": "Yoshua",
-                                    "last_name": "Bengio"
-                                },
-                                "paper_venue": "Journal of Machine Learning Research",
-                                "corpus_id": "264550170",
-                                "corpus_id_match_confidence": 1.0,
-                                "corpus_id_match_method": "title_exact_sanitized",
-                                "matches": []
-                            },
-                            {
-                                "type": "paper",
-                                "paper_title": "Long short-term memory",
-                                "paper_year": 1997,
-                                "paper_first_author": {
-                                    "first_name": "Sepp",
-                                    "last_name": "Hochreiter"
-                                },
-                                "paper_venue": "Neural Computation",
-                                "corpus_id": "123967430",
-                                "corpus_id_match_confidence": 1.0,
-                                "corpus_id_match_method": "title_exact_sanitized",
-                                "matches": []
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Gating mechanisms from Long Short\u2011Term Memory (LSTM) networks",
-                        "description": "Knowledge of the LSTM architecture, which uses input, forget, and output gates together with a memory cell to control information flow across time steps.",
-                        "explanation": "The reset and update gates of the proposed unit are directly inspired by the gating ideas introduced in LSTM, providing a simpler alternative.",
-                        "core_or_peripheral": "core",
-                        "references": [
-                            {
-                                "type": "paper",
-                                "paper_title": "Long short-term memory",
-                                "paper_year": 1997,
-                                "paper_first_author": {
-                                    "first_name": "Sepp",
-                                    "last_name": "Hochreiter"
-                                },
-                                "paper_venue": "Neural Computation",
-                                "corpus_id": "123967430",
-                                "corpus_id_match_confidence": 1.0,
-                                "corpus_id_match_method": "title_exact_sanitized",
-                                "matches": []
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Leaky\u2011integration and adaptive gating concepts",
-                        "description": "Prior work on leaky\u2011integrator units and adaptive gating in recurrent networks, which showed that multiplicative gates can improve memory capacity and training stability.",
-                        "explanation": "The paper positions its unit as an adaptive variant of a leaky\u2011integration unit, citing earlier work to justify the design choice.",
-                        "core_or_peripheral": "peripheral",
-                        "references": [
-                            {
-                                "type": "paper",
-                                "paper_title": "Advances in optimizing recurrent networks",
-                                "paper_year": 2013,
-                                "paper_first_author": {
-                                    "first_name": "Yoshua",
-                                    "last_name": "Bengio"
-                                },
-                                "paper_venue": "Proceedings of ICASSP 2013",
-                                "corpus_id": "12485056",
-                                "corpus_id_match_confidence": 1.0,
-                                "corpus_id_match_method": "title_exact_sanitized",
-                                "matches": [
-                                    {
-                                        "contribution_id": "12485056.c1",
-                                        "explanation": "Introduces leaky\u2011integration hidden units, directly providing the leaky\u2011integrator concept cited as a prerequisite.",
-                                        "match_type": "strong",
-                                        "match_method": "alignment_v1_feb14"
-                                    },
-                                    {
-                                        "contribution_id": "12485056.c5",
-                                        "explanation": "Includes leaky\u2011integration hidden units as one of several combined training enhancements, tangentially referencing the leaky\u2011integration concept.",
-                                        "match_type": "weak",
-                                        "match_method": "alignment_v1_feb14"
-                                    }
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "name": "AdaDelta optimization algorithm",
-                        "description": "An adaptive learning\u2011rate method for stochastic gradient descent that reduces the need for manual learning\u2011rate tuning.",
-                        "explanation": "Training the gated unit efficiently required a robust optimizer; the paper uses AdaDelta for this purpose.",
-                        "core_or_peripheral": "peripheral",
-                        "references": [
-                            {
-                                "type": "paper",
-                                "paper_title": "ADADELTA: an adaptive learning rate method",
-                                "paper_year": 2012,
-                                "paper_first_author": {
-                                    "first_name": "Matthew",
-                                    "last_name": "Zeiler"
-                                },
-                                "paper_venue": "arXiv preprint arXiv:1212.5701",
-                                "corpus_id": "7365802",
-                                "corpus_id_match_confidence": 1.0,
-                                "corpus_id_match_method": "title_exact_sanitized",
-                                "matches": [
-                                    {
-                                        "contribution_id": "7365802.c0",
-                                        "explanation": "Introduces the ADADELTA adaptive learning\u2011rate algorithm, which is exactly the optimizer named in the prerequisite.",
-                                        "match_type": "strong",
-                                        "match_method": "alignment_v1_feb14"
-                                    },
-                                    {
-                                        "contribution_id": "7365802.c1",
-                                        "explanation": "Provides a unit\u2011consistent theoretical derivation of the ADADELTA update rule, deepening understanding of the same optimizer.",
-                                        "match_type": "weak",
-                                        "match_method": "alignment_v1_feb14"
-                                    }
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Weight initialization via singular value decomposition (SVD)",
-                        "description": "Initializing recurrent weight matrices with orthogonal matrices derived from the left singular vectors of a random Gaussian matrix improves training stability of deep recurrent networks.",
-                        "explanation": "The paper adopts this initialization scheme for the recurrent weights of the gated unit to aid convergence.",
-                        "core_or_peripheral": "peripheral",
-                        "references": [
-                            {
-                                "type": "paper",
-                                "paper_title": "Exact solutions to the nonlinear dynamics of learning in deep linear neural networks",
-                                "paper_year": 2014,
-                                "paper_first_author": {
-                                    "first_name": "Andrew",
-                                    "last_name": "Saxe"
-                                },
-                                "paper_venue": "International Conference on Learning Representations (ICLR) 2014",
-                                "corpus_id": "17272965",
-                                "corpus_id_match_confidence": 1.0,
-                                "corpus_id_match_method": "title_exact_sanitized",
-                                "matches": [
-                                    {
-                                        "contribution_id": "17272965.c4",
-                                        "explanation": "The contribution proposes an orthogonal weight initialization scheme (random orthogonal matrices) that improves training stability, which is conceptually related to using orthogonal matrices derived from SVD, but the method differs from the SVD\u2011derived left singular vector approach.",
-                                        "match_type": "weak",
-                                        "match_method": "alignment_v1_feb14"
-                                    }
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "name": "RNN Encoder\u2013Decoder architecture for sequence\u2011to\u2011sequence learning",
-                        "description": "A two\u2011RNN system where one network encodes a variable\u2011length source sequence into a fixed\u2011dimensional vector and a second network decodes that vector into a variable\u2011length target sequence.",
-                        "explanation": "The gated unit is instantiated within both the encoder and decoder of this architecture; the overall model would not exist without the surrounding encoder\u2011decoder framework.",
-                        "core_or_peripheral": "core",
-                        "references": [
-                            {
-                                "type": "internal",
-                                "contribution_name": "RNN Encoder\u2013Decoder architecture for sequence\u2011to\u2011sequence learning",
-                                "contribution_id": "5590763.c0",
-                                "explanation": "The gated unit serves as the building block used in the encoder and decoder of this architecture."
-                            }
-                        ]
-                    }
                 ]
             }
         },
@@ -1523,9 +1350,138 @@
                 ]
             }
         },
+        "12330432.c0": {
+            "contribution_id": "12330432.c0",
+            "paper_title": "cuDNN: Efficient Primitives for Deep Learning",
+            "paper_corpus_id": "12330432",
+            "contribution_obj": {
+                "contribution_id": "12330432.c0",
+                "name": "cuDNN: a framework\u2011agnostic deep\u2011learning primitives library",
+                "description": "The paper introduces cuDNN, a C\u2011language library that implements highly optimized GPU kernels for the core operations used in deep\u2011learning models (convolution, pooling, activation functions, softmax, and tensor transformations). The library is deliberately framework\u2011agnostic: it exposes a lightweight, state\u2011free, thread\u2011safe API built around opaque descriptors that allow any tensor layout to be passed in without copying data. cuDNN achieves high performance and low auxiliary memory usage by mapping convolutions onto NVIDIA's high\u2011throughput GEMM engine with a lazy im2col strategy and by applying integer\u2011division\u2011to\u2011multiply indexing optimizations.",
+                "types": [
+                    {
+                        "type": "tool_system_software",
+                        "explanation": "cuDNN is a released software artifact intended for reuse by other researchers and practitioners."
+                    },
+                    {
+                        "type": "conceptual_framework",
+                        "explanation": "The paper defines a design philosophy (framework\u2011agnostic, descriptor\u2011based API) that guides future deep\u2011learning library development."
+                    }
+                ],
+                "sections": [
+                    "Introduction",
+                    "Library",
+                    "Overview and Handles",
+                    "Conclusion"
+                ]
+            }
+        },
+        "12330432.c4-1": {
+            "contribution_id": "12330432.c4-1",
+            "paper_title": "cuDNN: Efficient Primitives for Deep Learning",
+            "paper_corpus_id": "12330432",
+            "contribution_obj": {
+                "contribution_id": "12330432.c4-1",
+                "name": "GPU\u2011accelerated forward and backward pooling primitives",
+                "description": "cuDNN provides highly optimized GPU kernels for both max and average pooling operations, including forward passes that compute pooled outputs and backward passes that propagate gradients with respect to the input data. The primitives support arbitrary 4\u2011D tensor layouts via stride descriptors and require no auxiliary memory, enabling seamless integration into existing deep\u2011learning frameworks.",
+                "types": [
+                    {
+                        "type": "tool_system_software",
+                        "explanation": "Implements reusable GPU\u2011accelerated pooling operations that can be called from other deep\u2011learning frameworks."
+                    }
+                ],
+                "sections": [
+                    "Other functions",
+                    "Library"
+                ]
+            }
+        },
+        "12330432.c4-2": {
+            "contribution_id": "12330432.c4-2",
+            "paper_title": "cuDNN: Efficient Primitives for Deep Learning",
+            "paper_corpus_id": "12330432",
+            "contribution_obj": {
+                "contribution_id": "12330432.c4-2",
+                "name": "GPU\u2011accelerated activation function primitives (sigmoid, ReLU, tanh)",
+                "description": "cuDNN implements forward and backward kernels for three widely used activation functions\u2014sigmoid, rectified linear unit (ReLU), and hyperbolic tangent (tanh). The kernels respect arbitrary tensor layouts, require no extra memory, and are optimized for high throughput on NVIDIA GPUs.",
+                "types": [
+                    {
+                        "type": "tool_system_software",
+                        "explanation": "Provides reusable activation function kernels that can be linked into any deep\u2011learning framework."
+                    }
+                ],
+                "sections": [
+                    "Other functions",
+                    "Library"
+                ]
+            }
+        },
+        "12330432.c4-3": {
+            "contribution_id": "12330432.c4-3",
+            "paper_title": "cuDNN: Efficient Primitives for Deep Learning",
+            "paper_corpus_id": "12330432",
+            "contribution_obj": {
+                "contribution_id": "12330432.c4-3",
+                "name": "GPU\u2011accelerated numerically stable softmax primitive",
+                "description": "cuDNN offers a softmax routine that computes the softmax function in a numerically stable way by subtracting the maximum input value before exponentiation, with an optional fast\u2011but\u2011less\u2011accurate mode. The implementation supports forward and backward passes, arbitrary tensor layouts, and operates without auxiliary memory.",
+                "types": [
+                    {
+                        "type": "tool_system_software",
+                        "explanation": "Provides a reusable, high\u2011performance softmax implementation for deep\u2011learning frameworks."
+                    }
+                ],
+                "sections": [
+                    "Other functions",
+                    "Library"
+                ]
+            }
+        },
+        "12330432.c4-4": {
+            "contribution_id": "12330432.c4-4",
+            "paper_title": "cuDNN: Efficient Primitives for Deep Learning",
+            "paper_corpus_id": "12330432",
+            "contribution_obj": {
+                "contribution_id": "12330432.c4-4",
+                "name": "Tensor transformation utilities (addition with broadcasting and transposition)",
+                "description": "cuDNN includes auxiliary tensor operations such as element\u2011wise addition with optional broadcasting and tensor transposition. These utilities respect arbitrary stride\u2011based layouts, require no extra memory, and are designed to be called from deep\u2011learning frameworks to simplify common tensor manipulations.",
+                "types": [
+                    {
+                        "type": "tool_system_software",
+                        "explanation": "Provides reusable tensor manipulation routines that can be linked into other deep\u2011learning software."
+                    }
+                ],
+                "sections": [
+                    "Other functions",
+                    "Library"
+                ]
+            }
+        },
+        "2170930.c1": {
+            "contribution_id": "2170930.c1",
+            "paper_title": "DyNet: The Dynamic Neural Network Toolkit",
+            "paper_corpus_id": "2170930",
+            "contribution_obj": {
+                "contribution_id": "2170930.c1",
+                "name": "DyNet toolkit implementing dynamic declaration",
+                "description": "DyNet is an open\u2011source C++ library with Python bindings that embodies the dynamic declaration paradigm, constructing the computation graph implicitly during the forward pass of each training instance. It provides a lightweight graph representation, custom memory pools for forward and backward values, and an optimized backend that makes per\u2011example graph construction fast enough for practical training. The toolkit is released under the Apache 2.0 license and is designed to be idiomatic in both C++ and Python, enabling rapid prototyping of neural models with minimal boilerplate.",
+                "types": [
+                    {
+                        "type": "tool_system_software",
+                        "explanation": "It delivers a concrete software system that other researchers can adopt for building dynamic neural networks."
+                    }
+                ],
+                "sections": [
+                    "Dynamic Declaration",
+                    "Coding Paradigm",
+                    "Behind the Scenes",
+                    "Efficient Graph Construction",
+                    "Appendix (release information)"
+                ]
+            }
+        },
         "207847663.c2-2": {
             "contribution_id": "207847663.c2-2",
-            "paper_title": "ERASER : A Benchmark to Evaluate Rationalized NLP Models",
+            "paper_title": "<span id=\"page-0-0\"></span>ERASER : A Benchmark to Evaluate Rationalized NLP Models",
             "paper_corpus_id": "207847663",
             "contribution_obj": {
                 "contribution_id": "207847663.c2-2",
@@ -2086,6 +2042,84 @@
                 ]
             }
         },
+        "5590763.c0": {
+            "contribution_id": "5590763.c0",
+            "paper_title": "Learning Phrase Representations using RNN Encoder\u2013Decoder for Statistical Machine Translation",
+            "paper_corpus_id": "5590763",
+            "contribution_obj": {
+                "contribution_id": "5590763.c0",
+                "name": "RNN Encoder\u2013Decoder architecture for sequence\u2011to\u2011sequence learning",
+                "description": "The paper introduces the RNN Encoder\u2013Decoder, a neural network composed of two recurrent neural networks: an encoder that reads an input sequence of arbitrary length and compresses it into a fixed\u2011dimensional vector, and a decoder that generates an output sequence conditioned on this vector. The encoder and decoder are trained jointly to maximize the conditional log\u2011likelihood of target sequences given source sequences, enabling both scoring of source\u2011target phrase pairs and generation of target sequences. This design extends earlier fixed\u2011size feed\u2011forward translation models to truly variable\u2011length inputs and outputs, providing a new way to represent whole sequences in a continuous latent space.",
+                "types": [
+                    {
+                        "type": "models_or_architectures",
+                        "explanation": "Introduces a novel neural network architecture that did not exist before."
+                    },
+                    {
+                        "type": "conceptual_framework",
+                        "explanation": "Provides a high\u2011level framework for learning mappings between variable\u2011length sequences."
+                    },
+                    {
+                        "type": "representational",
+                        "explanation": "Defines a new way to encode whole sequences into continuous vector representations."
+                    }
+                ],
+                "sections": [
+                    "Introduction",
+                    "2 RNN Encoder\u2013Decoder",
+                    "2.2 RNN Encoder\u2013Decoder"
+                ]
+            }
+        },
+        "7961699.c0": {
+            "contribution_id": "7961699.c0",
+            "paper_title": "Sequence to Sequence Learning with Neural Networks",
+            "paper_corpus_id": "7961699",
+            "contribution_obj": {
+                "contribution_id": "7961699.c0",
+                "name": "Encoder\u2013decoder LSTM architecture for general sequence-to-sequence learning",
+                "description": "The paper introduces a domain\u2011independent, end\u2011to\u2011end framework that maps an input sequence to a fixed\u2011dimensional vector with a four\u2011layer Long Short\u2011Term Memory (LSTM) encoder and generates the output sequence with a separate four\u2011layer LSTM decoder. The model is trained with stochastic gradient descent using back\u2011propagation through time and a softmax output over a large vocabulary, eliminating the need for hand\u2011crafted alignment models and enabling direct translation of variable\u2011length sentences.",
+                "types": [
+                    {
+                        "type": "models_or_architectures",
+                        "explanation": "It proposes a novel neural architecture that combines two deep LSTMs for sequence transduction."
+                    },
+                    {
+                        "type": "techniques_algorithms",
+                        "explanation": "The encoder\u2013decoder formulation defines a new algorithmic pipeline for training and inference on variable\u2011length sequences."
+                    }
+                ],
+                "sections": [
+                    "Introduction",
+                    "The model"
+                ]
+            }
+        },
+        "1697424.c6": {
+            "contribution_id": "1697424.c6",
+            "paper_title": "Generating Sequences With Recurrent Neural Networks",
+            "paper_corpus_id": "1697424",
+            "contribution_obj": {
+                "contribution_id": "1697424.c6",
+                "name": "Soft\u2011window attention mechanism for conditional handwriting synthesis",
+                "description": "Introduces a differentiable soft\u2011window layer that convolves a mixture of Gaussian kernels with a one\u2011hot encoded character sequence, producing a context vector fed to each LSTM layer at every timestep. The window parameters (center location, width, and importance) are predicted by the network itself, allowing the model to learn an implicit alignment between characters and pen\u2011stroke positions during generation. Integrated with a deep stacked LSTM\u2011MDN architecture, this mechanism enables conditional generation of realistic online handwriting from arbitrary text strings in diverse styles.",
+                "types": [
+                    {
+                        "type": "models_or_architectures",
+                        "explanation": "Proposes a novel attention\u2011like soft\u2011window layer that augments a recurrent architecture for conditional sequence generation."
+                    },
+                    {
+                        "type": "techniques_algorithms",
+                        "explanation": "Specifies the algorithm for jointly learning the Gaussian\u2011window parameters together with the main LSTM\u2011MDN network."
+                    }
+                ],
+                "sections": [
+                    "Handwriting Synthesis",
+                    "Synthesis Network",
+                    "Section 5"
+                ]
+            }
+        },
         "16747630.c1": {
             "contribution_id": "16747630.c1",
             "paper_title": "Axiomatic Attribution for Deep Networks",
@@ -2107,6 +2141,345 @@
                 "sections": [
                     "Our Method: Integrated Gradients",
                     "Computing integrated gradients"
+                ],
+                "prerequisites": [
+                    {
+                        "name": "Gradient\u2011based saliency maps (raw gradients)",
+                        "description": "Using the gradient of the output with respect to the input as a primitive attribution signal, originally proposed for visualizing neural\u2011network decisions.",
+                        "explanation": "Integrated Gradients builds directly on the gradient operator; understanding its behavior is essential for formulating the new method.",
+                        "core_or_peripheral": "core",
+                        "references": [
+                            {
+                                "type": "paper",
+                                "paper_title": "Deep inside convolutional networks: Visualising image classification models and saliency maps",
+                                "paper_year": 2013,
+                                "paper_first_author": {
+                                    "first_name": "Karen",
+                                    "last_name": "Simonyan"
+                                },
+                                "paper_venue": "CoRR",
+                                "corpus_id": "1450294",
+                                "corpus_id_match_confidence": 1.0,
+                                "corpus_id_match_method": "title_exact_sanitized",
+                                "matches": [
+                                    {
+                                        "contribution_id": "1450294.c1",
+                                        "explanation": "Introduces a single back\u2011propagation method that directly uses the raw gradient of the class score w.r.t. the input to produce a class\u2011specific saliency map, which is exactly the gradient\u2011based saliency map prerequisite.",
+                                        "match_type": "strong",
+                                        "match_method": "alignment_v1_feb14"
+                                    },
+                                    {
+                                        "contribution_id": "1450294.c2",
+                                        "explanation": "Builds a weakly supervised localisation pipeline that first computes an image\u2011specific class saliency map by back\u2011propagating the raw gradient, directly employing the gradient\u2011based saliency map concept.",
+                                        "match_type": "strong",
+                                        "match_method": "alignment_v1_feb14"
+                                    },
+                                    {
+                                        "contribution_id": "1450294.c4-2",
+                                        "explanation": "Evaluates a weakly supervised object localisation system that computes class saliency maps via a single back\u2011propagation of raw gradients, matching the prerequisite.",
+                                        "match_type": "strong",
+                                        "match_method": "alignment_v1_feb14"
+                                    },
+                                    {
+                                        "contribution_id": "1450294.c3",
+                                        "explanation": "Analyzes the mathematical relationship between gradient back\u2011propagation and DeconvNet, which is related to gradients but does not directly provide raw gradient saliency maps.",
+                                        "match_type": "weak",
+                                        "match_method": "alignment_v1_feb14"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "paper",
+                                "paper_title": "How to explain individual classification decisions",
+                                "paper_year": 2010,
+                                "paper_first_author": {
+                                    "first_name": "David",
+                                    "last_name": "Baehrens"
+                                },
+                                "paper_venue": "Journal of Machine Learning Research",
+                                "corpus_id": "14664111",
+                                "corpus_id_match_confidence": null,
+                                "corpus_id_match_method": null,
+                                "matches": [
+                                    {
+                                        "contribution_id": "14664111.c0",
+                                        "explanation": "Defines local explanation vectors as the gradient of the class\u2011probability, which is a gradient\u2011based attribution similar to raw saliency maps but applied to a probability output.",
+                                        "match_type": "weak",
+                                        "match_method": "alignment_v1_feb14"
+                                    },
+                                    {
+                                        "contribution_id": "14664111.c2",
+                                        "explanation": "Uses a Parzen\u2011window surrogate to obtain estimated class probabilities and then takes the gradient of those probabilities, providing a gradient\u2011based attribution that parallels raw gradient saliency maps.",
+                                        "match_type": "weak",
+                                        "match_method": "alignment_v1_feb14"
+                                    },
+                                    {
+                                        "contribution_id": "14664111.c6",
+                                        "explanation": "Analyzes failure cases of gradient\u2011based explanation vectors and discusses the underlying gradient attribution concept, directly relating to the raw\u2011gradient saliency idea.",
+                                        "match_type": "weak",
+                                        "match_method": "alignment_v1_feb14"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Axiomatic framework for attribution (Sensitivity & Implementation Invariance)",
+                        "description": "A formal set of two axioms\u2014Sensitivity(a) and Implementation Invariance\u2014proposed to define desirable properties of any attribution method.",
+                        "explanation": "The design and theoretical justification of Integrated Gradients rely on these axioms to guarantee desirable behavior.",
+                        "core_or_peripheral": "core",
+                        "references": [
+                            {
+                                "type": "internal",
+                                "contribution_name": "Axiomatic framework for feature attribution in deep networks",
+                                "contribution_id": "16747630.c0",
+                                "explanation": "Contribution 0 introduces the two axioms that Integrated Gradients is built to satisfy."
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Understanding of prior attribution methods and their axiom violations",
+                        "description": "Knowledge of existing attribution techniques (DeepLift, LRP, Deconvolutional networks, Guided back\u2011propagation) and how each fails to satisfy at least one of the proposed axioms.",
+                        "explanation": "Identifying the shortcomings of these methods motivated the need for a new approach that satisfies both axioms.",
+                        "core_or_peripheral": "peripheral",
+                        "references": [
+                            {
+                                "type": "paper",
+                                "paper_title": "Not just a black box: Learning important features through propagating activation differences",
+                                "paper_year": 2016,
+                                "paper_first_author": {
+                                    "first_name": "Avanti",
+                                    "last_name": "Shrikumar"
+                                },
+                                "paper_venue": "CoRR",
+                                "corpus_id": "8564234",
+                                "corpus_id_match_confidence": 1.0,
+                                "corpus_id_match_method": "title_exact_sanitized",
+                                "matches": [
+                                    {
+                                        "contribution_id": "8564234.c0",
+                                        "explanation": "The DeepLIFT paper explicitly surveys existing saliency methods, identifies their failure to satisfy the Sensitivity axiom (zero\u2011gradient issue), and introduces a reference\u2011based approach that overcomes this violation.",
+                                        "match_type": "strong",
+                                        "match_method": "alignment_v1_feb14"
+                                    },
+                                    {
+                                        "contribution_id": "8564234.c3-2",
+                                        "explanation": "The equivalence analysis explains how DeepLIFT retains meaningful attributions where gradient\u00b7input (and thus methods like LRP) fail due to bias\u2011induced violations of the proposed axioms.",
+                                        "match_type": "weak",
+                                        "match_method": "alignment_v1_feb14"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "paper",
+                                "paper_title": "Layerwise relevance propagation for neural networks with local renormalization layers",
+                                "paper_year": 2016,
+                                "paper_first_author": {
+                                    "first_name": "Alexander",
+                                    "last_name": "Binder"
+                                },
+                                "paper_venue": "CoRR",
+                                "corpus_id": "15207861",
+                                "corpus_id_match_confidence": 1.0,
+                                "corpus_id_match_method": "title_exact_sanitized",
+                                "matches": [
+                                    {
+                                        "contribution_id": "15207861.c0",
+                                        "explanation": "The paper identifies a limitation of the existing LRP attribution method (its inability to handle LRN layers) and extends LRP, showing awareness of a prior method's shortcoming.",
+                                        "match_type": "weak",
+                                        "match_method": "alignment_v1_feb14"
+                                    },
+                                    {
+                                        "contribution_id": "15207861.c1",
+                                        "explanation": "The theoretical analysis derives relevance weighting for LRN layers, further addressing a known limitation of LRP, indicating understanding of a prior attribution technique's constraints.",
+                                        "match_type": "weak",
+                                        "match_method": "alignment_v1_feb14"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "paper",
+                                "paper_title": "Visualizing and understanding convolutional networks",
+                                "paper_year": 2014,
+                                "paper_first_author": {
+                                    "first_name": "Matthew D.",
+                                    "last_name": "Zeiler"
+                                },
+                                "paper_venue": "ECCV",
+                                "corpus_id": "3960646",
+                                "corpus_id_match_confidence": 1.0,
+                                "corpus_id_match_method": "title_exact_sanitized",
+                                "matches": [
+                                    {
+                                        "contribution_id": "3960646.c0",
+                                        "explanation": "The contribution introduces the Deconvolutional Network method, which is one of the prior attribution techniques listed in the prerequisite.",
+                                        "match_type": "weak",
+                                        "match_method": "alignment_v1_feb14"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "paper",
+                                "paper_title": "Striving for simplicity: The all convolutional net",
+                                "paper_year": 2014,
+                                "paper_first_author": {
+                                    "first_name": "Jost",
+                                    "last_name": "Springenberg"
+                                },
+                                "paper_venue": "CoRR",
+                                "corpus_id": "12998557",
+                                "corpus_id_match_confidence": 1.0,
+                                "corpus_id_match_method": "title_exact_sanitized",
+                                "matches": [
+                                    {
+                                        "contribution_id": "12998557.c2",
+                                        "explanation": "The cited paper introduces and analyzes Guided Backpropagation, a prior attribution method that the source prerequisite requires knowledge of.",
+                                        "match_type": "weak",
+                                        "match_method": "alignment_v1_feb14"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Path\u2011integral theory and the fundamental theorem of calculus for line integrals",
+                        "description": "Mathematical theory that relates the integral of a gradient field along a path to the difference in function values at the endpoints, enabling the Completeness proof for Integrated Gradients.",
+                        "explanation": "Integrated Gradients is defined as a line integral of gradients; the proof that attributions sum to the output difference uses this theorem.",
+                        "core_or_peripheral": "core",
+                        "references": []
+                    },
+                    {
+                        "name": "Cost\u2011sharing theory (Aumann\u2013Shapley value)",
+                        "description": "An economic theory that allocates total cost among participants based on marginal contributions; mathematically equivalent to integrating gradients along a straight line.",
+                        "explanation": "The paper connects Integrated Gradients to the Aumann\u2013Shapley cost\u2011sharing method, providing a cross\u2011disciplinary justification for the straight\u2011line path.",
+                        "core_or_peripheral": "peripheral",
+                        "references": [
+                            {
+                                "type": "internal",
+                                "contribution_name": "Link between attribution and Aumann\u2013Shapley cost\u2011sharing theory",
+                                "contribution_id": "16747630.c5",
+                                "explanation": "Contribution 5 establishes the equivalence between Integrated Gradients and the Aumann\u2013Shapley method."
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Automatic differentiation / gradient computation in deep\u2011learning frameworks",
+                        "description": "Software capability (e.g., TensorFlow\u2019s tf.gradients) that computes partial derivatives of network outputs with respect to inputs via back\u2011propagation.",
+                        "explanation": "Integrated Gradients requires repeated gradient evaluations; practical implementation depends on such automatic\u2011differentiation tools.",
+                        "core_or_peripheral": "peripheral",
+                        "references": [
+                            {
+                                "type": "other",
+                                "name": "TensorFlow",
+                                "url": "https://www.tensorflow.org"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Numerical approximation of integrals using Riemann sums",
+                        "description": "A standard numerical technique that approximates a definite integral by summing function values at discrete points along the integration interval.",
+                        "explanation": "The practical algorithm for Integrated Gradients approximates the path integral with a finite number of gradient evaluations.",
+                        "core_or_peripheral": "core",
+                        "references": []
+                    }
+                ]
+            }
+        },
+        "1450294.c1": {
+            "contribution_id": "1450294.c1",
+            "paper_title": "Deep Inside Convolutional Networks: Visualising Image Classification Models and Saliency Maps",
+            "paper_corpus_id": "1450294",
+            "contribution_obj": {
+                "contribution_id": "1450294.c1",
+                "name": "Image-specific class saliency map computation via single back-propagation",
+                "description": "The paper introduces a fast procedure to obtain a class\u2011specific saliency map for a given image by back\u2011propagating the gradient of the class score with respect to the input pixels. The absolute value of the gradient at each pixel (or the maximum across colour channels) quantifies the pixel's influence on the class score, yielding a spatial support map in a single backward pass. The method requires only image\u2011level class labels and no additional supervision, enabling rapid visual explanation of ConvNet decisions.",
+                "types": [
+                    {
+                        "type": "techniques_algorithms",
+                        "explanation": "It proposes a novel algorithm that derives class\u2011specific saliency maps from gradient information."
+                    },
+                    {
+                        "type": "research_methods_procedures",
+                        "explanation": "It defines a concrete, single\u2011pass back\u2011propagation procedure for extracting and visualising saliency maps from trained ConvNets."
+                    }
+                ],
+                "sections": [
+                    "Introduction",
+                    "Image\u2011Specific Class Saliency Visualisation (Section 3)",
+                    "Class Saliency Extraction (Section 3.1)"
+                ]
+            }
+        },
+        "1450294.c2": {
+            "contribution_id": "1450294.c2",
+            "paper_title": "Deep Inside Convolutional Networks: Visualising Image Classification Models and Saliency Maps",
+            "paper_corpus_id": "1450294",
+            "contribution_obj": {
+                "contribution_id": "1450294.c2",
+                "name": "Weakly supervised object localisation using class saliency maps and GraphCut segmentation",
+                "description": "The paper proposes a pipeline that localises objects in images using only image-level class labels. An image-specific class saliency map is first obtained by back-propagating the gradient of the class score with respect to the input pixels. The saliency map is thresholded at high and low quantiles to initialise foreground and background colour Gaussian Mixture Models, which drive an interactive GraphCut segmentation to produce a full object mask; a bounding box is then extracted from this mask. The method is evaluated on the ILSVRC\u20112013 localisation challenge, achieving 46.4% top\u20115 localisation error without any bounding\u2011box supervision.",
+                "types": [
+                    {
+                        "type": "real_world_application",
+                        "explanation": "It demonstrates a practical object localisation system that works on a large\u2011scale benchmark without bounding\u2011box supervision."
+                    },
+                    {
+                        "type": "empirical_evaluation",
+                        "explanation": "It reports quantitative localisation performance on the ILSVRC\u20112013 challenge."
+                    },
+                    {
+                        "type": "research_methods_procedures",
+                        "explanation": "It defines a concrete weakly\u2011supervised localisation procedure combining saliency maps, GMMs and GraphCut."
+                    }
+                ],
+                "sections": [
+                    "Image\u2013Specific Class Saliency Visualisation (Section 3)",
+                    "Weakly Supervised Object Localisation (Section 3.2)"
+                ]
+            }
+        },
+        "1450294.c4-2": {
+            "contribution_id": "1450294.c4-2",
+            "paper_title": "Deep Inside Convolutional Networks: Visualising Image Classification Models and Saliency Maps",
+            "paper_corpus_id": "1450294",
+            "contribution_obj": {
+                "contribution_id": "1450294.c4-2",
+                "name": "Empirical evaluation of weakly supervised object localisation using class saliency maps and GraphCut",
+                "description": "The authors compute image\u2011specific class saliency maps by a single back\u2011propagation pass, threshold them, and initialise colour\u2011based Gaussian mixture models for foreground and background. An interactive GraphCut segmentation refines the mask, from which the largest connected component yields a bounding box. Applied to the ILSVRC\u20112013 localisation challenge, the pipeline achieves 46.4\u202f% top\u20115 localisation error without any bounding\u2011box supervision, demonstrating the practicality of gradient\u2011based saliency for weakly supervised detection.",
+                "types": [
+                    {
+                        "type": "empirical_evaluation",
+                        "explanation": "The work reports quantitative localisation results that assess a weakly supervised pipeline on a standard benchmark."
+                    }
+                ],
+                "sections": [
+                    "Image\u2011Specific Class Saliency Visualisation (Section 3)",
+                    "Weakly Supervised Object Localisation (Section 3.2)"
+                ]
+            }
+        },
+        "8564234.c0": {
+            "contribution_id": "8564234.c0",
+            "paper_title": "Not Just a Black Box: Learning Important Features Through Propagating Activation Differences",
+            "paper_corpus_id": "8564234",
+            "contribution_obj": {
+                "contribution_id": "8564234.c0",
+                "name": "DeepLIFT reference\u2011based feature attribution method",
+                "description": "DeepLIFT introduces a reference\u2011based attribution technique that computes importance scores by comparing each neuron's activation to a reference activation and propagating contribution scores backward using specially derived multipliers. It formalizes two core properties\u2014summation\u2011to\u2011delta (contributions sum to the output difference from the reference) and linear composition (contributions distribute proportionally through downstream connections)\u2014which overcome zero\u2011gradient issues of traditional saliency methods. The method provides a unified algorithm applicable to affine layers, max\u2011pooling, and common nonlinearities, and can be implemented efficiently on GPUs.",
+                "types": [
+                    {
+                        "type": "techniques_algorithms",
+                        "explanation": "Presents a novel algorithmic procedure for computing feature importance in neural networks."
+                    },
+                    {
+                        "type": "conceptual_framework",
+                        "explanation": "Establishes a reference\u2011based conceptual framework for interpreting neural network predictions."
+                    }
+                ],
+                "sections": [
+                    "Introduction",
+                    "DeepLIFT Method",
+                    "Backpropagation Rules"
                 ]
             }
         },
@@ -2775,6 +3148,199 @@
                 "sections": [
                     "Scaling",
                     "Putting It All Together"
+                ],
+                "prerequisites": [
+                    {
+                        "name": "Unified Text\u2011to\u2011Text Transfer Transformer (T5) framework",
+                        "description": "A single encoder\u2011decoder Transformer model trained in a text\u2011to\u2011text format, where every NLP task is expressed as a prefixed input string and a target text string.",
+                        "explanation": "The scaling experiments are performed on this specific model architecture and training paradigm.",
+                        "core_or_peripheral": "core",
+                        "references": [
+                            {
+                                "type": "internal",
+                                "contribution_name": "Unified Text\u2011to\u2011Text Transfer Transformer (T5) framework",
+                                "contribution_id": "204838007.c0-1",
+                                "explanation": "The scaling study builds directly on the T5 model introduced earlier."
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Span\u2011corruption denoising pre\u2011training objective",
+                        "description": "A pre\u2011training task that masks contiguous spans of tokens (15\u202f% of tokens, average span length\u202f=\u202f3) and replaces each span with a unique sentinel token, training the model to reconstruct only the masked spans.",
+                        "explanation": "All scaled models are pre\u2011trained using this objective, so its definition and implementation are required for the scaling study.",
+                        "core_or_peripheral": "core",
+                        "references": [
+                            {
+                                "type": "internal",
+                                "contribution_name": "Span\u2011corruption denoising pre\u2011training objective",
+                                "contribution_id": "204838007.c2",
+                                "explanation": "The scaling experiments use the span\u2011corruption objective as the pre\u2011training loss."
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Colossal Clean Crawled Corpus (C4) dataset",
+                        "description": "A ~750\u202fGB English web\u2011text corpus created by filtering Common Crawl with heuristics to remove non\u2011natural language, profanity, code, boiler\u2011plate, short lines and duplicate spans.",
+                        "explanation": "All models are pre\u2011trained on C4, providing the large unlabeled data needed for scaling experiments.",
+                        "core_or_peripheral": "core",
+                        "references": [
+                            {
+                                "type": "internal",
+                                "contribution_name": "Colossal Clean Crawled Corpus (C4) dataset",
+                                "contribution_id": "204838007.c1",
+                                "explanation": "C4 is the pre\u2011training data source for the scaled models."
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Transformer architecture scaling guidelines (BERT\u202fLarge)",
+                        "description": "Design principles for scaling Transformer depth, hidden size, feed\u2011forward dimension and attention heads, as demonstrated in the BERT\u202fLarge configuration.",
+                        "explanation": "The larger T5 models (770\u202fM, 3\u202fB, 11\u202fB) follow the same scaling principles, requiring knowledge of how to increase model dimensions while preserving training stability.",
+                        "core_or_peripheral": "core",
+                        "references": [
+                            {
+                                "type": "paper",
+                                "paper_title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+                                "paper_year": 2018,
+                                "paper_first_author": {
+                                    "first_name": "Jacob",
+                                    "last_name": "Devlin"
+                                },
+                                "paper_venue": "arXiv",
+                                "corpus_id": "52967399",
+                                "corpus_id_match_confidence": 1.0,
+                                "corpus_id_match_method": "title_exact_sanitized",
+                                "matches": [
+                                    {
+                                        "contribution_id": "52967399.c6",
+                                        "explanation": "The paper conducts a systematic ablation study that varies Transformer depth and width, showing how larger models perform, thereby providing empirical scaling guidelines for Transformer dimensions.",
+                                        "match_type": "strong",
+                                        "match_method": "alignment_v1_feb14"
+                                    },
+                                    {
+                                        "contribution_id": "52967399.c0",
+                                        "explanation": "The BERT architecture description includes the BERT Large configuration, offering the basic scaling dimensions, but does not elaborate on the design principles for stable scaling.",
+                                        "match_type": "weak",
+                                        "match_method": "alignment_v1_feb14"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Large\u2011scale TPU\u2011pod training infrastructure",
+                        "description": "Google Cloud TPU v3 pods (1,024 chips) with model and data parallelism implemented via the Mesh TensorFlow library, enabling training of models with billions of parameters.",
+                        "explanation": "Training models of up to 11\u202fB parameters requires massive compute resources and parallelism techniques described in the paper.",
+                        "core_or_peripheral": "peripheral",
+                        "references": [
+                            {
+                                "type": "other",
+                                "name": "Mesh TensorFlow library",
+                                "url": "https://github.com/tensorflow/mesh"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "AdaFactor optimizer",
+                        "description": "An adaptive learning\u2011rate optimizer with sublinear memory cost, used for both pre\u2011training and fine\u2011tuning of T5 models.",
+                        "explanation": "All scaling experiments use AdaFactor for optimization, making its algorithm a prerequisite for reproducing the results.",
+                        "core_or_peripheral": "peripheral",
+                        "references": [
+                            {
+                                "type": "paper",
+                                "paper_title": "AdaFactor: Adaptive Learning Rates with Sublinear Memory Cost",
+                                "paper_year": 2018,
+                                "paper_first_author": {
+                                    "first_name": "Noam",
+                                    "last_name": "Shazeer"
+                                },
+                                "paper_venue": "arXiv",
+                                "corpus_id": "4786918",
+                                "corpus_id_match_confidence": 1.0,
+                                "corpus_id_match_method": "title_exact_sanitized",
+                                "matches": [
+                                    {
+                                        "contribution_id": "4786918.c6",
+                                        "explanation": "Introduces the Adafactor optimizer, which is the exact optimizer named in the prerequisite.",
+                                        "match_type": "strong",
+                                        "match_method": "alignment_v1_feb14"
+                                    },
+                                    {
+                                        "contribution_id": "4786918.c5",
+                                        "explanation": "Describes the relative step\u2011size scaling component that is part of the Adafactor optimizer.",
+                                        "match_type": "weak",
+                                        "match_method": "alignment_v1_feb14"
+                                    },
+                                    {
+                                        "contribution_id": "4786918.c0",
+                                        "explanation": "Presents the factored second\u2011moment estimator that underlies the memory\u2011efficient Adafactor optimizer.",
+                                        "match_type": "weak",
+                                        "match_method": "alignment_v1_feb14"
+                                    },
+                                    {
+                                        "contribution_id": "4786918.c7",
+                                        "explanation": "Provides empirical validation of Adafactor on a large\u2011scale translation task, confirming its practical utility.",
+                                        "match_type": "weak",
+                                        "match_method": "alignment_v1_feb14"
+                                    },
+                                    {
+                                        "contribution_id": "4786918.c8",
+                                        "explanation": "Releases an open\u2011source implementation of Adafactor, enabling reproducibility of the optimizer.",
+                                        "match_type": "weak",
+                                        "match_method": "alignment_v1_feb14"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "52967399.c6": {
+            "contribution_id": "52967399.c6",
+            "paper_title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+            "paper_corpus_id": "52967399",
+            "contribution_obj": {
+                "contribution_id": "52967399.c6",
+                "name": "Comprehensive ablation analysis of BERT pretraining objectives, model size, masking strategies, and training steps",
+                "description": "The paper conducts a systematic set of ablation experiments that (i) remove the Next Sentence Prediction (NSP) task, (ii) replace the Masked Language Model (MLM) objective with a left\u2011to\u2011right language model, (iii) vary the depth and width of the Transformer encoder, (iv) test different token\u2011masking policies (MASK/SAME/RND), and (v) change the number of pre\u2011training optimization steps. These studies quantify how each design choice impacts downstream performance on sentence\u2011pair and token\u2011level benchmarks, demonstrating that NSP is essential for sentence\u2011pair tasks, bidirectional MLM outperforms unidirectional LM, larger models yield gains even on low\u2011resource tasks, and a mixed masking strategy provides the best feature\u2011based results. The findings are reported in Section\u202f5 and Appendix\u202fC.",
+                "types": [
+                    {
+                        "type": "analysis",
+                        "explanation": "Provides detailed empirical analysis of how design choices affect downstream performance."
+                    },
+                    {
+                        "type": "empirical_evaluation",
+                        "explanation": "Reports quantitative results for each ablation setting."
+                    }
+                ],
+                "sections": [
+                    "Section 5: Ablation Studies",
+                    "Appendix C: Additional Ablation Studies"
+                ]
+            }
+        },
+        "4786918.c6": {
+            "contribution_id": "4786918.c6",
+            "paper_title": "Adafactor: Adaptive Learning Rates with Sublinear Memory Cost",
+            "paper_corpus_id": "4786918",
+            "contribution_obj": {
+                "contribution_id": "4786918.c6",
+                "name": "Adafactor optimizer: integrated low\u2011memory adaptive method",
+                "description": "Adafactor combines a factored approximation of the second\u2011moment accumulator, removal of the momentum term, update clipping, a time\u2011varying second\u2011moment decay schedule, and relative step\u2011size scaling into a single optimizer. The algorithm matches Adam's performance on the Transformer model for WMT 2014 English\u2011German translation while requiring only O(n+m) auxiliary memory for an n\u00d7m weight matrix. Full algorithmic details are given in Algorithms\u202f4\u20116 and default hyper\u2011parameters in Algorithm\u202f6, and an implementation is released in the Tensor2Tensor library.",
+                "types": [
+                    {
+                        "type": "techniques_algorithms",
+                        "explanation": "Introduces a novel composite optimization algorithm that reduces memory usage while preserving adaptive behavior."
+                    },
+                    {
+                        "type": "tool_system_software",
+                        "explanation": "Provides a ready\u2011to\u2011use implementation released as part of an open\u2011source library."
+                    }
+                ],
+                "sections": [
+                    "Conclusion",
+                    "Algorithms 4, 5, 6"
                 ]
             }
         },
@@ -2800,6 +3366,28 @@
                     "Introduction",
                     "Appendix A. Contributions",
                     "Conclusion"
+                ]
+            }
+        },
+        "52051958.c0": {
+            "contribution_id": "52051958.c0",
+            "paper_title": "SentencePiece: A simple and language independent subword tokenizer and detokenizer for Neural Text Processing",
+            "paper_corpus_id": "52051958",
+            "contribution_obj": {
+                "contribution_id": "52051958.c0",
+                "name": "SentencePiece open\u2011source toolkit (Apache\u202f2)",
+                "description": "SentencePiece is a publicly released C++/Python library that provides command\u2011line tools (spm_train, spm_encode, spm_decode) for language\u2011independent subword tokenization and detokenization. It supports both byte\u2011pair\u2011encoding (BPE) and unigram language\u2011model segmentation, performs Unicode NFKC normalization, and manages a self\u2011contained model file (Protocol Buffers) with vocabulary IDs. The toolkit also offers C++, Python and TensorFlow APIs for on\u2011the\u2011fly processing, enabling end\u2011to\u2011end neural text pipelines without external language\u2011specific preprocessors.",
+                "types": [
+                    {
+                        "type": "tool_system_software",
+                        "explanation": "It is a software artifact intended for reuse by the research community."
+                    }
+                ],
+                "sections": [
+                    "Abstract",
+                    "2 System Overview",
+                    "3 Library Design",
+                    "5 Conclusions"
                 ]
             }
         },
@@ -2843,6 +3431,201 @@
                 "sections": [
                     "Experiments",
                     "Can RoBERTa Answer Reasoning Questions?"
+                ]
+            }
+        },
+        "198953378.c7": {
+            "contribution_id": "198953378.c7",
+            "paper_title": "RoBERTa: A Robustly Optimized BERT Pretraining Approach",
+            "paper_corpus_id": "198953378",
+            "contribution_obj": {
+                "contribution_id": "198953378.c7",
+                "name": "Open\u2011source implementation and pretrained checkpoints",
+                "description": "The authors release a full PyTorch/Fairseq codebase that re\u2011implements BERT pretraining and downstream fine\u2011tuning, together with pretrained RoBERTa checkpoints for both BASE and LARGE configurations. The released artifacts include data preprocessing, dynamic masking, large\u2011batch training, mixed\u2011precision support, and a byte\u2011level BPE tokenizer, enabling reproducibility of the RoBERTa recipe and allowing the community to use state\u2011of\u2011the\u2011art models without retraining from scratch.",
+                "types": [
+                    {
+                        "type": "tool_system_software",
+                        "explanation": "Provides publicly available software and pretrained model artifacts for other researchers to use."
+                    }
+                ],
+                "sections": [
+                    "Implementation",
+                    "Appendix"
+                ]
+            }
+        },
+        "6826032.c0": {
+            "contribution_id": "6826032.c0",
+            "paper_title": "RACE: Large-scale ReAding Comprehension Dataset From Examinations",
+            "paper_corpus_id": "6826032",
+            "contribution_obj": {
+                "contribution_id": "6826032.c0",
+                "name": "RACE Dataset and Benchmark for Machine Reading Comprehension",
+                "description": "The paper introduces RACE, a large\u2011scale English reading\u2011comprehension resource containing 27,933 passages and 97,687 multiple\u2011choice questions sourced from Chinese middle\u2011school and high\u2011school English examinations. Each question provides four human\u2011written answer options that are not constrained to be text spans in the passage, requiring deeper reasoning. The authors publish predefined training, development, and test splits for the middle\u2011school (RACE\u2011M) and high\u2011school (RACE\u2011H) subsets and adopt simple accuracy as the evaluation metric, thereby establishing a new benchmark for the community.",
+                "types": [
+                    {
+                        "type": "resource_dataset",
+                        "explanation": "Creates a new, publicly released collection of passages, questions, and answer options."
+                    },
+                    {
+                        "type": "resource_benchmark",
+                        "explanation": "Defines standard data splits and an accuracy metric for consistent model comparison."
+                    }
+                ],
+                "sections": [
+                    "Abstract",
+                    "Introduction",
+                    "Data Analysis",
+                    "Collection Methodology",
+                    "Conclusion"
+                ]
+            }
+        },
+        "6826032.c5": {
+            "contribution_id": "6826032.c5",
+            "paper_title": "RACE: Large-scale ReAding Comprehension Dataset From Examinations",
+            "paper_corpus_id": "6826032",
+            "contribution_obj": {
+                "contribution_id": "6826032.c5",
+                "name": "Open\u2011source Release of RACE Dataset and Baseline Code",
+                "description": "The authors publicly release the full RACE reading\u2011comprehension dataset (27,933 passages and 97,687 multiple\u2011choice questions) via a CMU website and provide open\u2011source implementations of three baseline models (Sliding Window, Stanford Attentive Reader, Gated\u2011Attention Reader) on GitHub. This release enables reproducible benchmarking, comparative evaluation, and lowers the entry barrier for future machine\u2011reading\u2011comprehension research.",
+                "types": [
+                    {
+                        "type": "tool_system_software",
+                        "explanation": "Provides publicly available software artifacts (baseline implementations) for the community."
+                    },
+                    {
+                        "type": "resource_dataset",
+                        "explanation": "Distributes a new, large\u2011scale reading\u2011comprehension dataset for external use."
+                    }
+                ],
+                "sections": [
+                    "Abstract",
+                    "Conclusion"
+                ]
+            }
+        },
+        "153312532.c0": {
+            "contribution_id": "153312532.c0",
+            "paper_title": "How to Fine-Tune BERT for Text Classification?",
+            "paper_corpus_id": "153312532",
+            "contribution_obj": {
+                "contribution_id": "153312532.c0",
+                "name": "Three\u2011step BERT fine\u2011tuning framework for text classification",
+                "description": "The paper introduces a systematic three\u2011stage pipeline to adapt a pretrained BERT model to any text classification task. First, BERT is further pre\u2011trained on the target\u2011task training set or on additional in\u2011domain data using the original masked language modeling and next\u2011sentence\u2011prediction objectives. Second, an optional multi\u2011task fine\u2011tuning stage jointly trains the shared BERT encoder on several related classification tasks while keeping task\u2011specific output heads. Third, the target task is fine\u2011tuned with a layer\u2011wise decreasing learning\u2011rate schedule and a long\u2011text preprocessing strategy, yielding state\u2011of\u2011the\u2011art results on eight benchmark datasets.",
+                "types": [
+                    {
+                        "type": "research_methods_procedures",
+                        "explanation": "Defines a novel three\u2011stage experimental protocol for adapting BERT to downstream classification tasks."
+                    },
+                    {
+                        "type": "conceptual_framework",
+                        "explanation": "Provides a high\u2011level framework that guides future work on BERT adaptation and transfer."
+                    }
+                ],
+                "sections": [
+                    "Introduction",
+                    "Methodology"
+                ]
+            }
+        },
+        "153312532.c2": {
+            "contribution_id": "153312532.c2",
+            "paper_title": "How to Fine-Tune BERT for Text Classification?",
+            "paper_corpus_id": "153312532",
+            "contribution_obj": {
+                "contribution_id": "153312532.c2",
+                "name": "Layer-wise learning-rate decay schedule to mitigate catastrophic forgetting in BERT fine-tuning",
+                "description": "The paper introduces a learning\u2011rate schedule for BERT fine\u2011tuning that assigns a base learning rate to the top Transformer layer and geometrically decays it for lower layers using a factor \\(\\xi \\le 1\\). Setting \\(\\xi = 0.95\\) with a base rate of 2e\u20115 yields a lower error on the IMDb sentiment classification task by reducing catastrophic forgetting. The schedule is evaluated empirically on IMDb and analyzed in terms of its effect on knowledge retention across BERT layers.",
+                "types": [
+                    {
+                        "type": "techniques_algorithms",
+                        "explanation": "Introduces a novel layer\u2011wise learning\u2011rate decay algorithm for BERT fine\u2011tuning."
+                    },
+                    {
+                        "type": "analysis",
+                        "explanation": "Analyzes how varying learning rates across layers influences catastrophic forgetting."
+                    },
+                    {
+                        "type": "empirical_evaluation",
+                        "explanation": "Provides experimental results on IMDb showing performance gains from the schedule."
+                    }
+                ],
+                "sections": [
+                    "Exp-I: Investigating Different Fine-Tuning Strategies"
+                ]
+            }
+        },
+        "153312532.c4": {
+            "contribution_id": "153312532.c4",
+            "paper_title": "How to Fine-Tune BERT for Text Classification?",
+            "paper_corpus_id": "153312532",
+            "contribution_obj": {
+                "contribution_id": "153312532.c4",
+                "name": "Task\u2011specific, in\u2011domain, and cross\u2011domain further pre\u2011training of BERT",
+                "description": "The authors augment the original BERT model with an additional unsupervised pre\u2011training phase that re\u2011applies the masked language modeling (MLM) and next\u2011sentence prediction (NSP) objectives on (i) the target task\u2019s own training corpus (within\u2011task), (ii) a collection of corpora sharing the same semantic domain (in\u2011domain), and (iii) the union of all seven classification corpora (cross\u2011domain). This further pre\u2011training is inserted as the first stage of their three\u2011step BERT fine\u2011tuning pipeline and is evaluated on eight public text\u2011classification benchmarks, where it consistently reduces error rates relative to vanilla BERT\u2011base, with the largest gains observed for in\u2011domain pre\u2011training on small datasets such as TREC.",
+                "types": [
+                    {
+                        "type": "techniques_algorithms",
+                        "explanation": "Introduces a systematic additional pre\u2011training step that re\u2011uses MLM and NSP objectives on task\u2011specific or domain\u2011specific data."
+                    },
+                    {
+                        "type": "empirical_evaluation",
+                        "explanation": "Provides quantitative performance improvements across eight classification datasets."
+                    },
+                    {
+                        "type": "analysis",
+                        "explanation": "Analyzes how the similarity between pre\u2011training data and target data influences transfer effectiveness."
+                    }
+                ],
+                "sections": [
+                    "Exp-II: Investigating the Further Pretraining"
+                ]
+            }
+        },
+        "153312532.c5": {
+            "contribution_id": "153312532.c5",
+            "paper_title": "How to Fine-Tune BERT for Text Classification?",
+            "paper_corpus_id": "153312532",
+            "contribution_obj": {
+                "contribution_id": "153312532.c5",
+                "name": "Multi\u2011task fine\u2011tuning of BERT for text classification",
+                "description": "The authors jointly fine\u2011tune a shared BERT\u2011base encoder on four English text\u2011classification datasets (IMDb, Yelp\u2011P, AG's News, DBPedia) using a multi\u2011task learning setup where each task has a private classification head. After the joint training phase, they perform an additional low\u2011learning\u2011rate fine\u2011tuning step on each individual task. Experiments show modest accuracy gains over single\u2011task fine\u2011tuning and reveal that the benefit of multi\u2011task fine\u2011tuning diminishes when the model has already been subjected to cross\u2011domain further pre\u2011training.",
+                "types": [
+                    {
+                        "type": "empirical_evaluation",
+                        "explanation": "Provides comparative results for multi\u2011task versus single\u2011task BERT fine\u2011tuning on several benchmark datasets."
+                    },
+                    {
+                        "type": "analysis",
+                        "explanation": "Analyzes the interaction between prior cross\u2011domain further pre\u2011training and multi\u2011task fine\u2011tuning performance."
+                    }
+                ],
+                "sections": [
+                    "Exp-III: Multi-task Fine-Tuning"
+                ]
+            }
+        },
+        "153312532.c6": {
+            "contribution_id": "153312532.c6",
+            "paper_title": "How to Fine-Tune BERT for Text Classification?",
+            "paper_corpus_id": "153312532",
+            "contribution_obj": {
+                "contribution_id": "153312532.c6",
+                "name": "Few\u2011shot learning performance of (further pre\u2011trained) BERT for text classification",
+                "description": "The authors evaluate the pretrained BERT\u2011base model and its variants that undergo additional in\u2011domain pre\u2011training on the IMDb sentiment classification task when only a very small fraction (0.4\u202f% to 5\u202f%) of the original training data is available. By fine\u2011tuning BERT on these limited subsets they observe a reduction in error rate from 17.26\u202f% to 9.23\u202f% with the standard model, and further gains when the model has been further pre\u2011trained on in\u2011domain data, demonstrating BERT's suitability for low\u2011resource text classification scenarios.",
+                "types": [
+                    {
+                        "type": "empirical_evaluation",
+                        "explanation": "Provides quantitative error\u2011rate results for BERT under extreme low\u2011data conditions."
+                    },
+                    {
+                        "type": "analysis",
+                        "explanation": "Analyzes the impact of data scarcity on model accuracy and the benefit of further pre\u2011training."
+                    }
+                ],
+                "sections": [
+                    "Exp-IV: Few\u2011Shot Learning"
                 ]
             }
         },
@@ -2923,26 +3706,6 @@
                 "sections": [
                     "Training Procedure Analysis",
                     "RoBERTa"
-                ]
-            }
-        },
-        "198953378.c7": {
-            "contribution_id": "198953378.c7",
-            "paper_title": "RoBERTa: A Robustly Optimized BERT Pretraining Approach",
-            "paper_corpus_id": "198953378",
-            "contribution_obj": {
-                "contribution_id": "198953378.c7",
-                "name": "Open\u2011source implementation and pretrained checkpoints",
-                "description": "The authors release a full PyTorch/Fairseq codebase that re\u2011implements BERT pretraining and downstream fine\u2011tuning, together with pretrained RoBERTa checkpoints for both BASE and LARGE configurations. The released artifacts include data preprocessing, dynamic masking, large\u2011batch training, mixed\u2011precision support, and a byte\u2011level BPE tokenizer, enabling reproducibility of the RoBERTa recipe and allowing the community to use state\u2011of\u2011the\u2011art models without retraining from scratch.",
-                "types": [
-                    {
-                        "type": "tool_system_software",
-                        "explanation": "Provides publicly available software and pretrained model artifacts for other researchers to use."
-                    }
-                ],
-                "sections": [
-                    "Implementation",
-                    "Appendix"
                 ]
             }
         },
@@ -4600,10 +5363,23 @@
                                     "last_name": "Brown"
                                 },
                                 "paper_venue": "arXiv preprint",
-                                "corpus_id": null,
-                                "corpus_id_match_confidence": null,
-                                "corpus_id_match_method": null,
-                                "matches": []
+                                "corpus_id": "218971783",
+                                "corpus_id_match_confidence": 1.0,
+                                "corpus_id_match_method": "title_exact_sanitized",
+                                "matches": [
+                                    {
+                                        "contribution_id": "218971783.c0",
+                                        "explanation": "Introduces GPT\u20113, a dense decoder\u2011only Transformer model, directly embodying the architecture required by the prerequisite.",
+                                        "match_type": "strong",
+                                        "match_method": "alignment_v1_feb14"
+                                    },
+                                    {
+                                        "contribution_id": "218971783.c7",
+                                        "explanation": "Releases a family of smaller GPT\u20113 models that are also decoder\u2011only Transformers, providing additional concrete instances of the required architecture.",
+                                        "match_type": "strong",
+                                        "match_method": "alignment_v1_feb14"
+                                    }
+                                ]
                             }
                         ]
                     },
@@ -4623,7 +5399,7 @@
                                 },
                                 "paper_venue": "arXiv preprint",
                                 "corpus_id": null,
-                                "corpus_id_match_confidence": null,
+                                "corpus_id_match_confidence": 0.0,
                                 "corpus_id_match_method": null,
                                 "matches": []
                             },
@@ -4637,7 +5413,7 @@
                                 },
                                 "paper_venue": "arXiv preprint",
                                 "corpus_id": null,
-                                "corpus_id_match_confidence": null,
+                                "corpus_id_match_confidence": 0.0,
                                 "corpus_id_match_method": null,
                                 "matches": []
                             }
@@ -4700,10 +5476,17 @@
                                     "last_name": "Silver"
                                 },
                                 "paper_venue": "arXiv preprint",
-                                "corpus_id": null,
-                                "corpus_id_match_confidence": null,
-                                "corpus_id_match_method": null,
-                                "matches": []
+                                "corpus_id": "33081038",
+                                "corpus_id_match_confidence": 1.0,
+                                "corpus_id_match_method": "title_exact_sanitized",
+                                "matches": [
+                                    {
+                                        "contribution_id": "33081038.c0",
+                                        "explanation": "AlphaZero's generic reinforcement\u2011learning algorithm introduces a Monte\u2011Carlo Tree Search that expands nodes using policy network probabilities, which is analogous to ordering expansions by cumulative log\u2011probability.",
+                                        "match_type": "weak",
+                                        "match_method": "alignment_v1_feb14"
+                                    }
+                                ]
                             }
                         ]
                     },
@@ -4764,6 +5547,226 @@
                 ]
             }
         },
+        "218971783.c0": {
+            "contribution_id": "218971783.c0",
+            "paper_title": "Language Models are Few-Shot Learners",
+            "paper_corpus_id": "218971783",
+            "contribution_obj": {
+                "contribution_id": "218971783.c0",
+                "name": "GPT-3 175\u2011billion\u2011parameter dense autoregressive transformer language model",
+                "description": "The paper introduces GPT\u20113, a 175\u202fB\u2011parameter decoder\u2011only transformer trained on ~300\u202fB tokens of a filtered Common Crawl mixture. The model scales depth, width, and compute roughly ten\u2011fold beyond prior dense language models (e.g., GPT\u20112) while preserving the same autoregressive architecture. GPT\u20113 is evaluated without any weight updates on a wide range of NLP tasks using zero\u2011, one\u2011, and few\u2011shot prompting, achieving performance competitive with state\u2011of\u2011the\u2011art fine\u2011tuned systems on many benchmarks.",
+                "types": [
+                    {
+                        "type": "models_or_architectures",
+                        "explanation": "Introduces a new dense transformer model at an unprecedented scale."
+                    },
+                    {
+                        "type": "empirical_evaluation",
+                        "explanation": "Provides extensive zero\u2011, one\u2011, and few\u2011shot performance results across dozens of NLP benchmarks."
+                    }
+                ],
+                "sections": [
+                    "Introduction",
+                    "Approach",
+                    "Training Process",
+                    "Results"
+                ],
+                "prerequisites": [
+                    {
+                        "name": "Transformer decoder architecture",
+                        "description": "The standard multi\u2011head self\u2011attention transformer decoder that processes tokens autoregressively, originally introduced for sequence modeling and later used in GPT\u20112.",
+                        "explanation": "GPT\u20113 builds directly on this architecture; without it the model could not be constructed.",
+                        "core_or_peripheral": "core",
+                        "references": []
+                    },
+                    {
+                        "name": "GPT\u20112 training methodology and scaling",
+                        "description": "Prior work that demonstrated a decoder\u2011only transformer can be trained on large web corpora using the Adam optimizer, layer\u2011norm, and a simple language\u2011modeling objective, achieving strong zero\u2011shot capabilities.",
+                        "explanation": "GPT\u20113 adopts the same model design, training objective, and optimization tricks as GPT\u20112, scaling them up.",
+                        "core_or_peripheral": "core",
+                        "references": [
+                            {
+                                "type": "paper",
+                                "paper_title": "Language Models are Unsupervised Multitask Learners",
+                                "paper_year": 2019,
+                                "paper_first_author": {
+                                    "first_name": "Alec",
+                                    "last_name": "Radford"
+                                },
+                                "paper_venue": "arXiv",
+                                "corpus_id": "160025533",
+                                "corpus_id_match_confidence": 1.0,
+                                "corpus_id_match_method": "title_exact_sanitized",
+                                "matches": []
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Empirical scaling laws for language models",
+                        "description": "Observations that cross\u2011entropy loss and downstream performance follow smooth power\u2011law trends with model size, dataset size, and compute, enabling prediction of returns from scaling.",
+                        "explanation": "Guided the decision to train a 175\u202fB\u2011parameter model and to expect improved few\u2011shot performance.",
+                        "core_or_peripheral": "core",
+                        "references": [
+                            {
+                                "type": "paper",
+                                "paper_title": "Scaling laws for neural language models",
+                                "paper_year": 2020,
+                                "paper_first_author": {
+                                    "first_name": "Jared",
+                                    "last_name": "Kaplan"
+                                },
+                                "paper_venue": "arXiv",
+                                "corpus_id": "210861095",
+                                "corpus_id_match_confidence": 1.0,
+                                "corpus_id_match_method": "title_exact_sanitized",
+                                "matches": [
+                                    {
+                                        "contribution_id": "210861095.c0",
+                                        "explanation": "Directly reports power\u2011law scaling of loss with model size, dataset size, and compute, which is the empirical scaling law described in the prerequisite.",
+                                        "match_type": "strong",
+                                        "match_method": "alignment_v1_feb14"
+                                    },
+                                    {
+                                        "contribution_id": "210861095.c1",
+                                        "explanation": "Provides a closed\u2011form loss model L(N,D) that quantifies how loss scales with parameters and data, a concrete instance of the scaling\u2011law observation.",
+                                        "match_type": "strong",
+                                        "match_method": "alignment_v1_feb14"
+                                    },
+                                    {
+                                        "contribution_id": "210861095.c4",
+                                        "explanation": "Derives a compute\u2011optimal allocation framework using the previously observed scaling laws, so it builds on the scaling\u2011law foundation but does not itself present the empirical law.",
+                                        "match_type": "weak",
+                                        "match_method": "alignment_v1_feb14"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Large\u2011scale web data filtering and deduplication pipeline",
+                        "description": "A procedure that trains a logistic\u2011regression classifier to select high\u2011quality Common Crawl documents, re\u2011weights them, and applies fuzzy deduplication with MinHashLSH to reduce redundancy.",
+                        "explanation": "Ensured that the massive pre\u2011training corpus was of sufficient quality and diversity for a 175\u202fB\u2011parameter model.",
+                        "core_or_peripheral": "peripheral",
+                        "references": [
+                            {
+                                "type": "internal",
+                                "contribution_name": "Large\u2011scale web data filtering and deduplication pipeline",
+                                "contribution_id": "218971783.c3",
+                                "explanation": "Describes the data preparation steps directly used for GPT\u20113 training."
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Model\u2011parallel training infrastructure",
+                        "description": "Techniques for partitioning transformer layers and attention heads across many V100 GPUs, combining tensor\u2011 and pipeline\u2011parallelism to fit a 175\u202fB\u2011parameter model in memory and achieve efficient compute utilization.",
+                        "explanation": "Required to train a model of this size within feasible hardware constraints.",
+                        "core_or_peripheral": "peripheral",
+                        "references": []
+                    },
+                    {
+                        "name": "In\u2011context learning conceptual framework",
+                        "description": "The definition of zero\u2011, one\u2011, and few\u2011shot prompting as a form of meta\u2011learning where the model adapts to a new task at inference time using only textual context, without gradient updates.",
+                        "explanation": "Provides the methodology for evaluating GPT\u20113\u2019s capabilities without fine\u2011tuning.",
+                        "core_or_peripheral": "core",
+                        "references": [
+                            {
+                                "type": "internal",
+                                "contribution_name": "In\u2011context learning conceptual framework",
+                                "contribution_id": "218971783.c2",
+                                "explanation": "Establishes the prompting paradigm used for GPT\u20113 evaluation."
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Adam optimizer with learning\u2011rate schedule and batch\u2011size scaling",
+                        "description": "Use of Adam (\u03b2\u2081=0.9, \u03b2\u2082=0.95, \u03b5=1e\u20118) with cosine decay, warm\u2011up, and batch\u2011size scaling guided by gradient\u2011noise\u2011scale measurements.",
+                        "explanation": "Critical for stable training of very large models on massive data.",
+                        "core_or_peripheral": "peripheral",
+                        "references": []
+                    }
+                ]
+            }
+        },
+        "210861095.c0": {
+            "contribution_id": "210861095.c0",
+            "paper_title": "Scaling Laws for Neural Language Models",
+            "paper_corpus_id": "210861095",
+            "contribution_obj": {
+                "contribution_id": "210861095.c0",
+                "name": "Power-law scaling of Transformer language-model loss with model size, dataset size, and compute",
+                "description": "The authors empirically demonstrate that the cross-entropy loss of decoder-only Transformer language models follows simple power-law relationships with three independent scale factors: the number of non-embedding parameters (N), the number of training tokens (D), and the total non-embedding compute used for training (C). By training models ranging from 10^6 to >10^9 parameters on datasets spanning six orders of magnitude, they fit equations (1.1)\u2013(1.2) and (1.5)\u2013(1.6) that predict loss for any combination of N, D, and C when the other two are not bottlenecks. These scaling laws enable accurate extrapolation of performance and inform optimal allocation of compute resources.",
+                "types": [
+                    {
+                        "type": "empirical_evaluation",
+                        "explanation": "Provides large-scale measurements of loss across many model, data, and compute regimes."
+                    },
+                    {
+                        "type": "theoretical_insight",
+                        "explanation": "Formulates concise power-law equations that capture the observed behavior."
+                    },
+                    {
+                        "type": "conceptual_framework",
+                        "explanation": "Offers a unified framework for reasoning about language-model performance as a function of scale."
+                    }
+                ],
+                "sections": [
+                    "Abstract",
+                    "Summary",
+                    "Section 3 \u2013 Empirical Results and Basic Power Laws",
+                    "Appendix A \u2013 Summary of Power Laws"
+                ]
+            }
+        },
+        "210861095.c1": {
+            "contribution_id": "210861095.c1",
+            "paper_title": "Scaling Laws for Neural Language Models",
+            "paper_corpus_id": "210861095",
+            "contribution_obj": {
+                "contribution_id": "210861095.c1",
+                "name": "Closed-form loss model L(N,D) and universal overfitting scaling",
+                "description": "The authors propose a compact analytical expression L(N,D) (Equation\u202f1.5) that predicts the test cross\u2011entropy loss of decoder\u2011only Transformer language models as a function of the non\u2011embedding parameter count N and the dataset size D when both are varied jointly. By fitting this expression to a dense grid of experiments spanning six orders of magnitude in N and D, they demonstrate that the overfitting penalty follows a simple power\u2011law dependence on the ratio N^{0.74}/D, meaning that an eight\u2011fold increase in model size requires only about a five\u2011fold increase in data to avoid loss degradation. The model accurately captures the full experimental surface, providing a universal description of overfitting across scales.",
+                "types": [
+                    {
+                        "type": "theoretical_insight",
+                        "explanation": "Introduces a mathematically simple, unified expression linking model capacity, data quantity, and loss."
+                    },
+                    {
+                        "type": "analysis",
+                        "explanation": "Fits the expression to extensive empirical measurements and shows high predictive accuracy."
+                    }
+                ],
+                "sections": [
+                    "Section 4 \u2013 Charting the Infinite Data Limit and Overfitting",
+                    "Subsection \"Proposed L(N, D) Equation\"",
+                    "Table 2 \u2013 Fits to L(N,D)"
+                ]
+            }
+        },
+        "218971783.c7": {
+            "contribution_id": "218971783.c7",
+            "paper_title": "Language Models are Few-Shot Learners",
+            "paper_corpus_id": "218971783",
+            "contribution_obj": {
+                "contribution_id": "218971783.c7",
+                "name": "Release of a family of smaller GPT-3 models",
+                "description": "The authors train eight additional GPT-3 models ranging from 125\u202fM to 13\u202fB parameters using the same dense decoder\u2011only transformer architecture, data, and training pipeline as the 175\u202fB model, and publicly release the checkpoints. These models enable the research community to perform detailed scaling analyses and to apply language models in settings where the full 175\u202fB model is computationally infeasible.",
+                "types": [
+                    {
+                        "type": "tool_system_software",
+                        "explanation": "Provides publicly available model checkpoints for downstream research."
+                    },
+                    {
+                        "type": "empirical_evaluation",
+                        "explanation": "Uses the released smaller models to study scaling trends across many NLP tasks."
+                    }
+                ],
+                "sections": [
+                    "Approach",
+                    "Results",
+                    "Appendix B"
+                ]
+            }
+        },
         "19449905.c5": {
             "contribution_id": "19449905.c5",
             "paper_title": "Thinking Fast and Slow with Deep Learning and Tree Search",
@@ -4785,6 +5788,155 @@
                 "sections": [
                     "Using a Value Network",
                     "Experiments: Comparison of Value and Policy EXIT"
+                ],
+                "prerequisites": [
+                    {
+                        "name": "Expert Iteration (ExIt) framework",
+                        "description": "A reinforcement\u2011learning loop that alternates between planning with a tree\u2011search expert and policy/value generalisation with an apprentice network trained by imitation learning from expert plans.",
+                        "explanation": "The value\u2011network augmentation is built on top of the ExIt loop, which provides the self\u2011play data and the overall training schedule.",
+                        "core_or_peripheral": "core",
+                        "references": [
+                            {
+                                "type": "internal",
+                                "contribution_name": "Expert Iteration (ExIt) reinforcement learning algorithm",
+                                "contribution_id": "19449905.c0",
+                                "explanation": "Defines the overall learning paradigm within which the value network is introduced."
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Neural\u2011MCTS with policy\u2011biased UCT",
+                        "description": "Integration of a learned policy network into Monte\u2011Carlo Tree Search by adding a prior term proportional to the network\u2019s move probabilities in the UCT selection formula.",
+                        "explanation": "The value network shares the same apprentice architecture and is used together with the policy\u2011biased search; the policy network provides the apprentice estimates needed for the value target.",
+                        "core_or_peripheral": "core",
+                        "references": [
+                            {
+                                "type": "internal",
+                                "contribution_name": "Neural\u2011MCTS with policy\u2011biased UCT",
+                                "contribution_id": "19449905.c4",
+                                "explanation": "Provides the policy network and the search framework that the value network augments."
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Monte\u2011Carlo Tree Search (MCTS)",
+                        "description": "An anytime best\u2011first tree search algorithm that uses repeated simulations to estimate state values and guide action selection, typically employing the UCT (Upper Confidence bounds applied to Trees) formula.",
+                        "explanation": "The value network is trained to replace the rollout component of MCTS and is evaluated within the MCTS search loop.",
+                        "core_or_peripheral": "core",
+                        "references": [
+                            {
+                                "type": "paper",
+                                "paper_title": "Bandit Based Monte\u2011Carlo Planning",
+                                "paper_year": 2006,
+                                "paper_first_author": {
+                                    "first_name": "L",
+                                    "last_name": "Kocsis"
+                                },
+                                "paper_venue": "European Conference on Machine Learning",
+                                "corpus_id": "15184765",
+                                "corpus_id_match_confidence": null,
+                                "corpus_id_match_method": null,
+                                "matches": []
+                            },
+                            {
+                                "type": "paper",
+                                "paper_title": "Combining Online and Offline Knowledge in UCT",
+                                "paper_year": 2007,
+                                "paper_first_author": {
+                                    "first_name": "S",
+                                    "last_name": "Gelly"
+                                },
+                                "paper_venue": "International Conference on Machine Learning (ICML)",
+                                "corpus_id": "2917313",
+                                "corpus_id_match_confidence": null,
+                                "corpus_id_match_method": null,
+                                "matches": []
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Multitask CNN architecture with policy and value heads",
+                        "description": "A convolutional neural network that processes Hex board features and outputs both a softmax policy distribution (separate heads for black and white) and a scalar value estimate via sigmoid units.",
+                        "explanation": "The contribution relies on this architecture to jointly learn policy and value from the same representation.",
+                        "core_or_peripheral": "core",
+                        "references": [
+                            {
+                                "type": "internal",
+                                "contribution_name": "Hex board representation with hexagonal convolutional filters and padded dummy stones",
+                                "contribution_id": "19449905.c6",
+                                "explanation": "Provides the input encoding and convolutional design used by the multitask network."
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Monte\u2011Carlo value estimation from the apprentice",
+                        "description": "Using Monte\u2011Carlo rollouts of the current apprentice policy to obtain unbiased estimates of the state value, which serve as training targets for the value head.",
+                        "explanation": "The value network\u2019s training target is derived from these apprentice rollouts rather than from costly expert rollouts.",
+                        "core_or_peripheral": "core",
+                        "references": [
+                            {
+                                "type": "internal",
+                                "contribution_name": "Expert Iteration (ExIt) reinforcement learning algorithm",
+                                "contribution_id": "19449905.c0",
+                                "explanation": "ExIt supplies the self\u2011play data and the apprentice policy whose rollouts are used for value estimation."
+                            }
+                        ]
+                    },
+                    {
+                        "name": "KL loss and Adam optimiser for training",
+                        "description": "The apprentice and value networks are trained by minimising a Kullback\u2011Leibler divergence loss (for policy) and a KL loss for value, using the Adam stochastic optimisation algorithm.",
+                        "explanation": "These optimisation choices are necessary to successfully learn the multitask network.",
+                        "core_or_peripheral": "peripheral",
+                        "references": [
+                            {
+                                "type": "paper",
+                                "paper_title": "Adam: A Method for Stochastic Optimization",
+                                "paper_year": 2014,
+                                "paper_first_author": {
+                                    "first_name": "D",
+                                    "last_name": "Kingma"
+                                },
+                                "paper_venue": "arXiv preprint arXiv:1412.6980",
+                                "corpus_id": "6628106",
+                                "corpus_id_match_confidence": 1.0,
+                                "corpus_id_match_method": "title_exact_sanitized",
+                                "matches": [
+                                    {
+                                        "contribution_id": "6628106.c0",
+                                        "explanation": "Introduces the Adam optimizer, directly providing the Adam stochastic optimisation algorithm required by the prerequisite.",
+                                        "match_type": "strong",
+                                        "match_method": "alignment_v1_feb14"
+                                    },
+                                    {
+                                        "contribution_id": "6628106.c1",
+                                        "explanation": "Describes bias\u2011correction for Adam's moment estimates, extending the Adam algorithm and therefore supporting the prerequisite's Adam component.",
+                                        "match_type": "weak",
+                                        "match_method": "alignment_v1_feb14"
+                                    },
+                                    {
+                                        "contribution_id": "6628106.c6",
+                                        "explanation": "Frames Adam as a unifying adaptive optimizer within a broader conceptual framework, offering additional theoretical support for using Adam.",
+                                        "match_type": "weak",
+                                        "match_method": "alignment_v1_feb14"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Distributed dataset generation for Expert Iteration",
+                        "description": "A parallel pipeline where many CPU workers generate expert move datasets independently, each producing compact summaries that are batched for GPU\u2011accelerated policy/value evaluation.",
+                        "explanation": "Large amounts of self\u2011play data are required to train the multitask network; the distributed generation scheme makes this feasible.",
+                        "core_or_peripheral": "peripheral",
+                        "references": [
+                            {
+                                "type": "internal",
+                                "contribution_name": "Distributed dataset generation for Expert Iteration",
+                                "contribution_id": "19449905.c3",
+                                "explanation": "Describes the infrastructure used to collect the training data for the value network."
+                            }
+                        ]
+                    }
                 ]
             }
         },
@@ -4853,7 +6005,7 @@
                                 },
                                 "paper_venue": "Lulu Press",
                                 "corpus_id": null,
-                                "corpus_id_match_confidence": null,
+                                "corpus_id_match_confidence": 0.0,
                                 "corpus_id_match_method": null,
                                 "matches": []
                             }
@@ -4875,7 +6027,7 @@
                                 },
                                 "paper_venue": "arXiv",
                                 "corpus_id": null,
-                                "corpus_id_match_confidence": null,
+                                "corpus_id_match_confidence": 0.0,
                                 "corpus_id_match_method": null,
                                 "matches": []
                             }
@@ -5049,6 +6201,337 @@
                     "Stage 1: Character-level models",
                     "Stage 2: Word-level models",
                     "Experiments"
+                ],
+                "prerequisites": [
+                    {
+                        "name": "Long Short\u2011Term Memory (LSTM) architecture",
+                        "description": "A recurrent neural network cell that mitigates vanishing gradients via gated memory cells, enabling modeling of long\u2011range dependencies in sequences.",
+                        "explanation": "One of the three recurrent model families compared (pure recurrent networks) relies on LSTM cells.",
+                        "core_or_peripheral": "core",
+                        "references": [
+                            {
+                                "type": "paper",
+                                "paper_title": "Long short-term memory",
+                                "paper_year": 1997,
+                                "paper_first_author": {
+                                    "first_name": "Sepp",
+                                    "last_name": "Hochreiter"
+                                },
+                                "paper_venue": "Neural Computation",
+                                "corpus_id": "123967430",
+                                "corpus_id_match_confidence": 1.0,
+                                "corpus_id_match_method": "title_exact_sanitized",
+                                "matches": []
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Gated Recurrent Unit (GRU) architecture",
+                        "description": "A recurrent neural network variant with reset and update gates that provides a simpler alternative to LSTM while still handling sequence dependencies.",
+                        "explanation": "GRU cells constitute the second recurrent model family evaluated in the study.",
+                        "core_or_peripheral": "core",
+                        "references": [
+                            {
+                                "type": "paper",
+                                "paper_title": "Gated feedback recurrent neural networks",
+                                "paper_year": 2015,
+                                "paper_first_author": {
+                                    "first_name": "Junyoung",
+                                    "last_name": "Chung"
+                                },
+                                "paper_venue": "arXiv preprint",
+                                "corpus_id": "8577750",
+                                "corpus_id_match_confidence": 1.0,
+                                "corpus_id_match_method": "title_exact_sanitized",
+                                "matches": []
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Convolutional neural networks for sequence modeling",
+                        "description": "Neural networks that apply one\u2011dimensional convolutions over token sequences to extract local n\u2011gram features, often followed by max\u2011pooling to obtain fixed\u2011size representations.",
+                        "explanation": "Pure convolutional networks and the convolutional component of hybrid models are central to the comparison.",
+                        "core_or_peripheral": "core",
+                        "references": [
+                            {
+                                "type": "paper",
+                                "paper_title": "Understanding the difficulty of training deep feedforward neural networks",
+                                "paper_year": 2010,
+                                "paper_first_author": {
+                                    "first_name": "Xavier",
+                                    "last_name": "Glorot"
+                                },
+                                "paper_venue": "International conference on artificial intelligence and statistics",
+                                "corpus_id": "5575601",
+                                "corpus_id_match_confidence": 1.0,
+                                "corpus_id_match_method": "title_exact_sanitized",
+                                "matches": []
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Adam stochastic optimization algorithm",
+                        "description": "An adaptive learning\u2011rate method that computes individual learning rates for each parameter based on estimates of first and second moments of the gradients.",
+                        "explanation": "All neural models are trained using Adam, affecting convergence and final performance.",
+                        "core_or_peripheral": "core",
+                        "references": [
+                            {
+                                "type": "paper",
+                                "paper_title": "Adam: A method for stochastic optimization",
+                                "paper_year": 2014,
+                                "paper_first_author": {
+                                    "first_name": "Diederik",
+                                    "last_name": "Kingma"
+                                },
+                                "paper_venue": "arXiv preprint",
+                                "corpus_id": "6628106",
+                                "corpus_id_match_confidence": 1.0,
+                                "corpus_id_match_method": "title_exact_sanitized",
+                                "matches": [
+                                    {
+                                        "contribution_id": "6628106.c0",
+                                        "explanation": "This contribution introduces the Adam optimization algorithm itself, which is exactly the prerequisite required by the source paper.",
+                                        "match_type": "strong",
+                                        "match_method": "alignment_v1_feb14"
+                                    },
+                                    {
+                                        "contribution_id": "6628106.c1",
+                                        "explanation": "This contribution details the bias\u2011correction modifications used in Adam, a technical component of the Adam algorithm, so it is related but not the core definition.",
+                                        "match_type": "weak",
+                                        "match_method": "alignment_v1_feb14"
+                                    },
+                                    {
+                                        "contribution_id": "6628106.c3-1",
+                                        "explanation": "Empirical evaluation of Adam on a logistic regression task demonstrates the algorithm's performance, providing supporting evidence for the prerequisite.",
+                                        "match_type": "weak",
+                                        "match_method": "alignment_v1_feb14"
+                                    },
+                                    {
+                                        "contribution_id": "6628106.c3-2",
+                                        "explanation": "Empirical evaluation of Adam on a fully\u2011connected network shows how Adam works in practice, offering a tangential but relevant link to the prerequisite.",
+                                        "match_type": "weak",
+                                        "match_method": "alignment_v1_feb14"
+                                    },
+                                    {
+                                        "contribution_id": "6628106.c3-3",
+                                        "explanation": "Empirical evaluation of Adam on deep CNNs illustrates Adam's applicability, making it a weakly related match to the prerequisite.",
+                                        "match_type": "weak",
+                                        "match_method": "alignment_v1_feb14"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "TensorFlow machine\u2011learning framework",
+                        "description": "An open\u2011source library for defining and executing computational graphs on CPUs/GPUs, providing distributed training capabilities.",
+                        "explanation": "The implementation, training, and distributed execution of all models rely on TensorFlow.",
+                        "core_or_peripheral": "peripheral",
+                        "references": [
+                            {
+                                "type": "paper",
+                                "paper_title": "TensorFlow: Large-scale machine learning on heterogeneous systems",
+                                "paper_year": 2015,
+                                "paper_first_author": {
+                                    "first_name": "Mart\u00edn",
+                                    "last_name": "Abadi"
+                                },
+                                "paper_venue": "OSDI",
+                                "corpus_id": null,
+                                "corpus_id_match_confidence": 0.0,
+                                "corpus_id_match_method": null,
+                                "matches": []
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Keras high\u2011level neural\u2011network API",
+                        "description": "A user\u2011friendly Python library that runs on top of TensorFlow, simplifying model definition and training.",
+                        "explanation": "Model architectures and training loops are expressed using Keras APIs.",
+                        "core_or_peripheral": "peripheral",
+                        "references": [
+                            {
+                                "type": "paper",
+                                "paper_title": "Keras",
+                                "paper_year": 2015,
+                                "paper_first_author": {
+                                    "first_name": "Fran\u00e7ois",
+                                    "last_name": "Chollet"
+                                },
+                                "paper_venue": "GitHub",
+                                "corpus_id": null,
+                                "corpus_id_match_confidence": 0.0,
+                                "corpus_id_match_method": null,
+                                "matches": []
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Weight initialization for deep networks",
+                        "description": "Techniques (e.g., Glorot/Xavier initialization) that set initial network weights to maintain signal variance across layers.",
+                        "explanation": "The authors initialize convolutional and fully\u2011connected layers using the method from this work, influencing training stability.",
+                        "core_or_peripheral": "peripheral",
+                        "references": [
+                            {
+                                "type": "paper",
+                                "paper_title": "Understanding the difficulty of training deep feedforward neural networks",
+                                "paper_year": 2010,
+                                "paper_first_author": {
+                                    "first_name": "Xavier",
+                                    "last_name": "Glorot"
+                                },
+                                "paper_venue": "International conference on artificial intelligence and statistics",
+                                "corpus_id": "5575601",
+                                "corpus_id_match_confidence": 1.0,
+                                "corpus_id_match_method": "title_exact_sanitized",
+                                "matches": []
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Polyak averaging (exponential moving average of weights)",
+                        "description": "A technique that maintains a smoothed version of model parameters during training to improve generalization.",
+                        "explanation": "Final model weights are obtained via Polyak averaging, affecting reported performance.",
+                        "core_or_peripheral": "peripheral",
+                        "references": [
+                            {
+                                "type": "paper",
+                                "paper_title": "Acceleration of stochastic approximation by averaging",
+                                "paper_year": 1992,
+                                "paper_first_author": {
+                                    "first_name": "B. T.",
+                                    "last_name": "Polyak"
+                                },
+                                "paper_venue": "SIAM Journal on Control and Optimization",
+                                "corpus_id": "3548228",
+                                "corpus_id_match_confidence": 1.0,
+                                "corpus_id_match_method": "title_exact_sanitized",
+                                "matches": []
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Premise selection problem in automated theorem proving",
+                        "description": "Given a conjecture and a large library of previously proved lemmas, the task is to predict a small subset of lemmas that are most likely to enable an automated prover to find a proof.",
+                        "explanation": "The entire experimental setup evaluates how well each neural architecture can rank premises, so understanding this task is essential.",
+                        "core_or_peripheral": "core",
+                        "references": [
+                            {
+                                "type": "internal",
+                                "contribution_name": "First large\u2011scale application of deep neural networks to premise selection in automated theorem proving",
+                                "contribution_id": "8242113.c0",
+                                "explanation": "Defines the premise\u2011selection task and its relevance for scaling ATP over large libraries."
+                            },
+                            {
+                                "type": "paper",
+                                "paper_title": "Hammering towards QED",
+                                "paper_year": 2016,
+                                "paper_first_author": {
+                                    "first_name": "Jens",
+                                    "last_name": "Blanchette"
+                                },
+                                "paper_venue": "Formalized Reasoning",
+                                "corpus_id": null,
+                                "corpus_id_match_confidence": 0.0,
+                                "corpus_id_match_method": null,
+                                "matches": []
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Mizar Mathematical Library (MML) and its translation to first\u2011order logic",
+                        "description": "A corpus of over 57,000 formally verified theorems and definitions, translated into TPTP\u2011compatible first\u2011order logic using the MPTP system.",
+                        "explanation": "All neural models are trained and evaluated on this dataset; without it the experiments could not be performed.",
+                        "core_or_peripheral": "core",
+                        "references": [
+                            {
+                                "type": "paper",
+                                "paper_title": "MPTP 0.2: Design, implementation, and initial experiments",
+                                "paper_year": 2006,
+                                "paper_first_author": {
+                                    "first_name": "J\u00fcrgen",
+                                    "last_name": "Urban"
+                                },
+                                "paper_venue": "Journal of Automated Reasoning",
+                                "corpus_id": null,
+                                "corpus_id_match_confidence": 0.0,
+                                "corpus_id_match_method": null,
+                                "matches": []
+                            },
+                            {
+                                "type": "paper",
+                                "paper_title": "The TPTP world \u2013 infrastructure for automated reasoning",
+                                "paper_year": 2010,
+                                "paper_first_author": {
+                                    "first_name": "Geoff",
+                                    "last_name": "Sutcliffe"
+                                },
+                                "paper_venue": "Springer",
+                                "corpus_id": null,
+                                "corpus_id_match_confidence": 0.0,
+                                "corpus_id_match_method": null,
+                                "matches": []
+                            }
+                        ]
+                    },
+                    {
+                        "name": "E prover (automated theorem prover) for evaluating premise selection",
+                        "description": "A state\u2011of\u2011the\u2011art first\u2011order logic ATP used to attempt proofs given a set of selected premises.",
+                        "explanation": "Proof attempts with E prover provide the ultimate measure of whether a premise ranking is useful, linking model performance to actual theorem\u2011proving success.",
+                        "core_or_peripheral": "peripheral",
+                        "references": [
+                            {
+                                "type": "paper",
+                                "paper_title": "E \u2013 A Brainiac Theorem Prover",
+                                "paper_year": 2002,
+                                "paper_first_author": {
+                                    "first_name": "Stephan",
+                                    "last_name": "Schulz"
+                                },
+                                "paper_venue": "AI Communications",
+                                "corpus_id": "884116",
+                                "corpus_id_match_confidence": 1.0,
+                                "corpus_id_match_method": "title_exact_sanitized",
+                                "matches": []
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Evaluation metrics for premise selection (top\u2011k cutoff and average max relative rank)",
+                        "description": "Metrics that quantify how well a model ranks relevant premises: the number of theorems proved when the top\u2011k premises are given to the ATP, and the average maximum relative rank (aMRR) of true premises in the predicted ordering.",
+                        "explanation": "These metrics are used to compare the three neural architectures and to report empirical gains.",
+                        "core_or_peripheral": "core",
+                        "references": [
+                            {
+                                "type": "internal",
+                                "contribution_name": "Large\u2011scale empirical benchmark of premise selection on the Mizar Mathematical Library",
+                                "contribution_id": "8242113.c5",
+                                "explanation": "Defines the top\u2011k and aMRR metrics used throughout the experiments."
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Baseline hand\u2011engineered k\u2011nearest\u2011neighbors premise selector",
+                        "description": "A traditional premise\u2011selection method that uses handcrafted subterm and symbol features with a distance\u2011weighted k\u2011NN classifier.",
+                        "explanation": "Provides a reference point against which the neural architectures are compared, establishing the practical significance of the new models.",
+                        "core_or_peripheral": "peripheral",
+                        "references": [
+                            {
+                                "type": "paper",
+                                "paper_title": "Efficient semantic features for automated reasoning over large theories",
+                                "paper_year": 2015,
+                                "paper_first_author": {
+                                    "first_name": "Cezary",
+                                    "last_name": "Kaliszyk"
+                                },
+                                "paper_venue": "IJCAI",
+                                "corpus_id": null,
+                                "corpus_id_match_confidence": 0.0,
+                                "corpus_id_match_method": null,
+                                "matches": []
+                            }
+                        ]
+                    }
                 ]
             }
         },
@@ -5112,7 +6595,7 @@
         },
         "2100831.c1": {
             "contribution_id": "2100831.c1",
-            "paper_title": "MCTest: A Challenge Dataset for the Open-Domain Machine Comprehension of Text",
+            "paper_title": "**MCTest: A Challenge Dataset for the Open-Domain Machine Comprehension of Text**",
             "paper_corpus_id": "2100831",
             "contribution_obj": {
                 "contribution_id": "2100831.c1",
@@ -5695,10 +7178,17 @@
                                     "last_name": "Srivastava"
                                 },
                                 "paper_venue": "arXiv preprint",
-                                "corpus_id": null,
-                                "corpus_id_match_confidence": null,
-                                "corpus_id_match_method": null,
-                                "matches": []
+                                "corpus_id": "14786967",
+                                "corpus_id_match_confidence": 1.0,
+                                "corpus_id_match_method": "title_exact_sanitized",
+                                "matches": [
+                                    {
+                                        "contribution_id": "14786967.c0",
+                                        "explanation": "The cited contribution introduces the Highway Network architecture with transform and carry gates, which is the exact feed\u2011forward gated network that the source prerequisite refers to.",
+                                        "match_type": "strong",
+                                        "match_method": "alignment_v1_feb14"
+                                    }
+                                ]
                             }
                         ]
                     },
@@ -5769,10 +7259,23 @@
                                     "last_name": "Bahdanau"
                                 },
                                 "paper_venue": "ICLR",
-                                "corpus_id": null,
-                                "corpus_id_match_confidence": null,
-                                "corpus_id_match_method": null,
-                                "matches": []
+                                "corpus_id": "11212020",
+                                "corpus_id_match_confidence": 1.0,
+                                "corpus_id_match_method": "title_exact_sanitized",
+                                "matches": [
+                                    {
+                                        "contribution_id": "11212020.c1",
+                                        "explanation": "Introduces a soft attention mechanism that computes similarity scores and normalises them with a softmax, exactly matching the prerequisite's definition of soft attention for sequence-to-sequence models.",
+                                        "match_type": "strong",
+                                        "match_method": "alignment_v1_feb14"
+                                    },
+                                    {
+                                        "contribution_id": "11212020.c3",
+                                        "explanation": "Describes an end-to-end training procedure that jointly optimises the soft attention component, which is tangentially related to the prerequisite but does not itself introduce the core soft attention mechanism.",
+                                        "match_type": "weak",
+                                        "match_method": "alignment_v1_feb14"
+                                    }
+                                ]
                             }
                         ]
                     },
@@ -5818,10 +7321,23 @@
                                     "last_name": "Wang"
                                 },
                                 "paper_venue": "arXiv preprint",
-                                "corpus_id": null,
-                                "corpus_id_match_confidence": null,
-                                "corpus_id_match_method": null,
-                                "matches": []
+                                "corpus_id": "5592690",
+                                "corpus_id_match_confidence": 1.0,
+                                "corpus_id_match_method": "title_exact_sanitized",
+                                "matches": [
+                                    {
+                                        "contribution_id": "5592690.c0",
+                                        "explanation": "Introduces the match-LSTM model, a dynamic/recurrent attention mechanism that BiDAF cites as a contrasting dynamic approach.",
+                                        "match_type": "strong",
+                                        "match_method": "alignment_v1_feb14"
+                                    },
+                                    {
+                                        "contribution_id": "5592690.c1",
+                                        "explanation": "Extends the match-LSTM to a sequence generation setting, still embodying the dynamic/recurrent attention concept referenced by the prerequisite.",
+                                        "match_type": "strong",
+                                        "match_method": "alignment_v1_feb14"
+                                    }
+                                ]
                             }
                         ]
                     },
@@ -5840,10 +7356,17 @@
                                     "last_name": "Hill"
                                 },
                                 "paper_venue": "ICLR",
-                                "corpus_id": null,
-                                "corpus_id_match_confidence": null,
-                                "corpus_id_match_method": null,
-                                "matches": []
+                                "corpus_id": "14915449",
+                                "corpus_id_match_confidence": 1.0,
+                                "corpus_id_match_method": "title_exact_sanitized",
+                                "matches": [
+                                    {
+                                        "contribution_id": "14915449.c3",
+                                        "explanation": "The self\u2011supervised hard\u2011attention training selects a memory window based on the highest similarity to the query, using a similarity score for attention, but it does not introduce or analyze the parameterized similarity function designs (dot, bilinear, concatenation) described in the prerequisite.",
+                                        "match_type": "weak",
+                                        "match_method": "alignment_v1_feb14"
+                                    }
+                                ]
                             },
                             {
                                 "type": "paper",
@@ -5855,7 +7378,7 @@
                                 },
                                 "paper_venue": "EMNLP",
                                 "corpus_id": null,
-                                "corpus_id_match_confidence": null,
+                                "corpus_id_match_confidence": 0.0,
                                 "corpus_id_match_method": null,
                                 "matches": []
                             }
@@ -5890,10 +7413,17 @@
                                     "last_name": "Cui"
                                 },
                                 "paper_venue": "arXiv preprint",
-                                "corpus_id": null,
-                                "corpus_id_match_confidence": null,
-                                "corpus_id_match_method": null,
-                                "matches": []
+                                "corpus_id": "9205021",
+                                "corpus_id_match_confidence": 1.0,
+                                "corpus_id_match_method": "title_exact_sanitized",
+                                "matches": [
+                                    {
+                                        "contribution_id": "9205021.c0",
+                                        "explanation": "The AoA Reader introduces the Attention-over-Attention mechanism, which computes a global query-to-document (Q2C) vector using max/softmax operations, directly matching the prerequisite's Q2C attention formulation.",
+                                        "match_type": "strong",
+                                        "match_method": "alignment_v1_feb14"
+                                    }
+                                ]
                             }
                         ]
                     },
@@ -6727,6 +8257,31 @@
                 ]
             }
         },
+        "14786967.c0": {
+            "contribution_id": "14786967.c0",
+            "paper_title": "Highway Networks",
+            "paper_corpus_id": "14786967",
+            "contribution_obj": {
+                "contribution_id": "14786967.c0",
+                "name": "Highway Network Architecture with Transform and Carry Gates",
+                "description": "The paper introduces Highway Networks, a feed\u2011forward architecture in which each layer computes a transformed representation H(x) and a transform gate T(x). The layer output is a convex combination y = H(x)\u00b7T(x) + x\u00b7(1\u2011T(x)), where the carry gate C(x) is defined as 1\u2011T(x). This gating mechanism creates \"information highways\" that allow signals to propagate unchanged across many layers, mitigating the vanishing\u2011gradient problem and enabling the training of very deep networks with standard stochastic gradient descent.",
+                "types": [
+                    {
+                        "type": "models_or_architectures",
+                        "explanation": "Proposes a novel layer design that augments standard networks with learned gating mechanisms."
+                    },
+                    {
+                        "type": "conceptual_framework",
+                        "explanation": "Defines the \"information highway\" concept to explain depth\u2011wise information flow without attenuation."
+                    }
+                ],
+                "sections": [
+                    "Introduction",
+                    "Highway Networks",
+                    "Constructing Highway Networks"
+                ]
+            }
+        },
         "2926851.c0": {
             "contribution_id": "2926851.c0",
             "paper_title": "Memory Networks",
@@ -6771,6 +8326,95 @@
                 ],
                 "sections": [
                     "A MemNN Implementation For Text"
+                ]
+            }
+        },
+        "5592690.c0": {
+            "contribution_id": "5592690.c0",
+            "paper_title": "Machine Comprehension Using Match-LSTM and Answer Pointer",
+            "paper_corpus_id": "5592690",
+            "contribution_obj": {
+                "contribution_id": "5592690.c0",
+                "name": "Boundary model: match-LSTM with Pointer Network for span prediction",
+                "description": "The paper introduces a neural architecture for machine comprehension that predicts answer spans by jointly applying a match-LSTM to attend a passage to a question and a Pointer Network to select the start and end token positions. The match-LSTM encodes each passage token with bidirectional contextual information and aligns it to the question via attention, while the Answer Pointer layer uses the pointer mechanism to output two indices defining a contiguous answer span. Evaluated on the SQuAD v1.1 benchmark, the boundary model achieves an exact\u2011match score of 67.6% and an F1 of 77.0%, surpassing the logistic\u2011regression baseline.",
+                "types": [
+                    {
+                        "type": "models_or_architectures",
+                        "explanation": "Proposes a new end\u2011to\u2011end architecture that integrates match\u2011LSTM with a Pointer Network for span selection."
+                    },
+                    {
+                        "type": "techniques_algorithms",
+                        "explanation": "Applies the pointer mechanism to predict start and end positions rather than generating tokens from a fixed vocabulary."
+                    },
+                    {
+                        "type": "empirical_evaluation",
+                        "explanation": "Provides quantitative results on SQuAD demonstrating superior performance over prior baselines."
+                    }
+                ],
+                "sections": [
+                    "Introduction",
+                    "Method",
+                    "Match-LSTM",
+                    "Pointer Net",
+                    "Our Method",
+                    "Experiments",
+                    "Results"
+                ]
+            }
+        },
+        "5592690.c1": {
+            "contribution_id": "5592690.c1",
+            "paper_title": "Machine Comprehension Using Match-LSTM and Answer Pointer",
+            "paper_corpus_id": "5592690",
+            "contribution_obj": {
+                "contribution_id": "5592690.c1",
+                "name": "Sequence model: match-LSTM with Pointer Network for token\u2011sequence generation",
+                "description": "The paper introduces a neural architecture that combines a match\u2011LSTM encoder with a Pointer Network decoder to generate answers as a variable\u2011length sequence of token positions from the passage. The decoder emits indices into the passage and includes a special end\u2011of\u2011answer token, allowing the model to select non\u2011consecutive tokens. The model is trained end\u2011to\u2011end on the SQuAD v1.1 dataset and evaluated against baselines, showing lower performance than the span\u2011based boundary model but demonstrating the feasibility of sequence\u2011based answer generation.",
+                "types": [
+                    {
+                        "type": "models_or_architectures",
+                        "explanation": "Proposes a novel end\u2011to\u2011end neural architecture that treats answer generation as a token sequence."
+                    },
+                    {
+                        "type": "techniques_algorithms",
+                        "explanation": "Extends the Pointer Network to handle variable\u2011length output with an explicit end\u2011of\u2011answer token."
+                    },
+                    {
+                        "type": "empirical_evaluation",
+                        "explanation": "Provides experimental results on SQuAD comparing the sequence model to baselines and to the boundary model."
+                    }
+                ],
+                "sections": [
+                    "Introduction",
+                    "Method",
+                    "Our Method",
+                    "Experiments",
+                    "Results"
+                ]
+            }
+        },
+        "9205021.c0": {
+            "contribution_id": "9205021.c0",
+            "paper_title": "Attention-over-Attention Neural Networks for Reading Comprehension",
+            "paper_corpus_id": "9205021",
+            "contribution_obj": {
+                "contribution_id": "9205021.c0",
+                "name": "Attention-over-Attention (AoA) Reader Architecture",
+                "description": "The paper introduces the Attention-over-Attention (AoA) Reader, a neural network for cloze\u2011style reading comprehension. The model encodes document and query tokens with a shared bidirectional GRU, computes a pairwise matching matrix via dot\u2011product, derives a query\u2011to\u2011document attention for each query word (column\u2011wise softmax) and a document\u2011to\u2011query attention (row\u2011wise softmax), averages the latter to obtain a global query\u2011level attention vector, and finally produces an \"attended attention\" over the document by taking the dot product of the two attention matrices. The resulting document\u2011level attention scores are summed over all occurrences of each candidate word to yield answer probabilities, removing the need for heuristic merging functions while adding negligible computational overhead.",
+                "types": [
+                    {
+                        "type": "models_or_architectures",
+                        "explanation": "Proposes a novel neural architecture that nests a second\u2011level attention over standard document\u2011level attentions."
+                    },
+                    {
+                        "type": "conceptual_framework",
+                        "explanation": "Establishes the conceptual idea of applying an attention mechanism on top of another attention to capture mutual query\u2011document relevance."
+                    }
+                ],
+                "sections": [
+                    "3 Attention-over-Attention Reader",
+                    "Introduction (motivation for AoA)",
+                    "Related Work (positioning against heuristic merging)"
                 ]
             }
         },
@@ -6904,10 +8548,23 @@
                                     "last_name": "Srivastava"
                                 },
                                 "paper_venue": "arXiv preprint",
-                                "corpus_id": null,
-                                "corpus_id_match_confidence": null,
-                                "corpus_id_match_method": null,
-                                "matches": []
+                                "corpus_id": "14786967",
+                                "corpus_id_match_confidence": 1.0,
+                                "corpus_id_match_method": "title_exact_sanitized",
+                                "matches": [
+                                    {
+                                        "contribution_id": "14786967.c0",
+                                        "explanation": "Introduces the Highway Network architecture that BiDAF uses to process the three\u2011level embedding stack.",
+                                        "match_type": "strong",
+                                        "match_method": "alignment_v1_feb14"
+                                    },
+                                    {
+                                        "contribution_id": "14786967.c1",
+                                        "explanation": "Proposes a negative bias initialization for Highway transform gates, a training detail that can improve the Highway layer used in BiDAF.",
+                                        "match_type": "weak",
+                                        "match_method": "alignment_v1_feb14"
+                                    }
+                                ]
                             }
                         ]
                     },
@@ -6989,10 +8646,23 @@
                                     "last_name": "Zeiler"
                                 },
                                 "paper_venue": "arXiv preprint",
-                                "corpus_id": null,
-                                "corpus_id_match_confidence": null,
-                                "corpus_id_match_method": null,
-                                "matches": []
+                                "corpus_id": "7365802",
+                                "corpus_id_match_confidence": 1.0,
+                                "corpus_id_match_method": "title_exact_sanitized",
+                                "matches": [
+                                    {
+                                        "contribution_id": "7365802.c0",
+                                        "explanation": "Introduces the AdaDelta optimizer, which is the exact optimization method cited in the prerequisite.",
+                                        "match_type": "strong",
+                                        "match_method": "alignment_v1_feb14"
+                                    },
+                                    {
+                                        "contribution_id": "7365802.c1",
+                                        "explanation": "Provides a unit\u2011consistent theoretical derivation of the AdaDelta update rule, offering deeper insight into the optimizer used in the prerequisite.",
+                                        "match_type": "weak",
+                                        "match_method": "alignment_v1_feb14"
+                                    }
+                                ]
                             },
                             {
                                 "type": "paper",
@@ -7003,9 +8673,9 @@
                                     "last_name": "Srivastava"
                                 },
                                 "paper_venue": "JMLR",
-                                "corpus_id": null,
-                                "corpus_id_match_confidence": null,
-                                "corpus_id_match_method": null,
+                                "corpus_id": "6844431",
+                                "corpus_id_match_confidence": 1.0,
+                                "corpus_id_match_method": "title_exact_sanitized",
                                 "matches": []
                             }
                         ]
@@ -7107,10 +8777,23 @@
                                     "last_name": "Srivastava"
                                 },
                                 "paper_venue": "arXiv preprint",
-                                "corpus_id": null,
-                                "corpus_id_match_confidence": null,
-                                "corpus_id_match_method": null,
-                                "matches": []
+                                "corpus_id": "14786967",
+                                "corpus_id_match_confidence": 1.0,
+                                "corpus_id_match_method": "title_exact_sanitized",
+                                "matches": [
+                                    {
+                                        "contribution_id": "14786967.c0",
+                                        "explanation": "Introduces the Highway Network architecture, which is the exact component referenced in the prerequisite's embedding pipeline.",
+                                        "match_type": "strong",
+                                        "match_method": "alignment_v1_feb14"
+                                    },
+                                    {
+                                        "contribution_id": "14786967.c1",
+                                        "explanation": "Provides a training\u2011technique (negative bias initialization) for Highway transform gates, which is related but not essential to the pipeline.",
+                                        "match_type": "weak",
+                                        "match_method": "alignment_v1_feb14"
+                                    }
+                                ]
                             }
                         ]
                     },
@@ -7198,10 +8881,23 @@
                                     "last_name": "Zeiler"
                                 },
                                 "paper_venue": "arXiv preprint",
-                                "corpus_id": null,
-                                "corpus_id_match_confidence": null,
-                                "corpus_id_match_method": null,
-                                "matches": []
+                                "corpus_id": "7365802",
+                                "corpus_id_match_confidence": 1.0,
+                                "corpus_id_match_method": "title_exact_sanitized",
+                                "matches": [
+                                    {
+                                        "contribution_id": "7365802.c0",
+                                        "explanation": "Introduces the AdaDelta optimizer that the source paper uses for training, directly providing the required optimization method.",
+                                        "match_type": "strong",
+                                        "match_method": "alignment_v1_feb14"
+                                    },
+                                    {
+                                        "contribution_id": "7365802.c1",
+                                        "explanation": "Provides the unit\u2011consistent theoretical derivation of the AdaDelta update rule, which underlies the optimizer used in the source paper.",
+                                        "match_type": "weak",
+                                        "match_method": "alignment_v1_feb14"
+                                    }
+                                ]
                             },
                             {
                                 "type": "paper",
@@ -7212,9 +8908,9 @@
                                     "last_name": "Srivastava"
                                 },
                                 "paper_venue": "JMLR",
-                                "corpus_id": null,
-                                "corpus_id_match_confidence": null,
-                                "corpus_id_match_method": null,
+                                "corpus_id": "6844431",
+                                "corpus_id_match_confidence": 1.0,
+                                "corpus_id_match_method": "title_exact_sanitized",
                                 "matches": []
                             }
                         ]
@@ -7562,7 +9258,7 @@
         },
         "11039301.c1": {
             "contribution_id": "11039301.c1",
-            "paper_title": "Learning Question Classifiers",
+            "paper_title": "**Learning Question Classifiers**",
             "paper_corpus_id": "11039301",
             "contribution_obj": {
                 "contribution_id": "11039301.c1",
@@ -8833,6 +10529,66 @@
             "depth": 1
         },
         {
+            "contribution_id": "12330432.c0",
+            "used_by_contribution_id": "202786778.c0",
+            "prerequisite_description": "High\u2011performance kernels and libraries (CUDA, cuDNN, cuBLAS) that implement convolution, matrix multiplication, and other tensor operations on NVIDIA GPUs.",
+            "prerequisite_explanation": "To achieve performance comparable to static\u2011graph frameworks, PyTorch must offload heavy computation to optimized GPU kernels.",
+            "strengths": [
+                "strong"
+            ],
+            "depth": 2
+        },
+        {
+            "contribution_id": "12330432.c4-1",
+            "used_by_contribution_id": "202786778.c0",
+            "prerequisite_description": "High\u2011performance kernels and libraries (CUDA, cuDNN, cuBLAS) that implement convolution, matrix multiplication, and other tensor operations on NVIDIA GPUs.",
+            "prerequisite_explanation": "To achieve performance comparable to static\u2011graph frameworks, PyTorch must offload heavy computation to optimized GPU kernels.",
+            "strengths": [
+                "strong"
+            ],
+            "depth": 2
+        },
+        {
+            "contribution_id": "12330432.c4-2",
+            "used_by_contribution_id": "202786778.c0",
+            "prerequisite_description": "High\u2011performance kernels and libraries (CUDA, cuDNN, cuBLAS) that implement convolution, matrix multiplication, and other tensor operations on NVIDIA GPUs.",
+            "prerequisite_explanation": "To achieve performance comparable to static\u2011graph frameworks, PyTorch must offload heavy computation to optimized GPU kernels.",
+            "strengths": [
+                "strong"
+            ],
+            "depth": 2
+        },
+        {
+            "contribution_id": "12330432.c4-3",
+            "used_by_contribution_id": "202786778.c0",
+            "prerequisite_description": "High\u2011performance kernels and libraries (CUDA, cuDNN, cuBLAS) that implement convolution, matrix multiplication, and other tensor operations on NVIDIA GPUs.",
+            "prerequisite_explanation": "To achieve performance comparable to static\u2011graph frameworks, PyTorch must offload heavy computation to optimized GPU kernels.",
+            "strengths": [
+                "strong"
+            ],
+            "depth": 2
+        },
+        {
+            "contribution_id": "12330432.c4-4",
+            "used_by_contribution_id": "202786778.c0",
+            "prerequisite_description": "High\u2011performance kernels and libraries (CUDA, cuDNN, cuBLAS) that implement convolution, matrix multiplication, and other tensor operations on NVIDIA GPUs.",
+            "prerequisite_explanation": "To achieve performance comparable to static\u2011graph frameworks, PyTorch must offload heavy computation to optimized GPU kernels.",
+            "strengths": [
+                "strong"
+            ],
+            "depth": 2
+        },
+        {
+            "contribution_id": "2170930.c1",
+            "used_by_contribution_id": "202786778.c0",
+            "prerequisite_description": "Earlier deep\u2011learning libraries that demonstrated the feasibility of eager execution, albeit with different trade\u2011offs in performance or language choice, providing conceptual motivation for an imperative, eager\u2011execution system in Python.",
+            "prerequisite_explanation": "These works establish the feasibility of define\u2011by\u2011run execution and highlight the need for a high\u2011performance Python\u2011centric solution.",
+            "strengths": [
+                "strong"
+            ],
+            "depth": 2
+        },
+        {
             "contribution_id": "207847663.c2-2",
             "used_by_contribution_id": "233297051.c0",
             "prerequisite_description": "Existing QA explanation methods provide short textual rationales or supporting sentences rather than a full chain of reasoning.",
@@ -8913,6 +10669,46 @@
             "depth": 1
         },
         {
+            "contribution_id": "5590763.c0",
+            "used_by_contribution_id": "11212020.c1",
+            "prerequisite_description": "A sequence\u2011to\u2011sequence architecture where an encoder RNN maps a source sentence to a representation and a decoder RNN generates the target sentence conditioned on that representation.",
+            "prerequisite_explanation": "The attention mechanism augments this framework by replacing the single fixed\u2011length representation with a dynamic context computed from all encoder annotations.",
+            "strengths": [
+                "strong"
+            ],
+            "depth": 2
+        },
+        {
+            "contribution_id": "7961699.c0",
+            "used_by_contribution_id": "11212020.c1",
+            "prerequisite_description": "A sequence\u2011to\u2011sequence architecture where an encoder RNN maps a source sentence to a representation and a decoder RNN generates the target sentence conditioned on that representation.",
+            "prerequisite_explanation": "The attention mechanism augments this framework by replacing the single fixed\u2011length representation with a dynamic context computed from all encoder annotations.",
+            "strengths": [
+                "strong"
+            ],
+            "depth": 2
+        },
+        {
+            "contribution_id": "5590763.c1",
+            "used_by_contribution_id": "11212020.c1",
+            "prerequisite_description": "Gated recurrent units (GRU) or Long Short\u2011Term Memory (LSTM) cells mitigate the vanishing\u2011gradient problem and provide expressive hidden representations for both encoder and decoder RNNs.",
+            "prerequisite_explanation": "These hidden representations are the inputs to the attention alignment model and the decoder state updates.",
+            "strengths": [
+                "strong"
+            ],
+            "depth": 2
+        },
+        {
+            "contribution_id": "1697424.c6",
+            "used_by_contribution_id": "11212020.c1",
+            "prerequisite_description": "Prior use of a differentiable soft attention mechanism for handwriting synthesis, where a mixture of Gaussians is used to weight encoder outputs.",
+            "prerequisite_explanation": "Demonstrates that differentiable attention mechanisms are feasible and informs the design of the current attention model.",
+            "strengths": [
+                "strong"
+            ],
+            "depth": 2
+        },
+        {
             "contribution_id": "16747630.c1",
             "used_by_contribution_id": "207847663.c2-2",
             "prerequisite_description": "An attribution method that integrates gradients of the model output with respect to inputs along a path from a baseline to the actual input.",
@@ -8921,6 +10717,46 @@
                 "strong"
             ],
             "depth": 1
+        },
+        {
+            "contribution_id": "1450294.c1",
+            "used_by_contribution_id": "16747630.c1",
+            "prerequisite_description": "Using the gradient of the output with respect to the input as a primitive attribution signal, originally proposed for visualizing neural\u2011network decisions.",
+            "prerequisite_explanation": "Integrated Gradients builds directly on the gradient operator; understanding its behavior is essential for formulating the new method.",
+            "strengths": [
+                "strong"
+            ],
+            "depth": 2
+        },
+        {
+            "contribution_id": "1450294.c2",
+            "used_by_contribution_id": "16747630.c1",
+            "prerequisite_description": "Using the gradient of the output with respect to the input as a primitive attribution signal, originally proposed for visualizing neural\u2011network decisions.",
+            "prerequisite_explanation": "Integrated Gradients builds directly on the gradient operator; understanding its behavior is essential for formulating the new method.",
+            "strengths": [
+                "strong"
+            ],
+            "depth": 2
+        },
+        {
+            "contribution_id": "1450294.c4-2",
+            "used_by_contribution_id": "16747630.c1",
+            "prerequisite_description": "Using the gradient of the output with respect to the input as a primitive attribution signal, originally proposed for visualizing neural\u2011network decisions.",
+            "prerequisite_explanation": "Integrated Gradients builds directly on the gradient operator; understanding its behavior is essential for formulating the new method.",
+            "strengths": [
+                "strong"
+            ],
+            "depth": 2
+        },
+        {
+            "contribution_id": "8564234.c0",
+            "used_by_contribution_id": "16747630.c1",
+            "prerequisite_description": "Knowledge of existing attribution techniques (DeepLift, LRP, Deconvolutional networks, Guided back\u2011propagation) and how each fails to satisfy at least one of the proposed axioms.",
+            "prerequisite_explanation": "Identifying the shortcomings of these methods motivated the need for a new approach that satisfies both axioms.",
+            "strengths": [
+                "strong"
+            ],
+            "depth": 2
         },
         {
             "contribution_id": "13029170.c0",
@@ -9073,6 +10909,26 @@
             "depth": 1
         },
         {
+            "contribution_id": "52967399.c6",
+            "used_by_contribution_id": "204838007.c9-1",
+            "prerequisite_description": "Design principles for scaling Transformer depth, hidden size, feed\u2011forward dimension and attention heads, as demonstrated in the BERT\u202fLarge configuration.",
+            "prerequisite_explanation": "The larger T5 models (770\u202fM, 3\u202fB, 11\u202fB) follow the same scaling principles, requiring knowledge of how to increase model dimensions while preserving training stability.",
+            "strengths": [
+                "strong"
+            ],
+            "depth": 2
+        },
+        {
+            "contribution_id": "4786918.c6",
+            "used_by_contribution_id": "204838007.c9-1",
+            "prerequisite_description": "An adaptive learning\u2011rate optimizer with sublinear memory cost, used for both pre\u2011training and fine\u2011tuning of T5 models.",
+            "prerequisite_explanation": "All scaling experiments use AdaFactor for optimization, making its algorithm a prerequisite for reproducing the results.",
+            "strengths": [
+                "strong"
+            ],
+            "depth": 2
+        },
+        {
             "contribution_id": "204838007.c11",
             "used_by_contribution_id": "229371222.c0",
             "prerequisite_description": "A large\u2011scale encoder\u2011decoder model pretrained on massive text corpora and fine\u2011tuned for downstream tasks via a unified text\u2011to\u2011text format.",
@@ -9081,6 +10937,16 @@
                 "strong"
             ],
             "depth": 1
+        },
+        {
+            "contribution_id": "52051958.c0",
+            "used_by_contribution_id": "204838007.c11",
+            "prerequisite_description": "A language\u2011independent subword tokenization library that produces a shared 32\u202fk wordpiece vocabulary for both encoder and decoder.",
+            "prerequisite_explanation": "Required for preprocessing the C4 corpus and for tokenizing inputs/outputs of the released models.",
+            "strengths": [
+                "strong"
+            ],
+            "depth": 2
         },
         {
             "contribution_id": "211126663.c1",
@@ -9101,6 +10967,86 @@
                 "strong"
             ],
             "depth": 1
+        },
+        {
+            "contribution_id": "198953378.c7",
+            "used_by_contribution_id": "211126663.c2",
+            "prerequisite_description": "A large\u2011scale transformer model pretrained on massive text corpora using the RoBERTa training recipe, providing rich contextual representations for downstream fine\u2011tuning.",
+            "prerequisite_explanation": "RuleTaker builds directly on RoBERTa\u2011large; without the pretrained weights the model would lack the linguistic knowledge needed to process the natural\u2011language facts and rules.",
+            "strengths": [
+                "strong"
+            ],
+            "depth": 2
+        },
+        {
+            "contribution_id": "6826032.c0",
+            "used_by_contribution_id": "211126663.c2",
+            "prerequisite_description": "An additional fine\u2011tuning step on the RACE dataset, which contains multiple\u2011choice reading\u2011comprehension questions derived from examinations.",
+            "prerequisite_explanation": "The authors report that this intermediate fine\u2011tuning improves sensitivity to hyper\u2011parameters and overall downstream performance before training on the RuleTaker data.",
+            "strengths": [
+                "strong"
+            ],
+            "depth": 2
+        },
+        {
+            "contribution_id": "6826032.c5",
+            "used_by_contribution_id": "211126663.c2",
+            "prerequisite_description": "An additional fine\u2011tuning step on the RACE dataset, which contains multiple\u2011choice reading\u2011comprehension questions derived from examinations.",
+            "prerequisite_explanation": "The authors report that this intermediate fine\u2011tuning improves sensitivity to hyper\u2011parameters and overall downstream performance before training on the RuleTaker data.",
+            "strengths": [
+                "strong"
+            ],
+            "depth": 2
+        },
+        {
+            "contribution_id": "153312532.c0",
+            "used_by_contribution_id": "211126663.c2",
+            "prerequisite_description": "Empirical findings that additional fine\u2011tuning on task\u2011relevant data and careful hyper\u2011parameter choices can boost transformer performance on downstream tasks.",
+            "prerequisite_explanation": "The authors apply these techniques (e.g., fine\u2011tuning on RACE) to improve RuleTaker\u2019s accuracy, making them a supporting methodological prerequisite.",
+            "strengths": [
+                "strong"
+            ],
+            "depth": 2
+        },
+        {
+            "contribution_id": "153312532.c2",
+            "used_by_contribution_id": "211126663.c2",
+            "prerequisite_description": "Empirical findings that additional fine\u2011tuning on task\u2011relevant data and careful hyper\u2011parameter choices can boost transformer performance on downstream tasks.",
+            "prerequisite_explanation": "The authors apply these techniques (e.g., fine\u2011tuning on RACE) to improve RuleTaker\u2019s accuracy, making them a supporting methodological prerequisite.",
+            "strengths": [
+                "strong"
+            ],
+            "depth": 2
+        },
+        {
+            "contribution_id": "153312532.c4",
+            "used_by_contribution_id": "211126663.c2",
+            "prerequisite_description": "Empirical findings that additional fine\u2011tuning on task\u2011relevant data and careful hyper\u2011parameter choices can boost transformer performance on downstream tasks.",
+            "prerequisite_explanation": "The authors apply these techniques (e.g., fine\u2011tuning on RACE) to improve RuleTaker\u2019s accuracy, making them a supporting methodological prerequisite.",
+            "strengths": [
+                "strong"
+            ],
+            "depth": 2
+        },
+        {
+            "contribution_id": "153312532.c5",
+            "used_by_contribution_id": "211126663.c2",
+            "prerequisite_description": "Empirical findings that additional fine\u2011tuning on task\u2011relevant data and careful hyper\u2011parameter choices can boost transformer performance on downstream tasks.",
+            "prerequisite_explanation": "The authors apply these techniques (e.g., fine\u2011tuning on RACE) to improve RuleTaker\u2019s accuracy, making them a supporting methodological prerequisite.",
+            "strengths": [
+                "strong"
+            ],
+            "depth": 2
+        },
+        {
+            "contribution_id": "153312532.c6",
+            "used_by_contribution_id": "211126663.c2",
+            "prerequisite_description": "Empirical findings that additional fine\u2011tuning on task\u2011relevant data and careful hyper\u2011parameter choices can boost transformer performance on downstream tasks.",
+            "prerequisite_explanation": "The authors apply these techniques (e.g., fine\u2011tuning on RACE) to improve RuleTaker\u2019s accuracy, making them a supporting methodological prerequisite.",
+            "strengths": [
+                "strong"
+            ],
+            "depth": 2
         },
         {
             "contribution_id": "222141025.c0-1",
@@ -9643,6 +11589,46 @@
             "depth": 0
         },
         {
+            "contribution_id": "218971783.c0",
+            "used_by_contribution_id": "221535103.c0",
+            "prerequisite_description": "Transformer models that generate text autoregressively using stacked self\u2011attention layers, as introduced in the original Transformer paper and later scaled in GPT\u20112 and GPT\u20113.",
+            "prerequisite_explanation": "GPT\u2011f\u2019s core generative component is a decoder\u2011only Transformer; without this architecture the model could not generate proof steps conditioned on goals.",
+            "strengths": [
+                "strong"
+            ],
+            "depth": 1
+        },
+        {
+            "contribution_id": "210861095.c0",
+            "used_by_contribution_id": "218971783.c0",
+            "prerequisite_description": "Observations that cross\u2011entropy loss and downstream performance follow smooth power\u2011law trends with model size, dataset size, and compute, enabling prediction of returns from scaling.",
+            "prerequisite_explanation": "Guided the decision to train a 175\u202fB\u2011parameter model and to expect improved few\u2011shot performance.",
+            "strengths": [
+                "strong"
+            ],
+            "depth": 2
+        },
+        {
+            "contribution_id": "210861095.c1",
+            "used_by_contribution_id": "218971783.c0",
+            "prerequisite_description": "Observations that cross\u2011entropy loss and downstream performance follow smooth power\u2011law trends with model size, dataset size, and compute, enabling prediction of returns from scaling.",
+            "prerequisite_explanation": "Guided the decision to train a 175\u202fB\u2011parameter model and to expect improved few\u2011shot performance.",
+            "strengths": [
+                "strong"
+            ],
+            "depth": 2
+        },
+        {
+            "contribution_id": "218971783.c7",
+            "used_by_contribution_id": "221535103.c0",
+            "prerequisite_description": "Transformer models that generate text autoregressively using stacked self\u2011attention layers, as introduced in the original Transformer paper and later scaled in GPT\u20112 and GPT\u20113.",
+            "prerequisite_explanation": "GPT\u2011f\u2019s core generative component is a decoder\u2011only Transformer; without this architecture the model could not generate proof steps conditioned on goals.",
+            "strengths": [
+                "strong"
+            ],
+            "depth": 1
+        },
+        {
             "contribution_id": "19449905.c5",
             "used_by_contribution_id": "221535103.c0",
             "prerequisite_description": "An iterative procedure where the model generates self\u2011play proof data, a provability value function is trained on binary outcomes of intermediate goals, and the improved value function guides subsequent proof search.",
@@ -9651,6 +11637,16 @@
                 "strong"
             ],
             "depth": 1
+        },
+        {
+            "contribution_id": "6628106.c0",
+            "used_by_contribution_id": "19449905.c5",
+            "prerequisite_description": "The apprentice and value networks are trained by minimising a Kullback\u2011Leibler divergence loss (for policy) and a KL loss for value, using the Adam stochastic optimisation algorithm.",
+            "prerequisite_explanation": "These optimisation choices are necessary to successfully learn the multitask network.",
+            "strengths": [
+                "strong"
+            ],
+            "depth": 2
         },
         {
             "contribution_id": "221535103.c1",
@@ -9681,6 +11677,16 @@
                 "strong"
             ],
             "depth": 1
+        },
+        {
+            "contribution_id": "6628106.c0",
+            "used_by_contribution_id": "8242113.c1",
+            "prerequisite_description": "An adaptive learning\u2011rate method that computes individual learning rates for each parameter based on estimates of first and second moments of the gradients.",
+            "prerequisite_explanation": "All neural models are trained using Adam, affecting convergence and final performance.",
+            "strengths": [
+                "strong"
+            ],
+            "depth": 2
         },
         {
             "contribution_id": "3922816.c0",
@@ -9973,6 +11979,16 @@
             "depth": 2
         },
         {
+            "contribution_id": "14786967.c0",
+            "used_by_contribution_id": "8535316.c0",
+            "prerequisite_description": "A feed\u2011forward network with gated shortcut connections that transforms the concatenated character and word embeddings before they are fed to the contextual LSTM, facilitating deeper feature learning.",
+            "prerequisite_explanation": "The Highway network is essential for effectively combining the character\u2011level and word\u2011level vectors prior to contextual encoding.",
+            "strengths": [
+                "strong"
+            ],
+            "depth": 2
+        },
+        {
             "contribution_id": "8535316.c1",
             "used_by_contribution_id": "3922816.c0",
             "prerequisite_description": "Prior reading\u2011comprehension and natural\u2011language\u2011inference datasets (e.g., SQuAD, SNLI, TriviaQA) together with high\u2011performing neural models (e.g., BiDAF, Decomposable Attention) that established the state of the art before ARC.",
@@ -9981,6 +11997,16 @@
                 "strong"
             ],
             "depth": 1
+        },
+        {
+            "contribution_id": "11212020.c1",
+            "used_by_contribution_id": "8535316.c1",
+            "prerequisite_description": "Soft attention aligns two sequences by computing a similarity score for each pair of elements and weighting one sequence with a softmax over the scores; popularized in neural machine translation.",
+            "prerequisite_explanation": "BiDAF\u2019s similarity matrix S and the subsequent softmax\u2011based weighting directly build on this formulation.",
+            "strengths": [
+                "strong"
+            ],
+            "depth": 2
         },
         {
             "contribution_id": "2926851.c0",
@@ -9997,6 +12023,36 @@
             "used_by_contribution_id": "8535316.c1",
             "prerequisite_description": "Dynamic attention models compute attention recurrently, allowing the attention at step t to depend on previous attention states (e.g., Match\u2011LSTM, Memory Networks).",
             "prerequisite_explanation": "BiDAF\u2019s contribution is defined by contrasting its static, memory\u2011less attention with these dynamic approaches.",
+            "strengths": [
+                "strong"
+            ],
+            "depth": 2
+        },
+        {
+            "contribution_id": "5592690.c0",
+            "used_by_contribution_id": "8535316.c1",
+            "prerequisite_description": "Dynamic attention models compute attention recurrently, allowing the attention at step t to depend on previous attention states (e.g., Match\u2011LSTM, Memory Networks).",
+            "prerequisite_explanation": "BiDAF\u2019s contribution is defined by contrasting its static, memory\u2011less attention with these dynamic approaches.",
+            "strengths": [
+                "strong"
+            ],
+            "depth": 2
+        },
+        {
+            "contribution_id": "5592690.c1",
+            "used_by_contribution_id": "8535316.c1",
+            "prerequisite_description": "Dynamic attention models compute attention recurrently, allowing the attention at step t to depend on previous attention states (e.g., Match\u2011LSTM, Memory Networks).",
+            "prerequisite_explanation": "BiDAF\u2019s contribution is defined by contrasting its static, memory\u2011less attention with these dynamic approaches.",
+            "strengths": [
+                "strong"
+            ],
+            "depth": 2
+        },
+        {
+            "contribution_id": "9205021.c0",
+            "used_by_contribution_id": "8535316.c1",
+            "prerequisite_description": "The attention\u2011over\u2011attention mechanism computes a single context vector by taking the max over the similarity matrix and applying a softmax, highlighting the most relevant context words for the query.",
+            "prerequisite_explanation": "BiDAF\u2019s Q2C attention follows this formulation to obtain the global context vector h.",
             "strengths": [
                 "strong"
             ],
@@ -10073,6 +12129,16 @@
             "depth": 2
         },
         {
+            "contribution_id": "14786967.c0",
+            "used_by_contribution_id": "8535316.c3-1",
+            "prerequisite_description": "A three\u2011level embedding stack that combines character\u2011level CNN embeddings, pre\u2011trained GloVe word vectors, and contextual bidirectional LSTM representations passed through a Highway network.",
+            "prerequisite_explanation": "Rich token representations are required for the downstream attention and modeling layers to achieve high accuracy on SQuAD.",
+            "strengths": [
+                "strong"
+            ],
+            "depth": 2
+        },
+        {
             "contribution_id": "11816014.c0",
             "used_by_contribution_id": "8535316.c3-1",
             "prerequisite_description": "The Stanford Question Answering Dataset (over 100\u202fk questions) with evaluation based on Exact Match and token\u2011level F1 scores.",
@@ -10087,6 +12153,16 @@
             "used_by_contribution_id": "8535316.c3-1",
             "prerequisite_description": "The Stanford Question Answering Dataset (over 100\u202fk questions) with evaluation based on Exact Match and token\u2011level F1 scores.",
             "prerequisite_explanation": "The dataset defines the task and the metrics against which the model\u2019s performance is measured.",
+            "strengths": [
+                "strong"
+            ],
+            "depth": 2
+        },
+        {
+            "contribution_id": "7365802.c0",
+            "used_by_contribution_id": "8535316.c3-1",
+            "prerequisite_description": "Training on a single Titan\u202fX GPU using the AdaDelta optimizer, dropout regularization, and moving\u2011average weight tracking.",
+            "prerequisite_explanation": "Effective training procedures are required to achieve the reported performance levels.",
             "strengths": [
                 "strong"
             ],
@@ -10113,6 +12189,16 @@
             "depth": 2
         },
         {
+            "contribution_id": "14786967.c0",
+            "used_by_contribution_id": "8535316.c3-2",
+            "prerequisite_description": "A three\u2011level token representation that combines character\u2011level CNN embeddings, pretrained GloVe word vectors, and contextual BiLSTM outputs after a Highway network. This pipeline supplies rich lexical and contextual features to downstream attention and modeling components.",
+            "prerequisite_explanation": "Accurate token representations are essential for the attention flow and modeling layers to correctly identify answer entities in the cloze task.",
+            "strengths": [
+                "strong"
+            ],
+            "depth": 2
+        },
+        {
             "contribution_id": "6203757.c0",
             "used_by_contribution_id": "8535316.c3-2",
             "prerequisite_description": "Large\u2011scale news article datasets where a named\u2011entity placeholder is removed from a summary sentence; the task is to predict the missing entity from the article text.",
@@ -10127,6 +12213,16 @@
             "used_by_contribution_id": "8535316.c3-2",
             "prerequisite_description": "Large\u2011scale news article datasets where a named\u2011entity placeholder is removed from a summary sentence; the task is to predict the missing entity from the article text.",
             "prerequisite_explanation": "These datasets define the evaluation benchmark on which the reported state\u2011of\u2011the\u2011art results are measured.",
+            "strengths": [
+                "strong"
+            ],
+            "depth": 2
+        },
+        {
+            "contribution_id": "7365802.c0",
+            "used_by_contribution_id": "8535316.c3-2",
+            "prerequisite_description": "Training uses the AdaDelta optimizer with a learning rate of 0.5, dropout (rate 0.2) on CNNs and LSTMs, moving\u2011average weight tracking, and runs on a single Titan X GPU for ~20\u202fhours per model.",
+            "prerequisite_explanation": "Effective optimization and regularization are necessary to achieve the high accuracy reported on the cloze benchmarks.",
             "strengths": [
                 "strong"
             ],

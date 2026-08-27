@@ -157,6 +157,42 @@ digraph G {
   <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">PyTorch: An Imperative Style, High-Performance<BR/>Deep Learning Library</FONT></I></TD></TR>
   <TR><TD><FONT POINT-SIZE="11">The paper introduces PyTorch, a Python library<BR/>that performs immediate (eager) execution of<BR/>tensor operations while providing reverse‑mode<BR/>automatic differentiation and GPU acceleration. By<BR/>embracing Python&#x27;s imperative programming model,<BR/>models, data loaders, and optimizers can be<BR/>written as ordinary Python code, enabling<BR/>straightforward debugging and rapid<BR/>experimentation. The authors demonstrate that<BR/>careful engineering allows PyTorch to achieve<BR/>performance comparable to static‑graph frameworks,<BR/>challenging the belief that dynamic execution<BR/>necessarily incurs a large speed penalty.</FONT></TD></TR>
 </TABLE>>, fillcolor="#f9d5e5"];
+    "12330432.c0" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">12330432.c0</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">cuDNN: a framework‑agnostic deep‑learning<BR/>primitives library</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">cuDNN: Efficient Primitives for Deep Learning</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">The paper introduces cuDNN, a C‑language library<BR/>that implements highly optimized GPU kernels for<BR/>the core operations used in deep‑learning models<BR/>(convolution, pooling, activation functions,<BR/>softmax, and tensor transformations). The library<BR/>is deliberately framework‑agnostic: it exposes a<BR/>lightweight, state‑free, thread‑safe API built<BR/>around opaque descriptors that allow any tensor<BR/>layout to be passed in without copying data. cuDNN<BR/>achieves high performance and low auxiliary memory<BR/>usage by mapping convolutions onto NVIDIA&#x27;s<BR/>high‑throughput GEMM engine with a lazy im2col<BR/>strategy and by applying<BR/>integer‑division‑to‑multiply indexing<BR/>optimizations.</FONT></TD></TR>
+</TABLE>>, fillcolor="#e3d5ff"];
+    "12330432.c4-1" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">12330432.c4-1</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">GPU‑accelerated forward and backward pooling<BR/>primitives</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">cuDNN: Efficient Primitives for Deep Learning</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">cuDNN provides highly optimized GPU kernels for<BR/>both max and average pooling operations, including<BR/>forward passes that compute pooled outputs and<BR/>backward passes that propagate gradients with<BR/>respect to the input data. The primitives support<BR/>arbitrary 4‑D tensor layouts via stride<BR/>descriptors and require no auxiliary memory,<BR/>enabling seamless integration into existing<BR/>deep‑learning frameworks.</FONT></TD></TR>
+</TABLE>>, fillcolor="#e3d5ff"];
+    "12330432.c4-2" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">12330432.c4-2</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">GPU‑accelerated activation function primitives<BR/>(sigmoid, ReLU, tanh)</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">cuDNN: Efficient Primitives for Deep Learning</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">cuDNN implements forward and backward kernels for<BR/>three widely used activation functions—sigmoid,<BR/>rectified linear unit (ReLU), and hyperbolic<BR/>tangent (tanh). The kernels respect arbitrary<BR/>tensor layouts, require no extra memory, and are<BR/>optimized for high throughput on NVIDIA GPUs.</FONT></TD></TR>
+</TABLE>>, fillcolor="#e3d5ff"];
+    "12330432.c4-3" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">12330432.c4-3</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">GPU‑accelerated numerically stable softmax<BR/>primitive</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">cuDNN: Efficient Primitives for Deep Learning</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">cuDNN offers a softmax routine that computes the<BR/>softmax function in a numerically stable way by<BR/>subtracting the maximum input value before<BR/>exponentiation, with an optional<BR/>fast‑but‑less‑accurate mode. The implementation<BR/>supports forward and backward passes, arbitrary<BR/>tensor layouts, and operates without auxiliary<BR/>memory.</FONT></TD></TR>
+</TABLE>>, fillcolor="#e3d5ff"];
+    "12330432.c4-4" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">12330432.c4-4</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">Tensor transformation utilities (addition with<BR/>broadcasting and transposition)</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">cuDNN: Efficient Primitives for Deep Learning</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">cuDNN includes auxiliary tensor operations such as<BR/>element‑wise addition with optional broadcasting<BR/>and tensor transposition. These utilities respect<BR/>arbitrary stride‑based layouts, require no extra<BR/>memory, and are designed to be called from<BR/>deep‑learning frameworks to simplify common tensor<BR/>manipulations.</FONT></TD></TR>
+</TABLE>>, fillcolor="#e3d5ff"];
+    "2170930.c1" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">2170930.c1</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">DyNet toolkit implementing dynamic declaration</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">DyNet: The Dynamic Neural Network Toolkit</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">DyNet is an open‑source C++ library with Python<BR/>bindings that embodies the dynamic declaration<BR/>paradigm, constructing the computation graph<BR/>implicitly during the forward pass of each<BR/>training instance. It provides a lightweight graph<BR/>representation, custom memory pools for forward<BR/>and backward values, and an optimized backend that<BR/>makes per‑example graph construction fast enough<BR/>for practical training. The toolkit is released<BR/>under the Apache 2.0 license and is designed to be<BR/>idiomatic in both C++ and Python, enabling rapid<BR/>prototyping of neural models with minimal<BR/>boilerplate.</FONT></TD></TR>
+</TABLE>>, fillcolor="#e3d5ff"];
     "207847663.c2-2" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
   <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">207847663.c2-2</FONT></TD></TR>
   <TR><TD><B><FONT POINT-SIZE="14">Soft‑selection baseline models for rationalized<BR/>predictions</FONT></B></TD></TR>
@@ -193,12 +229,54 @@ digraph G {
   <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">Deep contextualized word representations</FONT></I></TD></TR>
   <TR><TD><FONT POINT-SIZE="11">The authors design a two‑layer bidirectional LSTM<BR/>language model that incorporates character‑level<BR/>convolutional token embeddings, two highway<BR/>layers, and a residual connection between the LSTM<BR/>layers. The model is trained on the 1‑Billion Word<BR/>Benchmark for ten epochs, achieving a<BR/>forward‑backward perplexity of 39.7 while<BR/>balancing capacity and computational cost. This<BR/>pretrained biLM serves as the backbone for<BR/>generating deep contextualized ELMo word<BR/>representations, and the pretrained weights and<BR/>extraction code are released publicly for reuse.</FONT></TD></TR>
 </TABLE>>, fillcolor="#e3d5ff"];
+    "5590763.c0" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">5590763.c0</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">RNN Encoder–Decoder architecture for<BR/>sequence‑to‑sequence learning</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">Learning Phrase Representations using RNN<BR/>Encoder–Decoder for Statistical Machine<BR/>Translation</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">The paper introduces the RNN Encoder–Decoder, a<BR/>neural network composed of two recurrent neural<BR/>networks: an encoder that reads an input sequence<BR/>of arbitrary length and compresses it into a<BR/>fixed‑dimensional vector, and a decoder that<BR/>generates an output sequence conditioned on this<BR/>vector. The encoder and decoder are trained<BR/>jointly to maximize the conditional log‑likelihood<BR/>of target sequences given source sequences,<BR/>enabling both scoring of source‑target phrase<BR/>pairs and generation of target sequences. This<BR/>design extends earlier fixed‑size feed‑forward<BR/>translation models to truly variable‑length inputs<BR/>and outputs, providing a new way to represent<BR/>whole sequences in a continuous latent space.</FONT></TD></TR>
+</TABLE>>, fillcolor="#e3d5ff"];
+    "7961699.c0" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">7961699.c0</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">Encoder–decoder LSTM architecture for general<BR/>sequence-to-sequence learning</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">Sequence to Sequence Learning with Neural Networks</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">The paper introduces a domain‑independent,<BR/>end‑to‑end framework that maps an input sequence<BR/>to a fixed‑dimensional vector with a four‑layer<BR/>Long Short‑Term Memory (LSTM) encoder and<BR/>generates the output sequence with a separate<BR/>four‑layer LSTM decoder. The model is trained with<BR/>stochastic gradient descent using back‑propagation<BR/>through time and a softmax output over a large<BR/>vocabulary, eliminating the need for hand‑crafted<BR/>alignment models and enabling direct translation<BR/>of variable‑length sentences.</FONT></TD></TR>
+</TABLE>>, fillcolor="#e3d5ff"];
+    "1697424.c6" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">1697424.c6</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">Soft‑window attention mechanism for conditional<BR/>handwriting synthesis</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">Generating Sequences With Recurrent Neural<BR/>Networks</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">Introduces a differentiable soft‑window layer that<BR/>convolves a mixture of Gaussian kernels with a<BR/>one‑hot encoded character sequence, producing a<BR/>context vector fed to each LSTM layer at every<BR/>timestep. The window parameters (center location,<BR/>width, and importance) are predicted by the<BR/>network itself, allowing the model to learn an<BR/>implicit alignment between characters and<BR/>pen‑stroke positions during generation. Integrated<BR/>with a deep stacked LSTM‑MDN architecture, this<BR/>mechanism enables conditional generation of<BR/>realistic online handwriting from arbitrary text<BR/>strings in diverse styles.</FONT></TD></TR>
+</TABLE>>, fillcolor="#e3d5ff"];
     "16747630.c1" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
   <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">16747630.c1</FONT></TD></TR>
   <TR><TD><B><FONT POINT-SIZE="14">Integrated Gradients attribution method</FONT></B></TD></TR>
   <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">Axiomatic Attribution for Deep Networks</FONT></I></TD></TR>
   <TR><TD><FONT POINT-SIZE="11">The paper introduces Integrated Gradients, a<BR/>feature attribution technique that computes the<BR/>path integral of a network&#x27;s gradients along the<BR/>straight‑line segment from a baseline input to the<BR/>actual input. The integral is approximated with a<BR/>Riemann sum (e.g., 50 steps) using only standard<BR/>gradient calls, so no network modification is<BR/>required. Integrated Gradients provably satisfies<BR/>the Sensitivity and Implementation Invariance<BR/>axioms as well as the Completeness property, and<BR/>can be implemented in any deep‑learning framework<BR/>such as TensorFlow.</FONT></TD></TR>
 </TABLE>>, fillcolor="#f9d5e5"];
+    "1450294.c1" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">1450294.c1</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">Image-specific class saliency map computation via<BR/>single back-propagation</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">Deep Inside Convolutional Networks: Visualising<BR/>Image Classification Models and Saliency Maps</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">The paper introduces a fast procedure to obtain a<BR/>class‑specific saliency map for a given image by<BR/>back‑propagating the gradient of the class score<BR/>with respect to the input pixels. The absolute<BR/>value of the gradient at each pixel (or the<BR/>maximum across colour channels) quantifies the<BR/>pixel&#x27;s influence on the class score, yielding a<BR/>spatial support map in a single backward pass. The<BR/>method requires only image‑level class labels and<BR/>no additional supervision, enabling rapid visual<BR/>explanation of ConvNet decisions.</FONT></TD></TR>
+</TABLE>>, fillcolor="#e3d5ff"];
+    "1450294.c2" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">1450294.c2</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">Weakly supervised object localisation using class<BR/>saliency maps and GraphCut segmentation</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">Deep Inside Convolutional Networks: Visualising<BR/>Image Classification Models and Saliency Maps</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">The paper proposes a pipeline that localises<BR/>objects in images using only image-level class<BR/>labels. An image-specific class saliency map is<BR/>first obtained by back-propagating the gradient of<BR/>the class score with respect to the input pixels.<BR/>The saliency map is thresholded at high and low<BR/>quantiles to initialise foreground and background<BR/>colour Gaussian Mixture Models, which drive an<BR/>interactive GraphCut segmentation to produce a<BR/>full object mask; a bounding box is then extracted<BR/>from this mask. The method is evaluated on the<BR/>ILSVRC‑2013 localisation challenge, achieving<BR/>46.4% top‑5 localisation error without any<BR/>bounding‑box supervision.</FONT></TD></TR>
+</TABLE>>, fillcolor="#e3d5ff"];
+    "1450294.c4-2" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">1450294.c4-2</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">Empirical evaluation of weakly supervised object<BR/>localisation using class saliency maps and<BR/>GraphCut</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">Deep Inside Convolutional Networks: Visualising<BR/>Image Classification Models and Saliency Maps</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">The authors compute image‑specific class saliency<BR/>maps by a single back‑propagation pass, threshold<BR/>them, and initialise colour‑based Gaussian mixture<BR/>models for foreground and background. An<BR/>interactive GraphCut segmentation refines the<BR/>mask, from which the largest connected component<BR/>yields a bounding box. Applied to the ILSVRC‑2013<BR/>localisation challenge, the pipeline achieves 46.4<BR/>% top‑5 localisation error without any<BR/>bounding‑box supervision, demonstrating the<BR/>practicality of gradient‑based saliency for weakly<BR/>supervised detection.</FONT></TD></TR>
+</TABLE>>, fillcolor="#e3d5ff"];
+    "8564234.c0" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">8564234.c0</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">DeepLIFT reference‑based feature attribution<BR/>method</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">Not Just a Black Box: Learning Important Features<BR/>Through Propagating Activation Differences</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">DeepLIFT introduces a reference‑based attribution<BR/>technique that computes importance scores by<BR/>comparing each neuron&#x27;s activation to a reference<BR/>activation and propagating contribution scores<BR/>backward using specially derived multipliers. It<BR/>formalizes two core properties—summation‑to‑delta<BR/>(contributions sum to the output difference from<BR/>the reference) and linear composition<BR/>(contributions distribute proportionally through<BR/>downstream connections)—which overcome<BR/>zero‑gradient issues of traditional saliency<BR/>methods. The method provides a unified algorithm<BR/>applicable to affine layers, max‑pooling, and<BR/>common nonlinearities, and can be implemented<BR/>efficiently on GPUs.</FONT></TD></TR>
+</TABLE>>, fillcolor="#e3d5ff"];
     "13029170.c0" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
   <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">13029170.c0</FONT></TD></TR>
   <TR><TD><B><FONT POINT-SIZE="14">LIME: Local Interpretable Model‑agnostic<BR/>Explanations</FONT></B></TD></TR>
@@ -277,12 +355,30 @@ digraph G {
   <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">Exploring the Limits of Transfer Learning with a<BR/>Unified Text-to-Text Transformer</FONT></I></TD></TR>
   <TR><TD><FONT POINT-SIZE="11">The authors systematically increase the number of<BR/>parameters of the T5 encoder‑decoder Transformer<BR/>from the baseline 220 M to 770 M, 3 B and finally<BR/>11 B, keeping the architecture, pre‑training<BR/>objective, data, and training hyper‑parameters<BR/>constant. Each model is pre‑trained on the C4<BR/>corpus and fine‑tuned on a wide suite of NLP<BR/>benchmarks. The results show consistent<BR/>performance gains across tasks as model size<BR/>grows, confirming that larger models yield better<BR/>language understanding and generation<BR/>capabilities.</FONT></TD></TR>
 </TABLE>>, fillcolor="#f9d5e5"];
+    "52967399.c6" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">52967399.c6</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">Comprehensive ablation analysis of BERT<BR/>pretraining objectives, model size, masking<BR/>strategies, and training steps</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">BERT: Pre-training of Deep Bidirectional<BR/>Transformers for Language Understanding</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">The paper conducts a systematic set of ablation<BR/>experiments that (i) remove the Next Sentence<BR/>Prediction (NSP) task, (ii) replace the Masked<BR/>Language Model (MLM) objective with a<BR/>left‑to‑right language model, (iii) vary the depth<BR/>and width of the Transformer encoder, (iv) test<BR/>different token‑masking policies (MASK/SAME/RND),<BR/>and (v) change the number of pre‑training<BR/>optimization steps. These studies quantify how<BR/>each design choice impacts downstream performance<BR/>on sentence‑pair and token‑level benchmarks,<BR/>demonstrating that NSP is essential for<BR/>sentence‑pair tasks, bidirectional MLM outperforms<BR/>unidirectional LM, larger models yield gains even<BR/>on low‑resource tasks, and a mixed masking<BR/>strategy provides the best feature‑based results.<BR/>The findings are reported in Section 5 and<BR/>Appendix C.</FONT></TD></TR>
+</TABLE>>, fillcolor="#e3d5ff"];
+    "4786918.c6" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">4786918.c6</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">Adafactor optimizer: integrated low‑memory<BR/>adaptive method</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">Adafactor: Adaptive Learning Rates with Sublinear<BR/>Memory Cost</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">Adafactor combines a factored approximation of the<BR/>second‑moment accumulator, removal of the momentum<BR/>term, update clipping, a time‑varying<BR/>second‑moment decay schedule, and relative<BR/>step‑size scaling into a single optimizer. The<BR/>algorithm matches Adam&#x27;s performance on the<BR/>Transformer model for WMT 2014 English‑German<BR/>translation while requiring only O(n+m) auxiliary<BR/>memory for an n×m weight matrix. Full algorithmic<BR/>details are given in Algorithms 4‑6 and default<BR/>hyper‑parameters in Algorithm 6, and an<BR/>implementation is released in the Tensor2Tensor<BR/>library.</FONT></TD></TR>
+</TABLE>>, fillcolor="#e3d5ff"];
     "204838007.c11" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
   <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">204838007.c11</FONT></TD></TR>
   <TR><TD><B><FONT POINT-SIZE="14">Release of T5 model checkpoints, code, and C4<BR/>dataset</FONT></B></TD></TR>
   <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">Exploring the Limits of Transfer Learning with a<BR/>Unified Text-to-Text Transformer</FONT></I></TD></TR>
   <TR><TD><FONT POINT-SIZE="11">The authors publicly release pre‑trained T5 model<BR/>checkpoints for five model sizes (Small, Base,<BR/>Large, 3 B, 11 B), the full TensorFlow‑based<BR/>training and evaluation codebase, and the Colossal<BR/>Clean Crawled Corpus (C4) dataset. These artifacts<BR/>enable the research community to reproduce the<BR/>experiments, fine‑tune the models on downstream<BR/>tasks, and build new systems using the same<BR/>unified text‑to‑text framework. The release is<BR/>accompanied by documentation and integration with<BR/>TensorFlow Datasets for easy access.</FONT></TD></TR>
 </TABLE>>, fillcolor="#f9d5e5"];
+    "52051958.c0" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">52051958.c0</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">SentencePiece open‑source toolkit (Apache 2)</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">SentencePiece: A simple and language independent<BR/>subword tokenizer and detokenizer for Neural Text<BR/>Processing</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">SentencePiece is a publicly released C++/Python<BR/>library that provides command‑line tools<BR/>(spm_train, spm_encode, spm_decode) for<BR/>language‑independent subword tokenization and<BR/>detokenization. It supports both<BR/>byte‑pair‑encoding (BPE) and unigram<BR/>language‑model segmentation, performs Unicode NFKC<BR/>normalization, and manages a self‑contained model<BR/>file (Protocol Buffers) with vocabulary IDs. The<BR/>toolkit also offers C++, Python and TensorFlow<BR/>APIs for on‑the‑fly processing, enabling<BR/>end‑to‑end neural text pipelines without external<BR/>language‑specific preprocessors.</FONT></TD></TR>
+</TABLE>>, fillcolor="#e3d5ff"];
     "211126663.c1" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
   <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">211126663.c1</FONT></TD></TR>
   <TR><TD><B><FONT POINT-SIZE="14">Synthetic RuleTaker dataset suite</FONT></B></TD></TR>
@@ -295,6 +391,54 @@ digraph G {
   <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">Transformers as Soft Reasoners over Language</FONT></I></TD></TR>
   <TR><TD><FONT POINT-SIZE="11">The authors fine‑tune a pretrained RoBERTa‑large<BR/>model (additionally fine‑tuned on the RACE<BR/>reading‑comprehension dataset) to predict the<BR/>truth value of a query given a natural‑language<BR/>context consisting of facts and<BR/>conjunctive‑implication rules. The resulting<BR/>model, called RuleTaker, emulates the input‑output<BR/>behavior of a formal theorem prover, operating<BR/>directly on language without any explicit symbolic<BR/>manipulation, and achieves near‑perfect accuracy<BR/>on synthetic rule‑reasoning benchmarks as well as<BR/>strong zero‑shot transfer to hand‑authored and<BR/>paraphrased rulebases.</FONT></TD></TR>
 </TABLE>>, fillcolor="#f9d5e5"];
+    "198953378.c7" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">198953378.c7</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">Open‑source implementation and pretrained<BR/>checkpoints</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">RoBERTa: A Robustly Optimized BERT Pretraining<BR/>Approach</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">The authors release a full PyTorch/Fairseq<BR/>codebase that re‑implements BERT pretraining and<BR/>downstream fine‑tuning, together with pretrained<BR/>RoBERTa checkpoints for both BASE and LARGE<BR/>configurations. The released artifacts include<BR/>data preprocessing, dynamic masking, large‑batch<BR/>training, mixed‑precision support, and a<BR/>byte‑level BPE tokenizer, enabling reproducibility<BR/>of the RoBERTa recipe and allowing the community<BR/>to use state‑of‑the‑art models without retraining<BR/>from scratch.</FONT></TD></TR>
+</TABLE>>, fillcolor="#e3d5ff"];
+    "6826032.c0" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">6826032.c0</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">RACE Dataset and Benchmark for Machine Reading<BR/>Comprehension</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">RACE: Large-scale ReAding Comprehension Dataset<BR/>From Examinations</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">The paper introduces RACE, a large‑scale English<BR/>reading‑comprehension resource containing 27,933<BR/>passages and 97,687 multiple‑choice questions<BR/>sourced from Chinese middle‑school and high‑school<BR/>English examinations. Each question provides four<BR/>human‑written answer options that are not<BR/>constrained to be text spans in the passage,<BR/>requiring deeper reasoning. The authors publish<BR/>predefined training, development, and test splits<BR/>for the middle‑school (RACE‑M) and high‑school<BR/>(RACE‑H) subsets and adopt simple accuracy as the<BR/>evaluation metric, thereby establishing a new<BR/>benchmark for the community.</FONT></TD></TR>
+</TABLE>>, fillcolor="#e3d5ff"];
+    "6826032.c5" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">6826032.c5</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">Open‑source Release of RACE Dataset and Baseline<BR/>Code</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">RACE: Large-scale ReAding Comprehension Dataset<BR/>From Examinations</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">The authors publicly release the full RACE<BR/>reading‑comprehension dataset (27,933 passages and<BR/>97,687 multiple‑choice questions) via a CMU<BR/>website and provide open‑source implementations of<BR/>three baseline models (Sliding Window, Stanford<BR/>Attentive Reader, Gated‑Attention Reader) on<BR/>GitHub. This release enables reproducible<BR/>benchmarking, comparative evaluation, and lowers<BR/>the entry barrier for future<BR/>machine‑reading‑comprehension research.</FONT></TD></TR>
+</TABLE>>, fillcolor="#e3d5ff"];
+    "153312532.c0" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">153312532.c0</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">Three‑step BERT fine‑tuning framework for text<BR/>classification</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">How to Fine-Tune BERT for Text Classification?</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">The paper introduces a systematic three‑stage<BR/>pipeline to adapt a pretrained BERT model to any<BR/>text classification task. First, BERT is further<BR/>pre‑trained on the target‑task training set or on<BR/>additional in‑domain data using the original<BR/>masked language modeling and<BR/>next‑sentence‑prediction objectives. Second, an<BR/>optional multi‑task fine‑tuning stage jointly<BR/>trains the shared BERT encoder on several related<BR/>classification tasks while keeping task‑specific<BR/>output heads. Third, the target task is fine‑tuned<BR/>with a layer‑wise decreasing learning‑rate<BR/>schedule and a long‑text preprocessing strategy,<BR/>yielding state‑of‑the‑art results on eight<BR/>benchmark datasets.</FONT></TD></TR>
+</TABLE>>, fillcolor="#e3d5ff"];
+    "153312532.c2" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">153312532.c2</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">Layer-wise learning-rate decay schedule to<BR/>mitigate catastrophic forgetting in BERT<BR/>fine-tuning</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">How to Fine-Tune BERT for Text Classification?</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">The paper introduces a learning‑rate schedule for<BR/>BERT fine‑tuning that assigns a base learning rate<BR/>to the top Transformer layer and geometrically<BR/>decays it for lower layers using a factor \(\xi<BR/>\le 1\). Setting \(\xi = 0.95\) with a base rate<BR/>of 2e‑5 yields a lower error on the IMDb sentiment<BR/>classification task by reducing catastrophic<BR/>forgetting. The schedule is evaluated empirically<BR/>on IMDb and analyzed in terms of its effect on<BR/>knowledge retention across BERT layers.</FONT></TD></TR>
+</TABLE>>, fillcolor="#e3d5ff"];
+    "153312532.c4" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">153312532.c4</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">Task‑specific, in‑domain, and cross‑domain further<BR/>pre‑training of BERT</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">How to Fine-Tune BERT for Text Classification?</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">The authors augment the original BERT model with<BR/>an additional unsupervised pre‑training phase that<BR/>re‑applies the masked language modeling (MLM) and<BR/>next‑sentence prediction (NSP) objectives on (i)<BR/>the target task’s own training corpus<BR/>(within‑task), (ii) a collection of corpora<BR/>sharing the same semantic domain (in‑domain), and<BR/>(iii) the union of all seven classification<BR/>corpora (cross‑domain). This further pre‑training<BR/>is inserted as the first stage of their three‑step<BR/>BERT fine‑tuning pipeline and is evaluated on<BR/>eight public text‑classification benchmarks, where<BR/>it consistently reduces error rates relative to<BR/>vanilla BERT‑base, with the largest gains observed<BR/>for in‑domain pre‑training on small datasets such<BR/>as TREC.</FONT></TD></TR>
+</TABLE>>, fillcolor="#e3d5ff"];
+    "153312532.c5" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">153312532.c5</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">Multi‑task fine‑tuning of BERT for text<BR/>classification</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">How to Fine-Tune BERT for Text Classification?</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">The authors jointly fine‑tune a shared BERT‑base<BR/>encoder on four English text‑classification<BR/>datasets (IMDb, Yelp‑P, AG&#x27;s News, DBPedia) using<BR/>a multi‑task learning setup where each task has a<BR/>private classification head. After the joint<BR/>training phase, they perform an additional<BR/>low‑learning‑rate fine‑tuning step on each<BR/>individual task. Experiments show modest accuracy<BR/>gains over single‑task fine‑tuning and reveal that<BR/>the benefit of multi‑task fine‑tuning diminishes<BR/>when the model has already been subjected to<BR/>cross‑domain further pre‑training.</FONT></TD></TR>
+</TABLE>>, fillcolor="#e3d5ff"];
+    "153312532.c6" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">153312532.c6</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">Few‑shot learning performance of (further<BR/>pre‑trained) BERT for text classification</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">How to Fine-Tune BERT for Text Classification?</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">The authors evaluate the pretrained BERT‑base<BR/>model and its variants that undergo additional<BR/>in‑domain pre‑training on the IMDb sentiment<BR/>classification task when only a very small<BR/>fraction (0.4 % to 5 %) of the original training<BR/>data is available. By fine‑tuning BERT on these<BR/>limited subsets they observe a reduction in error<BR/>rate from 17.26 % to 9.23 % with the standard<BR/>model, and further gains when the model has been<BR/>further pre‑trained on in‑domain data,<BR/>demonstrating BERT&#x27;s suitability for low‑resource<BR/>text classification scenarios.</FONT></TD></TR>
+</TABLE>>, fillcolor="#e3d5ff"];
     "222141025.c0-1" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
   <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">222141025.c0-1</FONT></TD></TR>
   <TR><TD><B><FONT POINT-SIZE="14">PROVER Multi-Module Transformer Architecture for<BR/>Joint QA and Proof Generation</FONT></B></TD></TR>
@@ -312,12 +456,6 @@ digraph G {
   <TR><TD><B><FONT POINT-SIZE="14">Discovery of BERT under‑training and four simple<BR/>training improvements (RoBERTa recipe)</FONT></B></TD></TR>
   <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">RoBERTa: A Robustly Optimized BERT Pretraining<BR/>Approach</FONT></I></TD></TR>
   <TR><TD><FONT POINT-SIZE="11">By replicating BERT pretraining, the authors show<BR/>that the original BERT model was trained for<BR/>insufficient steps and that its performance can be<BR/>substantially improved by (i) training for many<BR/>more updates with larger mini‑batches, (ii)<BR/>removing the next‑sentence prediction (NSP)<BR/>objective, (iii) feeding longer input sequences<BR/>(full‑sentence inputs), and (iv) using dynamic<BR/>masking instead of a static mask. These four<BR/>modifications together define the RoBERTa training<BR/>recipe, which achieves state‑of‑the‑art results on<BR/>GLUE, SQuAD and RACE without extra data or<BR/>multi‑task finetuning.</FONT></TD></TR>
-</TABLE>>, fillcolor="#e3d5ff"];
-    "198953378.c7" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
-  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">198953378.c7</FONT></TD></TR>
-  <TR><TD><B><FONT POINT-SIZE="14">Open‑source implementation and pretrained<BR/>checkpoints</FONT></B></TD></TR>
-  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">RoBERTa: A Robustly Optimized BERT Pretraining<BR/>Approach</FONT></I></TD></TR>
-  <TR><TD><FONT POINT-SIZE="11">The authors release a full PyTorch/Fairseq<BR/>codebase that re‑implements BERT pretraining and<BR/>downstream fine‑tuning, together with pretrained<BR/>RoBERTa checkpoints for both BASE and LARGE<BR/>configurations. The released artifacts include<BR/>data preprocessing, dynamic masking, large‑batch<BR/>training, mixed‑precision support, and a<BR/>byte‑level BPE tokenizer, enabling reproducibility<BR/>of the RoBERTa recipe and allowing the community<BR/>to use state‑of‑the‑art models without retraining<BR/>from scratch.</FONT></TD></TR>
 </TABLE>>, fillcolor="#e3d5ff"];
     "222141025.c0-2" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
   <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">222141025.c0-2</FONT></TD></TR>
@@ -547,6 +685,30 @@ digraph G {
   <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">Generative Language Modeling for Automated Theorem<BR/>Proving</FONT></I></TD></TR>
   <TR><TD><FONT POINT-SIZE="11">The paper introduces GPT‑f, a system that couples<BR/>a decoder‑only Transformer (up to 774 M<BR/>parameters) with a custom Python Metamath<BR/>verifier. GPT‑f generates a proof‑step (theorem<BR/>identifier and substitution list) conditioned on a<BR/>Metamath goal, expands open goals by sampling<BR/>multiple tactics, and orders them by cumulative<BR/>log‑probability in a breadth‑first proof search.<BR/>The system also supports an interactive<BR/>proof‑assistant mode and an iterative self‑play<BR/>loop that trains a provability value function on<BR/>generated proof data, achieving state‑of‑the‑art<BR/>performance on the Metamath set.mm benchmark.</FONT></TD></TR>
 </TABLE>>, fillcolor="#fde0c5"];
+    "218971783.c0" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">218971783.c0</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">GPT-3 175‑billion‑parameter dense autoregressive<BR/>transformer language model</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">Language Models are Few-Shot Learners</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">The paper introduces GPT‑3, a 175 B‑parameter<BR/>decoder‑only transformer trained on ~300 B tokens<BR/>of a filtered Common Crawl mixture. The model<BR/>scales depth, width, and compute roughly ten‑fold<BR/>beyond prior dense language models (e.g., GPT‑2)<BR/>while preserving the same autoregressive<BR/>architecture. GPT‑3 is evaluated without any<BR/>weight updates on a wide range of NLP tasks using<BR/>zero‑, one‑, and few‑shot prompting, achieving<BR/>performance competitive with state‑of‑the‑art<BR/>fine‑tuned systems on many benchmarks.</FONT></TD></TR>
+</TABLE>>, fillcolor="#f9d5e5"];
+    "210861095.c0" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">210861095.c0</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">Power-law scaling of Transformer language-model<BR/>loss with model size, dataset size, and compute</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">Scaling Laws for Neural Language Models</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">The authors empirically demonstrate that the<BR/>cross-entropy loss of decoder-only Transformer<BR/>language models follows simple power-law<BR/>relationships with three independent scale<BR/>factors: the number of non-embedding parameters<BR/>(N), the number of training tokens (D), and the<BR/>total non-embedding compute used for training (C).<BR/>By training models ranging from 10^6 to &gt;10^9<BR/>parameters on datasets spanning six orders of<BR/>magnitude, they fit equations (1.1)–(1.2) and<BR/>(1.5)–(1.6) that predict loss for any combination<BR/>of N, D, and C when the other two are not<BR/>bottlenecks. These scaling laws enable accurate<BR/>extrapolation of performance and inform optimal<BR/>allocation of compute resources.</FONT></TD></TR>
+</TABLE>>, fillcolor="#e3d5ff"];
+    "210861095.c1" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">210861095.c1</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">Closed-form loss model L(N,D) and universal<BR/>overfitting scaling</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">Scaling Laws for Neural Language Models</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">The authors propose a compact analytical<BR/>expression L(N,D) (Equation 1.5) that predicts the<BR/>test cross‑entropy loss of decoder‑only<BR/>Transformer language models as a function of the<BR/>non‑embedding parameter count N and the dataset<BR/>size D when both are varied jointly. By fitting<BR/>this expression to a dense grid of experiments<BR/>spanning six orders of magnitude in N and D, they<BR/>demonstrate that the overfitting penalty follows a<BR/>simple power‑law dependence on the ratio<BR/>N^{0.74}/D, meaning that an eight‑fold increase in<BR/>model size requires only about a five‑fold<BR/>increase in data to avoid loss degradation. The<BR/>model accurately captures the full experimental<BR/>surface, providing a universal description of<BR/>overfitting across scales.</FONT></TD></TR>
+</TABLE>>, fillcolor="#e3d5ff"];
+    "218971783.c7" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">218971783.c7</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">Release of a family of smaller GPT-3 models</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">Language Models are Few-Shot Learners</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">The authors train eight additional GPT-3 models<BR/>ranging from 125 M to 13 B parameters using the<BR/>same dense decoder‑only transformer architecture,<BR/>data, and training pipeline as the 175 B model,<BR/>and publicly release the checkpoints. These models<BR/>enable the research community to perform detailed<BR/>scaling analyses and to apply language models in<BR/>settings where the full 175 B model is<BR/>computationally infeasible.</FONT></TD></TR>
+</TABLE>>, fillcolor="#f9d5e5"];
     "19449905.c5" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
   <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">19449905.c5</FONT></TD></TR>
   <TR><TD><B><FONT POINT-SIZE="14">Value‑network augmentation for MCTS using<BR/>apprentice estimates</FONT></B></TD></TR>
@@ -586,7 +748,7 @@ digraph G {
     "2100831.c1" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
   <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">2100831.c1</FONT></TD></TR>
   <TR><TD><B><FONT POINT-SIZE="14">MCTest MC160 and MC500 Reading‑Comprehension<BR/>Datasets with Standard Splits and Rich Metadata</FONT></B></TD></TR>
-  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">MCTest: A Challenge Dataset for the Open-Domain<BR/>Machine Comprehension of Text</FONT></I></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">**MCTest: A Challenge Dataset for the Open-Domain<BR/>Machine Comprehension of Text**</FONT></I></TD></TR>
   <TR><TD><FONT POINT-SIZE="11">The authors construct and publicly release two<BR/>non‑copyrighted corpora, MC160 (160 story sets)<BR/>and MC500 (500 story sets), each consisting of a<BR/>150‑300 word fictional story, four multiple‑choice<BR/>questions with four answer options, correct answer<BR/>labels, and extensive metadata<BR/>(age‑appropriateness, grammar quality, clarity,<BR/>and a flag indicating whether a question requires<BR/>information from multiple sentences). The corpora<BR/>are accompanied by predefined train/dev/test<BR/>splits, enabling immediate benchmarking of<BR/>machine‑reading systems. By providing both the raw<BR/>data and the evaluation protocol, the resource<BR/>serves as a benchmark for open‑domain machine<BR/>comprehension research.</FONT></TD></TR>
 </TABLE>>, fillcolor="#e3d5ff"];
     "6203757.c0" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
@@ -685,6 +847,12 @@ digraph G {
   <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">Long Short-Term Memory-Networks for Machine<BR/>Reading</FONT></I></TD></TR>
   <TR><TD><FONT POINT-SIZE="11">The authors integrate the Long Short-Term<BR/>Memory-Network (LSTMN) into an encoder-decoder<BR/>framework using shallow and deep attention-fusion<BR/>strategies and evaluate the resulting models on<BR/>the Stanford Natural Language Inference (SNLI)<BR/>corpus. The shallow-fusion LSTMN and the<BR/>deep-fusion LSTMN (300‑dimensional hidden units)<BR/>achieve test accuracies of 84.3% and 86.3%<BR/>respectively, matching or surpassing prior<BR/>state‑of‑the‑art results while using a comparable<BR/>number of parameters. This demonstrates that<BR/>combining intra‑attention, inter‑sentence<BR/>attention, and a memory‑network‑augmented<BR/>recurrence effectively models sentence‑pair<BR/>semantics for natural language inference.</FONT></TD></TR>
 </TABLE>>, fillcolor="#e3d5ff"];
+    "14786967.c0" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">14786967.c0</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">Highway Network Architecture with Transform and<BR/>Carry Gates</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">Highway Networks</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">The paper introduces Highway Networks, a<BR/>feed‑forward architecture in which each layer<BR/>computes a transformed representation H(x) and a<BR/>transform gate T(x). The layer output is a convex<BR/>combination y = H(x)·T(x) + x·(1‑T(x)), where the<BR/>carry gate C(x) is defined as 1‑T(x). This gating<BR/>mechanism creates &quot;information highways&quot; that<BR/>allow signals to propagate unchanged across many<BR/>layers, mitigating the vanishing‑gradient problem<BR/>and enabling the training of very deep networks<BR/>with standard stochastic gradient descent.</FONT></TD></TR>
+</TABLE>>, fillcolor="#e3d5ff"];
     "2926851.c0" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
   <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">2926851.c0</FONT></TD></TR>
   <TR><TD><B><FONT POINT-SIZE="14">Memory Networks conceptual framework</FONT></B></TD></TR>
@@ -696,6 +864,24 @@ digraph G {
   <TR><TD><B><FONT POINT-SIZE="14">Memory Neural Network (MemNN) architecture for<BR/>textual QA</FONT></B></TD></TR>
   <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">Memory Networks</FONT></I></TD></TR>
   <TR><TD><FONT POINT-SIZE="11">The paper presents a concrete neural<BR/>implementation of the Memory Networks framework<BR/>for question answering over text. Sentences (facts<BR/>or questions) are stored verbatim in a growing<BR/>memory array via the I and G modules. At inference<BR/>time the O module retrieves up to k supporting<BR/>memories using learned embedding similarity<BR/>scores, and the R module produces a single‑word<BR/>answer by scoring candidate answer words with a<BR/>separate embedding matrix. The implementation uses<BR/>bag‑of‑words feature mappings, distinct embedding<BR/>matrices for retrieval and answer scoring, and is<BR/>trained with a margin ranking loss optimized by<BR/>stochastic gradient descent.</FONT></TD></TR>
+</TABLE>>, fillcolor="#e3d5ff"];
+    "5592690.c0" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">5592690.c0</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">Boundary model: match-LSTM with Pointer Network<BR/>for span prediction</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">Machine Comprehension Using Match-LSTM and Answer<BR/>Pointer</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">The paper introduces a neural architecture for<BR/>machine comprehension that predicts answer spans<BR/>by jointly applying a match-LSTM to attend a<BR/>passage to a question and a Pointer Network to<BR/>select the start and end token positions. The<BR/>match-LSTM encodes each passage token with<BR/>bidirectional contextual information and aligns it<BR/>to the question via attention, while the Answer<BR/>Pointer layer uses the pointer mechanism to output<BR/>two indices defining a contiguous answer span.<BR/>Evaluated on the SQuAD v1.1 benchmark, the<BR/>boundary model achieves an exact‑match score of<BR/>67.6% and an F1 of 77.0%, surpassing the<BR/>logistic‑regression baseline.</FONT></TD></TR>
+</TABLE>>, fillcolor="#e3d5ff"];
+    "5592690.c1" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">5592690.c1</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">Sequence model: match-LSTM with Pointer Network<BR/>for token‑sequence generation</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">Machine Comprehension Using Match-LSTM and Answer<BR/>Pointer</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">The paper introduces a neural architecture that<BR/>combines a match‑LSTM encoder with a Pointer<BR/>Network decoder to generate answers as a<BR/>variable‑length sequence of token positions from<BR/>the passage. The decoder emits indices into the<BR/>passage and includes a special end‑of‑answer<BR/>token, allowing the model to select<BR/>non‑consecutive tokens. The model is trained<BR/>end‑to‑end on the SQuAD v1.1 dataset and evaluated<BR/>against baselines, showing lower performance than<BR/>the span‑based boundary model but demonstrating<BR/>the feasibility of sequence‑based answer<BR/>generation.</FONT></TD></TR>
+</TABLE>>, fillcolor="#e3d5ff"];
+    "9205021.c0" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
+  <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">9205021.c0</FONT></TD></TR>
+  <TR><TD><B><FONT POINT-SIZE="14">Attention-over-Attention (AoA) Reader Architecture</FONT></B></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">Attention-over-Attention Neural Networks for<BR/>Reading Comprehension</FONT></I></TD></TR>
+  <TR><TD><FONT POINT-SIZE="11">The paper introduces the Attention-over-Attention<BR/>(AoA) Reader, a neural network for cloze‑style<BR/>reading comprehension. The model encodes document<BR/>and query tokens with a shared bidirectional GRU,<BR/>computes a pairwise matching matrix via<BR/>dot‑product, derives a query‑to‑document attention<BR/>for each query word (column‑wise softmax) and a<BR/>document‑to‑query attention (row‑wise softmax),<BR/>averages the latter to obtain a global query‑level<BR/>attention vector, and finally produces an<BR/>&quot;attended attention&quot; over the document by taking<BR/>the dot product of the two attention matrices. The<BR/>resulting document‑level attention scores are<BR/>summed over all occurrences of each candidate word<BR/>to yield answer probabilities, removing the need<BR/>for heuristic merging functions while adding<BR/>negligible computational overhead.</FONT></TD></TR>
 </TABLE>>, fillcolor="#e3d5ff"];
     "868693.c1" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
   <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">868693.c1</FONT></TD></TR>
@@ -736,7 +922,7 @@ digraph G {
     "11039301.c1" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
   <TR><TD><FONT POINT-SIZE="10" COLOR="gray40">11039301.c1</FONT></TD></TR>
   <TR><TD><B><FONT POINT-SIZE="14">Two‑Layered Semantic Taxonomy of Answer Types</FONT></B></TD></TR>
-  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">Learning Question Classifiers</FONT></I></TD></TR>
+  <TR><TD><I><FONT POINT-SIZE="11" COLOR="gray25">**Learning Question Classifiers**</FONT></I></TD></TR>
   <TR><TD><FONT POINT-SIZE="11">The paper defines a two‑level taxonomy for answer<BR/>types used in open‑domain question answering. Six<BR/>coarse categories (ABBREVIATION, ENTITY,<BR/>DESCRIPTION, HUMAN, LOCATION, NUMERIC VALUE) are<BR/>introduced to align with existing entity<BR/>recognizers and to provide a manageable top‑level<BR/>partition. Each coarse class is further refined<BR/>into 50 mutually exclusive fine‑grained subclasses<BR/>(e.g., city, speed, definition) based on analysis<BR/>of the TREC‑10 question set, yielding a natural<BR/>semantic hierarchy that serves as the label space<BR/>for a hierarchical classifier and guides<BR/>downstream answer‑selection strategies.</FONT></TD></TR>
 </TABLE>>, fillcolor="#e3d5ff"];
     "5421278.c1" [label=<<TABLE BORDER="0" CELLBORDER="0" CELLPADDING="4">
@@ -852,6 +1038,12 @@ digraph G {
     "5590763.c1" -> "7365802.c0";
     "207847663.c2-1" -> "6628106.c0";
     "207847663.c2-1" -> "202786778.c0";
+    "202786778.c0" -> "12330432.c0";
+    "202786778.c0" -> "12330432.c4-1";
+    "202786778.c0" -> "12330432.c4-2";
+    "202786778.c0" -> "12330432.c4-3";
+    "202786778.c0" -> "12330432.c4-4";
+    "202786778.c0" -> "2170930.c1";
     "233297051.c0" -> "207847663.c2-2";
     "207847663.c2-2" -> "52967399.c0";
     "52967399.c0" -> "13756489.c0";
@@ -860,7 +1052,15 @@ digraph G {
     "52967399.c0" -> "3626819.c1";
     "207847663.c2-2" -> "52967399.c7";
     "207847663.c2-2" -> "11212020.c1";
+    "11212020.c1" -> "5590763.c0";
+    "11212020.c1" -> "7961699.c0";
+    "11212020.c1" -> "5590763.c1";
+    "11212020.c1" -> "1697424.c6";
     "207847663.c2-2" -> "16747630.c1";
+    "16747630.c1" -> "1450294.c1";
+    "16747630.c1" -> "1450294.c2";
+    "16747630.c1" -> "1450294.c4-2";
+    "16747630.c1" -> "8564234.c0";
     "207847663.c2-2" -> "13029170.c0";
     "207847663.c2-2" -> "13029170.c2";
     "13029170.c2" -> "12383721.c0";
@@ -876,9 +1076,20 @@ digraph G {
     "207847663.c2-2" -> "202786778.c0";
     "233297051.c0" -> "229371222.c0";
     "229371222.c0" -> "204838007.c9-1";
+    "204838007.c9-1" -> "52967399.c6";
+    "204838007.c9-1" -> "4786918.c6";
     "229371222.c0" -> "204838007.c11";
+    "204838007.c11" -> "52051958.c0";
     "229371222.c0" -> "211126663.c1";
     "229371222.c0" -> "211126663.c2";
+    "211126663.c2" -> "198953378.c7";
+    "211126663.c2" -> "6826032.c0";
+    "211126663.c2" -> "6826032.c5";
+    "211126663.c2" -> "153312532.c0";
+    "211126663.c2" -> "153312532.c2";
+    "211126663.c2" -> "153312532.c4";
+    "211126663.c2" -> "153312532.c5";
+    "211126663.c2" -> "153312532.c6";
     "229371222.c0" -> "222141025.c0-1";
     "222141025.c0-1" -> "198953378.c4";
     "222141025.c0-1" -> "198953378.c1";
@@ -933,10 +1144,16 @@ digraph G {
     "229371222.c1" -> "222141025.c0-2";
     "229371222.c1" -> "222141025.c1";
     "233297051.c0" -> "221535103.c0";
+    "221535103.c0" -> "218971783.c0";
+    "218971783.c0" -> "210861095.c0";
+    "218971783.c0" -> "210861095.c1";
+    "221535103.c0" -> "218971783.c7";
     "221535103.c0" -> "19449905.c5";
+    "19449905.c5" -> "6628106.c0";
     "233297051.c0" -> "221535103.c1";
     "233297051.c0" -> "211132980.c0";
     "211132980.c0" -> "8242113.c1";
+    "8242113.c1" -> "6628106.c0";
     "233297051.c0" -> "3922816.c0";
     "3922816.c0" -> "11816014.c0";
     "11816014.c0" -> "2100831.c1";
@@ -966,9 +1183,14 @@ digraph G {
     "3922816.c0" -> "8535316.c0";
     "8535316.c0" -> "1957433.c0";
     "8535316.c0" -> "1957433.c8";
+    "8535316.c0" -> "14786967.c0";
     "3922816.c0" -> "8535316.c1";
+    "8535316.c1" -> "11212020.c1";
     "8535316.c1" -> "2926851.c0";
     "8535316.c1" -> "2926851.c1";
+    "8535316.c1" -> "5592690.c0";
+    "8535316.c1" -> "5592690.c1";
+    "8535316.c1" -> "9205021.c0";
     "8535316.c1" -> "868693.c1";
     "3922816.c0" -> "8535316.c2";
     "8535316.c2" -> "11816014.c0";
@@ -976,12 +1198,16 @@ digraph G {
     "8535316.c2" -> "6203757.c1";
     "3922816.c0" -> "8535316.c3-1";
     "8535316.c3-1" -> "1957433.c0";
+    "8535316.c3-1" -> "14786967.c0";
     "8535316.c3-1" -> "11816014.c0";
     "8535316.c3-1" -> "11816014.c5-1";
+    "8535316.c3-1" -> "7365802.c0";
     "3922816.c0" -> "8535316.c3-2";
     "8535316.c3-2" -> "1957433.c0";
+    "8535316.c3-2" -> "14786967.c0";
     "8535316.c3-2" -> "6203757.c0";
     "8535316.c3-2" -> "6203757.c2";
+    "8535316.c3-2" -> "7365802.c0";
     "233297051.c0" -> "218974301.c0";
     "218974301.c0" -> "3922816.c0";
     "218974301.c0" -> "199668863.c0";
