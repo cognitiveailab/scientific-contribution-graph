@@ -10,7 +10,7 @@ The Scientific Contribution Graph maps how science is "built upon the shoulders 
 
 Several things make the Scientific Contribution Graph different than previous knowledge graphs.  First, its nodes and edges have *a lot* of content -- they include descriptions of each scientific contribution, and explanations of why each contribution's prerequisite is there, as well as why that prerequisite is filled by specific papers.  This is because the extraction is modeled as a full (expensive) sequence-to-sequence summarization/extraction task over the full text of each paper, using long-context models, rather than simply extracting triples or sentence spans.  So you don't just get a triple, like `entailment_tree, requires, multi_premise_entailment` -- you get detailed names and descriptions (an average of 130 tokens) of each scientific contribution, and detailed explanations of why one contribution is considered a prerequisite for another (using an average of 71 tokens). 
 
-Second, the Scientific Contribution Graph is *large*.  It currently contains over *2 million* scientific contributions (and *12 million* prerequisite relations) extracted from over *230k* open access scientific articles, centrally in natural language processing and artificial intelligence.  In its current state, it likely maps out most of the technological roadmap of the field of natural language processing that is capable of being mapped using open access articles.
+Second, the Scientific Contribution Graph is *large*.  It currently contains over *5.9 million* scientific contributions (and *36 million* prerequisite relations) extracted from over *655k* open access scientific articles, centrally in natural language processing and artificial intelligence.  In its current state, it likely maps out most of the technological roadmap of the field of natural language processing that is capable of being mapped using open access articles.
 
 ## Live (Web) Demo on Huggingface Spaces
 
@@ -63,7 +63,7 @@ The Scientific Contribution Graph is described in the following paper: [The Scie
 <span id="2-1-where-can-i-download"/>
 
 ### 2.1. Where can I download the scientific contribution graph, and how do I start using it?
-The data for the graph is large (approximately 30GB on disk), and is currently distributed using a HuggingFace Datasets storage bucket.  The API for using the graph is contained in this repository.  To get started quickly, see [Section 3. Installation and Running](#3-installation-and-running).  After download, the getting up and running should take only a few minutes.
+The data for the graph is large (approximately 80GB on disk), and is currently distributed using a HuggingFace Datasets storage bucket.  The API for using the graph is contained in this repository.  To get started quickly, see [Section 3. Installation and Running](#3-installation-and-running).  After download, the getting up and running should take only a few minutes.
 
 <span id="2-2-are-there-examples"/>
 
@@ -171,7 +171,7 @@ The Scientific Contribution Graph API is intentionally designed to be light-weig
 
 #### Step 1: Download the latest Scientific Contribution Graph 
 
-The Scientific Contribution Graph is stored on [HuggingFace Datasets](https://huggingface.co/datasets) in a bucket, as it is quite large (~7GB zipped, ~34GB unzipped). 
+The Scientific Contribution Graph is stored on [HuggingFace Datasets](https://huggingface.co/datasets) in a bucket, as it is quite large (~19GB zipped, ~80GB unzipped). 
 
 #### Step 1.1: Install Huggingface Datasets Command Line Interface
 
@@ -191,8 +191,8 @@ You can list the size of the latest graph in `/releases-tar/current/`:
 ```
 > hf buckets ls hf://buckets/pajansen/scientific-contribution-graph/releases-tar/current/
 
-  6483552957  2026-05-12 21:49:53  releases-tar/current/scg-release-1.0.0.tar.gz
-          91  2026-05-12 21:49:54  releases-tar/current/scg-release-1.0.0.tar.gz.sha256
+  18949624976  2026-08-26 16:00:00  releases-tar/current/scg-release-1.1.0.tar.gz
+          91  2026-08-26 16:00:00  releases-tar/current/scg-release-1.1.0.tar.gz.sha256
 ```
 
 Then download the archive and `sha256`:
@@ -208,8 +208,8 @@ Sync plan: hf://buckets/pajansen/scientific-contribution-graph/releases-tar/curr
   Deletes: 0
   Skips: 0
 Syncing...
-  Downloading: scg-release-1.0.0.tar.gz (new file)
-  Downloading: scg-release-1.0.0.tar.gz.sha256 (new file)
+  Downloading: scg-release-1.1.0.tar.gz (new file)
+  Downloading: scg-release-1.1.0.tar.gz.sha256 (new file)
 Downloading 2 files
 Downloading bucket files: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 6.48G/6.48G [01:18<00:00, 82.2MB/s]
 Sync completed.
@@ -217,22 +217,22 @@ Sync completed.
 
 And you can verify the `sha256`: 
 ```
-> sha256sum -c scg-release-1.0.0.tar.gz.sha256
+> sha256sum -c scg-release-1.1.0.tar.gz.sha256
 
-scg-release-1.0.0.tar.gz: OK
+scg-release-1.1.0.tar.gz: OK
 ```
 
 Then, extract the archive using tar: 
 ```
-tar -xzvf scg-release-1.0.0.tar.gz
+tar -xzvf scg-release-1.1.0.tar.gz
 ```
 
 If you'd like, you can verify the overall structure of the archive:
 ```
 > ls
 data
-scg-release-1.0.0.tar.gz
-scg-release-1.0.0.tar.gz.sha256
+scg-release-1.1.0.tar.gz
+scg-release-1.1.0.tar.gz.sha256
 
 > ls data/
 embeddings
@@ -252,13 +252,13 @@ Similarly, `du` can be used to verify the size:
 > du -lh
 
 ...
-1.5G    ./data/papers/23
-89M     ./data/papers/37
-2.1G    ./data/papers/26
-24G     ./data/papers
-4.0G    ./data/embeddings
-28G     ./data
-34G     .
+4.1G    ./data/papers/23
+306M    ./data/papers/37
+4.7G    ./data/papers/26
+68G     ./data/papers
+12G     ./data/embeddings
+80G     ./data
+98G     .
 ```
 
 
