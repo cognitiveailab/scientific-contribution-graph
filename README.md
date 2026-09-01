@@ -1,7 +1,7 @@
 ## The Scientific Contribution Graph
 
 
-This is the repository for [The Scientific Contribution Graph: Automated Literature-based Technological Roadmapping at Scale](https://arxiv.org/pdf/2605.15011), and contains the API and installation instructions.
+This is the repository for [The Scientific Contribution Graph: Automated Literature-based Technological Roadmapping at Scale](https://arxiv.org/pdf/2605.15011) (EMNLP Findings 2026), and contains the API and installation instructions.
 
 <table align="center"><tr><td><img src="images/example-bert.png" width="800"><br><a href="https://en.wikipedia.org/wiki/Standing_on_the_shoulders_of_giants">"If I have seen further than others, it is by standing on the shoulders of giants" (Isaac Newton)</a></td></tr></table>
 
@@ -17,6 +17,25 @@ Second, the Scientific Contribution Graph is *large*.  It currently contains ove
 There is a live web demo of a high-level browsing interface available on [Huggingface Spaces here](https://huggingface.co/spaces/pajansen/scientific-contribution-graph), as well as a short instructional video on how to use it below. You can also install the demo locally (see [demo/](demo/) for instructions):
 
 [![Watch the demo on YouTube](demo/youtube-preview.png)](https://youtu.be/5zfU8xp1jU4)
+
+---
+
+## Changelog
+
+**Version 1.1** (August 2026) -- current release
+
+- **Approximately 2.9x larger.** 655,195 papers (up from 230,454), 5,976,913 scientific contributions (up from 2,047,426), and 36,199,762 prerequisite relations (up from 12,524,458).
+- **Improved reference linking.** Paper references that carried no Semantic Scholar corpus ID were backfilled by exact title match, and the cross-contribution linking pass was then re-run across the entire corpus.  The proportion of paper references successfully linked to a specific downstream contribution rose from 25.7% to 29.0%.
+- **Faster startup.** The API now reads the paper list from `data/metadata/paper_manifest.jsonl` rather than walking the paper directory tree.
+- **New metadata file.** `data/metadata/demo_stats.json` ships the release totals, so the demo no longer relies on hard-coded values.
+- **Size:** approximately 19GB compressed, 80GB uncompressed.
+
+**Version 1.0** (May 2026) -- initial public release
+
+- 230,454 papers, 2,047,426 scientific contributions, and 12,524,458 prerequisite relations.
+- **Size:** approximately 6.5GB compressed, 28GB uncompressed.
+
+Both releases remain available.  Version 1.1 is in `releases-tar/current/` (and `releases-tar/1.1/`); version 1.0 is in `releases-tar/1.0/`.  See [Section 3.2](#3-2-installation-instructions) for download instructions.
 
 ---
 
@@ -48,7 +67,7 @@ There is a live web demo of a high-level browsing interface available on [Huggin
 
 ## 1. Paper 
 
-The Scientific Contribution Graph is described in the following paper: [The Scientific Contribution Graph: Automated Literature-based Technological Roadmapping at Scale [Arxiv/PDF]](https://arxiv.org/pdf/2605.15011).
+The Scientific Contribution Graph is described in the following paper (accepted to **Findings of EMNLP 2026**): [The Scientific Contribution Graph: Automated Literature-based Technological Roadmapping at Scale [Arxiv/PDF]](https://arxiv.org/pdf/2605.15011).
 
 <div align="center">
 <table> <tr> <td>
@@ -73,7 +92,7 @@ Yes!  A set of cool and common examples and visualizations are included in the [
 <span id="2-3-how-many-contributions-per-paper"/>
 
 ### 2.3. How many scientific contributions are extracted per paper?
-On average, each paper has 9 contributions.  On average, each contribution lists 6 prerequisites.  These prerequisites can be a mix of references to external papers, internal contributions (i.e. contributions from the same paper), or references to tools/URLs.  Currently, 61% are external papers, 33% are references to contributions in the same paper (typically when a later contribution builds upon an earlier one), and 6% are references to external tools/URLs.
+On average, each paper has 9 contributions.  On average, each contribution lists 6 prerequisites.  These prerequisites can be a mix of references to external papers, internal contributions (i.e. contributions from the same paper), or references to tools/URLs.  Currently, 61% are external papers, 34% are references to contributions in the same paper (typically when a later contribution builds upon an earlier one), and 5% are references to external tools/URLs.
 
 <span id="2-4-how-are-papers-and-contributions-referenced"/>
 
@@ -88,7 +107,23 @@ To find Corpus IDs for a given paper, you can use:
 <span id="2-5-does-the-scg-contain-only-ai-articles"/>
 
 ### 2.5. Does the Scientific Contribution Graph contain only Artificial Intelligence articles?
-The short answer is: mostly.  The longer answer is: The crawl is initially seeded from the [ACL Anthology](https://aclanthology.org/), meaning that any open access papers cited by ACL Anthology papers (or, papers that cite those papers, recursively) will be attempted to be crawled.  The longer-term goal is for the graph to be expanded into other domains, though this is limited by open access literature availability (which is plentiful in the AI domain). 
+Version 1.0 of the scientific contribution graph was a full back-crawl from the entire [ACL Anthology](https://aclanthology.org/) (February 2025 snapshot) backwards through the Semantic Scholar Open Research Corpus (S2ORC).  Version 1.1 does alternating cycles of forward (impact) and backward (technological dependency) crawling through S2ORC, and has expanded beyond just artificial intelligence.  A table with the Semantic Scholar topic ratings of the articles in the Scientific Contribution Graph is below (note: Semantic Scholar articles frequently have more than one topic classification, so percentages sum to greater than 100%).
+
+| Topic | Count | % | | Topic | Count | % |
+|---|---:|---:|:-:|---|---:|---:|
+| Medicine | 304,898 | 46.5% | | Sociology | 4,796 | 0.7% |
+| Computer Science | 272,796 | 41.6% | | Education | 3,637 | 0.6% |
+| Biology | 177,090 | 27.0% | | Political Science | 3,108 | 0.5% |
+| Physics | 163,066 | 24.9% | | Business | 2,642 | 0.4% |
+| Mathematics | 58,616 | 8.9% | | Economics | 2,628 | 0.4% |
+| Linguistics | 51,830 | 7.9% | | Agricultural and Food Sciences | 2,615 | 0.4% |
+| Engineering | 51,458 | 7.9% | | Geography | 1,904 | 0.3% |
+| Environmental Science | 40,636 | 6.2% | | Philosophy | 1,900 | 0.3% |
+| Chemistry | 35,962 | 5.5% | | Law | 1,650 | 0.3% |
+| Materials Science | 20,198 | 3.1% | | History | 1,111 | 0.2% |
+| Psychology | 13,494 | 2.1% | |  |  |  |
+
+*Topics with fewer than 1,000 articles are omitted (Art: 830, Geology: 499).*
 
 <span id="2-6-what-do-the-nodes-and-edges-look-like"/>
 
@@ -125,6 +160,8 @@ In the context of the scientific contribution graph:
 - *Backward crawling from a Contribution X*: Determining which technologies Contribution X was built from (i.e. backwards in time).
 - *Forward crawling from a Contribution X*: Determining which technologies built off of Contribution X (i.e. forwards in time).
 
+*A note on how the graph itself was crawled:* Version 1.0 was built primarily through backward crawling -- starting from a seed set of papers and recursively crawling their prerequisites.  Version 1.1 uses alternating cycles of forward and backward crawling, expanding the graph in both the impact and technological-dependency directions.
+
 <span id="2-9-measure-downstream-impact"/>
 
 ### 2.9. Can I use the Scientific Contribution Graph to measure the downstream impact of a specific paper, or a specific contribution in that paper?
@@ -132,7 +169,7 @@ Yes, in multiple ways.
 - **Visualization:** If you'd like a visualization of how a specific contribution led to further contributions (i.e. its impact), see the `forward crawling` example code here: [examples/](examples/) . There are examples visualizing this as a [simple radial graph where nodes are contribution names](examples/forward_crawl_example_results.radial-iter500.svg), and also slightly more [detailed graphs that include contribution descriptions](examples/forward_crawl_example_results.graphviz.edgelabels.pdf)
 - **Impact Number:** If you'd like a citation-like number (e.g. a count of the number of downstream scientific contributions that were made possible from a specific paper or contribution), see the `impact` example code here: [examples/](examples/).  The summary report includes impact both across an entire paper, and broken down for each contribution [(see an example here)](examples/example6_impact_metric.json) .
 
-A caveat of impact assessment is that since the graph is largely crawled in the `prerequisite` (i.e. backwards) direction during the extraction process, there will be lower recall in the `impact` (i.e. forwards) direction.  That means: whatever impact it says a contribution has had, the true impact is likely higher, particularly if that impact comes from papers (a) that are not open access, or (b) that are not in the AI/NLP domain.
+A caveat of impact assessment is crawl direction (see [Section 2.8](#2-8-backward-crawl-forward-crawl)).  Version 1.0 was crawled largely in the `prerequisite` (i.e. backwards) direction during the extraction process, giving it lower recall in the `impact` (i.e. forwards) direction.  Version 1.1 uses alternating cycles of forward and backward crawling, which improves recall in the forward direction, though some asymmetry remains.  In either case: whatever impact it says a contribution has had, the true impact is likely higher, particularly if that impact comes from papers (a) that are not open access, or (b) that are not in the AI/NLP domain.
 
 <span id="2-10-technological-requirement-prediction-task"/>
 
@@ -146,6 +183,10 @@ This includes:
 - **Example Code:** A runnable example/API function to perform this task in real life scientific prediction, along with example output.
 
 <table align="center"><tr><td><img src="images/image-table3.png" width="800"></td></tr></table>
+
+To help ground the technological requirement prediction task, see the cartoon example image below.  Given a technology you'd like to build, and a list of existing technologies (presented in random order), you must rank the list of existing technologies so that the ones that are actually needed are ranked highest.  This is ideally done using temporal backtesting -- so that the technology you'd like to build was developed after the judge model's knowledge cutoff date.  Also note that this is a cartoon example, and for simplicity doesn't include much of the information (like the actual descriptions of the technologies) that the model sees to help it perform the task.
+
+<table align="center"><tr><td><img src="images/technological_requirement_prediction_example.png" width="800"></td></tr></table>
 
 <span id="2-11-question-not-answered"/>
 
@@ -211,7 +252,7 @@ Syncing...
   Downloading: scg-release-1.1.0.tar.gz (new file)
   Downloading: scg-release-1.1.0.tar.gz.sha256 (new file)
 Downloading 2 files
-Downloading bucket files: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 6.48G/6.48G [01:18<00:00, 82.2MB/s]
+Downloading bucket files: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 17.6G/17.6G [03:50<00:00, 82.2MB/s]
 Sync completed.
 ```
 
@@ -295,7 +336,7 @@ A number of ready-made examples of the API are available to run in the `example_
 <span id="4-citation"/>
 
 ## 4. Citation
-If you use this work, please reference the following citation:
+If you use this work, please reference the following citation.  Note that this paper has been accepted to **Findings of EMNLP 2026**, and this citation will be updated when the proceedings version is published:
 ```
 @misc{jansen2026scientificcontributiongraphautomated,
       title={The Scientific Contribution Graph: Automated Literature-based Technological Roadmapping at Scale}, 

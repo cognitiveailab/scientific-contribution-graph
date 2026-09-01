@@ -10,6 +10,12 @@ The code here frames this as a ranking task:
 
 The result is a ranked list of existing technologies, each a scientific contribution from a paper in the scientific contribution graph.  They are ranked in decreasing order of relevance (i.e. the highest-ranked technology is nominally the most relevant). 
 
+### **Cartoon Example**
+
+To help ground the technological requirement prediction task, see the cartoon example image below.  Given a technology you'd like to build, and a list of existing technologies (presented in random order), you must rank the list of existing technologies so that the ones that are actually needed are ranked highest.  This is ideally done using temporal backtesting -- so that the technology you'd like to build was developed after the judge model's knowledge cutoff date.  Also note that this is a cartoon example, and for simplicity doesn't include much of the information (like the actual descriptions of the technologies) that the model sees to help it perform the task.
+
+<table align="center"><tr><td><img src="../images/technological_requirement_prediction_example.png" width="800"></td></tr></table>
+
 ### **Table of Contents: Code in this repository**
 The code in this directory includes: 
 1. **Runnable Example:** A simple end-to-end runnable example function, that can be directly used to apply this task for real-world technological requirement prediction tasks.
