@@ -184,7 +184,7 @@ This includes:
 
 <table align="center"><tr><td><img src="images/image-table3.png" width="800"></td></tr></table>
 
-To help ground the technological requirement prediction task, see the cartoon example image below.  Given a technology you'd like to build, and a list of existing technologies (presented in random order), you must rank the list of existing technologies so that the ones that are actually needed are ranked highest.  This is ideally done using temporal backtesting -- so that the technology you'd like to build was developed after the judge model's knowledge cutoff date.  Also note that this is a cartoon example, and for simplicity doesn't include much of the information (like the actual descriptions of the technologies) that the model sees to help it perform the task.
+To help ground the technological requirement prediction task, see the cartoon example image below.  Given a technology you'd like to build, and a list of existing technologies (presented in random order), you must rank the list of existing technologies so that the ones that are actually needed are ranked highest.  This is ideally done using temporal backtesting -- so that the technology you'd like to build was developed after the judge model's knowledge cutoff date (and why the table above reports performance before and after a given model's advertised knowledge cutoff date).  Also note that this is a cartoon example, and for simplicity doesn't include much of the information (like the actual descriptions of the technologies) that the model sees to help it perform the task.
 
 <table align="center"><tr><td><img src="images/technological_requirement_prediction_example.png" width="800"></td></tr></table>
 
