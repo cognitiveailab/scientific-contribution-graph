@@ -1536,6 +1536,13 @@ INDEX_HTML = r"""<!doctype html>
     <i class="fa-regular fa-circle-question"></i>
     Help
   </a>
+  <a class="paper-link"
+     href="https://www.youtube.com/watch?v=5zfU8xp1jU4"
+     target="_blank" rel="noopener"
+     title="Watch the demo video on YouTube">
+    <i class="fa-brands fa-youtube"></i>
+    Help Video
+  </a>
 </header>
 
 <div class="layout">
