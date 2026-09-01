@@ -29,11 +29,13 @@ There is a live web demo of a high-level browsing interface available on [Huggin
 - **Faster startup.** The API now reads the paper list from `data/metadata/paper_manifest.jsonl` rather than walking the paper directory tree.
 - **New metadata file.** `data/metadata/demo_stats.json` ships the release totals, so the demo no longer relies on hard-coded values.
 - **Size:** approximately 19GB compressed, 80GB uncompressed.
+- **Domain:** Expanded from AI into science more broadly. See [Section 2.5](#2-5-does-the-scg-contain-only-ai-articles) for the distribution of papers, including medicine, computer science, biology, chemistry, mathematics, and others.
 
 **Version 1.0** (May 2026) -- initial public release
 
 - 230,454 papers, 2,047,426 scientific contributions, and 12,524,458 prerequisite relations.
 - **Size:** approximately 6.5GB compressed, 28GB uncompressed.
+- **Domain:** Largely AI: Full crawl of the ACL Anthology (https://aclanthology.org/), then back-crawl through S2ORC.
 
 Both releases remain available.  Version 1.1 is in `releases-tar/current/` (and `releases-tar/1.1/`); version 1.0 is in `releases-tar/1.0/`.  See [Section 3.2](#3-2-installation-instructions) for download instructions.
 
