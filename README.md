@@ -10,7 +10,7 @@ The Scientific Contribution Graph maps how science is "built upon the shoulders 
 
 Several things make the Scientific Contribution Graph different than previous knowledge graphs.  First, its nodes and edges have *a lot* of content -- they include descriptions of each scientific contribution, and explanations of why each contribution's prerequisite is there, as well as why that prerequisite is filled by specific papers.  This is because the extraction is modeled as a full (expensive) sequence-to-sequence summarization/extraction task over the full text of each paper, using long-context models, rather than simply extracting triples or sentence spans.  So you don't just get a triple, like `entailment_tree, requires, multi_premise_entailment` -- you get detailed names and descriptions (an average of 130 tokens) of each scientific contribution, and detailed explanations of why one contribution is considered a prerequisite for another (using an average of 71 tokens). 
 
-Second, the Scientific Contribution Graph is *large*.  It currently contains over *5.9 million* scientific contributions (and *36 million* prerequisite relations) extracted from over *655k* open access scientific articles, centrally in natural language processing and artificial intelligence.  In its current state, it likely maps out most of the technological roadmap of the field of natural language processing that is capable of being mapped using open access articles.
+Second, the Scientific Contribution Graph is *large*.  It currently contains over *7.8 million* scientific contributions (and *47 million* prerequisite relations) extracted from over *847k* open access scientific articles, initially centrally in natural language processing and artificial intelligence, but now extended to biomedicine, computer science, physics, and other fields.  In its current state, it likely maps out most of the technological roadmap of the field of natural language processing that is capable of being mapped using open access articles.
 
 ## Live (Web) Demo on Huggingface Spaces
 
@@ -22,7 +22,14 @@ There is a live web demo of a high-level browsing interface available on [Huggin
 
 ## Changelog
 
-**Version 1.1** (August 2026) -- current release
+**Version 1.2** (November 2026) -- current release
+
+- **Approximately 1.3x larger.** 847,125 papers (up from 655,195), 7,894,403 scientific contributions (up from 5,976,913), and 47,920,828 prerequisite relations (up from 36,199,762).  All papers in Version 1.1 are retained.
+- **Metadata refresh.** Paper metadata (corpus IDs, titles, years) was refreshed against a September 2026 Semantic Scholar snapshot, references without corpus IDs were backfilled by exact title match, and cross-contribution linking was re-run.
+- **Size:** approximately 25GB compressed, 107GB uncompressed.
+- **Domain:** Continues to broaden across the sciences; physics in particular grew (29.7% of papers, up from 24.9%).  See [Section 2.5](#2-5-does-the-scg-contain-only-ai-articles).
+
+**Version 1.1** (August 2026)
 
 - **Approximately 2.9x larger.** 655,195 papers (up from 230,454), 5,976,913 scientific contributions (up from 2,047,426), and 36,199,762 prerequisite relations (up from 12,524,458).
 - **Improved reference linking.** Paper references that carried no Semantic Scholar corpus ID were backfilled by exact title match, and the cross-contribution linking pass was then re-run across the entire corpus.  The proportion of paper references successfully linked to a specific downstream contribution rose from 25.7% to 29.0%.
@@ -37,7 +44,7 @@ There is a live web demo of a high-level browsing interface available on [Huggin
 - **Size:** approximately 6.5GB compressed, 28GB uncompressed.
 - **Domain:** Largely AI: Full crawl of the ACL Anthology (https://aclanthology.org/), then back-crawl through S2ORC.
 
-Both releases remain available.  Version 1.1 is in `releases-tar/current/` (and `releases-tar/1.1/`); version 1.0 is in `releases-tar/1.0/`.  See [Section 3.2](#3-2-installation-instructions) for download instructions.
+All releases remain available.  Version 1.2 is in `releases-tar/current/` (and `releases-tar/1.2/`); version 1.1 is in `releases-tar/1.1/`; version 1.0 is in `releases-tar/1.0/`.  See [Section 3.2](#3-2-installation-instructions) for download instructions.
 
 ---
 
@@ -84,7 +91,7 @@ The Scientific Contribution Graph is described in the following paper (accepted 
 <span id="2-1-where-can-i-download"/>
 
 ### 2.1. Where can I download the scientific contribution graph, and how do I start using it?
-The data for the graph is large (approximately 80GB on disk), and is currently distributed using a HuggingFace Datasets storage bucket.  The API for using the graph is contained in this repository.  To get started quickly, see [Section 3. Installation and Running](#3-installation-and-running).  After download, the getting up and running should take only a few minutes.
+The data for the graph is large (approximately 107GB on disk), and is currently distributed using a HuggingFace Datasets storage bucket.  The API for using the graph is contained in this repository.  To get started quickly, see [Section 3. Installation and Running](#3-installation-and-running).  After download, the getting up and running should take only a few minutes.
 
 <span id="2-2-are-there-examples"/>
 
@@ -109,23 +116,23 @@ To find Corpus IDs for a given paper, you can use:
 <span id="2-5-does-the-scg-contain-only-ai-articles"/>
 
 ### 2.5. Does the Scientific Contribution Graph contain only Artificial Intelligence articles?
-Version 1.0 of the scientific contribution graph was a full back-crawl from the entire [ACL Anthology](https://aclanthology.org/) (February 2025 snapshot) backwards through the Semantic Scholar Open Research Corpus (S2ORC).  Version 1.1 does alternating cycles of forward (impact) and backward (technological dependency) crawling through S2ORC, and has expanded beyond just artificial intelligence.  A table with the Semantic Scholar topic ratings of the articles in the Scientific Contribution Graph is below (note: Semantic Scholar articles frequently have more than one topic classification, so percentages sum to greater than 100%).
+Version 1.0 of the scientific contribution graph was a full back-crawl from the entire [ACL Anthology](https://aclanthology.org/) (February 2025 snapshot) backwards through the Semantic Scholar Open Research Corpus (S2ORC).  Versions 1.1 and 1.2 do alternating cycles of forward (impact) and backward (technological dependency) crawling through S2ORC, and have expanded beyond just artificial intelligence.  A table (for Version 1.2) with the Semantic Scholar topic ratings of the articles in the Scientific Contribution Graph is below (note: Semantic Scholar articles frequently have more than one topic classification, so percentages sum to greater than 100%).
 
 | Topic | Count | % | | Topic | Count | % |
 |---|---:|---:|:-:|---|---:|---:|
-| Medicine | 304,898 | 46.5% | | Sociology | 4,796 | 0.7% |
-| Computer Science | 272,796 | 41.6% | | Education | 3,637 | 0.6% |
-| Biology | 177,090 | 27.0% | | Political Science | 3,108 | 0.5% |
-| Physics | 163,066 | 24.9% | | Business | 2,642 | 0.4% |
-| Mathematics | 58,616 | 8.9% | | Economics | 2,628 | 0.4% |
-| Linguistics | 51,830 | 7.9% | | Agricultural and Food Sciences | 2,615 | 0.4% |
-| Engineering | 51,458 | 7.9% | | Geography | 1,904 | 0.3% |
-| Environmental Science | 40,636 | 6.2% | | Philosophy | 1,900 | 0.3% |
-| Chemistry | 35,962 | 5.5% | | Law | 1,650 | 0.3% |
-| Materials Science | 20,198 | 3.1% | | History | 1,111 | 0.2% |
-| Psychology | 13,494 | 2.1% | |  |  |  |
+| Medicine | 403,597 | 47.6% | | Sociology | 5,291 | 0.6% |
+| Computer Science | 306,605 | 36.2% | | Education | 4,065 | 0.5% |
+| Physics | 251,880 | 29.7% | | Political Science | 3,404 | 0.4% |
+| Biology | 240,408 | 28.4% | | Agricultural and Food Sciences | 3,285 | 0.4% |
+| Mathematics | 70,112 | 8.3% | | Economics | 3,126 | 0.4% |
+| Engineering | 62,105 | 7.3% | | Business | 2,959 | 0.3% |
+| Environmental Science | 57,546 | 6.8% | | Geography | 2,211 | 0.3% |
+| Linguistics | 54,278 | 6.4% | | Philosophy | 2,157 | 0.3% |
+| Chemistry | 50,134 | 5.9% | | Law | 1,802 | 0.2% |
+| Materials Science | 25,820 | 3.0% | | Geology | 1,471 | 0.2% |
+| Psychology | 15,439 | 1.8% | | History | 1,290 | 0.2% |
 
-*Topics with fewer than 1,000 articles are omitted (Art: 830, Geology: 499).*
+*Topics with fewer than 1,000 articles are omitted (Art: 878).*
 
 <span id="2-6-what-do-the-nodes-and-edges-look-like"/>
 
@@ -162,7 +169,7 @@ In the context of the scientific contribution graph:
 - *Backward crawling from a Contribution X*: Determining which technologies Contribution X was built from (i.e. backwards in time).
 - *Forward crawling from a Contribution X*: Determining which technologies built off of Contribution X (i.e. forwards in time).
 
-*A note on how the graph itself was crawled:* Version 1.0 was built primarily through backward crawling -- starting from a seed set of papers and recursively crawling their prerequisites.  Version 1.1 uses alternating cycles of forward and backward crawling, expanding the graph in both the impact and technological-dependency directions.
+*A note on how the graph itself was crawled:* Version 1.0 was built primarily through backward crawling -- starting from a seed set of papers and recursively crawling their prerequisites.  Versions 1.1 and later use alternating cycles of forward and backward crawling, expanding the graph in both the impact and technological-dependency directions.
 
 <span id="2-9-measure-downstream-impact"/>
 
@@ -171,7 +178,7 @@ Yes, in multiple ways.
 - **Visualization:** If you'd like a visualization of how a specific contribution led to further contributions (i.e. its impact), see the `forward crawling` example code here: [examples/](examples/) . There are examples visualizing this as a [simple radial graph where nodes are contribution names](examples/forward_crawl_example_results.radial-iter500.svg), and also slightly more [detailed graphs that include contribution descriptions](examples/forward_crawl_example_results.graphviz.edgelabels.pdf)
 - **Impact Number:** If you'd like a citation-like number (e.g. a count of the number of downstream scientific contributions that were made possible from a specific paper or contribution), see the `impact` example code here: [examples/](examples/).  The summary report includes impact both across an entire paper, and broken down for each contribution [(see an example here)](examples/example6_impact_metric.json) .
 
-A caveat of impact assessment is crawl direction (see [Section 2.8](#2-8-backward-crawl-forward-crawl)).  Version 1.0 was crawled largely in the `prerequisite` (i.e. backwards) direction during the extraction process, giving it lower recall in the `impact` (i.e. forwards) direction.  Version 1.1 uses alternating cycles of forward and backward crawling, which improves recall in the forward direction, though some asymmetry remains.  In either case: whatever impact it says a contribution has had, the true impact is likely higher, particularly if that impact comes from papers (a) that are not open access, or (b) that are not in the AI/NLP domain.
+A caveat of impact assessment is crawl direction (see [Section 2.8](#2-8-backward-crawl-forward-crawl)).  Version 1.0 was crawled largely in the `prerequisite` (i.e. backwards) direction during the extraction process, giving it lower recall in the `impact` (i.e. forwards) direction.  Versions 1.1 and later use alternating cycles of forward and backward crawling, which improves recall in the forward direction, though some asymmetry remains.  In either case: whatever impact it says a contribution has had, the true impact is likely higher, particularly if that impact comes from papers (a) that are not open access, or (b) that are not in the AI/NLP domain.
 
 <span id="2-10-technological-requirement-prediction-task"/>
 
@@ -206,7 +213,7 @@ The installation has been tested working on Ubuntu Linux.  It will likely work w
 
 ### 3.1. System Requirements
 
-The Scientific Contribution Graph API is intentionally designed to be light-weight, and all the contribution data is streamed from disk, so the memory and compute requirements are low (a few gigabytes).  When search embeddings are enabled, this does increase RAM requirements somewhat, to approximately 10GB.
+The Scientific Contribution Graph API is intentionally designed to be light-weight, and all the contribution data is streamed from disk, so the memory and compute requirements are low (approximately 7GB of RAM for version 1.2).  When search embeddings are enabled, the embeddings and query encoder are held in memory, increasing RAM requirements to approximately 26GB for version 1.2.
 
 <span id="3-2-installation-instructions"/>
 
@@ -214,7 +221,7 @@ The Scientific Contribution Graph API is intentionally designed to be light-weig
 
 #### Step 1: Download the latest Scientific Contribution Graph 
 
-The Scientific Contribution Graph is stored on [HuggingFace Datasets](https://huggingface.co/datasets) in a bucket, as it is quite large (~19GB zipped, ~80GB unzipped). 
+The Scientific Contribution Graph is stored on [HuggingFace Datasets](https://huggingface.co/datasets) in a bucket, as it is quite large (~25GB zipped, ~107GB unzipped). 
 
 #### Step 1.1: Install Huggingface Datasets Command Line Interface
 
@@ -234,8 +241,8 @@ You can list the size of the latest graph in `/releases-tar/current/`:
 ```
 > hf buckets ls hf://buckets/pajansen/scientific-contribution-graph/releases-tar/current/
 
-  18949624976  2026-08-27 00:13:21  releases-tar/current/scg-release-1.1.0.tar.gz
-          91  2026-08-27 00:14:14  releases-tar/current/scg-release-1.1.0.tar.gz.sha256
+  25298338934  2026-11-18 23:32:00  releases-tar/current/scg-release-1.2.0.tar.gz
+          91  2026-11-18 23:33:11  releases-tar/current/scg-release-1.2.0.tar.gz.sha256
 ```
 
 Then download the archive and `sha256`:
@@ -251,31 +258,30 @@ Sync plan: hf://buckets/pajansen/scientific-contribution-graph/releases-tar/curr
   Deletes: 0
   Skips: 0
 Syncing...
-  Downloading: scg-release-1.1.0.tar.gz (new file)
-  Downloading: scg-release-1.1.0.tar.gz.sha256 (new file)
+  Downloading: scg-release-1.2.0.tar.gz (new file)
+  Downloading: scg-release-1.2.0.tar.gz.sha256 (new file)
 Downloading 2 files
-Downloading bucket files: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 17.6G/17.6G [03:50<00:00, 82.2MB/s]
 Sync completed.
 ```
 
 And you can verify the `sha256`: 
 ```
-> sha256sum -c scg-release-1.1.0.tar.gz.sha256
+> sha256sum -c scg-release-1.2.0.tar.gz.sha256
 
-scg-release-1.1.0.tar.gz: OK
+scg-release-1.2.0.tar.gz: OK
 ```
 
 Then, extract the archive using tar: 
 ```
-tar -xzvf scg-release-1.1.0.tar.gz
+tar -xzvf scg-release-1.2.0.tar.gz
 ```
 
 If you'd like, you can verify the overall structure of the archive:
 ```
 > ls
 data
-scg-release-1.1.0.tar.gz
-scg-release-1.1.0.tar.gz.sha256
+scg-release-1.2.0.tar.gz
+scg-release-1.2.0.tar.gz.sha256
 
 > ls data/
 embeddings
